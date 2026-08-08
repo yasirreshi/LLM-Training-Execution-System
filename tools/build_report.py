@@ -31,7 +31,7 @@ from tools import report_collect as RC  # noqa: E402
 
 A = PATHS.submission
 TEMPLATE = ROOT / "tools" / "report_template.html"
-OUTPUT = ROOT / "docs" / "report.html"
+OUTPUT = ROOT / "docs" / "index.html"   # docs/index.html is the GitHub Pages root
 
 LANES = ["general_web", "code", "math_science", "indic", "agentic", "reasoning"]
 

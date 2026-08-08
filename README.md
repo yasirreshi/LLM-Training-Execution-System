@@ -14,7 +14,7 @@ The model is deliberately tiny (1.3M parameters) and beside the point. The point
 that the data system can prove **what it consumed, why it consumed it, what the model
 learned from it, and how the run can be reconstructed.**
 
-**→ [Interactive report](docs/report.html)** — the complete record of this run. Nineteen
+**→ [Interactive report](https://yasirreshi.github.io/LLM-Training-Execution-System/)** — the complete record of this run. Nineteen
 stages in execution order, each answering the same questions, weighted toward what was
 actually built and run rather than toward theory:
 
@@ -50,6 +50,14 @@ All of it is read from the working tree and `submission_artifacts/` by
 `python tools/build_report.py`, so the code it displays is the code that ran and the records it
 shows are records the run wrote.
 
+> **Viewing it.** The live page is at
+> **https://yasirreshi.github.io/LLM-Training-Execution-System/** (GitHub Pages, served from
+> `docs/`). Opening `docs/index.html` through the GitHub file browser will *not* work — GitHub
+> serves `.html` blobs as `text/plain` with `X-Content-Type-Options: nosniff`, which forbids the
+> browser from rendering them. That is a deliberate anti-XSS measure and no change to the file
+> can override it. Cloning the repo and opening `docs/index.html` from disk works too; the page
+> is entirely self-contained, with no external requests.
+
 ## Contents
 
 - [The pipeline, end to end](#the-pipeline-end-to-end) — every stage, in execution order, with the decision made at each touchpoint
@@ -66,7 +74,7 @@ pip install -r requirements.txt
 python run_demo.py                    # regenerates submission_artifacts/ from scratch
 python -m tdes.cli.verify_evidence    # independent re-derivation of every claim
 pytest -q                             # 112 invariant tests
-python tools/build_report.py          # rebuild docs/report.html from the artifacts
+python tools/build_report.py          # rebuild docs/index.html from the artifacts
 ```
 
 The report is assembled from `tools/report_head.html` + `report_body.html` +
