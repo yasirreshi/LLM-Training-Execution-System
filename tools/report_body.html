@@ -1,0 +1,257 @@
+<div class="shell">
+<nav class="rail" aria-label="Contents"><ol id="railList"></ol></nav>
+<main>
+
+<header class="mast">
+  <div class="eyebrow">
+    <span>Training infrastructure</span><span aria-hidden="true">·</span>
+    <span id="mRun">run</span><span aria-hidden="true">·</span><span id="mCfg">config</span>
+  </div>
+  <h1>Training Data Execution System</h1>
+  <p class="dek">The complete record of one training run — 19 stages from raw text to audited
+     evidence. What was built, what it ran, the code that ran it, the artifacts it wrote and the
+     records inside them. The model is 1.3M parameters and beside the point; the data system is
+     the work. Every number, every line of code and every record on this page is read from the
+     working tree and the run's own artifacts.</p>
+  <div class="verdict" id="verdict"></div>
+</header>
+
+<!-- ══ ORIENTATION ═══════════════════════════════════════════════════ -->
+<section id="s-read" data-title="How to read this" data-group="Orientation">
+  <div class="wrap stack">
+    <h2>How to read this</h2>
+    <p>The page follows the pipeline in execution order, 19 stages. Each gets the same facets, and
+       the weight is on what was built and what it ran rather than on theory — the concept is a
+       snapshot, then the detail. Interactive instruments sit inside the stage they belong to,
+       showing that stage's real output.</p>
+    <p class="note">Nothing here was transcribed. The code excerpts are pulled out of the working
+       tree at build time, the records are lifted verbatim from the ledgers, the file sizes are
+       stat'd, and the log lines are sliced from <code>run.log</code>. Change the run and this page
+       changes with it.</p>
+  </div>
+  <div class="panel">
+    <div class="panel-hd"><h4>The facets, on every stage</h4></div>
+    <div class="panel-bd flush">
+      <div class="facets" style="margin:0;border:0;border-radius:0">
+        <div class="facet"><div class="fl">Concept</div><div class="fb">A snapshot — what the object
+          is, and the alternative rejected. Two or three sentences, no more.</div></div>
+        <div class="facet"><div class="fl">What we built</div><div class="fb">The concrete
+          implementation: formats, constants, algorithms, and the decisions taken inside the code.</div></div>
+        <div class="facet"><div class="fl">What it ran</div><div class="fb">What actually happened
+          in this run, with the numbers.</div></div>
+        <div class="facet"><div class="fl">The code that ran</div><div class="fb">The real functions,
+          extracted from the source at build time — not a paraphrase.</div></div>
+        <div class="facet"><div class="fl">What it wrote</div><div class="fb">The artifacts with
+          their real sizes, plus one verbatim record from the run.</div></div>
+        <div class="facet"><div class="fl">In run.log</div><div class="fb">That stage's actual log
+          lines, as the run emitted them.</div></div>
+        <div class="facet"><div class="fl">In / out</div><div class="fb">What it consumes, what it
+          produces, and which stage depends on it.</div></div>
+        <div class="facet"><div class="fl">Measured</div><div class="fb">The metrics the stage
+          emitted in this run.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ARCHITECTURE ══════════════════════════════════════════════════ -->
+<section id="s-arch" data-title="Architecture" data-group="Orientation">
+  <div class="wrap stack">
+    <h2>Three views of the same system</h2>
+    <p>A data system is easiest to misunderstand when you only ever see one view of it. These
+       three answer different questions: what obligations it must satisfy, what code exists,
+       and what actually moves at run time.</p>
+  </div>
+
+  <h3 class="wrap" style="margin-top:1.6rem">Logical — the contract stack</h3>
+  <p class="wrap note" style="margin-top:.4rem">Each upstream contract imposes an obligation.
+     Execution is where they stop being advice and become executable checks. The right-hand
+     column is the component that enforces it.</p>
+  <div class="panel">
+    <div class="panel-bd flush scroll"><table id="contractTable"></table></div>
+  </div>
+
+  <h3 class="wrap" style="margin-top:1.9rem">Technological — layers and dependency direction</h3>
+  <figure>
+    <svg viewBox="0 0 900 330" role="img" aria-label="Five architectural layers from foundations up to orchestration, with dependencies pointing downward only">
+      <defs><marker id="da" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+        <polygon points="0,1 8,4 0,7" fill="currentColor"/></marker></defs>
+      <g font-family="ui-monospace,monospace" font-size="10.5" fill="currentColor">
+        <text x="0" y="12" font-size="9.5" opacity=".6">dependencies point downward only — no layer imports from the layer above it</text>
+
+        <rect x="0" y="24" width="900" height="46" rx="5" fill="var(--accent)" opacity=".1"/>
+        <rect x="0" y="24" width="900" height="46" rx="5" fill="none" stroke="var(--accent)" stroke-opacity=".6"/>
+        <text x="12" y="42" font-size="9" opacity=".7">ORCHESTRATION</text>
+        <text x="12" y="60">run_demo.py · cli/train_worker.py (killable subprocess) · cli/verify_evidence.py · tools/build_report.py</text>
+
+        <rect x="0" y="80" width="900" height="46" rx="5" fill="none" stroke="currentColor" stroke-opacity=".45"/>
+        <text x="12" y="98" font-size="9" opacity=".7">EXECUTION</text>
+        <text x="12" y="116">training/loop.py · training/checkpoint.py · training/crash.py · opus/selector.py · streams/resume.py · streams/replay.py</text>
+
+        <rect x="0" y="136" width="900" height="46" rx="5" fill="none" stroke="currentColor" stroke-opacity=".45"/>
+        <text x="12" y="154" font-size="9" opacity=".7">PLANNING</text>
+        <text x="12" y="172">mixture/compiler.py · mixture/floors.py · streams/planner.py (pure) · opus/proxy.py · packing/policies.py</text>
+
+        <rect x="0" y="192" width="900" height="46" rx="5" fill="none" stroke="currentColor" stroke-opacity=".45"/>
+        <text x="12" y="210" font-size="9" opacity=".7">DATA OBJECTS</text>
+        <text x="12" y="228">corpus/loader.py · tokenizer/ · shards/builder.py · shards/manifest.py · shards/registry.py · packing/packer.py · firewall/</text>
+
+        <rect x="0" y="248" width="900" height="46" rx="5" fill="var(--accent)" opacity=".07"/>
+        <rect x="0" y="248" width="900" height="46" rx="5" fill="none" stroke="var(--accent)" stroke-opacity=".5"/>
+        <text x="12" y="266" font-size="9" opacity=".7">FOUNDATIONS — everything depends on these, they depend on nothing</text>
+        <text x="12" y="284">hashing.py · fsutil.py (atomic writes) · ledger/store.py (hash chain) · events.py · config.py (frozen, hashed)</text>
+
+        <line x1="450" y1="70" x2="450" y2="78" stroke="currentColor" opacity=".4" marker-end="url(#da)"/>
+        <line x1="450" y1="126" x2="450" y2="134" stroke="currentColor" opacity=".4" marker-end="url(#da)"/>
+        <line x1="450" y1="182" x2="450" y2="190" stroke="currentColor" opacity=".4" marker-end="url(#da)"/>
+        <line x1="450" y1="238" x2="450" y2="246" stroke="currentColor" opacity=".4" marker-end="url(#da)"/>
+        <text x="0" y="316" font-size="9.5" opacity=".6">Python 3.9+ · PyTorch (CPU, single-threaded for determinism) · stdlib only elsewhere — no tokenizer library, no dataloader framework, no database</text>
+      </g>
+    </svg>
+    <figcaption>The foundation layer is deliberately tiny and dependency-free: canonical hashing,
+      atomic file writes, and the append-only hash-chained ledger. Everything above is replaceable;
+      those three are the load-bearing invariants.</figcaption>
+  </figure>
+
+  <h3 class="wrap" style="margin-top:1.9rem">Functional — what moves, and in what type</h3>
+  <figure>
+    <svg viewBox="0 0 900 250" role="img" aria-label="Data flow from text files through documents, token arrays, packed samples, batch specs and tensors, with the two ledgers recording consumption and learning">
+      <defs><marker id="fa" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+        <polygon points="0,1 8,4 0,7" fill="currentColor"/></marker></defs>
+      <g font-family="ui-monospace,monospace" font-size="10" fill="currentColor">
+        <g id="flowrow">
+          <rect x="0" y="40" width="112" height="40" rx="4" fill="none" stroke="currentColor" stroke-opacity=".5"/>
+          <text x="8" y="57" font-size="9.5">.txt + JSON</text><text x="8" y="71" font-size="8.5" opacity=".6">on disk</text>
+          <rect x="146" y="40" width="112" height="40" rx="4" fill="none" stroke="currentColor" stroke-opacity=".5"/>
+          <text x="154" y="57" font-size="9.5">Document[]</text><text x="154" y="71" font-size="8.5" opacity=".6">+ provenance</text>
+          <rect x="292" y="40" width="112" height="40" rx="4" fill="none" stroke="currentColor" stroke-opacity=".5"/>
+          <text x="300" y="57" font-size="9.5">uint32[] .bin</text><text x="300" y="71" font-size="8.5" opacity=".6">+ manifest</text>
+          <rect x="438" y="40" width="112" height="40" rx="4" fill="none" stroke="currentColor" stroke-opacity=".5"/>
+          <text x="446" y="57" font-size="9.5">PackedSample</text><text x="446" y="71" font-size="8.5" opacity=".6">+ 3 mask arrays</text>
+          <rect x="584" y="40" width="112" height="40" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.3"/>
+          <text x="592" y="57" font-size="9.5">BatchSpec</text><text x="592" y="71" font-size="8.5" opacity=".6">ids only, no tensors</text>
+          <rect x="730" y="40" width="112" height="40" rx="4" fill="none" stroke="currentColor" stroke-opacity=".5"/>
+          <text x="738" y="57" font-size="9.5">torch.Tensor</text><text x="738" y="71" font-size="8.5" opacity=".6">B × L</text>
+        </g>
+        <line x1="112" y1="60" x2="143" y2="60" stroke="currentColor" opacity=".45" marker-end="url(#fa)"/>
+        <line x1="258" y1="60" x2="289" y2="60" stroke="currentColor" opacity=".45" marker-end="url(#fa)"/>
+        <line x1="404" y1="60" x2="435" y2="60" stroke="currentColor" opacity=".45" marker-end="url(#fa)"/>
+        <line x1="550" y1="60" x2="581" y2="60" stroke="currentColor" opacity=".45" marker-end="url(#fa)"/>
+        <line x1="696" y1="60" x2="727" y2="60" stroke="currentColor" opacity=".45" marker-end="url(#fa)"/>
+        <text x="146" y="30" font-size="8.5" opacity=".6">normalize</text>
+        <text x="292" y="30" font-size="8.5" opacity=".6">tokenize + freeze</text>
+        <text x="438" y="30" font-size="8.5" opacity=".6">pack + mask</text>
+        <text x="584" y="30" font-size="8.5" opacity=".6">plan + select</text>
+        <text x="730" y="30" font-size="8.5" opacity=".6">materialise</text>
+
+        <rect x="584" y="128" width="258" height="38" rx="4" fill="var(--accent)" opacity=".1"/>
+        <rect x="584" y="128" width="258" height="38" rx="4" fill="none" stroke="var(--accent)" stroke-opacity=".6"/>
+        <text x="592" y="152">consumption ledger — what was served</text>
+        <line x1="640" y1="80" x2="640" y2="126" stroke="var(--accent)" opacity=".65" marker-end="url(#fa)"/>
+        <text x="648" y="106" font-size="8.5" fill="var(--accent)">before the optimizer step</text>
+
+        <rect x="584" y="184" width="258" height="38" rx="4" fill="var(--accent)" opacity=".1"/>
+        <rect x="584" y="184" width="258" height="38" rx="4" fill="none" stroke="var(--accent)" stroke-opacity=".6"/>
+        <text x="592" y="208">learning ledger — what came back</text>
+        <line x1="786" y1="80" x2="786" y2="182" stroke="var(--accent)" opacity=".65" marker-end="url(#fa)"/>
+        <text x="794" y="130" font-size="8.5" fill="var(--accent)">after</text>
+
+        <rect x="0" y="128" width="404" height="94" rx="4" fill="none" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity=".4"/>
+        <text x="10" y="146" font-size="9" opacity=".7">CONTENT-ADDRESSED — nothing named by a counter</text>
+        <text x="10" y="166" font-size="9">shard_id = h(source, doc_ids, tokenizer_hash)</text>
+        <text x="10" y="184" font-size="9">sample_id = h(lane, policy, window, segments)</text>
+        <text x="10" y="202" font-size="9">batch_id  = h(step, branch, plan_hash, microbatches)</text>
+      </g>
+    </svg>
+    <figcaption>Tensors exist only at the last hop and are never persisted. Everything durable is
+      integers and hashes, which is why the identity comparisons behind resume and replay are exact.
+      The consumption ledger is written <em>before</em> the optimizer step — the single ordering
+      decision that makes crash recovery non-trivial.</figcaption>
+  </figure>
+</section>
+
+<div id="stageSections"></div>
+
+
+<!-- ══ COMPLETION CRITERION ══════════════════════════════════════════ -->
+<section id="s-criterion" data-title="The completion criterion" data-group="Proof">
+  <div class="wrap stack">
+    <h2>The four things the system has to prove</h2>
+    <blockquote style="margin:0;padding:.85rem 1.1rem;border-left:3px solid var(--accent);
+      background:var(--accent-soft);border-radius:0 4px 4px 0;font-family:var(--serif);
+      font-size:1.05rem;line-height:1.55">
+      “The assignment is complete only when the system can prove <b>what it consumed</b>,
+      <b>why it consumed it</b>, <b>what the model learned from it</b> and
+      <b>how the run can be reconstructed</b>.”
+    </blockquote>
+    <p>Every other check verifies one subsystem. This one verifies that the subsystems are
+       <em>joined up</em> — that you can start from a token span the model actually saw and walk,
+       without a gap, to the reason it was chosen, to what the model got back, and to everything
+       needed to rebuild it.</p>
+    <p class="note">That is a different property. A run could have a perfect consumption ledger, a
+       perfect OPUS ledger and a perfect learning ledger and still fail here, if an id in one does
+       not resolve in the next. So the test is a link walk over <em>every</em> consumed sample, not
+       a spot check — any dangling reference fails the clause it belongs to.</p>
+  </div>
+
+  <div class="panel">
+    <div class="panel-hd"><h4>Clause by clause</h4><span class="note" id="critHdr"></span></div>
+    <div class="panel-bd flush"><div id="critClauses"></div></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-hd"><h4>One sample, followed all the way through</h4>
+      <span class="note">check it by hand against the ledgers</span></div>
+    <div class="panel-bd"><div id="critExample"></div></div>
+  </div>
+</section>
+
+<!-- ══ EVIDENCE ══════════════════════════════════════════════════════ -->
+<section id="s-evidence" data-title="Evidence bundle" data-group="Proof">
+  <div class="wrap stack">
+    <h2>Generated, then independently re-verified</h2>
+    <p id="evGen"></p>
+    <p>Grading happens in three steps — execute, verify evidence, inspect code — and the third
+       exists to catch simulated behaviour. So the bundle is built to survive it: every check
+       reopens the artifacts and recomputes, and a second program re-derives the same
+       conclusions without trusting the first.</p>
+  </div>
+  <div class="panel">
+    <div class="panel-hd"><h4>Requirements</h4><span class="note" id="evCount"></span></div>
+    <div class="panel-bd flush"><div id="evList"></div></div>
+  </div>
+  <div class="panel">
+    <div class="panel-hd"><h4>Every check emitted during the run</h4></div>
+    <div class="panel-bd scroll"><div id="passList" class="mono" style="font-size:.73rem;line-height:1.85"></div></div>
+  </div>
+  <div class="wrap" style="margin-top:1.2rem">
+    <div class="callout"><strong>An auditor that can never fail is not evidence of anything.</strong>
+      <code>verify_evidence.py</code> re-runs every check, re-verifies every hash chain, and
+      re-derives the headline figures by summing the consumption ledger. Three tests corrupt
+      artifacts — a doctored ledger record, a flipped verdict, a deleted file — and require the
+      verifier to notice each one.</div>
+  </div>
+</section>
+
+<!-- ══ REPRODUCE ═════════════════════════════════════════════════════ -->
+<section id="s-run" data-title="Reproduce it" data-group="Proof">
+  <div class="wrap stack">
+    <h2>Reproduce it</h2>
+    <div class="codeline" style="font-size:.8rem">pip install -r requirements.txt
+python run_demo.py                    <span style="opacity:.55"># regenerates submission_artifacts/ from scratch</span>
+python -m tdes.cli.verify_evidence    <span style="opacity:.55"># independent re-derivation</span>
+pytest -q                             <span style="opacity:.55"># 107 invariant tests</span>
+python tools/build_report.py          <span style="opacity:.55"># rebuild this page from the artifacts</span></div>
+    <p class="note">Two consecutive full runs produced bit-identical batch ids, token spans,
+      ledger hash chains, all 528 OPUS gradient cosines, and every loss value. Identity here is
+      derived from integers, so the hashes hold regardless of float behaviour; the float
+      reproducibility is a bonus, not a dependency.</p>
+    <p class="note">This page is generated by <code>tools/build_report.py</code>, which reads
+      <code>submission_artifacts/</code> and fails if an artifact it expects is missing. Nothing
+      on it was typed by hand — it would have been inconsistent to hardcode the one document
+      arguing that nothing is hardcoded.</p>
+  </div>
+</section>
+
+</main>
+</div>

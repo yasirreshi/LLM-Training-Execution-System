@@ -1,0 +1,1061 @@
+{
+  "actions": {
+    "collect_more": [
+      {
+        "because": "exposure reduced loss on its own tokens by 0.02333 on average",
+        "lanes": [
+          "agentic"
+        ],
+        "mean_loss_delta": -0.023331,
+        "mean_token_perplexity": 8989.582357,
+        "repeat_effect": 0.0,
+        "shard_id": "sh-agentic-2124a81dbc"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.06902 on average",
+        "lanes": [
+          "code"
+        ],
+        "mean_loss_delta": -0.069023,
+        "mean_token_perplexity": 6602.601911,
+        "repeat_effect": -0.054093,
+        "shard_id": "sh-code-45fc328cb1"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.13241 on average",
+        "lanes": [
+          "code"
+        ],
+        "mean_loss_delta": -0.132408,
+        "mean_token_perplexity": 4812.50579,
+        "repeat_effect": 0.067253,
+        "shard_id": "sh-code-a513275e65"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.10981 on average",
+        "lanes": [
+          "code"
+        ],
+        "mean_loss_delta": -0.109809,
+        "mean_token_perplexity": 5628.890045,
+        "repeat_effect": 0.066012,
+        "shard_id": "sh-code-e0ea18f98d"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.12384 on average",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.12384,
+        "mean_token_perplexity": 3575.388705,
+        "repeat_effect": 0.142527,
+        "shard_id": "sh-generalweb-0891b7c5fa"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.12132 on average",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.121316,
+        "mean_token_perplexity": 3236.156128,
+        "repeat_effect": 0.101247,
+        "shard_id": "sh-generalweb-507734bdcc"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.06731 on average",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.067305,
+        "mean_token_perplexity": 2906.837242,
+        "repeat_effect": 0.116214,
+        "shard_id": "sh-generalweb-582f1166ec"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.11797 on average",
+        "lanes": [
+          "indic"
+        ],
+        "mean_loss_delta": -0.117975,
+        "mean_token_perplexity": 3795.866753,
+        "repeat_effect": -0.140435,
+        "shard_id": "sh-indic-5bbc73dbfa"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.24720 on average",
+        "lanes": [
+          "indic"
+        ],
+        "mean_loss_delta": -0.247202,
+        "mean_token_perplexity": 2973.271566,
+        "repeat_effect": 0.224024,
+        "shard_id": "sh-indic-65d3c8b055"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.11548 on average",
+        "lanes": [
+          "math_science"
+        ],
+        "mean_loss_delta": -0.115478,
+        "mean_token_perplexity": 2643.291263,
+        "repeat_effect": 0.064762,
+        "shard_id": "sh-mathscience-1889d2c0cc"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.14524 on average",
+        "lanes": [
+          "math_science"
+        ],
+        "mean_loss_delta": -0.145239,
+        "mean_token_perplexity": 2417.359064,
+        "repeat_effect": 0.154009,
+        "shard_id": "sh-mathscience-6602f5780e"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.03696 on average",
+        "lanes": [
+          "reasoning"
+        ],
+        "mean_loss_delta": -0.03696,
+        "mean_token_perplexity": 6205.742188,
+        "repeat_effect": 0.015108,
+        "shard_id": "sh-reasoning-8e3e81c92a"
+      }
+    ],
+    "defer": [],
+    "protect": [
+      {
+        "because": "exposure reduced loss on its own tokens by 0.02333 on average",
+        "lanes": [
+          "agentic"
+        ],
+        "mean_loss_delta": -0.023331,
+        "mean_token_perplexity": 8989.582357,
+        "repeat_effect": 0.0,
+        "shard_id": "sh-agentic-2124a81dbc"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.06902 on average",
+        "lanes": [
+          "code"
+        ],
+        "mean_loss_delta": -0.069023,
+        "mean_token_perplexity": 6602.601911,
+        "repeat_effect": -0.054093,
+        "shard_id": "sh-code-45fc328cb1"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.13241 on average",
+        "lanes": [
+          "code"
+        ],
+        "mean_loss_delta": -0.132408,
+        "mean_token_perplexity": 4812.50579,
+        "repeat_effect": 0.067253,
+        "shard_id": "sh-code-a513275e65"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.10981 on average",
+        "lanes": [
+          "code"
+        ],
+        "mean_loss_delta": -0.109809,
+        "mean_token_perplexity": 5628.890045,
+        "repeat_effect": 0.066012,
+        "shard_id": "sh-code-e0ea18f98d"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.12384 on average",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.12384,
+        "mean_token_perplexity": 3575.388705,
+        "repeat_effect": 0.142527,
+        "shard_id": "sh-generalweb-0891b7c5fa"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.12132 on average",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.121316,
+        "mean_token_perplexity": 3236.156128,
+        "repeat_effect": 0.101247,
+        "shard_id": "sh-generalweb-507734bdcc"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.06731 on average",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.067305,
+        "mean_token_perplexity": 2906.837242,
+        "repeat_effect": 0.116214,
+        "shard_id": "sh-generalweb-582f1166ec"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.11797 on average",
+        "lanes": [
+          "indic"
+        ],
+        "mean_loss_delta": -0.117975,
+        "mean_token_perplexity": 3795.866753,
+        "repeat_effect": -0.140435,
+        "shard_id": "sh-indic-5bbc73dbfa"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.24720 on average",
+        "lanes": [
+          "indic"
+        ],
+        "mean_loss_delta": -0.247202,
+        "mean_token_perplexity": 2973.271566,
+        "repeat_effect": 0.224024,
+        "shard_id": "sh-indic-65d3c8b055"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.11548 on average",
+        "lanes": [
+          "math_science"
+        ],
+        "mean_loss_delta": -0.115478,
+        "mean_token_perplexity": 2643.291263,
+        "repeat_effect": 0.064762,
+        "shard_id": "sh-mathscience-1889d2c0cc"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.14524 on average",
+        "lanes": [
+          "math_science"
+        ],
+        "mean_loss_delta": -0.145239,
+        "mean_token_perplexity": 2417.359064,
+        "repeat_effect": 0.154009,
+        "shard_id": "sh-mathscience-6602f5780e"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.03696 on average",
+        "lanes": [
+          "reasoning"
+        ],
+        "mean_loss_delta": -0.03696,
+        "mean_token_perplexity": 6205.742188,
+        "repeat_effect": 0.015108,
+        "shard_id": "sh-reasoning-8e3e81c92a"
+      }
+    ],
+    "reject": [
+      {
+        "because": "gradient spiked to 29.953 against a mean of 3.583 - needs cleaning, later staging or a warmup before reuse",
+        "lanes": [
+          "agentic"
+        ],
+        "mean_loss_delta": -0.128209,
+        "mean_token_perplexity": 2570.328875,
+        "repeat_effect": 0.138373,
+        "shard_id": "sh-agentic-15e9e87bcd"
+      },
+      {
+        "because": "loss on these tokens rose by 0.12726 across the update",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": 0.127261,
+        "mean_token_perplexity": 7411.72454,
+        "repeat_effect": -0.022847,
+        "shard_id": "sh-generalweb-8592ef7b58"
+      },
+      {
+        "because": "loss on these tokens rose by 0.20463 across the update",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": 0.204629,
+        "mean_token_perplexity": 7308.05498,
+        "repeat_effect": 0.02712,
+        "shard_id": "sh-generalweb-cbd3f64ece"
+      },
+      {
+        "because": "gradient spiked to 29.953 against a mean of 3.618 - needs cleaning, later staging or a warmup before reuse",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.123814,
+        "mean_token_perplexity": 2130.47179,
+        "repeat_effect": 0.148272,
+        "shard_id": "sh-generalweb-d7da98bf1b"
+      },
+      {
+        "because": "loss on these tokens rose by 0.00843 across the update",
+        "lanes": [
+          "indic"
+        ],
+        "mean_loss_delta": 0.008432,
+        "mean_token_perplexity": 2641.052124,
+        "repeat_effect": 0.0,
+        "shard_id": "sh-indic-2222a85dee"
+      },
+      {
+        "because": "gradient spiked to 29.953 against a mean of 3.110 - needs cleaning, later staging or a warmup before reuse",
+        "lanes": [
+          "indic"
+        ],
+        "mean_loss_delta": -0.041828,
+        "mean_token_perplexity": 2766.919271,
+        "repeat_effect": -0.063768,
+        "shard_id": "sh-indic-cde2b9fc1b"
+      },
+      {
+        "because": "gradient spiked to 29.953 against a mean of 3.066 - needs cleaning, later staging or a warmup before reuse",
+        "lanes": [
+          "reasoning"
+        ],
+        "mean_loss_delta": -0.044958,
+        "mean_token_perplexity": 3278.632611,
+        "repeat_effect": 0.079958,
+        "shard_id": "sh-reasoning-74d077c73c"
+      }
+    ],
+    "repeat": [
+      {
+        "because": "gradient spiked to 29.953 against a mean of 3.583 - needs cleaning, later staging or a warmup before reuse",
+        "lanes": [
+          "agentic"
+        ],
+        "mean_loss_delta": -0.128209,
+        "mean_token_perplexity": 2570.328875,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.138373,
+        "shard_id": "sh-agentic-15e9e87bcd"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.13241 on average",
+        "lanes": [
+          "code"
+        ],
+        "mean_loss_delta": -0.132408,
+        "mean_token_perplexity": 4812.50579,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.067253,
+        "shard_id": "sh-code-a513275e65"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.10981 on average",
+        "lanes": [
+          "code"
+        ],
+        "mean_loss_delta": -0.109809,
+        "mean_token_perplexity": 5628.890045,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.066012,
+        "shard_id": "sh-code-e0ea18f98d"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.12384 on average",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.12384,
+        "mean_token_perplexity": 3575.388705,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.142527,
+        "shard_id": "sh-generalweb-0891b7c5fa"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.12132 on average",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.121316,
+        "mean_token_perplexity": 3236.156128,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.101247,
+        "shard_id": "sh-generalweb-507734bdcc"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.06731 on average",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.067305,
+        "mean_token_perplexity": 2906.837242,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.116214,
+        "shard_id": "sh-generalweb-582f1166ec"
+      },
+      {
+        "because": "loss on these tokens rose by 0.20463 across the update",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": 0.204629,
+        "mean_token_perplexity": 7308.05498,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.02712,
+        "shard_id": "sh-generalweb-cbd3f64ece"
+      },
+      {
+        "because": "gradient spiked to 29.953 against a mean of 3.618 - needs cleaning, later staging or a warmup before reuse",
+        "lanes": [
+          "general_web"
+        ],
+        "mean_loss_delta": -0.123814,
+        "mean_token_perplexity": 2130.47179,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.148272,
+        "shard_id": "sh-generalweb-d7da98bf1b"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.24720 on average",
+        "lanes": [
+          "indic"
+        ],
+        "mean_loss_delta": -0.247202,
+        "mean_token_perplexity": 2973.271566,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.224024,
+        "shard_id": "sh-indic-65d3c8b055"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.11548 on average",
+        "lanes": [
+          "math_science"
+        ],
+        "mean_loss_delta": -0.115478,
+        "mean_token_perplexity": 2643.291263,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.064762,
+        "shard_id": "sh-mathscience-1889d2c0cc"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.14524 on average",
+        "lanes": [
+          "math_science"
+        ],
+        "mean_loss_delta": -0.145239,
+        "mean_token_perplexity": 2417.359064,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.154009,
+        "shard_id": "sh-mathscience-6602f5780e"
+      },
+      {
+        "because": "gradient spiked to 29.953 against a mean of 3.066 - needs cleaning, later staging or a warmup before reuse",
+        "lanes": [
+          "reasoning"
+        ],
+        "mean_loss_delta": -0.044958,
+        "mean_token_perplexity": 3278.632611,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.079958,
+        "shard_id": "sh-reasoning-74d077c73c"
+      },
+      {
+        "because": "exposure reduced loss on its own tokens by 0.03696 on average",
+        "lanes": [
+          "reasoning"
+        ],
+        "mean_loss_delta": -0.03696,
+        "mean_token_perplexity": 6205.742188,
+        "note": "further passes stopped helping",
+        "repeat_effect": 0.015108,
+        "shard_id": "sh-reasoning-8e3e81c92a"
+      }
+    ]
+  },
+  "generated_from": "learning ledger sample records",
+  "learned_out_ppl_threshold": 1.2,
+  "shard_cards": [
+    {
+      "classification": "harmful",
+      "exposures": 21,
+      "lanes": [
+        "agentic"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.040434,
+        "early": -0.200913,
+        "late": -0.009626,
+        "mid": -0.094154
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 3.582818,
+      "mean_loss_delta": -0.128209,
+      "mean_opus_score": 0.01698,
+      "mean_token_perplexity": 2570.328875,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "late",
+        "mid"
+      ],
+      "rationale": "gradient spiked to 29.953 against a mean of 3.583 - needs cleaning, later staging or a warmup before reuse",
+      "repeat_effect": 0.138373,
+      "shard_id": "sh-agentic-15e9e87bcd"
+    },
+    {
+      "classification": "useful",
+      "exposures": 3,
+      "lanes": [
+        "agentic"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.023331
+      },
+      "max_gradient_norm": 1.07687,
+      "mean_gradient_norm": 0.933636,
+      "mean_loss_delta": -0.023331,
+      "mean_opus_score": -0.227742,
+      "mean_token_perplexity": 8989.582357,
+      "passes_seen": [
+        0
+      ],
+      "phases_seen": [
+        "anneal"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.02333 on average",
+      "repeat_effect": 0.0,
+      "shard_id": "sh-agentic-2124a81dbc"
+    },
+    {
+      "classification": "useful",
+      "exposures": 7,
+      "lanes": [
+        "code"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.056929,
+        "mid": -0.071038
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 5.59035,
+      "mean_loss_delta": -0.069023,
+      "mean_opus_score": -0.103186,
+      "mean_token_perplexity": 6602.601911,
+      "passes_seen": [
+        0,
+        2,
+        3
+      ],
+      "phases_seen": [
+        "anneal",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.06902 on average",
+      "repeat_effect": -0.054093,
+      "shard_id": "sh-code-45fc328cb1"
+    },
+    {
+      "classification": "useful",
+      "exposures": 21,
+      "lanes": [
+        "code"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.028022,
+        "early": -0.198489,
+        "late": -0.044319,
+        "mid": -0.143322
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 4.767468,
+      "mean_loss_delta": -0.132408,
+      "mean_opus_score": -0.058646,
+      "mean_token_perplexity": 4812.50579,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "late",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.13241 on average",
+      "repeat_effect": 0.067253,
+      "shard_id": "sh-code-a513275e65"
+    },
+    {
+      "classification": "useful",
+      "exposures": 12,
+      "lanes": [
+        "code"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.020268,
+        "early": -0.215699,
+        "late": -0.085118,
+        "mid": -0.090825
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 3.950941,
+      "mean_loss_delta": -0.109809,
+      "mean_opus_score": -0.068361,
+      "mean_token_perplexity": 5628.890045,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "late",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.10981 on average",
+      "repeat_effect": 0.066012,
+      "shard_id": "sh-code-e0ea18f98d"
+    },
+    {
+      "classification": "useful",
+      "exposures": 11,
+      "lanes": [
+        "general_web"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.014869,
+        "early": -0.189253,
+        "mid": -0.096558
+      },
+      "max_gradient_norm": 13.094936,
+      "mean_gradient_norm": 2.661508,
+      "mean_loss_delta": -0.12384,
+      "mean_opus_score": 0.03063,
+      "mean_token_perplexity": 3575.388705,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.12384 on average",
+      "repeat_effect": 0.142527,
+      "shard_id": "sh-generalweb-0891b7c5fa"
+    },
+    {
+      "classification": "useful",
+      "exposures": 8,
+      "lanes": [
+        "general_web"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.013234,
+        "early": -0.186598,
+        "mid": -0.070301
+      },
+      "max_gradient_norm": 13.094936,
+      "mean_gradient_norm": 2.949155,
+      "mean_loss_delta": -0.121316,
+      "mean_opus_score": 0.020848,
+      "mean_token_perplexity": 3236.156128,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.12132 on average",
+      "repeat_effect": 0.101247,
+      "shard_id": "sh-generalweb-507734bdcc"
+    },
+    {
+      "classification": "useful",
+      "exposures": 19,
+      "lanes": [
+        "general_web"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.026351,
+        "early": -0.196167,
+        "late": -0.008199,
+        "mid": 0.11643
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 3.888477,
+      "mean_loss_delta": -0.067305,
+      "mean_opus_score": -0.023203,
+      "mean_token_perplexity": 2906.837242,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "late",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.06731 on average",
+      "repeat_effect": 0.116214,
+      "shard_id": "sh-generalweb-582f1166ec"
+    },
+    {
+      "classification": "harmful",
+      "exposures": 7,
+      "lanes": [
+        "general_web"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.033125,
+        "mid": 0.341109
+      },
+      "max_gradient_norm": 2.156068,
+      "mean_gradient_norm": 1.334688,
+      "mean_loss_delta": 0.127261,
+      "mean_opus_score": -0.008691,
+      "mean_token_perplexity": 7411.72454,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "phases_seen": [
+        "anneal",
+        "mid"
+      ],
+      "rationale": "loss on these tokens rose by 0.12726 across the update",
+      "repeat_effect": -0.022847,
+      "shard_id": "sh-generalweb-8592ef7b58"
+    },
+    {
+      "classification": "harmful",
+      "exposures": 5,
+      "lanes": [
+        "general_web"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.03425,
+        "mid": 0.562947
+      },
+      "max_gradient_norm": 1.483898,
+      "mean_gradient_norm": 1.194751,
+      "mean_loss_delta": 0.204629,
+      "mean_opus_score": -0.04058,
+      "mean_token_perplexity": 7308.05498,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "phases_seen": [
+        "anneal",
+        "mid"
+      ],
+      "rationale": "loss on these tokens rose by 0.20463 across the update",
+      "repeat_effect": 0.02712,
+      "shard_id": "sh-generalweb-cbd3f64ece"
+    },
+    {
+      "classification": "harmful",
+      "exposures": 21,
+      "lanes": [
+        "general_web"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.018791,
+        "early": -0.194087,
+        "mid": -0.039177
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 3.617704,
+      "mean_loss_delta": -0.123814,
+      "mean_opus_score": 0.003926,
+      "mean_token_perplexity": 2130.47179,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "mid"
+      ],
+      "rationale": "gradient spiked to 29.953 against a mean of 3.618 - needs cleaning, later staging or a warmup before reuse",
+      "repeat_effect": 0.148272,
+      "shard_id": "sh-generalweb-d7da98bf1b"
+    },
+    {
+      "classification": "harmful",
+      "exposures": 2,
+      "lanes": [
+        "indic"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": 0.008432
+      },
+      "max_gradient_norm": 1.188306,
+      "mean_gradient_norm": 1.058547,
+      "mean_loss_delta": 0.008432,
+      "mean_opus_score": 0.286473,
+      "mean_token_perplexity": 2641.052124,
+      "passes_seen": [
+        0
+      ],
+      "phases_seen": [
+        "anneal"
+      ],
+      "rationale": "loss on these tokens rose by 0.00843 across the update",
+      "repeat_effect": 0.0,
+      "shard_id": "sh-indic-2222a85dee"
+    },
+    {
+      "classification": "useful",
+      "exposures": 9,
+      "lanes": [
+        "indic"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.016583,
+        "early": -0.225291,
+        "late": -0.261372,
+        "mid": -0.037389
+      },
+      "max_gradient_norm": 2.799163,
+      "mean_gradient_norm": 1.702348,
+      "mean_loss_delta": -0.117975,
+      "mean_opus_score": 0.189293,
+      "mean_token_perplexity": 3795.866753,
+      "passes_seen": [
+        0,
+        1,
+        2
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "late",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.11797 on average",
+      "repeat_effect": -0.140435,
+      "shard_id": "sh-indic-5bbc73dbfa"
+    },
+    {
+      "classification": "useful",
+      "exposures": 6,
+      "lanes": [
+        "indic"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": 0.016812,
+        "early": -0.547227,
+        "mid": -0.13519
+      },
+      "max_gradient_norm": 13.094936,
+      "mean_gradient_norm": 3.36667,
+      "mean_loss_delta": -0.247202,
+      "mean_opus_score": 0.51326,
+      "mean_token_perplexity": 2973.271566,
+      "passes_seen": [
+        0,
+        1
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.24720 on average",
+      "repeat_effect": 0.224024,
+      "shard_id": "sh-indic-65d3c8b055"
+    },
+    {
+      "classification": "harmful",
+      "exposures": 18,
+      "lanes": [
+        "indic"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": 0.000999,
+        "early": -0.023423,
+        "mid": -0.088194
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 3.110207,
+      "mean_loss_delta": -0.041828,
+      "mean_opus_score": 0.526345,
+      "mean_token_perplexity": 2766.919271,
+      "passes_seen": [
+        0,
+        1
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "mid"
+      ],
+      "rationale": "gradient spiked to 29.953 against a mean of 3.110 - needs cleaning, later staging or a warmup before reuse",
+      "repeat_effect": -0.063768,
+      "shard_id": "sh-indic-cde2b9fc1b"
+    },
+    {
+      "classification": "useful",
+      "exposures": 18,
+      "lanes": [
+        "math_science"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.03356,
+        "early": -0.222589,
+        "mid": -0.090286
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 3.759619,
+      "mean_loss_delta": -0.115478,
+      "mean_opus_score": 0.034034,
+      "mean_token_perplexity": 2643.291263,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.11548 on average",
+      "repeat_effect": 0.064762,
+      "shard_id": "sh-mathscience-1889d2c0cc"
+    },
+    {
+      "classification": "useful",
+      "exposures": 11,
+      "lanes": [
+        "math_science"
+      ],
+      "loss_delta_by_phase": {
+        "early": -0.216561,
+        "late": -0.050001,
+        "mid": -0.062065
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 4.430399,
+      "mean_loss_delta": -0.145239,
+      "mean_opus_score": 0.049446,
+      "mean_token_perplexity": 2417.359064,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "phases_seen": [
+        "early",
+        "late",
+        "mid"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.14524 on average",
+      "repeat_effect": 0.154009,
+      "shard_id": "sh-mathscience-6602f5780e"
+    },
+    {
+      "classification": "harmful",
+      "exposures": 26,
+      "lanes": [
+        "reasoning"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.030038,
+        "early": -0.151262,
+        "late": -0.013873,
+        "mid": 0.055827
+      },
+      "max_gradient_norm": 29.952969,
+      "mean_gradient_norm": 3.066145,
+      "mean_loss_delta": -0.044958,
+      "mean_opus_score": -0.046757,
+      "mean_token_perplexity": 3278.632611,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "phases_seen": [
+        "anneal",
+        "early",
+        "late",
+        "mid"
+      ],
+      "rationale": "gradient spiked to 29.953 against a mean of 3.066 - needs cleaning, later staging or a warmup before reuse",
+      "repeat_effect": 0.079958,
+      "shard_id": "sh-reasoning-74d077c73c"
+    },
+    {
+      "classification": "useful",
+      "exposures": 4,
+      "lanes": [
+        "reasoning"
+      ],
+      "loss_delta_by_phase": {
+        "anneal": -0.03696
+      },
+      "max_gradient_norm": 1.317308,
+      "mean_gradient_norm": 1.094433,
+      "mean_loss_delta": -0.03696,
+      "mean_opus_score": -0.102513,
+      "mean_token_perplexity": 6205.742188,
+      "passes_seen": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "phases_seen": [
+        "anneal"
+      ],
+      "rationale": "exposure reduced loss on its own tokens by 0.03696 on average",
+      "repeat_effect": 0.015108,
+      "shard_id": "sh-reasoning-8e3e81c92a"
+    }
+  ],
+  "summary": {
+    "exhausted": 0,
+    "harmful": 7,
+    "neutral": 0,
+    "useful": 12
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "batch_checks": 49,
+  "blocked_shard_ids": [
+    "sh-test-24dae7d4c5"
+  ],
+  "blocks": [
+    {
+      "detail": {
+        "admitted": false,
+        "benchmark_id": "benchmark_reasoning_v1",
+        "context": "firewall_demo",
+        "lane": "test",
+        "never_train": true,
+        "rejection_reasons": [
+          "never_train_flag_set"
+        ]
+      },
+      "reason": "permission_test",
+      "shard_id": "sh-test-24dae7d4c5",
+      "side": "registry"
+    },
+    {
+      "detail": {
+        "batch_id": "firewall-demo-batch"
+      },
+      "reason": "permission_test",
+      "shard_id": "sh-test-24dae7d4c5",
+      "side": "batch"
+    }
+  ],
+  "blocks_by_reason": {
+    "permission_test": 2
+  },
+  "blocks_by_side": {
+    "batch": 1,
+    "registry": 1
+  },
+  "blocks_total": 2,
+  "fingerprint_registry": {
+    "benchmark_items": [
+      "test-0001",
+      "test-0002",
+      "test-0003",
+      "test-0004"
+    ],
+    "canaries": [
+      "TDES-CANARY-7f3a91c4-benchmark-reasoning-v1-do-not-train"
+    ],
+    "content_hash_count": 4,
+    "fingerprints_per_item": {
+      "test-0001": 62,
+      "test-0002": 60,
+      "test-0003": 57,
+      "test-0004": 27
+    },
+    "ngram_size": 8,
+    "overlap_threshold": 0.55
+  },
+  "note": "blocks are read from ledgers/firewall_events.jsonl, which every process appends to, so this counts real refusals from the driver demo, the training worker and the fork worker together",
+  "registry_checks": 134,
+  "validation_gradient_bearing_tokens": 0
+}

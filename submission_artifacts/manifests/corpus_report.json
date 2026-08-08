@@ -1,0 +1,15 @@
+{
+  "corpus_hash": "87a634a5eb0c6440622f6e8176e4ec7af9cf2814095fd3f2c23806ffa7acc7c2",
+  "documents": 54,
+  "fertility_by_language": {
+    "bn": 4.3833,
+    "en": 1.6522,
+    "hi": 3.1758,
+    "mr": 4.3987,
+    "ta": 7.1798,
+    "te": 5.9806
+  },
+  "sources": 16,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d",
+  "vocab_size": 3558
+}

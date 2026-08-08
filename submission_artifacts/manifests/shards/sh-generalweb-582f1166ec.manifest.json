@@ -1,0 +1,134 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "f6ceea07ed9addfee30838dcdbf1b97628f9b38d03102aa3f967bca835d6b149"
+  ],
+  "capability_tags": [
+    "en",
+    "history",
+    "world_knowledge"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "f6ceea07ed9addfee30838dcdbf1b97628f9b38d03102aa3f967bca835d6b149",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "web-0201",
+    "web-0202",
+    "web-0203"
+  ],
+  "documents": [
+    {
+      "content_hash": "29e510ab370a92794bca545fef5f8f5fae6fb07e46f3dd666267f0e1ff94c389",
+      "doc_id": "web-0201",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          357,
+          true
+        ],
+        [
+          "eos",
+          357,
+          358,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 358,
+      "token_start": 0
+    },
+    {
+      "content_hash": "4a804bccf53412f20ebf79e057334d70d10dc435037439e2d6800850e45106cd",
+      "doc_id": "web-0202",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          359,
+          667,
+          true
+        ],
+        [
+          "eos",
+          667,
+          668,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 668,
+      "token_start": 358
+    },
+    {
+      "content_hash": "c55559f9d5b50262de3d0c582bd6daef14b1eb606711f8a7153cc3e01c33b7a4",
+      "doc_id": "web-0203",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          669,
+          986,
+          true
+        ],
+        [
+          "eos",
+          986,
+          987,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 987,
+      "token_start": 668
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "51298f1cf4930fd33dcfac676b57fc6536dd2adea59bad80ea8508e3c98d5664",
+  "lane": "general_web",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "concat_chop",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored historical prose, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-generalweb-582f1166ec",
+  "source_file": "general_web/web_history.txt",
+  "source_id": "src-web-hist",
+  "stage_hint": "mid",
+  "token_count": 987,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

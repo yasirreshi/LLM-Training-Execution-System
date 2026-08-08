@@ -1,0 +1,59 @@
+{
+  "all_identical_before_fork": true,
+  "any_divergence_after_fork": true,
+  "differing_after_fork": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "diverged_correctly": true,
+  "fork_batch_ids": {
+    "12": "b-1ddc3426fd92",
+    "13": "b-e3bdf2d3f3fd",
+    "14": "b-6a3a2b1ded6b",
+    "15": "b-778f8a045e84"
+  },
+  "fork_branch_id": "br-dce229fce9",
+  "fork_point_step": 12,
+  "identical_before_fork": [],
+  "parent_batch_ids": {
+    "0": "b-9a4e71e13c97",
+    "1": "b-5614dc8e7078",
+    "10": "b-435e5f934156",
+    "11": "b-abb8e3c69282",
+    "12": "b-fc9d1740c8f3",
+    "13": "b-cb5613c10c6f",
+    "14": "b-fbf7eefeded2",
+    "15": "b-67672a77a4d9",
+    "16": "b-8d02d62c7efa",
+    "17": "b-ef5cecaa6621",
+    "18": "b-6a7d5ed19aa6",
+    "19": "b-e2122d7b6546",
+    "2": "b-0c7bb750d98f",
+    "20": "b-5af9f81b8644",
+    "21": "b-37e4c7e26631",
+    "22": "b-6a5ff68530db",
+    "23": "b-aeb04f3b8996",
+    "3": "b-4b3a43ef703c",
+    "4": "b-280278f4ba57",
+    "5": "b-07253ccbc024",
+    "6": "b-febc9f3de71c",
+    "7": "b-e8f94e6f8187",
+    "8": "b-af43476e7607",
+    "9": "b-68f7d9bc465f"
+  },
+  "shared_steps": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "steps_after_fork": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "steps_before_fork": []
+}

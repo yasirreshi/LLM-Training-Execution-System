@@ -1,0 +1,18 @@
+# Line endings matter more than usual in this repository.
+#
+# Default: normalise to LF in the repo and on checkout, so the corpus hashes
+# identically on Windows, macOS and Linux.
+* text=auto eol=lf
+
+# Exceptions — never touch these.
+#
+# The ledgers are hash-chained, and every checkpoint stores a *byte offset*
+# into them. Converting LF to CRLF on checkout would shift every offset by one
+# byte per preceding line, so `verify_chain` and the resume rollback would fail
+# against the committed artifacts. Leave them exactly as written.
+*.jsonl                 -text
+submission_artifacts/** -text
+
+# Token arrays are binary.
+*.bin                   -text binary
+*.pt                    -text binary

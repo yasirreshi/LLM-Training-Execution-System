@@ -1,0 +1,82 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "fbaef230316b3f8b01fa1f2d9c2442af8a7c10ee139e17a9639b053026905e61"
+  ],
+  "capability_tags": [
+    "en",
+    "history",
+    "world_knowledge"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "fbaef230316b3f8b01fa1f2d9c2442af8a7c10ee139e17a9639b053026905e61",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 1,
+  "document_ids": [
+    "web-0204"
+  ],
+  "documents": [
+    {
+      "content_hash": "10ab5651db1a570418f584b66395c8423406b823c8060ad7bec2622435bca92e",
+      "doc_id": "web-0204",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          311,
+          true
+        ],
+        [
+          "eos",
+          311,
+          312,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 312,
+      "token_start": 0
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "559ee7f67dfb1d786f4049b19df158b9057f08852cf299cfbb453316462ed9bd",
+  "lane": "general_web",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "concat_chop",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored historical prose, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-generalweb-8592ef7b58",
+  "source_file": "general_web/web_history.txt",
+  "source_id": "src-web-hist",
+  "stage_hint": "mid",
+  "token_count": 312,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

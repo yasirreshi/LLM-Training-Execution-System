@@ -1,0 +1,216 @@
+{
+  "counters": {
+    "context_only_tokens": 3227,
+    "microbatches": 112,
+    "pad_tokens": 9290,
+    "raw_positions": 69632,
+    "sequences": 224,
+    "useful_loss_bearing_tokens": 57115
+  },
+  "counters_source": "summed from every ledgers/consumption_*.jsonl record; covers all 28 (branch, step) pairs across 2 branches, including the pre-crash steps whose in-memory counters died with the killed process",
+  "efficiency": {
+    "compute_share_of_wall": 0.123667,
+    "context_only_share": 0.046344,
+    "loss_density": 0.820241,
+    "packing_utilisation": 0.866584,
+    "padding_waste": 0.133416
+  },
+  "how_to_reconstruct": {
+    "independent_source": "counters are summed from ledgers/consumption_*.jsonl (total_positions, pad_tokens, loss_bearing_tokens, context_only_tokens) - verify_evidence.py re-sums them from the ledger and compares, rather than trusting this file",
+    "loss_density": "useful_loss_bearing_tokens / raw_positions",
+    "packing_utilisation": "(raw_positions - pad_tokens) / raw_positions",
+    "useful_tokens_per_sec_compute": "timed_phase_counters.useful_loss_bearing_tokens / timings.compute"
+  },
+  "opus": {
+    "candidates_rejected": 128,
+    "candidates_scored": 256,
+    "rejection_rate": 0.5,
+    "rejections_by_lane": {
+      "agentic": 16,
+      "code": 26,
+      "general_web": 32,
+      "indic": 16,
+      "math_science": 16,
+      "reasoning": 22
+    }
+  },
+  "per_phase": {
+    "phase_fork_br-dce229fce9": {
+      "counters": {
+        "accepted_tokens_after_opus": 7069,
+        "cache_hits": 0,
+        "context_only_tokens": 267,
+        "microbatches": 16,
+        "pad_tokens": 856,
+        "raw_positions": 8192,
+        "rejected_candidate_tokens": 6958,
+        "sequences": 32,
+        "shard_reads": 0,
+        "steps": 4,
+        "useful_loss_bearing_tokens": 7069
+      },
+      "efficiency": {
+        "cache_hit_rate": 0.0,
+        "compute_share_of_wall": 0.320289,
+        "context_only_share": 0.032593,
+        "idle_share_of_wall": 0.440791,
+        "loader_wait_share_of_wall": 3e-05,
+        "loss_density": 0.862915,
+        "opus_share_of_wall": 0.23889,
+        "packing_utilisation": 0.895508,
+        "padding_waste": 0.104492
+      },
+      "how_to_reconstruct": {
+        "loss_density": "useful_loss_bearing_tokens / raw_positions",
+        "note": "raw_positions, pad_tokens and useful_loss_bearing_tokens are also recoverable by summing total_positions, pad_tokens and loss_bearing_tokens over the consumption ledger, which is what verify_evidence.py does rather than trusting this file.",
+        "packing_utilisation": "(raw_positions - pad_tokens) / raw_positions",
+        "useful_tokens_per_sec_compute": "useful_loss_bearing_tokens / timings.compute"
+      },
+      "opus": {
+        "candidates_by_lane": {
+          "agentic": 8,
+          "code": 16,
+          "general_web": 16,
+          "indic": 8,
+          "math_science": 8,
+          "reasoning": 8
+        },
+        "candidates_rejected": 32,
+        "candidates_scored": 64,
+        "rejection_rate": 0.5,
+        "rejections_by_lane": {
+          "agentic": 4,
+          "code": 8,
+          "general_web": 8,
+          "indic": 4,
+          "math_science": 4,
+          "reasoning": 4
+        }
+      },
+      "throughput": {
+        "accepted_tokens_per_sec_compute": 3472.36,
+        "raw_tokens_per_sec_compute": 4023.99,
+        "sequences_per_sec_wall": 5.0345,
+        "useful_tokens_per_sec_compute": 3472.36,
+        "useful_tokens_per_sec_wall": 1112.16
+      },
+      "timer_calls": {
+        "compute": 20,
+        "firewall": 16,
+        "loader": 4,
+        "opus": 5
+      },
+      "timings_seconds": {
+        "compute": 2.03579,
+        "firewall": 0.022223,
+        "loader": 0.000191,
+        "opus": 1.51841
+      },
+      "wall_seconds": 6.356099
+    },
+    "phase_resume_main": {
+      "counters": {
+        "accepted_tokens_after_opus": 29632,
+        "cache_hits": 0,
+        "context_only_tokens": 1971,
+        "microbatches": 48,
+        "pad_tokens": 5261,
+        "raw_positions": 36864,
+        "rejected_candidate_tokens": 29667,
+        "sequences": 96,
+        "shard_reads": 0,
+        "steps": 12,
+        "useful_loss_bearing_tokens": 29632
+      },
+      "efficiency": {
+        "cache_hit_rate": 0.0,
+        "compute_share_of_wall": 0.359572,
+        "context_only_share": 0.053467,
+        "idle_share_of_wall": 0.485316,
+        "loader_wait_share_of_wall": 2.5e-05,
+        "loss_density": 0.803819,
+        "opus_share_of_wall": 0.155087,
+        "packing_utilisation": 0.857286,
+        "padding_waste": 0.142714
+      },
+      "how_to_reconstruct": {
+        "loss_density": "useful_loss_bearing_tokens / raw_positions",
+        "note": "raw_positions, pad_tokens and useful_loss_bearing_tokens are also recoverable by summing total_positions, pad_tokens and loss_bearing_tokens over the consumption ledger, which is what verify_evidence.py does rather than trusting this file.",
+        "packing_utilisation": "(raw_positions - pad_tokens) / raw_positions",
+        "useful_tokens_per_sec_compute": "useful_loss_bearing_tokens / timings.compute"
+      },
+      "opus": {
+        "candidates_by_lane": {
+          "agentic": 24,
+          "code": 36,
+          "general_web": 48,
+          "indic": 24,
+          "math_science": 24,
+          "reasoning": 36
+        },
+        "candidates_rejected": 96,
+        "candidates_scored": 192,
+        "rejection_rate": 0.5,
+        "rejections_by_lane": {
+          "agentic": 12,
+          "code": 18,
+          "general_web": 24,
+          "indic": 12,
+          "math_science": 12,
+          "reasoning": 18
+        }
+      },
+      "throughput": {
+        "accepted_tokens_per_sec_compute": 2828.67,
+        "raw_tokens_per_sec_compute": 3519.04,
+        "sequences_per_sec_wall": 3.2952,
+        "useful_tokens_per_sec_compute": 2828.67,
+        "useful_tokens_per_sec_wall": 1017.11
+      },
+      "timer_calls": {
+        "compute": 60,
+        "firewall": 48,
+        "loader": 12,
+        "opus": 14,
+        "validation": 2
+      },
+      "timings_seconds": {
+        "compute": 10.475581,
+        "firewall": 0.069774,
+        "loader": 0.000723,
+        "opus": 4.518207,
+        "validation": 0.133805
+      },
+      "wall_seconds": 29.133452
+    }
+  },
+  "throughput": {
+    "_scope": "rates use the timed phases only (resume + fork), because the crashed process never reported its wall clock; the token counts in this block are the matching subset, not the ledger totals",
+    "accepted_tokens_per_sec_compute": 2933.41,
+    "measured_over_positions": 45056,
+    "raw_tokens_per_sec_compute": 3601.2,
+    "useful_tokens_per_sec_compute": 2933.41,
+    "useful_tokens_per_sec_wall": 362.77
+  },
+  "timed_phase_counters": {
+    "accepted_tokens_after_opus": 36701,
+    "cache_hits": 0,
+    "context_only_tokens": 2238,
+    "microbatches": 64,
+    "pad_tokens": 6117,
+    "raw_positions": 45056,
+    "rejected_candidate_tokens": 36625,
+    "sequences": 128,
+    "shard_reads": 0,
+    "steps": 16,
+    "useful_loss_bearing_tokens": 36701
+  },
+  "timings_seconds": {
+    "compute": 12.511371,
+    "firewall": 0.091997,
+    "loader": 0.000914,
+    "opus": 6.036617,
+    "validation": 0.133805
+  },
+  "wall_seconds_total": 101.17
+}

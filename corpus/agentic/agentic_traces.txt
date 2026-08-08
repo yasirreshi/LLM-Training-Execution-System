@@ -1,0 +1,67 @@
+# tdes-corpus v1
+# source: hand written agent trajectories
+# note: every document here is a complete trajectory. The agentic lane uses
+#       structure-preserving packing, so two trajectories are never placed in
+#       one attention window - a model that sees one trace continue straight
+#       into an unrelated one learns that unrelated tool output is a natural
+#       continuation, which is exactly the behaviour to avoid.
+#
+#       Loss is applied to @think, @tool_call and @answer only. The user turn
+#       and the tool result are context the model must condition on, not text
+#       it should learn to generate.
+
+===DOC===
+doc_id: agent-0001
+lang: en
+script: Latn
+title: Diagnose a failing nightly job
+stage_hint: mid
+---
+@user: The nightly aggregation job failed again last night. Third time this week. Can you find out why?
+@think: Three failures in a week is a pattern, not an accident. I should look at the failure times first - if they cluster at the same clock time, the cause is probably contention with something else scheduled then. If they cluster at the same point in the job, it is more likely a data-dependent bug. Start with the run history.
+@tool_call: jobs.history(name="nightly_aggregation", limit=10)
+@tool_result: [{"run":"2026-08-05","status":"failed","started":"02:00:03","duration_s":1841,"error":"lock timeout"},{"run":"2026-08-04","status":"success","started":"02:00:02","duration_s":903},{"run":"2026-08-03","status":"failed","started":"02:00:04","duration_s":1847,"error":"lock timeout"},{"run":"2026-08-02","status":"failed","started":"02:00:02","duration_s":1839,"error":"lock timeout"},{"run":"2026-08-01","status":"success","started":"02:00:03","duration_s":889}]
+@think: The failures all die at roughly 1840 seconds with a lock timeout, and the successes finish in about 900 seconds. So the job is not slowly degrading - it is either fast or it is blocked. A lock timeout at a consistent duration suggests a fixed timeout being hit, not a variable slowdown. Something else holds a lock the job needs. Let me see what else runs in that window.
+@tool_call: scheduler.overlapping(window_start="02:00", window_end="02:35")
+@tool_result: [{"name":"nightly_aggregation","cron":"0 2 * * *"},{"name":"index_rebuild","cron":"0 2 * * 1,3,6"},{"name":"log_rotation","cron":"15 2 * * *"}]
+@think: index_rebuild runs on Monday, Wednesday and Saturday. The failures were the 2nd, 3rd and 5th of August. I need the weekdays for those dates to confirm the match rather than assume it.
+@tool_call: calendar.weekdays(dates=["2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05"])
+@tool_result: {"2026-08-01":"Saturday","2026-08-02":"Sunday","2026-08-03":"Monday","2026-08-04":"Tuesday","2026-08-05":"Wednesday"}
+@think: That breaks my hypothesis. index_rebuild runs Monday, Wednesday and Saturday - that is the 1st, 3rd and 5th. But the failures were the 2nd, 3rd and 5th, and the 1st succeeded. So two of three failures line up and one does not, and one rebuild day succeeded. The overlap is suggestive but it is not the whole story. I should check whether the rebuild itself ran late on Saturday and spilled into Sunday.
+@tool_call: jobs.history(name="index_rebuild", limit=5)
+@tool_result: [{"run":"2026-08-05","status":"success","started":"02:00:01","duration_s":2400},{"run":"2026-08-03","status":"success","started":"02:00:01","duration_s":2380},{"run":"2026-08-01","status":"success","started":"02:00:01","duration_s":8700}]
+@think: There it is. On Saturday the 1st the rebuild took 8700 seconds - nearly two and a half hours - so it was still holding its lock well into Sunday the 2nd. That explains the Sunday failure. And on the 1st itself the aggregation succeeded because it started one second after the rebuild and grabbed the lock first. The rule is simply that whichever job gets the lock first wins, and the aggregation only survives when it wins the race.
+@answer: The nightly aggregation is competing for a table lock with index_rebuild, and it fails whenever it loses the race.
+
+The evidence: all three failures ended at ~1840s with a lock timeout while successful runs finish in ~900s, so the job is blocked rather than slow. index_rebuild is scheduled at the same minute on Monday, Wednesday and Saturday, which covers the Monday and Wednesday failures. The Sunday failure is explained by the Saturday rebuild overrunning to 8700 seconds and still holding the lock the next morning. The Saturday run itself succeeded only because the aggregation happened to acquire the lock one second ahead of the rebuild.
+
+Two fixes, in order of preference. First, stop scheduling them at the same minute - move the aggregation to 03:30, which clears even a badly overrunning rebuild. Second, and independently, find out why one rebuild took nearly four times its normal duration, because a job with that much variance will collide with something else eventually.
+
+===DOC===
+doc_id: agent-0002
+lang: en
+script: Latn
+title: Track down a size regression
+stage_hint: mid
+---
+@user: Our deployment bundle grew from 12 MB to 41 MB in one release. Nobody knows what happened. Find the cause.
+@think: A 29 MB jump in a single release is almost certainly one dependency, not gradual creep. The fastest path is to diff the dependency manifest between the two releases rather than inspecting the bundle itself.
+@tool_call: vcs.diff(path="package-lock.json", from_ref="v3.4.0", to_ref="v3.5.0", summary=true)
+@tool_result: {"added":["@corp/icon-set@2.0.0","sharp@0.33.2","color-convert@2.0.1"],"removed":["@corp/icon-set@1.4.2"],"changed":["typescript@5.3.3 -> 5.4.2"]}
+@think: sharp is the suspicious entry - it ships prebuilt native binaries for several platforms and is commonly tens of megabytes. But I should measure rather than assume, and I should also check the icon-set major bump, since a 1.x to 2.x jump could easily have changed from SVG to bitmap assets.
+@tool_call: registry.package_size(names=["sharp@0.33.2","@corp/icon-set@2.0.0","@corp/icon-set@1.4.2","color-convert@2.0.1"])
+@tool_result: {"sharp@0.33.2":{"unpacked_mb":24.6},"@corp/icon-set@2.0.0":{"unpacked_mb":9.1},"@corp/icon-set@1.4.2":{"unpacked_mb":0.8},"color-convert@2.0.1":{"unpacked_mb":0.1}}
+@think: 24.6 plus 9.1 minus 0.8 is 32.9 MB of new dependency weight against an observed 29 MB of bundle growth. Close enough that these two account for it. Now the useful question is whether either is actually needed at runtime. sharp is an image processing library; if it was pulled in for a build step it belongs in devDependencies and should never reach the bundle.
+@tool_call: deps.why(name="sharp", ref="v3.5.0")
+@tool_result: {"paths":[["@corp/icon-set@2.0.0","sharp@0.33.2"]],"declared_in":"dependencies","direct":false}
+@think: sharp is not a direct dependency at all - it arrives transitively through the icon-set upgrade. So the entire 33 MB traces back to one version bump. The fix is a conversation with whoever owns icon-set, not a change in this repo. I should check whether the new icon-set actually needs sharp at runtime or only during its own build, because if it is the latter the upstream package has a packaging bug.
+@tool_call: registry.manifest(name="@corp/icon-set@2.0.0", fields=["dependencies","scripts","files"])
+@tool_result: {"dependencies":{"sharp":"^0.33.0"},"scripts":{"build":"node tools/rasterise.js"},"files":["dist/","tools/"]}
+@think: Confirmed. sharp is used by tools/rasterise.js, which is a build script, but it is declared as a runtime dependency and tools/ is shipped in the published files list. So every consumer of icon-set downloads a 24 MB image library to run a script they never execute. That is an upstream packaging defect with a clear fix.
+@answer: The growth is one dependency bump, and the fix belongs upstream.
+
+@corp/icon-set went from 1.4.2 to 2.0.0. The new version is 9.1 MB instead of 0.8 MB, and it pulls in sharp@0.33.2 at 24.6 MB. Together that is 32.9 MB of new weight, which matches the 29 MB you observed once tree-shaking is accounted for.
+
+The important detail is that sharp is not needed at runtime. icon-set uses it only in tools/rasterise.js, a build script, but declares it under dependencies and publishes tools/ in its files list. Every consumer therefore downloads an image processing library to run code that never executes in their process.
+
+Recommended actions: ask the icon-set owners to move sharp to devDependencies and drop tools/ from the published files - that alone returns roughly 24 MB to every consumer. In the meantime you can pin icon-set to 1.4.2, or add a bundler exclusion for sharp if nothing in your own code imports it.

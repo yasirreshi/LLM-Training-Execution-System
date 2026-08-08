@@ -1,0 +1,141 @@
+{
+  "first_round_accepted_grad_norm": 0.536681,
+  "last_round_accepted_grad_norm": 0.164914,
+  "per_round": [
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.536681,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.383895,
+      "mean_score": 0.000474,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0012",
+      "step": 12
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.150111,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.174448,
+      "mean_score": -0.117601,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0012",
+      "step": 13
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.192215,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.194181,
+      "mean_score": -0.103434,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0012",
+      "step": 14
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.196065,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.190884,
+      "mean_score": -0.104345,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0012",
+      "step": 15
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.128569,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.153691,
+      "mean_score": -0.133576,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0012",
+      "step": 16
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.278289,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.295935,
+      "mean_score": -0.317706,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0012",
+      "step": 17
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.208878,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.211182,
+      "mean_score": -0.032744,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0018",
+      "step": 18
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.262032,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.252136,
+      "mean_score": -0.094968,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0018",
+      "step": 19
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.158036,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.176043,
+      "mean_score": -0.042274,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0018",
+      "step": 20
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.200841,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.207498,
+      "mean_score": -0.091651,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0018",
+      "step": 21
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.262473,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.279627,
+      "mean_score": -0.203444,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0018",
+      "step": 22
+    },
+    {
+      "accepted": 8,
+      "accepted_mean_gradient_norm": 0.164914,
+      "candidates": 16,
+      "deferred": 8,
+      "mean_gradient_norm": 0.19091,
+      "mean_score": -0.091144,
+      "rejected": 0,
+      "scoring_checkpoint": "ckpt_main_0018",
+      "step": 23
+    }
+  ],
+  "ratio_last_over_first": 0.3073,
+  "rounds": 12,
+  "verdict": "accepted gradient norms collapsed - the pool is likely exhausted, OPUS is selecting the best of poor candidates"
+}

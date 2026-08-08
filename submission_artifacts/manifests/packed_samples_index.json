@@ -1,0 +1,5870 @@
+{
+  "contexts": {
+    "len256": {
+      "agentic": [
+        "smp-5cc744b848f2",
+        "smp-4ba3395483c4",
+        "smp-44757f2a80a7",
+        "smp-bfca01925505",
+        "smp-48fcb66efb0a",
+        "smp-67600870aa78",
+        "smp-ac277563ace3",
+        "smp-73cbfe6255f0",
+        "smp-6dda46bd5c96",
+        "smp-f5add82ac701",
+        "smp-e5a825bb8b79"
+      ],
+      "code": [
+        "smp-adda4e8f635a",
+        "smp-dfc87060cd1c",
+        "smp-3840ec996d79",
+        "smp-33c28a89b8bf",
+        "smp-65a7af7249ac",
+        "smp-f6373f1dadcc",
+        "smp-28385dd82d5b",
+        "smp-2bb7794c530b",
+        "smp-1d66d4be8f00",
+        "smp-932f9d29f8cd",
+        "smp-54b5891b2907",
+        "smp-8b04455072e5"
+      ],
+      "general_web": [
+        "smp-3fe09239c287",
+        "smp-dcb28d5d0c85",
+        "smp-991bfd8dbb55",
+        "smp-e5047669d7c8",
+        "smp-3d41f1d09538",
+        "smp-13e2c29ed5e0",
+        "smp-e0eca11a6d30",
+        "smp-395c5b31df1d",
+        "smp-6fde11fbc65c",
+        "smp-41304901fd4f",
+        "smp-a4f66445817c",
+        "smp-ed0bbb95d9be",
+        "smp-3fc24cc6f9fe",
+        "smp-e9f1495c2703",
+        "smp-8a0202098d9f",
+        "smp-930a3669f13d",
+        "smp-22c4686b4ed3",
+        "smp-a56a2c9a3c74"
+      ],
+      "indic": [
+        "smp-6e5d04357004",
+        "smp-fcf1b3ebbfd5",
+        "smp-03f14e9164ab",
+        "smp-1b177cdcdec3",
+        "smp-886d1847ccb3",
+        "smp-a734f6ebdbb7",
+        "smp-674c6e80e324",
+        "smp-073daeb75929",
+        "smp-228f78f4e64d",
+        "smp-a2ab49c8cd4a",
+        "smp-a49fe609dd4a",
+        "smp-22e18fac48d8",
+        "smp-59219a969ad8",
+        "smp-9ec987da7930",
+        "smp-1176d19f9740",
+        "smp-03ceeab21611",
+        "smp-6dd88e262f55"
+      ],
+      "math_science": [
+        "smp-b6fb15eabb4d",
+        "smp-e87c7a74a054",
+        "smp-cc3d38001044",
+        "smp-67280ce6d7f4",
+        "smp-eb58ddba0bdc",
+        "smp-9ea2e6484f81"
+      ],
+      "reasoning": [
+        "smp-8914ca3f4d63",
+        "smp-c245e7308abb",
+        "smp-94b14ad3e76c",
+        "smp-9f7ba82d073c",
+        "smp-8fa561b5d3bc",
+        "smp-c36a0289da58"
+      ]
+    },
+    "len512+reserved": {
+      "agentic": [
+        "smp-951c87b3e34d",
+        "smp-6fd665aa32ab",
+        "smp-99fd21f74aee",
+        "smp-cb8d1470cd5c",
+        "smp-ec822a135e16",
+        "smp-d04df58c5581",
+        "smp-df737f87d7c3",
+        "smp-dd1b1aff5f45",
+        "smp-a878cf89ee84",
+        "smp-99d66c22c899",
+        "smp-9cdc96448a6c",
+        "smp-a5e5bff92955"
+      ],
+      "code": [
+        "smp-9adb3ee992e3",
+        "smp-aaadf7c8914d",
+        "smp-82d06601337e",
+        "smp-0a40c2e57101",
+        "smp-deb91810ab7c",
+        "smp-0957bc6ebd85",
+        "smp-9e4195d9c288"
+      ],
+      "general_web": [
+        "smp-fda7622a835d",
+        "smp-2bffab9b931d",
+        "smp-dbb615d6e7bb",
+        "smp-92a1c51c9e7a",
+        "smp-158e6de97a09",
+        "smp-ce88522fb3d0",
+        "smp-51e0378a3822",
+        "smp-b0ad31d5d1d7",
+        "smp-457a087de1a2"
+      ],
+      "indic": [
+        "smp-ac1d4638f6a5",
+        "smp-c6fbdd806aee",
+        "smp-65539ccb8bf7",
+        "smp-a2a3e75cba6b",
+        "smp-6c6444b376d1",
+        "smp-16fb09a11e42",
+        "smp-1a61b8e93ac1",
+        "smp-ca55a668faa8",
+        "smp-eccd52866ffe",
+        "smp-e442ebcd4bd4"
+      ],
+      "math_science": [
+        "smp-f37377ec9bc9",
+        "smp-fdda140a23aa",
+        "smp-67f9b2abaf54",
+        "smp-749c9a745989"
+      ],
+      "reasoning": [
+        "smp-81c7769e2c07",
+        "smp-6163789933ae",
+        "smp-cf4dd6efe2d0",
+        "smp-a698bef9b981",
+        "smp-e9974ba6db3d",
+        "smp-318a7cf581ae"
+      ]
+    }
+  },
+  "sample_count": 121,
+  "samples": [
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "296d6e78c52590c3",
+      "context_only_tokens": 5,
+      "doc_ids": [
+        "indic-0001",
+        "indic-0103",
+        "indic-0101",
+        "indic-0101",
+        "indic-0102"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 251,
+      "loss_density": 0.9805,
+      "loss_mask_hash": "74f7e7fe5399350cd63b18259ec88babd7d1b40062a425f220b816364427a7f5",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-03ceeab21611",
+      "segments": [
+        {
+          "doc_id": "indic-0001",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 645,
+          "token_start": 513,
+          "window_start": 0
+        },
+        {
+          "doc_id": "indic-0103",
+          "lane": "indic",
+          "lang": "te",
+          "script": "Telu",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1790,
+          "token_start": 1684,
+          "window_start": 132
+        },
+        {
+          "doc_id": "indic-0101",
+          "lane": "indic",
+          "lang": "bn",
+          "script": "Beng",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 529,
+          "token_start": 513,
+          "window_start": 238
+        },
+        {
+          "doc_id": "indic-0101",
+          "lane": "indic",
+          "lang": "bn",
+          "script": "Beng",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 254
+        },
+        {
+          "doc_id": "indic-0102",
+          "lane": "indic",
+          "lang": "ta",
+          "script": "Taml",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 530,
+          "token_start": 529,
+          "window_start": 255
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa",
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:513-645",
+        "sh-indic-5bbc73dbfa:1684-1790",
+        "sh-indic-5bbc73dbfa:513-529",
+        "sh-indic-5bbc73dbfa:0-1",
+        "sh-indic-5bbc73dbfa:529-530"
+      ],
+      "tokens_hash": "f8ac2e9a9daf95772d55bf27ebdaa1dbf1fca4d64a89b017c27cec1c01ecb857",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "aa4d5df19e30c1ce",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0102"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-03f14e9164ab",
+      "segments": [
+        {
+          "doc_id": "indic-0102",
+          "lane": "indic",
+          "lang": "ta",
+          "script": "Taml",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 786,
+          "token_start": 530,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:530-786"
+      ],
+      "tokens_hash": "0ca0103e170e767de441961e5c5c84db35cd1706fc4713cc8888be5fa5029217",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "484d297811c994d3",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0004"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-073daeb75929",
+      "segments": [
+        {
+          "doc_id": "indic-0004",
+          "lane": "indic",
+          "lang": "mr",
+          "script": "Deva",
+          "shard_id": "sh-indic-65d3c8b055",
+          "token_end": 513,
+          "token_start": 257,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-65d3c8b055"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-65d3c8b055:257-513"
+      ],
+      "tokens_hash": "e3648fc87f9e83ef946567eb4fbee38798aee0752e1a9a3312bda4bb0e2c53f1",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "8e0d67ed5ceab3c0",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0102"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 348,
+      "loss_density": 0.6797,
+      "loss_mask_hash": "2a9774b4bed52595d8780edcb76c234767982cf9ec34c336655e3d3e89bf522e",
+      "loss_policy": "all",
+      "pad_count": 163,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-0957bc6ebd85",
+      "segments": [
+        {
+          "doc_id": "code-0102",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 762,
+          "token_start": 413,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-code-e0ea18f98d"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-e0ea18f98d:413-762"
+      ],
+      "tokens_hash": "9f1da205889b9381039de1e6131bb262a35388334700de633e9894ae3152e21e",
+      "utilisation": 0.6816
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "d8f0c860f4cd4971",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0003"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 388,
+      "loss_density": 0.7578,
+      "loss_mask_hash": "0d83a19fb0c76233f40be7a58fb9e50aa5a88a3c30bff6d4f21dc8773f69ce3b",
+      "loss_policy": "all",
+      "pad_count": 123,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-0a40c2e57101",
+      "segments": [
+        {
+          "doc_id": "code-0003",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 1293,
+          "token_start": 904,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-code-a513275e65"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-code-a513275e65:904-1293"
+      ],
+      "tokens_hash": "099ee16305b817702f23fce8e48058eeca18ff38a5e4d426d5f3ffe475720273",
+      "utilisation": 0.7598
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "67cf377203f81fe9",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "indic-0004",
+        "indic-0002"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 224,
+      "loss_density": 0.875,
+      "loss_mask_hash": "42f84efb9f5fff6ee0d60987702b0a4ca18219b6ff4069e9d9696d2c7eff3792",
+      "loss_policy": "all",
+      "pad_count": 30,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-1176d19f9740",
+      "segments": [
+        {
+          "doc_id": "indic-0004",
+          "lane": "indic",
+          "lang": "mr",
+          "script": "Deva",
+          "shard_id": "sh-indic-65d3c8b055",
+          "token_end": 698,
+          "token_start": 513,
+          "window_start": 0
+        },
+        {
+          "doc_id": "indic-0002",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1199,
+          "token_start": 1158,
+          "window_start": 185
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-65d3c8b055",
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-65d3c8b055:513-698",
+        "sh-indic-cde2b9fc1b:1158-1199"
+      ],
+      "tokens_hash": "ec5c16f4c4fc58e09095ea9eb897727d4adc84fd73c630f69b353af151e696bf",
+      "utilisation": 0.8828
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "8021faeb85a8797b",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0005",
+        "web-0201"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "2da6af3b0498e69a714b7a6f8d06d23b84432c9ff57830fbdbdadd70e9ac23d5",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-13e2c29ed5e0",
+      "segments": [
+        {
+          "doc_id": "web-0005",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-507734bdcc",
+          "token_end": 657,
+          "token_start": 410,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0201",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 9,
+          "token_start": 0,
+          "window_start": 247
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-507734bdcc",
+        "sh-generalweb-582f1166ec"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-507734bdcc:410-657",
+        "sh-generalweb-582f1166ec:0-9"
+      ],
+      "tokens_hash": "e08ed2402881c0817649884ea2a0f7fff4e2dc57664acc1248942ed796c58819",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "07d76b3f368f5014",
+      "context_only_tokens": 3,
+      "doc_ids": [
+        "web-0202",
+        "web-0203",
+        "web-0204"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 509,
+      "loss_density": 0.9941,
+      "loss_mask_hash": "fcd79901b3f0fe03e7799e9a4b37484bdd500d527086fa3aa4d6c833903ed600",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-158e6de97a09",
+      "segments": [
+        {
+          "doc_id": "web-0202",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 668,
+          "token_start": 521,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0203",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 987,
+          "token_start": 668,
+          "window_start": 147
+        },
+        {
+          "doc_id": "web-0204",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-8592ef7b58",
+          "token_end": 46,
+          "token_start": 0,
+          "window_start": 466
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-generalweb-582f1166ec",
+        "sh-generalweb-8592ef7b58"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-582f1166ec:521-668",
+        "sh-generalweb-582f1166ec:668-987",
+        "sh-generalweb-8592ef7b58:0-46"
+      ],
+      "tokens_hash": "44c2cb722e1519b7dbb45037cf6b9783991828b8404efd522a6a52065655784d",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "170848ca106374f8",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0001"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 511,
+      "loss_density": 0.998,
+      "loss_mask_hash": "01f43dce07d2def6d05e638ba90d1c71e6c8fa30b33d0cd4225015084c74eb93",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-16fb09a11e42",
+      "segments": [
+        {
+          "doc_id": "indic-0001",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 513,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:1-513"
+      ],
+      "tokens_hash": "8a38126c190395badf9b45af636b67189c5c8b92800be99eaa6bd9192cdc0180",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "373fc000a8ccc2e3",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0002"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 511,
+      "loss_density": 0.998,
+      "loss_mask_hash": "01f43dce07d2def6d05e638ba90d1c71e6c8fa30b33d0cd4225015084c74eb93",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-1a61b8e93ac1",
+      "segments": [
+        {
+          "doc_id": "indic-0002",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1158,
+          "token_start": 646,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:646-1158"
+      ],
+      "tokens_hash": "054229d726a71adf45b8bf5582abd737af3be37ffbb3c267e9d02b1449cd896a",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "a31ddca4ec7ae683",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0102"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-1b177cdcdec3",
+      "segments": [
+        {
+          "doc_id": "indic-0102",
+          "lane": "indic",
+          "lang": "ta",
+          "script": "Taml",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1042,
+          "token_start": 786,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:786-1042"
+      ],
+      "tokens_hash": "9bc4959ee2d76c680eaa023bd976ffb9c72e7fdf624d6bc7f6bb95593d156ca3",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "edda622b1561db6f",
+      "context_only_tokens": 5,
+      "doc_ids": [
+        "code-0101",
+        "code-0102",
+        "code-0001",
+        "code-0004",
+        "code-0001"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 251,
+      "loss_density": 0.9805,
+      "loss_mask_hash": "f5df3d2a4b933578ddac60ca72d6efd5996b68881cea393cb0f3a05cf3c37fa3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-1d66d4be8f00",
+      "segments": [
+        {
+          "doc_id": "code-0101",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 413,
+          "token_start": 257,
+          "window_start": 0
+        },
+        {
+          "doc_id": "code-0102",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 762,
+          "token_start": 670,
+          "window_start": 156
+        },
+        {
+          "doc_id": "code-0001",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 519,
+          "token_start": 513,
+          "window_start": 248
+        },
+        {
+          "doc_id": "code-0004",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-45fc328cb1",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 254
+        },
+        {
+          "doc_id": "code-0001",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 255
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-45fc328cb1",
+        "sh-code-a513275e65",
+        "sh-code-e0ea18f98d"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-e0ea18f98d:257-413",
+        "sh-code-e0ea18f98d:670-762",
+        "sh-code-a513275e65:513-519",
+        "sh-code-45fc328cb1:0-1",
+        "sh-code-a513275e65:0-1"
+      ],
+      "tokens_hash": "8a788a257e008711fc2ebb976e802c92e7803fbeb8f8f8542755fffd5bf2ad65",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "15f26b33f13363a1",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "val-0001",
+        "val-0002"
+      ],
+      "lane": "validation",
+      "loss_bearing_tokens": 192,
+      "loss_density": 0.75,
+      "loss_mask_hash": "ab239379783a3c16d2c4667524ad719bd5659af33aad3096e53f16492f848b97",
+      "loss_policy": "all",
+      "pad_count": 62,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-1dd1562c842e",
+      "segments": [
+        {
+          "doc_id": "val-0001",
+          "lane": "validation",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-validation-9d927d0047",
+          "token_end": 193,
+          "token_start": 0,
+          "window_start": 0
+        },
+        {
+          "doc_id": "val-0002",
+          "lane": "validation",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-validation-9d927d0047",
+          "token_end": 194,
+          "token_start": 193,
+          "window_start": 193
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-validation-9d927d0047"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-validation-9d927d0047:0-193",
+        "sh-validation-9d927d0047:193-194"
+      ],
+      "tokens_hash": "11614c3a16197bed682d7c627ed97b985a936bbe8342480c3aba1f5f7ae69b93",
+      "utilisation": 0.7578
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "d429848f748f3502",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0001"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-228f78f4e64d",
+      "segments": [
+        {
+          "doc_id": "indic-0001",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 257,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:1-257"
+      ],
+      "tokens_hash": "338ec72fee6220d7770942c48d20b5ff1f1f413d1a128bf360904701add5d09f",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "2fa8886dc2a46ea2",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0002",
+        "web-0003"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "8e322a325daf3f1377d3526df0ae7d15a9967deda77c9e074f0c3eee1264219c",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-22c4686b4ed3",
+      "segments": [
+        {
+          "doc_id": "web-0002",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 734,
+          "token_start": 716,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0003",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 972,
+          "token_start": 734,
+          "window_start": 18
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-d7da98bf1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-d7da98bf1b:716-734",
+        "sh-generalweb-d7da98bf1b:734-972"
+      ],
+      "tokens_hash": "9f976a78d5123020455824ce0fab0a835081daabe07221c51755b2ae351c8580",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "018e7ae9ac0883c0",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0002"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-22e18fac48d8",
+      "segments": [
+        {
+          "doc_id": "indic-0002",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1158,
+          "token_start": 902,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:902-1158"
+      ],
+      "tokens_hash": "64271dc0876a43522e90eaf7e2a0ff1690684f48a30a6a53eba7e5d338ebd75b",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "e65d73c3cfbcc789",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0102"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-28385dd82d5b",
+      "segments": [
+        {
+          "doc_id": "code-0102",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 670,
+          "token_start": 414,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-e0ea18f98d"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-e0ea18f98d:414-670"
+      ],
+      "tokens_hash": "86d414c4eb5b1f807f22b2f51f2d2e361f3ae8508c96b913faae3c0f539bfb4c",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "cf2431ea86fe8096",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0103"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-2bb7794c530b",
+      "segments": [
+        {
+          "doc_id": "code-0103",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 1019,
+          "token_start": 763,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-e0ea18f98d"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-code-e0ea18f98d:763-1019"
+      ],
+      "tokens_hash": "4fca652bea28248c37671fb0143073814aed542cc7be2d9278a2136b2f8e3991",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "50f4d85fe189b696",
+      "context_only_tokens": 3,
+      "doc_ids": [
+        "web-0102",
+        "web-0103",
+        "web-0004"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 509,
+      "loss_density": 0.9941,
+      "loss_mask_hash": "2604b3d20ec90f5228147a5cdd1ef4302473a10734b0354ab8c40163544357af",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-2bffab9b931d",
+      "segments": [
+        {
+          "doc_id": "web-0102",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 587,
+          "token_start": 512,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0103",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 870,
+          "token_start": 587,
+          "window_start": 75
+        },
+        {
+          "doc_id": "web-0004",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-507734bdcc",
+          "token_end": 154,
+          "token_start": 0,
+          "window_start": 358
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-generalweb-0891b7c5fa",
+        "sh-generalweb-507734bdcc"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-0891b7c5fa:512-587",
+        "sh-generalweb-0891b7c5fa:587-870",
+        "sh-generalweb-507734bdcc:0-154"
+      ],
+      "tokens_hash": "f70ea47442feeb8bb86951abcc5e7cac90c34d9948b387c0157a62027dd1e8c9",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6b6fef76085746e1",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "reason-0004"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 294,
+      "loss_density": 0.5742,
+      "loss_mask_hash": "0fa22670d3061386b36c66ea8d7234f89e52a0af976697546c8d030b2f676505",
+      "loss_policy": "response_only",
+      "pad_count": 217,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-318a7cf581ae",
+      "segments": [
+        {
+          "doc_id": "reason-0004",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-8e3e81c92a",
+          "token_end": 755,
+          "token_start": 460,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-reasoning-8e3e81c92a"
+      ],
+      "stage_hint": "anneal",
+      "token_span_ids": [
+        "sh-reasoning-8e3e81c92a:460-755"
+      ],
+      "tokens_hash": "a8abc7e83d23ec7820ca5cffb4cd09d1e36c6f18670bff74618b078234809430",
+      "utilisation": 0.5762
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "48d8d2fe6706c06d",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0002"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-33c28a89b8bf",
+      "segments": [
+        {
+          "doc_id": "code-0002",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 776,
+          "token_start": 520,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-a513275e65"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-a513275e65:520-776"
+      ],
+      "tokens_hash": "bdb24359758193c570950e9caf7ef414c96e0eefa01960e43e913d3880c2fee7",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "062a2fa61f81ba07",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0001"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-3840ec996d79",
+      "segments": [
+        {
+          "doc_id": "code-0001",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 513,
+          "token_start": 257,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-a513275e65"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-code-a513275e65:257-513"
+      ],
+      "tokens_hash": "ea9852a9d6851b0766f067b5c42fec14bbd2eb2b464a7464e55d88338b6694bf",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "84e108130e0111a8",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0201",
+        "web-0202"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "9b696e4b418c39821405f4330317d672c9c35d709b3641321057d7b0f083f19a",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-395c5b31df1d",
+      "segments": [
+        {
+          "doc_id": "web-0201",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 358,
+          "token_start": 265,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0202",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 521,
+          "token_start": 358,
+          "window_start": 93
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-582f1166ec"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-582f1166ec:265-358",
+        "sh-generalweb-582f1166ec:358-521"
+      ],
+      "tokens_hash": "c69c4de61fa6b22d9e270aeec39b3ab82eba8f1ad7e2d50b0c5afb8341a6c10a",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "97a49fd27d6f6461",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0004",
+        "web-0005"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "8a7183ff1401107e4e1c4fad12608c1b30bd33266b758814f5e860b5eb1c5b05",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-3d41f1d09538",
+      "segments": [
+        {
+          "doc_id": "web-0004",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-507734bdcc",
+          "token_end": 357,
+          "token_start": 154,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0005",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-507734bdcc",
+          "token_end": 410,
+          "token_start": 357,
+          "window_start": 203
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-507734bdcc"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-507734bdcc:154-357",
+        "sh-generalweb-507734bdcc:357-410"
+      ],
+      "tokens_hash": "0716bdbcf364c0c94899a9f9e57ace49ef31c5a2764dcd0e331ce8dc8fd74956",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "7c8293e2b0e564e0",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0104",
+        "web-0105"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "24092caee311ac040586a89f7dd2d6e8ea1753687d20b314461d0547c1750f66",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-3fc24cc6f9fe",
+      "segments": [
+        {
+          "doc_id": "web-0104",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "token_end": 284,
+          "token_start": 246,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0105",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "token_end": 502,
+          "token_start": 284,
+          "window_start": 38
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-cbd3f64ece"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-cbd3f64ece:246-284",
+        "sh-generalweb-cbd3f64ece:284-502"
+      ],
+      "tokens_hash": "97fd8b9a911e9fb8719cc63e2653e3d8938a4f65d3ade7682027eecd1081a4ee",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "4d5e54e1967197b7",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "web-0101"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-3fe09239c287",
+      "segments": [
+        {
+          "doc_id": "web-0101",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 256,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-0891b7c5fa"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-0891b7c5fa:0-256"
+      ],
+      "tokens_hash": "9cffb66ac256c8ede009afc6fc1770d7f0e1869b6f9f50cff7f95e8c369f2bd4",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "0745b166cf24acb2",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0203",
+        "web-0204"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "b7581a775202504c9ad5362903d919db9a5bc5b104c9d9bdd69d766cd043644a",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-41304901fd4f",
+      "segments": [
+        {
+          "doc_id": "web-0203",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 987,
+          "token_start": 777,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0204",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-8592ef7b58",
+          "token_end": 46,
+          "token_start": 0,
+          "window_start": 210
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-582f1166ec",
+        "sh-generalweb-8592ef7b58"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-582f1166ec:777-987",
+        "sh-generalweb-8592ef7b58:0-46"
+      ],
+      "tokens_hash": "220281a346446e96abedde6338aa607278085def655a83bb2bbfbfbcb922afd2",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "e71b75e678d29c12",
+      "context_only_tokens": 98,
+      "doc_ids": [
+        "agent-0001"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 112,
+      "loss_density": 0.4375,
+      "loss_mask_hash": "d7279cdfb7f78823d19710aabb863223899c2ec10835e2f365a70b92242fc75a",
+      "loss_policy": "model_turns",
+      "pad_count": 46,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-44757f2a80a7",
+      "segments": [
+        {
+          "doc_id": "agent-0001",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 561,
+          "token_start": 351,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:351-561"
+      ],
+      "tokens_hash": "e38cc94597ed20cecfe1155c1729363779510472a4a2c70f5a8a5ad7627b6438",
+      "utilisation": 0.8203
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "0fa4493f03113210",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0002",
+        "web-0003"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 391,
+      "loss_density": 0.7637,
+      "loss_mask_hash": "e159d96b857a8e94b637f58170b608346743430ea2bb6fb0f9412c2dc4c19498",
+      "loss_policy": "all",
+      "pad_count": 119,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-457a087de1a2",
+      "segments": [
+        {
+          "doc_id": "web-0002",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 734,
+          "token_start": 716,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0003",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 1109,
+          "token_start": 734,
+          "window_start": 18
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-generalweb-d7da98bf1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-d7da98bf1b:716-734",
+        "sh-generalweb-d7da98bf1b:734-1109"
+      ],
+      "tokens_hash": "4c6207c74354f8aec187e884963994612f65ded8499cdf881f762d135653703c",
+      "utilisation": 0.7676
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "a0cf7737a0936e5e",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "agent-0001"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 99,
+      "loss_density": 0.3867,
+      "loss_mask_hash": "9001fddebbfff96675232de065014f8d0845f4b1e4f455983c2e8ad29a2cac8b",
+      "loss_policy": "model_turns",
+      "pad_count": 156,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-48fcb66efb0a",
+      "segments": [
+        {
+          "doc_id": "agent-0001",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 862,
+          "token_start": 762,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:762-862"
+      ],
+      "tokens_hash": "5ed5641b5be2e734d2190244e28b5a7af33bf031c7a33cfeb43647183a21ad85",
+      "utilisation": 0.3906
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "44408b2c2606e9ff",
+      "context_only_tokens": 149,
+      "doc_ids": [
+        "agent-0001"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 88,
+      "loss_density": 0.3438,
+      "loss_mask_hash": "dfeb59de376fad3e326192bd17490630098cb5e8621c9645ac99d73fec5eeacb",
+      "loss_policy": "model_turns",
+      "pad_count": 19,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-4ba3395483c4",
+      "segments": [
+        {
+          "doc_id": "agent-0001",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 351,
+          "token_start": 114,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:114-351"
+      ],
+      "tokens_hash": "5fa9ba024a8cafd077d88cbdc81a79712b3df291fa02fa98d4fb1ecd43ab49b8",
+      "utilisation": 0.9258
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "9f967bad71bdfd6a",
+      "context_only_tokens": 3,
+      "doc_ids": [
+        "web-0104",
+        "web-0105",
+        "web-0001"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 509,
+      "loss_density": 0.9941,
+      "loss_mask_hash": "993eb95a28f96312623db6cf43292e424a8b21bd881f656d04d31f61e449505d",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-51e0378a3822",
+      "segments": [
+        {
+          "doc_id": "web-0104",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "token_end": 284,
+          "token_start": 246,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0105",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "token_end": 554,
+          "token_start": 284,
+          "window_start": 38
+        },
+        {
+          "doc_id": "web-0001",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 204,
+          "token_start": 0,
+          "window_start": 308
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-generalweb-cbd3f64ece",
+        "sh-generalweb-d7da98bf1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-cbd3f64ece:246-284",
+        "sh-generalweb-cbd3f64ece:284-554",
+        "sh-generalweb-d7da98bf1b:0-204"
+      ],
+      "tokens_hash": "cb56d01a9cc4f60e8b98aea18f3704068ed84833bbc6b897b5d8e92b75563a94",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "1be6b64ccb884870",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0003"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 131,
+      "loss_density": 0.5117,
+      "loss_mask_hash": "03ab71b6ca10e31474b1032ee1c270713a60b6c9dec21b2e6f1bbefedfd04c86",
+      "loss_policy": "all",
+      "pad_count": 124,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-54b5891b2907",
+      "segments": [
+        {
+          "doc_id": "code-0003",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 1293,
+          "token_start": 1161,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-a513275e65"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-code-a513275e65:1161-1293"
+      ],
+      "tokens_hash": "d175b2122eef001e5889f1a52e304e89f9d8096c662aefb214baff8f19d858fe",
+      "utilisation": 0.5156
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "1acee32682f79d9d",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0003"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-59219a969ad8",
+      "segments": [
+        {
+          "doc_id": "indic-0003",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1456,
+          "token_start": 1200,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:1200-1456"
+      ],
+      "tokens_hash": "67434e25b98f2248b487d7f5181f1c3da7694f41b713af659c7f5213c744e1f2",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "9c97d77aef5b5b87",
+      "context_only_tokens": 24,
+      "doc_ids": [
+        "agent-0001"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 90,
+      "loss_density": 0.3516,
+      "loss_mask_hash": "359e8abc06545a3c7faf068b80e1fda5da84c4affd690ac8b0039d27864ce0d6",
+      "loss_policy": "model_turns",
+      "pad_count": 142,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-5cc744b848f2",
+      "segments": [
+        {
+          "doc_id": "agent-0001",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 114,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:0-114"
+      ],
+      "tokens_hash": "d638a555dd0c05c0f3d90e5d94d58c50a68ee2c25d8c7cec2ea7383d1edec470",
+      "utilisation": 0.4453
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "1eeb6be1ea70017c",
+      "context_only_tokens": 35,
+      "doc_ids": [
+        "reason-0002"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 477,
+      "loss_density": 0.9316,
+      "loss_mask_hash": "d5c2464f714652688077eb1dff469168fc744e48e851497dbb5237062b06dbf1",
+      "loss_policy": "response_only",
+      "pad_count": 0,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-6163789933ae",
+      "segments": [
+        {
+          "doc_id": "reason-0002",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 1011,
+          "token_start": 499,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:499-1011"
+      ],
+      "tokens_hash": "cf017762bd30c150876552e11dfcc87711f45274c1b76d29f34e837541501b23",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "bd7e7cb755c6cdcb",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0102"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 511,
+      "loss_density": 0.998,
+      "loss_mask_hash": "01f43dce07d2def6d05e638ba90d1c71e6c8fa30b33d0cd4225015084c74eb93",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-65539ccb8bf7",
+      "segments": [
+        {
+          "doc_id": "indic-0102",
+          "lane": "indic",
+          "lang": "ta",
+          "script": "Taml",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1042,
+          "token_start": 530,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:530-1042"
+      ],
+      "tokens_hash": "661dc5a08f9907af245cf9eed505192ed2cf6a83cc9fcd9917ce5bc7cd0a5874",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "8761de3d94cb4be6",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0003"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-65a7af7249ac",
+      "segments": [
+        {
+          "doc_id": "code-0003",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 1161,
+          "token_start": 905,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-a513275e65"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-code-a513275e65:905-1161"
+      ],
+      "tokens_hash": "c3871567b8144b49b0b21ef435cbaa6391b99fe432642a7af6e356a5a0ae2c52",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "2efe426e08a2f79f",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "math-0003"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-67280ce6d7f4",
+      "segments": [
+        {
+          "doc_id": "math-0003",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 910,
+          "token_start": 654,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-mathscience-1889d2c0cc"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-mathscience-1889d2c0cc:654-910"
+      ],
+      "tokens_hash": "33b591197b9260e5f542cf6ff15d2a627a0cbd49b741c6a1031eef4133a9af64",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "3551675aee79166b",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0004"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-674c6e80e324",
+      "segments": [
+        {
+          "doc_id": "indic-0004",
+          "lane": "indic",
+          "lang": "mr",
+          "script": "Deva",
+          "shard_id": "sh-indic-65d3c8b055",
+          "token_end": 257,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-65d3c8b055"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-65d3c8b055:1-257"
+      ],
+      "tokens_hash": "85a07e6cb81f7253fa3c0ed1b9da770b69cae5ca15f42f3d06de627be3841208",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "5a1e785f514fd521",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "agent-0001"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 216,
+      "loss_density": 0.8438,
+      "loss_mask_hash": "b19764bfc1aeb9bab27e984593dcc47ac3ff53b9159b5cb76f40511f2e789f0d",
+      "loss_policy": "model_turns",
+      "pad_count": 39,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-67600870aa78",
+      "segments": [
+        {
+          "doc_id": "agent-0001",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 1079,
+          "token_start": 862,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:862-1079"
+      ],
+      "tokens_hash": "13755a4386c95818f5156697780a1fcbf1a85d048107933c4fb487ab1fa1f14e",
+      "utilisation": 0.8477
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "30669711819330dc",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "math-0003"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 342,
+      "loss_density": 0.668,
+      "loss_mask_hash": "18a1e4450a204e21b92fc8de50789125643f96f9ef7880271123c77b1e839c2c",
+      "loss_policy": "all",
+      "pad_count": 169,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-67f9b2abaf54",
+      "segments": [
+        {
+          "doc_id": "math-0003",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 996,
+          "token_start": 653,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-mathscience-1889d2c0cc"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-mathscience-1889d2c0cc:653-996"
+      ],
+      "tokens_hash": "6c78013671bee4622294a0182b328646b1d97dac4098d7b0df16ba3d5bfd8e02",
+      "utilisation": 0.6699
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6b01d3277fb4ca85",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0004"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 511,
+      "loss_density": 0.998,
+      "loss_mask_hash": "01f43dce07d2def6d05e638ba90d1c71e6c8fa30b33d0cd4225015084c74eb93",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-6c6444b376d1",
+      "segments": [
+        {
+          "doc_id": "indic-0004",
+          "lane": "indic",
+          "lang": "mr",
+          "script": "Deva",
+          "shard_id": "sh-indic-65d3c8b055",
+          "token_end": 513,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-65d3c8b055"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-65d3c8b055:1-513"
+      ],
+      "tokens_hash": "830335255d706a2a38a7687349c1700cf98944edae558d1f7dc63747fda6dc08",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "8073b23d8e666377",
+      "context_only_tokens": 7,
+      "doc_ids": [
+        "indic-0102",
+        "indic-0003",
+        "indic-0103",
+        "indic-0004",
+        "indic-0001",
+        "indic-0002",
+        "indic-0003"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 230,
+      "loss_density": 0.8984,
+      "loss_mask_hash": "220e575970e66dd90d3f259e44e505a91da961e9152c9d0ca4cbf36ce6fc7b12",
+      "loss_policy": "all",
+      "pad_count": 19,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-6dd88e262f55",
+      "segments": [
+        {
+          "doc_id": "indic-0102",
+          "lane": "indic",
+          "lang": "ta",
+          "script": "Taml",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1171,
+          "token_start": 1042,
+          "window_start": 0
+        },
+        {
+          "doc_id": "indic-0003",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1815,
+          "token_start": 1712,
+          "window_start": 129
+        },
+        {
+          "doc_id": "indic-0103",
+          "lane": "indic",
+          "lang": "te",
+          "script": "Telu",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1172,
+          "token_start": 1171,
+          "window_start": 232
+        },
+        {
+          "doc_id": "indic-0004",
+          "lane": "indic",
+          "lang": "mr",
+          "script": "Deva",
+          "shard_id": "sh-indic-65d3c8b055",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 233
+        },
+        {
+          "doc_id": "indic-0001",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 234
+        },
+        {
+          "doc_id": "indic-0002",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 646,
+          "token_start": 645,
+          "window_start": 235
+        },
+        {
+          "doc_id": "indic-0003",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1200,
+          "token_start": 1199,
+          "window_start": 236
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa",
+        "sh-indic-65d3c8b055",
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:1042-1171",
+        "sh-indic-cde2b9fc1b:1712-1815",
+        "sh-indic-5bbc73dbfa:1171-1172",
+        "sh-indic-65d3c8b055:0-1",
+        "sh-indic-cde2b9fc1b:0-1",
+        "sh-indic-cde2b9fc1b:645-646",
+        "sh-indic-cde2b9fc1b:1199-1200"
+      ],
+      "tokens_hash": "6c7ad39a5b71983c0cd5366fe492d83fd911a81e10ad5fb447c5303c8e1d3a35",
+      "utilisation": 0.9258
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "d38448a2c9ded177",
+      "context_only_tokens": 42,
+      "doc_ids": [
+        "agent-0002"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 207,
+      "loss_density": 0.8086,
+      "loss_mask_hash": "bd3edac9d4c9b5e9b8fdafa181269d017c9cbc7502370b127f18ca4dc75711bf",
+      "loss_policy": "model_turns",
+      "pad_count": 7,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-6dda46bd5c96",
+      "segments": [
+        {
+          "doc_id": "agent-0002",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 1724,
+          "token_start": 1475,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:1475-1724"
+      ],
+      "tokens_hash": "483f7d79bc6cb4a5eb58c961a02b12d940a50ff3198c2e42228b262492b85f4a",
+      "utilisation": 0.9727
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "945888994f83fe7f",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0101"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-6e5d04357004",
+      "segments": [
+        {
+          "doc_id": "indic-0101",
+          "lane": "indic",
+          "lang": "bn",
+          "script": "Beng",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 257,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:1-257"
+      ],
+      "tokens_hash": "d1ac9dd4f773aa8efebba2f52f958b5f90e9a6fdef6bdf7b127a37e234123e64",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "2add387b7684a9f3",
+      "context_only_tokens": 131,
+      "doc_ids": [
+        "agent-0001"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 260,
+      "loss_density": 0.5078,
+      "loss_mask_hash": "250913950f5fa249392fedcff17f1fcc4194067050d91a8e6c9c87079fe6b24c",
+      "loss_policy": "model_turns",
+      "pad_count": 121,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-6fd665aa32ab",
+      "segments": [
+        {
+          "doc_id": "agent-0001",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 862,
+          "token_start": 471,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:471-862"
+      ],
+      "tokens_hash": "c13323ebad7d5626c1d7f6d0695c99deb42135159cfb146d775946b1e0912113",
+      "utilisation": 0.7637
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "4406d9c6ea49f217",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0202",
+        "web-0203"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "7c7c0262b747241e8de536a167e1803f9b08547cc4bed6e9503fd8183ac6c1ee",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-6fde11fbc65c",
+      "segments": [
+        {
+          "doc_id": "web-0202",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 668,
+          "token_start": 521,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0203",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 777,
+          "token_start": 668,
+          "window_start": 147
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-582f1166ec"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-582f1166ec:521-668",
+        "sh-generalweb-582f1166ec:668-777"
+      ],
+      "tokens_hash": "21926f0e4094fe03e469384209dbca123accb71c1352286b26e3f4553e70a426",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "51d819af2e2f5120",
+      "context_only_tokens": 75,
+      "doc_ids": [
+        "agent-0002"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 135,
+      "loss_density": 0.5273,
+      "loss_mask_hash": "0dbc0b61b5420d499254fe8b42dad850df7f371d38dac0aa1b7d4cf79d15ca9b",
+      "loss_policy": "model_turns",
+      "pad_count": 46,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-73cbfe6255f0",
+      "segments": [
+        {
+          "doc_id": "agent-0002",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 1475,
+          "token_start": 1265,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:1265-1475"
+      ],
+      "tokens_hash": "5671e1077ecd0e5c5003c3005e0e0b51b35521a6cc1c19f394abc8b4e5dc076b",
+      "utilisation": 0.8203
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "c791d4e9e03b5c6c",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "math-0004"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 347,
+      "loss_density": 0.6777,
+      "loss_mask_hash": "f1b4c3292ca922af0492c5c7cd704e7d89d4f4fce899f36e704798ac5687aa5f",
+      "loss_policy": "all",
+      "pad_count": 164,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-749c9a745989",
+      "segments": [
+        {
+          "doc_id": "math-0004",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-6602f5780e",
+          "token_end": 348,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-mathscience-6602f5780e"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-mathscience-6602f5780e:0-348"
+      ],
+      "tokens_hash": "aeb21607141715b8eeaa114f95cc484e7f5984e8d534bd16c394af14d1c0d736",
+      "utilisation": 0.6797
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "1f0962e83ff45975",
+      "context_only_tokens": 64,
+      "doc_ids": [
+        "reason-0001"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 435,
+      "loss_density": 0.8496,
+      "loss_mask_hash": "72e4573c17eb01863d5de455bd3b9a58116c5d8c302082a8afe6eb34b867a7fe",
+      "loss_policy": "response_only",
+      "pad_count": 13,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-81c7769e2c07",
+      "segments": [
+        {
+          "doc_id": "reason-0001",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 499,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:0-499"
+      ],
+      "tokens_hash": "f50739c3919e57914d0ffd22c87623a4e76c56c868ebe4a85ba8969f9de6e3a0",
+      "utilisation": 0.9746
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "b8058c2d8c542c3c",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0103"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 393,
+      "loss_density": 0.7676,
+      "loss_mask_hash": "9ca51c1119d9719e49454392b16f79b4145e926b5bf34b51f77334d9172a0a7e",
+      "loss_policy": "all",
+      "pad_count": 118,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-82d06601337e",
+      "segments": [
+        {
+          "doc_id": "code-0103",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 1156,
+          "token_start": 762,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-code-e0ea18f98d"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-code-e0ea18f98d:762-1156"
+      ],
+      "tokens_hash": "d747810053ed423c625b9199513f59135e712ac79b84ddc6cfb4e19c5c969e7d",
+      "utilisation": 0.7695
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "fbdc755039457596",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0103"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-886d1847ccb3",
+      "segments": [
+        {
+          "doc_id": "indic-0103",
+          "lane": "indic",
+          "lang": "te",
+          "script": "Telu",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1428,
+          "token_start": 1172,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:1172-1428"
+      ],
+      "tokens_hash": "cadc8c0f4ad6d0bee4745433990f0cf9e74e4d0b9d5017459ffab0439c8a6e68",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "9bf9ae63cf96aaf2",
+      "context_only_tokens": 64,
+      "doc_ids": [
+        "reason-0001"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 0,
+      "loss_density": 0.0,
+      "loss_mask_hash": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "loss_policy": "response_only",
+      "pad_count": 192,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-8914ca3f4d63",
+      "segments": [
+        {
+          "doc_id": "reason-0001",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 64,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:0-64"
+      ],
+      "tokens_hash": "66836668aebac7af57ab983252d77113e0ce1f184c4437b19f4a4d895ecc4982",
+      "utilisation": 0.25
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "8edf67d8ce5c3b11",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0001",
+        "web-0002"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "d09f1f2b045b102cfe031d83c55477b29278691ef2d0730ae716b135a7a271d3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-8a0202098d9f",
+      "segments": [
+        {
+          "doc_id": "web-0001",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 405,
+          "token_start": 204,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0002",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 460,
+          "token_start": 405,
+          "window_start": 201
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-d7da98bf1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-d7da98bf1b:204-405",
+        "sh-generalweb-d7da98bf1b:405-460"
+      ],
+      "tokens_hash": "a201f019035b91503e6f1f8c8f1e89f83af7c340f7d6dd5a0b451fec7e6f9f9b",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "437b102402d4086b",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0002"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 127,
+      "loss_density": 0.4961,
+      "loss_mask_hash": "5ce62857ca947792bf0a971a61292a096714f74e1e3c56672a7aa1374ead2324",
+      "loss_policy": "all",
+      "pad_count": 128,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-8b04455072e5",
+      "segments": [
+        {
+          "doc_id": "code-0002",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 904,
+          "token_start": 776,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-a513275e65"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-a513275e65:776-904"
+      ],
+      "tokens_hash": "67cf7275c2bd83046b13f61e0fb86c05ddc36dafa09d5e49daa6d3fbb3f499fb",
+      "utilisation": 0.5
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "f41d62241f1a992f",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "reason-0002"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "response_only",
+      "pad_count": 0,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-8fa561b5d3bc",
+      "segments": [
+        {
+          "doc_id": "reason-0002",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 790,
+          "token_start": 534,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:534-790"
+      ],
+      "tokens_hash": "c6f58c733a0e110c206d4096d144be8f3429807b500de8a67b8232be156706d5",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "96c419e91726ea96",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0201",
+        "web-0202"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 510,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "bdbab3a632a03bb8096b413ae0ac7a5323d4b707343f2f40b2098fd8578999e6",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-92a1c51c9e7a",
+      "segments": [
+        {
+          "doc_id": "web-0201",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 358,
+          "token_start": 9,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0202",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 521,
+          "token_start": 358,
+          "window_start": 349
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-generalweb-582f1166ec"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-582f1166ec:9-358",
+        "sh-generalweb-582f1166ec:358-521"
+      ],
+      "tokens_hash": "39803e6dacf58419733ca153cc1c41316cd311d859d850839de9781286c9d200",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "9655f572233ce6f4",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "web-0002"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-930a3669f13d",
+      "segments": [
+        {
+          "doc_id": "web-0002",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 716,
+          "token_start": 460,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-d7da98bf1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-d7da98bf1b:460-716"
+      ],
+      "tokens_hash": "c32c44b0db682498dfd41cd92c7ae8fbee855d4f8b9dae4afa8015d3c6f9ed5e",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "d4b89b68b63219ab",
+      "context_only_tokens": 7,
+      "doc_ids": [
+        "code-0103",
+        "code-0004",
+        "code-0002",
+        "code-0003",
+        "code-0101",
+        "code-0102",
+        "code-0103"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 185,
+      "loss_density": 0.7227,
+      "loss_mask_hash": "d533c9dce713804a9c7ac0f8d069c0cce5a60c497bb03bba1dbca1ef2dba65e7",
+      "loss_policy": "all",
+      "pad_count": 64,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-932f9d29f8cd",
+      "segments": [
+        {
+          "doc_id": "code-0103",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 1156,
+          "token_start": 1019,
+          "window_start": 0
+        },
+        {
+          "doc_id": "code-0004",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-45fc328cb1",
+          "token_end": 307,
+          "token_start": 257,
+          "window_start": 137
+        },
+        {
+          "doc_id": "code-0002",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 520,
+          "token_start": 519,
+          "window_start": 187
+        },
+        {
+          "doc_id": "code-0003",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 905,
+          "token_start": 904,
+          "window_start": 188
+        },
+        {
+          "doc_id": "code-0101",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 189
+        },
+        {
+          "doc_id": "code-0102",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 414,
+          "token_start": 413,
+          "window_start": 190
+        },
+        {
+          "doc_id": "code-0103",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 763,
+          "token_start": 762,
+          "window_start": 191
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-45fc328cb1",
+        "sh-code-a513275e65",
+        "sh-code-e0ea18f98d"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-e0ea18f98d:1019-1156",
+        "sh-code-45fc328cb1:257-307",
+        "sh-code-a513275e65:519-520",
+        "sh-code-a513275e65:904-905",
+        "sh-code-e0ea18f98d:0-1",
+        "sh-code-e0ea18f98d:413-414",
+        "sh-code-e0ea18f98d:762-763"
+      ],
+      "tokens_hash": "2f4cd8a651ac11b1cbcc28f8224465a46b1cff6c6860aa7f7ad8c7dba5db45f7",
+      "utilisation": 0.75
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "bfae53c12d5af5e6",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "reason-0001"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 178,
+      "loss_density": 0.6953,
+      "loss_mask_hash": "b9adf2cb55c5ef9551aa4e9f6673d6d8092b4c020087076dcb406a992009795f",
+      "loss_policy": "response_only",
+      "pad_count": 77,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-94b14ad3e76c",
+      "segments": [
+        {
+          "doc_id": "reason-0001",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 499,
+          "token_start": 320,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:320-499"
+      ],
+      "tokens_hash": "c86adca8b7c79811074f82d3e8900525a593cb2b51e03621b9820b10968fd2eb",
+      "utilisation": 0.6992
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "c97aabca279dcee0",
+      "context_only_tokens": 222,
+      "doc_ids": [
+        "agent-0001"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 249,
+      "loss_density": 0.4863,
+      "loss_mask_hash": "05fccbd445fc54fdd217d53349ad690f4233325cce4f778213e7c992ffb7e4fa",
+      "loss_policy": "model_turns",
+      "pad_count": 41,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-951c87b3e34d",
+      "segments": [
+        {
+          "doc_id": "agent-0001",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 471,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:0-471"
+      ],
+      "tokens_hash": "ade6ad4f0ae921b0bb868113dd7ee9d1cedf9eeeba54eefcfbc28ba61cc106bd",
+      "utilisation": 0.9199
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "3a13c9c9e179f41f",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0102",
+        "web-0103"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "8d00654d85f2cac86a1dd76bba14325a8da51d3eb269e0b73af5cf8cc6942376",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-991bfd8dbb55",
+      "segments": [
+        {
+          "doc_id": "web-0102",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 587,
+          "token_start": 512,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0103",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 768,
+          "token_start": 587,
+          "window_start": 75
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-0891b7c5fa"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-0891b7c5fa:512-587",
+        "sh-generalweb-0891b7c5fa:587-768"
+      ],
+      "tokens_hash": "b9c6358c81502e7b0d0dc20822b57f812d0194e286fc55fb334e38839b1b59bc",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "9c292a70d94219c1",
+      "context_only_tokens": 232,
+      "doc_ids": [
+        "agent-0102"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 214,
+      "loss_density": 0.418,
+      "loss_mask_hash": "1aa80902449d0871030a217a6667f7516946496a9c5c3b53fb44cae4e7e9b3d1",
+      "loss_policy": "model_turns",
+      "pad_count": 66,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-99d66c22c899",
+      "segments": [
+        {
+          "doc_id": "agent-0102",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-2124a81dbc",
+          "token_end": 1543,
+          "token_start": 1097,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-2124a81dbc"
+      ],
+      "stage_hint": "anneal",
+      "token_span_ids": [
+        "sh-agentic-2124a81dbc:1097-1543"
+      ],
+      "tokens_hash": "c10e1fed10639db943895355a88fa9636e87e11e540042f33748482f21f3876d",
+      "utilisation": 0.8711
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "c3ac107be8dee0cf",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "agent-0001"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 216,
+      "loss_density": 0.4219,
+      "loss_mask_hash": "3f69a331ff28f97bd39d5a761470296a9db38af4d1b6fd81b6e246757b6b37d0",
+      "loss_policy": "model_turns",
+      "pad_count": 295,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-99fd21f74aee",
+      "segments": [
+        {
+          "doc_id": "agent-0001",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 1079,
+          "token_start": 862,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:862-1079"
+      ],
+      "tokens_hash": "65d5c36b177212c3c19566b65f65ba8a777ef24892d8159ee95bd32d14e956ba",
+      "utilisation": 0.4238
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "53e6d41e9d684c45",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0001"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 511,
+      "loss_density": 0.998,
+      "loss_mask_hash": "01f43dce07d2def6d05e638ba90d1c71e6c8fa30b33d0cd4225015084c74eb93",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-9adb3ee992e3",
+      "segments": [
+        {
+          "doc_id": "code-0001",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 513,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-code-a513275e65"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-code-a513275e65:1-513"
+      ],
+      "tokens_hash": "64e9a172e43af102774b01e329ae2921f5a12010d531cf6c9d10b723f5848848",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "9194669fc1ac2cb5",
+      "context_only_tokens": 55,
+      "doc_ids": [
+        "agent-0102"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 343,
+      "loss_density": 0.6699,
+      "loss_mask_hash": "98eec80157e4e617690ef6631bfe8b42a6faedcf85a59d139ce585e2ba2faf29",
+      "loss_policy": "model_turns",
+      "pad_count": 114,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-9cdc96448a6c",
+      "segments": [
+        {
+          "doc_id": "agent-0102",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-2124a81dbc",
+          "token_end": 1941,
+          "token_start": 1543,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-2124a81dbc"
+      ],
+      "stage_hint": "anneal",
+      "token_span_ids": [
+        "sh-agentic-2124a81dbc:1543-1941"
+      ],
+      "tokens_hash": "7682e13cfbd94f0b46a9f5098e3ab23fc102a9c1fb32ef1ab38343108dbbdaeb",
+      "utilisation": 0.7773
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "fa621ff46ee871d7",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0004"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 306,
+      "loss_density": 0.5977,
+      "loss_mask_hash": "84bbc3d5e7adb2e71c236e0ca4444f24642fb63eea42f406ee641ee23f0075c0",
+      "loss_policy": "all",
+      "pad_count": 205,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-9e4195d9c288",
+      "segments": [
+        {
+          "doc_id": "code-0004",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-45fc328cb1",
+          "token_end": 307,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-code-45fc328cb1"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-45fc328cb1:0-307"
+      ],
+      "tokens_hash": "01a51d8d21b6a63374ed9e1acf580eac03888c5efe3b4bb1d22f66aed55c4cdd",
+      "utilisation": 0.5996
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "828bee25000f7fcf",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "math-0004"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 90,
+      "loss_density": 0.3516,
+      "loss_mask_hash": "8f338cbb381498d439dcac168e44f34967295ac58413d3d2cbad2fa77febe9cd",
+      "loss_policy": "all",
+      "pad_count": 165,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-9ea2e6484f81",
+      "segments": [
+        {
+          "doc_id": "math-0004",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-6602f5780e",
+          "token_end": 348,
+          "token_start": 257,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-mathscience-6602f5780e"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-mathscience-6602f5780e:257-348"
+      ],
+      "tokens_hash": "aa53a83f741ec3e9340ddddcad1600daaf32eea340ed4a30ee19741d47dbec2e",
+      "utilisation": 0.3555
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "b1943028240c3f28",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0003"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-9ec987da7930",
+      "segments": [
+        {
+          "doc_id": "indic-0003",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1712,
+          "token_start": 1456,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:1456-1712"
+      ],
+      "tokens_hash": "b05104638a338ed09d58b1f920539d329b9a4f942078a5fe9debba7a3345fe78",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "8610b14009ca3ae1",
+      "context_only_tokens": 35,
+      "doc_ids": [
+        "reason-0002"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 0,
+      "loss_density": 0.0,
+      "loss_mask_hash": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "loss_policy": "response_only",
+      "pad_count": 221,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-9f7ba82d073c",
+      "segments": [
+        {
+          "doc_id": "reason-0002",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 534,
+          "token_start": 499,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:499-534"
+      ],
+      "tokens_hash": "86f35fc7f6e68a3677e24a742f1b0f4b5c386578a01e38327f81c841a4343cc4",
+      "utilisation": 0.1367
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "4ff0f341d5dc50e2",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0103"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 511,
+      "loss_density": 0.998,
+      "loss_mask_hash": "01f43dce07d2def6d05e638ba90d1c71e6c8fa30b33d0cd4225015084c74eb93",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-a2a3e75cba6b",
+      "segments": [
+        {
+          "doc_id": "indic-0103",
+          "lane": "indic",
+          "lang": "te",
+          "script": "Telu",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1684,
+          "token_start": 1172,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:1172-1684"
+      ],
+      "tokens_hash": "9ed23c6db13b10df138597a8157c00575a93f90a8e0cd117fffea4e3e4b52cac",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "711d94df3995d856",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0001"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-a2ab49c8cd4a",
+      "segments": [
+        {
+          "doc_id": "indic-0001",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 513,
+          "token_start": 257,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:257-513"
+      ],
+      "tokens_hash": "3b39b38bd58f9bea02acd16c31158c1ee5fdbc6063fa5f270b29f81e3c33057c",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6fbefa97150d2f00",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0002"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-a49fe609dd4a",
+      "segments": [
+        {
+          "doc_id": "indic-0002",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 902,
+          "token_start": 646,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:646-902"
+      ],
+      "tokens_hash": "a55e229eb6388c68cf04930bc04d4bf971e6c02c44a247a370541b2ae2e2fc21",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "8d3433039f79d088",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "web-0204"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-a4f66445817c",
+      "segments": [
+        {
+          "doc_id": "web-0204",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-8592ef7b58",
+          "token_end": 302,
+          "token_start": 46,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-8592ef7b58"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-8592ef7b58:46-302"
+      ],
+      "tokens_hash": "e28e36836707c30bca469b6038c1c7fbd22fc3d0e79cc827fe719643737eb36c",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6ead5ca732c962eb",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "web-0003"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 136,
+      "loss_density": 0.5312,
+      "loss_mask_hash": "19bd2ec17e74f38c91a8c65ca2337e1a991aad79151004eb8478b100fd7b8bf4",
+      "loss_policy": "all",
+      "pad_count": 119,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-a56a2c9a3c74",
+      "segments": [
+        {
+          "doc_id": "web-0003",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 1109,
+          "token_start": 972,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-d7da98bf1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-d7da98bf1b:972-1109"
+      ],
+      "tokens_hash": "c94d308d6e18d9c88d455da56918e227f9c345ca105aaaf965fc01bde7798312",
+      "utilisation": 0.5352
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "7552f219aa129c71",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "agent-0102"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 320,
+      "loss_density": 0.625,
+      "loss_mask_hash": "592baf8189aa5e26f977c7aebc80034cb3d336e18a9def865b23910da1f04e23",
+      "loss_policy": "model_turns",
+      "pad_count": 191,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-a5e5bff92955",
+      "segments": [
+        {
+          "doc_id": "agent-0102",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-2124a81dbc",
+          "token_end": 2262,
+          "token_start": 1941,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-2124a81dbc"
+      ],
+      "stage_hint": "anneal",
+      "token_span_ids": [
+        "sh-agentic-2124a81dbc:1941-2262"
+      ],
+      "tokens_hash": "6c84b5ef0dfee2799ead4668c32bc77f76711a2ef343f1a7fada6cf540a34504",
+      "utilisation": 0.627
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "75e7a47eac95d2e0",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "reason-0003"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 291,
+      "loss_density": 0.5684,
+      "loss_mask_hash": "e7b9736ed529186ccc8bc5497ac8054fee4100a3e2fe0b5c459b64b0285ee10f",
+      "loss_policy": "response_only",
+      "pad_count": 220,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-a698bef9b981",
+      "segments": [
+        {
+          "doc_id": "reason-0003",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 1719,
+          "token_start": 1427,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:1427-1719"
+      ],
+      "tokens_hash": "f65942460a8bf04154d89652fa92efbf561c00c1c88528b75788f6625838ecb6",
+      "utilisation": 0.5703
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6665f9e7d0934ba2",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0103"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-a734f6ebdbb7",
+      "segments": [
+        {
+          "doc_id": "indic-0103",
+          "lane": "indic",
+          "lang": "te",
+          "script": "Telu",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1684,
+          "token_start": 1428,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:1428-1684"
+      ],
+      "tokens_hash": "6e2cf4e84f91b77c6f82d865427cdfe2d2bccff856bb67bda598bdcd5cd3fb93",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "3f23f683a1e05a9d",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "agent-0101"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.4961,
+      "loss_mask_hash": "6f84bf8690fa03e8db22a9d9c02e9235a2bc79de002b45c2db28c8845658c7c6",
+      "loss_policy": "model_turns",
+      "pad_count": 257,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-a878cf89ee84",
+      "segments": [
+        {
+          "doc_id": "agent-0101",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-2124a81dbc",
+          "token_end": 1097,
+          "token_start": 842,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-2124a81dbc"
+      ],
+      "stage_hint": "anneal",
+      "token_span_ids": [
+        "sh-agentic-2124a81dbc:842-1097"
+      ],
+      "tokens_hash": "8d11bc5f3f1c48a3fd44c593eee39c811f08af722f963600dec31cfc91e45627",
+      "utilisation": 0.498
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "af33cb400da9caa5",
+      "context_only_tokens": 3,
+      "doc_ids": [
+        "code-0101",
+        "code-0001",
+        "code-0001"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 417,
+      "loss_density": 0.8145,
+      "loss_mask_hash": "3217a0d3c6117b97e654025e33c2727919c25e13edc068553ea8407889925374",
+      "loss_policy": "all",
+      "pad_count": 92,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-aaadf7c8914d",
+      "segments": [
+        {
+          "doc_id": "code-0101",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 413,
+          "token_start": 0,
+          "window_start": 0
+        },
+        {
+          "doc_id": "code-0001",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 519,
+          "token_start": 513,
+          "window_start": 413
+        },
+        {
+          "doc_id": "code-0001",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 419
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-code-a513275e65",
+        "sh-code-e0ea18f98d"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-e0ea18f98d:0-413",
+        "sh-code-a513275e65:513-519",
+        "sh-code-a513275e65:0-1"
+      ],
+      "tokens_hash": "d42ee0488c4bd2052d6b24d63ede4537a7b5b8ae6ee6e1807095beec143ebba3",
+      "utilisation": 0.8203
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "551d41591588cc6f",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0104"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 511,
+      "loss_density": 0.998,
+      "loss_mask_hash": "01f43dce07d2def6d05e638ba90d1c71e6c8fa30b33d0cd4225015084c74eb93",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-ac1d4638f6a5",
+      "segments": [
+        {
+          "doc_id": "indic-0104",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-2222a85dee",
+          "token_end": 513,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-2222a85dee"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-2222a85dee:1-513"
+      ],
+      "tokens_hash": "ee0ac5e19d1cffe2b0c21f507ae557c926190de84b04ca7d8b12919a7353e0ec",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "fc9658af48e9648e",
+      "context_only_tokens": 99,
+      "doc_ids": [
+        "agent-0002"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 87,
+      "loss_density": 0.3398,
+      "loss_mask_hash": "0709fba150ef471a18e1a0756910b46882a1adfd250510f4c6ac0232671d5106",
+      "loss_policy": "model_turns",
+      "pad_count": 70,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-ac277563ace3",
+      "segments": [
+        {
+          "doc_id": "agent-0002",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 1265,
+          "token_start": 1079,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:1079-1265"
+      ],
+      "tokens_hash": "d7cf02ab58620bc7b1545d7c76817f2bbeda81f1792fe331c4a0a1e2adbc4d68",
+      "utilisation": 0.7266
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "b6794c20c5196029",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0004"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-adda4e8f635a",
+      "segments": [
+        {
+          "doc_id": "code-0004",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-45fc328cb1",
+          "token_end": 257,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-45fc328cb1"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-45fc328cb1:1-257"
+      ],
+      "tokens_hash": "ecfbdc7be53143e883fe6eff4e3d927c55ed19fa83758615a5bf61aa1360d461",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "8cc177cb35f16ab1",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0001",
+        "web-0002"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 510,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "161d5cfaa856b8951f3c684d25af8f336825a7ee07edeb1354e2e36323276c25",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-b0ad31d5d1d7",
+      "segments": [
+        {
+          "doc_id": "web-0001",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 405,
+          "token_start": 204,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0002",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 716,
+          "token_start": 405,
+          "window_start": 201
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-generalweb-d7da98bf1b"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-d7da98bf1b:204-405",
+        "sh-generalweb-d7da98bf1b:405-716"
+      ],
+      "tokens_hash": "9fc835791bad024fdbf37648f307c458ad24607eb9e07d58749cfdc8861a314c",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "17b60147c568d257",
+      "context_only_tokens": 7,
+      "doc_ids": [
+        "math-0001",
+        "math-0001",
+        "math-0002",
+        "math-0002",
+        "math-0003",
+        "math-0003",
+        "math-0004"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 222,
+      "loss_density": 0.8672,
+      "loss_mask_hash": "613e410143514bf6bd74a467d593cdec7724e0b9bda090c64f1baadb5a959787",
+      "loss_policy": "all",
+      "pad_count": 27,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-b6fb15eabb4d",
+      "segments": [
+        {
+          "doc_id": "math-0001",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 0
+        },
+        {
+          "doc_id": "math-0001",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 344,
+          "token_start": 257,
+          "window_start": 1
+        },
+        {
+          "doc_id": "math-0002",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 345,
+          "token_start": 344,
+          "window_start": 88
+        },
+        {
+          "doc_id": "math-0002",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 653,
+          "token_start": 601,
+          "window_start": 89
+        },
+        {
+          "doc_id": "math-0003",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 654,
+          "token_start": 653,
+          "window_start": 141
+        },
+        {
+          "doc_id": "math-0003",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 996,
+          "token_start": 910,
+          "window_start": 142
+        },
+        {
+          "doc_id": "math-0004",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-6602f5780e",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 228
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-mathscience-1889d2c0cc",
+        "sh-mathscience-6602f5780e"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-mathscience-1889d2c0cc:0-1",
+        "sh-mathscience-1889d2c0cc:257-344",
+        "sh-mathscience-1889d2c0cc:344-345",
+        "sh-mathscience-1889d2c0cc:601-653",
+        "sh-mathscience-1889d2c0cc:653-654",
+        "sh-mathscience-1889d2c0cc:910-996",
+        "sh-mathscience-6602f5780e:0-1"
+      ],
+      "tokens_hash": "790698fa3307a2bef05daa77415e8b8504b7f69a6b62d259a6f17101a868f9c2",
+      "utilisation": 0.8945
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "5a36159db3d5d6dd",
+      "context_only_tokens": 83,
+      "doc_ids": [
+        "agent-0001"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 118,
+      "loss_density": 0.4609,
+      "loss_mask_hash": "63bbc0435f584ecf9d09b4360ab65d68c56cfee9a4b97f2f1f10892b945b3e25",
+      "loss_policy": "model_turns",
+      "pad_count": 55,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-bfca01925505",
+      "segments": [
+        {
+          "doc_id": "agent-0001",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 762,
+          "token_start": 561,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:561-762"
+      ],
+      "tokens_hash": "b95f10dceee585795cc8bcc2e44b96cd113bf80e737bc1757289b96e83e3c127",
+      "utilisation": 0.7852
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "19a8ea7bdf95d409",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "reason-0001"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "response_only",
+      "pad_count": 0,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-c245e7308abb",
+      "segments": [
+        {
+          "doc_id": "reason-0001",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 320,
+          "token_start": 64,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:64-320"
+      ],
+      "tokens_hash": "c7ddc1fbc07d80a5b3f26ea3e066f73690d4c53255eef8d58649fd9810e6b312",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "20a5e73b91ae1942",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "reason-0002"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 221,
+      "loss_density": 0.8633,
+      "loss_mask_hash": "f583acd6c86848b3eed3b568e53a7c99eb3531788ffe291b7f4cca87f7fcf960",
+      "loss_policy": "response_only",
+      "pad_count": 34,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-c36a0289da58",
+      "segments": [
+        {
+          "doc_id": "reason-0002",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 1012,
+          "token_start": 790,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:790-1012"
+      ],
+      "tokens_hash": "f5592d06152898fdc7280b639f3b2141f5ce09a1ebb396aa4409761ec4832fdd",
+      "utilisation": 0.8672
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6ee48ae549fbdf34",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0101"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 511,
+      "loss_density": 0.998,
+      "loss_mask_hash": "01f43dce07d2def6d05e638ba90d1c71e6c8fa30b33d0cd4225015084c74eb93",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-c6fbdd806aee",
+      "segments": [
+        {
+          "doc_id": "indic-0101",
+          "lane": "indic",
+          "lang": "bn",
+          "script": "Beng",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 513,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:1-513"
+      ],
+      "tokens_hash": "9fce60361d1920271ff5c9d3dd69859acddac5c97b0d6b8e02fd2858528c6a65",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "bd14c8bbb8f1144f",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0003"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 511,
+      "loss_density": 0.998,
+      "loss_mask_hash": "01f43dce07d2def6d05e638ba90d1c71e6c8fa30b33d0cd4225015084c74eb93",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-ca55a668faa8",
+      "segments": [
+        {
+          "doc_id": "indic-0003",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1712,
+          "token_start": 1200,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-cde2b9fc1b:1200-1712"
+      ],
+      "tokens_hash": "ee0bc83a17ce91bbc225d605f8b68b90c85edd66e4cee3d7a9ea5e8298334ffe",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "df8de45d2962d5e2",
+      "context_only_tokens": 173,
+      "doc_ids": [
+        "agent-0002"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 330,
+      "loss_density": 0.6445,
+      "loss_mask_hash": "ab241d496dde8ab38f9ed30f26f33be1aa14781473d02de4323413c0763811c1",
+      "loss_policy": "model_turns",
+      "pad_count": 9,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-cb8d1470cd5c",
+      "segments": [
+        {
+          "doc_id": "agent-0002",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 1582,
+          "token_start": 1079,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:1079-1582"
+      ],
+      "tokens_hash": "2922fc66f7907f40b6ade2ccd66ec60a81885dc5a21e9161782ea09017907ced",
+      "utilisation": 0.9824
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "ed98bdaeea6f03dc",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "math-0002"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-cc3d38001044",
+      "segments": [
+        {
+          "doc_id": "math-0002",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 601,
+          "token_start": 345,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-mathscience-1889d2c0cc"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-mathscience-1889d2c0cc:345-601"
+      ],
+      "tokens_hash": "8a0bb64a5353102edf6eed3c7a24f3f69aa62223eada7b54e647fad0affb3e54",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "a7a2c9092564a544",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0204",
+        "web-0104"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 510,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "a0ddffdf1d554761d95d5575f2acfbf3fcfd909f7e8b8c5e8f44519828f1f1ca",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-ce88522fb3d0",
+      "segments": [
+        {
+          "doc_id": "web-0204",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-8592ef7b58",
+          "token_end": 312,
+          "token_start": 46,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0104",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "token_end": 246,
+          "token_start": 0,
+          "window_start": 266
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-generalweb-8592ef7b58",
+        "sh-generalweb-cbd3f64ece"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-8592ef7b58:46-312",
+        "sh-generalweb-cbd3f64ece:0-246"
+      ],
+      "tokens_hash": "e6c97d6cf1942bfcc1476599d973f39f3ddfdc00757e8cca0fa348b40cfa4ec2",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "b39f3e4a055b39f0",
+      "context_only_tokens": 39,
+      "doc_ids": [
+        "reason-0003"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 376,
+      "loss_density": 0.7344,
+      "loss_mask_hash": "c3b8a18886535413d3c6710abcbda2f8535470d9b05e9d33aff44ed51ff9a33d",
+      "loss_policy": "response_only",
+      "pad_count": 97,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-cf4dd6efe2d0",
+      "segments": [
+        {
+          "doc_id": "reason-0003",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-74d077c73c",
+          "token_end": 1427,
+          "token_start": 1012,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-reasoning-74d077c73c:1012-1427"
+      ],
+      "tokens_hash": "1ff43b5967e014949e39456d567ae0e1e221913dbf3a7cd7c356c8eb4e645b6b",
+      "utilisation": 0.8105
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "c191dfe56581a569",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "agent-0002"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 252,
+      "loss_density": 0.4922,
+      "loss_mask_hash": "10df524e3675d7eda2cac2e1f053603fbbf21ace0b9a2e4775fdcfe52691e12a",
+      "loss_policy": "model_turns",
+      "pad_count": 259,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-d04df58c5581",
+      "segments": [
+        {
+          "doc_id": "agent-0002",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 2123,
+          "token_start": 1870,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:1870-2123"
+      ],
+      "tokens_hash": "f44b08b51fec2d6cfe25d12acec57bb3ebfe626a93108aa4bef715a470e5c2af",
+      "utilisation": 0.4941
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6a49756af7e8c6a9",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "val-0002",
+        "val-0003"
+      ],
+      "lane": "validation",
+      "loss_bearing_tokens": 183,
+      "loss_density": 0.7148,
+      "loss_mask_hash": "7c555a223ab42d348a8f3b8fa5f791f9a3acb9ef306e502f6aa055589093f78b",
+      "loss_policy": "all",
+      "pad_count": 71,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-d0d99b846f63",
+      "segments": [
+        {
+          "doc_id": "val-0002",
+          "lane": "validation",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-validation-9d927d0047",
+          "token_end": 513,
+          "token_start": 450,
+          "window_start": 0
+        },
+        {
+          "doc_id": "val-0003",
+          "lane": "validation",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-validation-9d927d0047",
+          "token_end": 635,
+          "token_start": 513,
+          "window_start": 63
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-validation-9d927d0047"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-validation-9d927d0047:450-513",
+        "sh-validation-9d927d0047:513-635"
+      ],
+      "tokens_hash": "bcb45ecee95a59bb5366bfe39ca3f625372d40ceeb1dee0e53925d5cab7a3c0d",
+      "utilisation": 0.7227
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "c8931fcf470ba970",
+      "context_only_tokens": 3,
+      "doc_ids": [
+        "web-0004",
+        "web-0005",
+        "web-0201"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 509,
+      "loss_density": 0.9941,
+      "loss_mask_hash": "de2c20ed6839f73f61765ee233b35221761cb187ccb42f07c6ce04b1b4b71b4c",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-dbb615d6e7bb",
+      "segments": [
+        {
+          "doc_id": "web-0004",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-507734bdcc",
+          "token_end": 357,
+          "token_start": 154,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0005",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-507734bdcc",
+          "token_end": 657,
+          "token_start": 357,
+          "window_start": 203
+        },
+        {
+          "doc_id": "web-0201",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 9,
+          "token_start": 0,
+          "window_start": 503
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-generalweb-507734bdcc",
+        "sh-generalweb-582f1166ec"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-507734bdcc:154-357",
+        "sh-generalweb-507734bdcc:357-657",
+        "sh-generalweb-582f1166ec:0-9"
+      ],
+      "tokens_hash": "f0050a7633ed548b5c6615fe13d1fb6787b89e0015c29f9e659cf0b37cf41076",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "9e90b3df2e499b05",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0101",
+        "web-0102"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "912ff0b86919ba68265b946d4c222b7e616fd61699f37d647378649d40f26174",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-dcb28d5d0c85",
+      "segments": [
+        {
+          "doc_id": "web-0101",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 318,
+          "token_start": 256,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0102",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 512,
+          "token_start": 318,
+          "window_start": 62
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-0891b7c5fa"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-0891b7c5fa:256-318",
+        "sh-generalweb-0891b7c5fa:318-512"
+      ],
+      "tokens_hash": "2578fe517846b7f7faa79eb853ed0f5876bbad1990e1ebb4441339d8ed7c11be",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "3b9be7a5abdf9f72",
+      "context_only_tokens": 168,
+      "doc_ids": [
+        "agent-0101"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 184,
+      "loss_density": 0.3594,
+      "loss_mask_hash": "f2d13b9679d590dad862b833e6dc9b38bde4ecd1c1decae5243639b92ee816b5",
+      "loss_policy": "model_turns",
+      "pad_count": 160,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-dd1b1aff5f45",
+      "segments": [
+        {
+          "doc_id": "agent-0101",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-2124a81dbc",
+          "token_end": 842,
+          "token_start": 490,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-2124a81dbc"
+      ],
+      "stage_hint": "anneal",
+      "token_span_ids": [
+        "sh-agentic-2124a81dbc:490-842"
+      ],
+      "tokens_hash": "86fed89b8b1160f3751f6367aa75cb7c0a45c15cb104daecb551bfc6640022c1",
+      "utilisation": 0.6875
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "8d0e081a242e210d",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0002"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 384,
+      "loss_density": 0.75,
+      "loss_mask_hash": "6d07a1ff462cf5980a53441a4b2afe5de4cd6ef0dfd6cc409efef011a48e18b7",
+      "loss_policy": "all",
+      "pad_count": 127,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-deb91810ab7c",
+      "segments": [
+        {
+          "doc_id": "code-0002",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 904,
+          "token_start": 519,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-code-a513275e65"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-a513275e65:519-904"
+      ],
+      "tokens_hash": "74833735547fa3af6617d733faf99bffdb6a701a1b9e8b9afb10757e1a3b4fb2",
+      "utilisation": 0.752
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6647dff9e2880e32",
+      "context_only_tokens": 204,
+      "doc_ids": [
+        "agent-0101"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 286,
+      "loss_density": 0.5586,
+      "loss_mask_hash": "efc0f3ab69391d6d125928556a918ec9bc67f3054c13c1849311f88f6fd6abe0",
+      "loss_policy": "model_turns",
+      "pad_count": 22,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-df737f87d7c3",
+      "segments": [
+        {
+          "doc_id": "agent-0101",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-2124a81dbc",
+          "token_end": 490,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-2124a81dbc"
+      ],
+      "stage_hint": "anneal",
+      "token_span_ids": [
+        "sh-agentic-2124a81dbc:0-490"
+      ],
+      "tokens_hash": "78adc4ca76223af3994285d2771eb2760de2259872a18057156ea819fe179c6d",
+      "utilisation": 0.957
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "b3dd8a1c3c2aa739",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0001"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-dfc87060cd1c",
+      "segments": [
+        {
+          "doc_id": "code-0001",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-a513275e65",
+          "token_end": 257,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-a513275e65"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-code-a513275e65:1-257"
+      ],
+      "tokens_hash": "1f4e0c020c8c5a2050094c40addf94388f281d5a77df78765dd28ae3e3e23244",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "1b1df72b344afdd2",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "web-0201"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-e0eca11a6d30",
+      "segments": [
+        {
+          "doc_id": "web-0201",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-582f1166ec",
+          "token_end": 265,
+          "token_start": 9,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-582f1166ec"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-generalweb-582f1166ec:9-265"
+      ],
+      "tokens_hash": "8eea33efbd71780cbf8c5fccd554e18d0b9fa0174fa437ac6cfcb2ff7d3b654d",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "bb40aa70b2496276",
+      "context_only_tokens": 3,
+      "doc_ids": [
+        "indic-0103",
+        "indic-0003",
+        "indic-0104"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 301,
+      "loss_density": 0.5879,
+      "loss_mask_hash": "b1ad9c25383c9d9be31c1b3e1c8f16d849c03c961370a6ab6463ca16708e69e0",
+      "loss_policy": "all",
+      "pad_count": 208,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-e442ebcd4bd4",
+      "segments": [
+        {
+          "doc_id": "indic-0103",
+          "lane": "indic",
+          "lang": "te",
+          "script": "Telu",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1790,
+          "token_start": 1684,
+          "window_start": 0
+        },
+        {
+          "doc_id": "indic-0003",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1815,
+          "token_start": 1712,
+          "window_start": 106
+        },
+        {
+          "doc_id": "indic-0104",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-2222a85dee",
+          "token_end": 608,
+          "token_start": 513,
+          "window_start": 209
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-2222a85dee",
+        "sh-indic-5bbc73dbfa",
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:1684-1790",
+        "sh-indic-cde2b9fc1b:1712-1815",
+        "sh-indic-2222a85dee:513-608"
+      ],
+      "tokens_hash": "74ac179003d81dc4d31be3007d9cb914df18e82fe1283d7da183125c3eb6cee7",
+      "utilisation": 0.5938
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "136516f09b3c09ff",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0103",
+        "web-0004"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "6947f1fa7aee75eb63a225e75d38c5119cbfe77cf2ec117c83484181a765d097",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-e5047669d7c8",
+      "segments": [
+        {
+          "doc_id": "web-0103",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 870,
+          "token_start": 768,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0004",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-507734bdcc",
+          "token_end": 154,
+          "token_start": 0,
+          "window_start": 102
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-0891b7c5fa",
+        "sh-generalweb-507734bdcc"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-0891b7c5fa:768-870",
+        "sh-generalweb-507734bdcc:0-154"
+      ],
+      "tokens_hash": "2b570a739d8ffe9353fd151ea71e45ab252793cd4d2f2512499df9692a8b8a38",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6821e51639fd2ea2",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "agent-0002"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 252,
+      "loss_density": 0.9844,
+      "loss_mask_hash": "c0054072db868073fa10aa976e4fb274adf2c956840a23a2c73f1a634391733a",
+      "loss_policy": "model_turns",
+      "pad_count": 3,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-e5a825bb8b79",
+      "segments": [
+        {
+          "doc_id": "agent-0002",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 2123,
+          "token_start": 1870,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:1870-2123"
+      ],
+      "tokens_hash": "5439dd475ab7530db429c25cd5ae6de3f45ccf1f1f20ac775825c3f2605e3464",
+      "utilisation": 0.9883
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "b3b52693dc4c574d",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "math-0001"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-e87c7a74a054",
+      "segments": [
+        {
+          "doc_id": "math-0001",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 257,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-mathscience-1889d2c0cc"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-mathscience-1889d2c0cc:1-257"
+      ],
+      "tokens_hash": "90f5eeda7d985f1ff027290f0e897533685bfe1c9d57666a646072216271e73d",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "6082b3511b3d16d5",
+      "context_only_tokens": 42,
+      "doc_ids": [
+        "reason-0004"
+      ],
+      "lane": "reasoning",
+      "loss_bearing_tokens": 418,
+      "loss_density": 0.8164,
+      "loss_mask_hash": "eb17b5f2d15d86a1faede98d333aa5f73afbf308dc0e4878970e8245415800a2",
+      "loss_policy": "response_only",
+      "pad_count": 52,
+      "policy": "long_context",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-e9974ba6db3d",
+      "segments": [
+        {
+          "doc_id": "reason-0004",
+          "lane": "reasoning",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-reasoning-8e3e81c92a",
+          "token_end": 460,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-reasoning-8e3e81c92a"
+      ],
+      "stage_hint": "anneal",
+      "token_span_ids": [
+        "sh-reasoning-8e3e81c92a:0-460"
+      ],
+      "tokens_hash": "65daf7906b852fb9f42970e02ee65a903113bed9c5882e8cd5ba4e120819333f",
+      "utilisation": 0.8984
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "e424d2c6cfeebba8",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0105",
+        "web-0001"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "29274615c8f2079e1f219e81afbbabd0e543bd1869c2d6a03e151f0e2d8a6197",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-e9f1495c2703",
+      "segments": [
+        {
+          "doc_id": "web-0105",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "token_end": 554,
+          "token_start": 502,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0001",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "token_end": 204,
+          "token_start": 0,
+          "window_start": 52
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-cbd3f64ece",
+        "sh-generalweb-d7da98bf1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-cbd3f64ece:502-554",
+        "sh-generalweb-d7da98bf1b:0-204"
+      ],
+      "tokens_hash": "70748ac0a44269f85e5c20925be1d8d2b581fc1559f934a480098229794b6c13",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "343468f44777cba4",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "math-0004"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-eb58ddba0bdc",
+      "segments": [
+        {
+          "doc_id": "math-0004",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-6602f5780e",
+          "token_end": 257,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-mathscience-6602f5780e"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-mathscience-6602f5780e:1-257"
+      ],
+      "tokens_hash": "fd82141bc895635facf424f88d84a4976497120ab9d07563acfe9c910df3d35d",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "b389ce6342571022",
+      "context_only_tokens": 77,
+      "doc_ids": [
+        "agent-0002"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 211,
+      "loss_density": 0.4121,
+      "loss_mask_hash": "6b1edef12b510efcfb444113b52178c1757f5a8553e494c9c2e579df3d48871d",
+      "loss_policy": "model_turns",
+      "pad_count": 224,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-ec822a135e16",
+      "segments": [
+        {
+          "doc_id": "agent-0002",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 1870,
+          "token_start": 1582,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:1582-1870"
+      ],
+      "tokens_hash": "4c934719ad5b92c8beec8743c86210616feb0d319982accba29d82469689ec45",
+      "utilisation": 0.5625
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "108abb6325a9c7ad",
+      "context_only_tokens": 13,
+      "doc_ids": [
+        "indic-0004",
+        "indic-0001",
+        "indic-0102",
+        "indic-0002",
+        "indic-0101",
+        "indic-0104",
+        "indic-0101",
+        "indic-0102",
+        "indic-0103",
+        "indic-0004",
+        "indic-0001",
+        "indic-0002",
+        "indic-0003"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 498,
+      "loss_density": 0.9727,
+      "loss_mask_hash": "cb53ee968cef00f3f41a16e11320579ce2551bbb9898dea750fd1eb5b4b949a7",
+      "loss_policy": "all",
+      "pad_count": 1,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": true,
+      "sample_id": "smp-eccd52866ffe",
+      "segments": [
+        {
+          "doc_id": "indic-0004",
+          "lane": "indic",
+          "lang": "mr",
+          "script": "Deva",
+          "shard_id": "sh-indic-65d3c8b055",
+          "token_end": 698,
+          "token_start": 513,
+          "window_start": 0
+        },
+        {
+          "doc_id": "indic-0001",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 645,
+          "token_start": 513,
+          "window_start": 185
+        },
+        {
+          "doc_id": "indic-0102",
+          "lane": "indic",
+          "lang": "ta",
+          "script": "Taml",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1171,
+          "token_start": 1042,
+          "window_start": 317
+        },
+        {
+          "doc_id": "indic-0002",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1199,
+          "token_start": 1158,
+          "window_start": 446
+        },
+        {
+          "doc_id": "indic-0101",
+          "lane": "indic",
+          "lang": "bn",
+          "script": "Beng",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 529,
+          "token_start": 513,
+          "window_start": 487
+        },
+        {
+          "doc_id": "indic-0104",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-2222a85dee",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 503
+        },
+        {
+          "doc_id": "indic-0101",
+          "lane": "indic",
+          "lang": "bn",
+          "script": "Beng",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 504
+        },
+        {
+          "doc_id": "indic-0102",
+          "lane": "indic",
+          "lang": "ta",
+          "script": "Taml",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 530,
+          "token_start": 529,
+          "window_start": 505
+        },
+        {
+          "doc_id": "indic-0103",
+          "lane": "indic",
+          "lang": "te",
+          "script": "Telu",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 1172,
+          "token_start": 1171,
+          "window_start": 506
+        },
+        {
+          "doc_id": "indic-0004",
+          "lane": "indic",
+          "lang": "mr",
+          "script": "Deva",
+          "shard_id": "sh-indic-65d3c8b055",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 507
+        },
+        {
+          "doc_id": "indic-0001",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1,
+          "token_start": 0,
+          "window_start": 508
+        },
+        {
+          "doc_id": "indic-0002",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 646,
+          "token_start": 645,
+          "window_start": 509
+        },
+        {
+          "doc_id": "indic-0003",
+          "lane": "indic",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "token_end": 1200,
+          "token_start": 1199,
+          "window_start": 510
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-indic-2222a85dee",
+        "sh-indic-5bbc73dbfa",
+        "sh-indic-65d3c8b055",
+        "sh-indic-cde2b9fc1b"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-indic-65d3c8b055:513-698",
+        "sh-indic-cde2b9fc1b:513-645",
+        "sh-indic-5bbc73dbfa:1042-1171",
+        "sh-indic-cde2b9fc1b:1158-1199",
+        "sh-indic-5bbc73dbfa:513-529",
+        "sh-indic-2222a85dee:0-1",
+        "sh-indic-5bbc73dbfa:0-1",
+        "sh-indic-5bbc73dbfa:529-530",
+        "sh-indic-5bbc73dbfa:1171-1172",
+        "sh-indic-65d3c8b055:0-1",
+        "sh-indic-cde2b9fc1b:0-1",
+        "sh-indic-cde2b9fc1b:645-646",
+        "sh-indic-cde2b9fc1b:1199-1200"
+      ],
+      "tokens_hash": "872bbc9bba7816dd2b09faa9f2b2821acf533cdf7436511066506ae88a009eb6",
+      "utilisation": 0.998
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "0cd6b62fe581cc6c",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0204",
+        "web-0104"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 254,
+      "loss_density": 0.9922,
+      "loss_mask_hash": "8d9a084e3cf1194d516784440dbdd11504b50886e3c623ddb3b0e25d4f274df4",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-ed0bbb95d9be",
+      "segments": [
+        {
+          "doc_id": "web-0204",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-8592ef7b58",
+          "token_end": 312,
+          "token_start": 302,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0104",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "token_end": 246,
+          "token_start": 0,
+          "window_start": 10
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-generalweb-8592ef7b58",
+        "sh-generalweb-cbd3f64ece"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-8592ef7b58:302-312",
+        "sh-generalweb-cbd3f64ece:0-246"
+      ],
+      "tokens_hash": "c856900d86bd7aa22bc3c28f5db1975c5616dafe1477ce5ca07dd852426dbf82",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "49ee4ac0d2021bb6",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "math-0001"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 343,
+      "loss_density": 0.6699,
+      "loss_mask_hash": "dd64273a762ce340a8d25e4a46ffd4b0b4f3553257931699f169d0a2e11f53b1",
+      "loss_policy": "all",
+      "pad_count": 168,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-f37377ec9bc9",
+      "segments": [
+        {
+          "doc_id": "math-0001",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 344,
+          "token_start": 0,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-mathscience-1889d2c0cc"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-mathscience-1889d2c0cc:0-344"
+      ],
+      "tokens_hash": "c945ee869603bf0229e3a9be46bcfbaf66a782785e9f47266cb467117fa1a3c6",
+      "utilisation": 0.6719
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "c7eb4ffb09ae94e9",
+      "context_only_tokens": 37,
+      "doc_ids": [
+        "agent-0002"
+      ],
+      "lane": "agentic",
+      "loss_bearing_tokens": 109,
+      "loss_density": 0.4258,
+      "loss_mask_hash": "d52e5d8c1d6a4f9baaf5c5278e1373fbbb8c1837b5bed9f14c71905d941a6f94",
+      "loss_policy": "model_turns",
+      "pad_count": 110,
+      "policy": "structure_preserving",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-f5add82ac701",
+      "segments": [
+        {
+          "doc_id": "agent-0002",
+          "lane": "agentic",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "token_end": 1870,
+          "token_start": 1724,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-agentic-15e9e87bcd:1724-1870"
+      ],
+      "tokens_hash": "7ce34fb6b95eda29038fe3afe3fdc4db5fd7224db2b06efd7b32e949a60e9338",
+      "utilisation": 0.5703
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "5f32c215727f9fda",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "code-0101"
+      ],
+      "lane": "code",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-f6373f1dadcc",
+      "segments": [
+        {
+          "doc_id": "code-0101",
+          "lane": "code",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-code-e0ea18f98d",
+          "token_end": 257,
+          "token_start": 1,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-code-e0ea18f98d"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-code-e0ea18f98d:1-257"
+      ],
+      "tokens_hash": "59f556456d4f4fd5138b1a8ff2a50d5eec3cc1407831e3214e43fb03c0c59c91",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "4bd1b5600d721a2e",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "val-0002"
+      ],
+      "lane": "validation",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-fbb481d8e932",
+      "segments": [
+        {
+          "doc_id": "val-0002",
+          "lane": "validation",
+          "lang": "hi",
+          "script": "Deva",
+          "shard_id": "sh-validation-9d927d0047",
+          "token_end": 450,
+          "token_start": 194,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-validation-9d927d0047"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-validation-9d927d0047:194-450"
+      ],
+      "tokens_hash": "2902530c4bfe4cdc912ba8ad0345e881ac34aad91bd39f149f1992664d578513",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "bc679b5f48ec7281",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "indic-0101"
+      ],
+      "lane": "indic",
+      "loss_bearing_tokens": 255,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "11e11f545637b979ed825443697e64758774e724b9938e9436124252c9de37c3",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "best_fit",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-fcf1b3ebbfd5",
+      "segments": [
+        {
+          "doc_id": "indic-0101",
+          "lane": "indic",
+          "lang": "bn",
+          "script": "Beng",
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "token_end": 513,
+          "token_start": 257,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 256,
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa"
+      ],
+      "stage_hint": "early",
+      "token_span_ids": [
+        "sh-indic-5bbc73dbfa:257-513"
+      ],
+      "tokens_hash": "ffdc07a1796034ae76692e3313620104440a0f1f8b65461d6b07ccb46ffeb8cb",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "0e8c68a1c44cded2",
+      "context_only_tokens": 2,
+      "doc_ids": [
+        "web-0101",
+        "web-0102"
+      ],
+      "lane": "general_web",
+      "loss_bearing_tokens": 510,
+      "loss_density": 0.9961,
+      "loss_mask_hash": "2dc727c58e84a53db8b84bbd5a9c24c14f829b3ef17ab69fe78ba75b67538871",
+      "loss_policy": "all",
+      "pad_count": 0,
+      "policy": "concat_chop",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-fda7622a835d",
+      "segments": [
+        {
+          "doc_id": "web-0101",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 318,
+          "token_start": 0,
+          "window_start": 0
+        },
+        {
+          "doc_id": "web-0102",
+          "lane": "general_web",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "token_end": 512,
+          "token_start": 318,
+          "window_start": 318
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-generalweb-0891b7c5fa"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-generalweb-0891b7c5fa:0-318",
+        "sh-generalweb-0891b7c5fa:318-512"
+      ],
+      "tokens_hash": "e720f61f9ba89073785a413bc35390a075fd69c36cdc8ada1d594da401c3d93c",
+      "utilisation": 1.0
+    },
+    {
+      "attention_policy": "causal_block_diagonal_per_segment",
+      "content_hash": "d7fb1af00d439fb7",
+      "context_only_tokens": 1,
+      "doc_ids": [
+        "math-0002"
+      ],
+      "lane": "math_science",
+      "loss_bearing_tokens": 308,
+      "loss_density": 0.6016,
+      "loss_mask_hash": "15e079ec7bff762a606e561771d8a38ffd07597c3ae201e17a8bd18d6a6c52e1",
+      "loss_policy": "all",
+      "pad_count": 203,
+      "policy": "greedy",
+      "position_policy": "segment_relative",
+      "reserved": false,
+      "sample_id": "smp-fdda140a23aa",
+      "segments": [
+        {
+          "doc_id": "math-0002",
+          "lane": "math_science",
+          "lang": "en",
+          "script": "Latn",
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "token_end": 653,
+          "token_start": 344,
+          "window_start": 0
+        }
+      ],
+      "sequence_length": 512,
+      "shard_ids": [
+        "sh-mathscience-1889d2c0cc"
+      ],
+      "stage_hint": "mid",
+      "token_span_ids": [
+        "sh-mathscience-1889d2c0cc:344-653"
+      ],
+      "tokens_hash": "66e7440d9a4916b08239cbc69cd8228b9388b3697b43c22f0d8c77a5444c6d06",
+      "utilisation": 0.6035
+    }
+  ]
+}

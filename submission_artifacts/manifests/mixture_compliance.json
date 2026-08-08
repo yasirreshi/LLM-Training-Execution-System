@@ -1,0 +1,129 @@
+{
+  "actual_total_tokens": 61440,
+  "all_floors_respected": true,
+  "all_lanes_within_tolerance": true,
+  "lanes": [
+    {
+      "actual_share": 0.29583,
+      "actual_tokens": 18176,
+      "delta": 0.0,
+      "lane": "general_web",
+      "planned_share": 0.29583,
+      "planned_tokens": 18176,
+      "within_tolerance": true
+    },
+    {
+      "actual_share": 0.15417,
+      "actual_tokens": 9472,
+      "delta": 0.0,
+      "lane": "code",
+      "planned_share": 0.15417,
+      "planned_tokens": 9472,
+      "within_tolerance": true
+    },
+    {
+      "actual_share": 0.125,
+      "actual_tokens": 7680,
+      "delta": 0.0,
+      "lane": "math_science",
+      "planned_share": 0.125,
+      "planned_tokens": 7680,
+      "within_tolerance": true
+    },
+    {
+      "actual_share": 0.125,
+      "actual_tokens": 7680,
+      "delta": 0.0,
+      "lane": "indic",
+      "planned_share": 0.125,
+      "planned_tokens": 7680,
+      "within_tolerance": true
+    },
+    {
+      "actual_share": 0.125,
+      "actual_tokens": 7680,
+      "delta": 0.0,
+      "lane": "agentic",
+      "planned_share": 0.125,
+      "planned_tokens": 7680,
+      "within_tolerance": true
+    },
+    {
+      "actual_share": 0.175,
+      "actual_tokens": 10752,
+      "delta": 0.0,
+      "lane": "reasoning",
+      "planned_share": 0.175,
+      "planned_tokens": 10752,
+      "within_tolerance": true
+    }
+  ],
+  "max_abs_delta": 0.0,
+  "planned_total_tokens": 61440,
+  "protected_floor_checks": [
+    {
+      "achieved_share": 0.125,
+      "floor": 0.03,
+      "lane": "agentic",
+      "respected": true,
+      "stage": "foundation-en"
+    },
+    {
+      "achieved_share": 0.125,
+      "floor": 0.1,
+      "lane": "indic",
+      "respected": true,
+      "stage": "foundation-en"
+    },
+    {
+      "achieved_share": 0.125,
+      "floor": 0.05,
+      "lane": "reasoning",
+      "respected": true,
+      "stage": "foundation-en"
+    },
+    {
+      "achieved_share": 0.125,
+      "floor": 0.1,
+      "lane": "agentic",
+      "respected": true,
+      "stage": "long-context-anneal"
+    },
+    {
+      "achieved_share": 0.125,
+      "floor": 0.12,
+      "lane": "indic",
+      "respected": true,
+      "stage": "long-context-anneal"
+    },
+    {
+      "achieved_share": 0.25,
+      "floor": 0.16,
+      "lane": "reasoning",
+      "respected": true,
+      "stage": "long-context-anneal"
+    },
+    {
+      "achieved_share": 0.125,
+      "floor": 0.06,
+      "lane": "agentic",
+      "respected": true,
+      "stage": "reasoning-heavy-midtrain"
+    },
+    {
+      "achieved_share": 0.125,
+      "floor": 0.1,
+      "lane": "indic",
+      "respected": true,
+      "stage": "reasoning-heavy-midtrain"
+    },
+    {
+      "achieved_share": 0.125,
+      "floor": 0.1,
+      "lane": "reasoning",
+      "respected": true,
+      "stage": "reasoning-heavy-midtrain"
+    }
+  ],
+  "tolerance": 0.06
+}

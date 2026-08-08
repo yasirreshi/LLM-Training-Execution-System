@@ -1,0 +1,85 @@
+{
+  "all_four_clauses_proved": true,
+  "branch_id": "main",
+  "clauses": {
+    "how_the_run_can_be_reconstructed": {
+      "fork_diverged_correctly": true,
+      "how": "every record carries plan hash, batch id, RNG fingerprint, tokenizer version, dataloader version and config hash; replay matched on three independent derivations; resume matched the expected batch and re-served the rolled-back interval identically; the fork diverged only after its recorded divergence point",
+      "plan_recomputation_matches": true,
+      "proved": true,
+      "records_missing_provenance_fields": 0,
+      "replay_all_match": true,
+      "resume_next_batch_matched": true,
+      "rollback_replay_identical": true
+    },
+    "what_it_consumed": {
+      "how": "every consumed microbatch names its shard ids, document ids, token span ids and token/mask hashes",
+      "instances_without_shard_ids": 0,
+      "instances_without_token_spans": 0,
+      "proved": true
+    },
+    "what_the_model_learned": {
+      "how": "every consumed sample has a learning record with the loss measured before and after the update on the same tokens; a full per-token trace exists for the configured interval; every shard has a report card with a classification",
+      "instances_without_a_learning_record": 0,
+      "proved": true,
+      "records_without_a_loss_delta": 0,
+      "shards_without_a_report_card": 0,
+      "token_trace_records": 5038
+    },
+    "why_it_consumed_it": {
+      "decisions_without_a_reason": 0,
+      "how": "every consumed sample carries an OPUS decision id that resolves in the OPUS ledger, and every decision carries a reason from a fixed vocabulary — plus the mixture lane and curriculum stage",
+      "instances_without_a_resolvable_decision": 0,
+      "proved": true
+    }
+  },
+  "consumed_sample_instances": 192,
+  "criterion": "The assignment is complete only when the system can prove what it consumed, why it consumed it, what the model learned from it and how the run can be reconstructed.",
+  "method": "a link walk over every consumed sample instance — not a spot check. Any dangling reference between the consumption, OPUS and learning ledgers fails the clause it belongs to.",
+  "worked_example": {
+    "consumed": {
+      "doc_id": "agent-0001",
+      "loss_mask_hash": "63bbc0435f584ecf9d09b4360ab65d68c56cfee9a4b97f2f1f10892b945b3e25",
+      "microbatch_id": "s0000-r0-a0",
+      "rank": 0,
+      "sample_id": "smp-bfca01925505",
+      "shard_id": "sh-agentic-15e9e87bcd",
+      "step": 0,
+      "token_span": "sh-agentic-15e9e87bcd:561-762",
+      "tokens_hash": "b95f10dceee585795cc8bcc2e44b96cd113bf80e737bc1757289b96e83e3c127"
+    },
+    "learned": {
+      "checkpoint_before": "genesis",
+      "eos_perplexity": null,
+      "gradient_norm": 2.799163,
+      "loss_after": 7.971709,
+      "loss_before": 8.200393,
+      "loss_delta": -0.228684,
+      "mean_token_perplexity": 3032.968262,
+      "model_phase": "early",
+      "shard_classification": "harmful",
+      "shard_rationale": "gradient spiked to 29.953 against a mean of 3.583 - needs cleaning, later staging or a warmup before reuse"
+    },
+    "reconstructable_from": {
+      "batch_id": "b-9a4e71e13c97",
+      "checkpoint_id": "genesis",
+      "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+      "dataloader_version": "tdes-loader-1.0.0",
+      "plan_hash": "d91e8b961dacf8e0",
+      "rng_fingerprint": "7ecbc81c2db0d867",
+      "tokenizer_version": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+    },
+    "why": {
+      "curriculum_stage": "foundation-en",
+      "mixture_lane": "agentic",
+      "opus_decision_id": "opd-69adeadaa108",
+      "opus_score": 0.116878,
+      "protected_floor_override": true,
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "genesis",
+      "status": "accepted",
+      "threshold": 0.074855
+    }
+  }
+}

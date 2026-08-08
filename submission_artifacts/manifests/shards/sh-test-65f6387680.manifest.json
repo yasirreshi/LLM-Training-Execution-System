@@ -1,0 +1,135 @@
+{
+  "admitted": false,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": "benchmark_reasoning_v1",
+  "block_hashes": [
+    "375afd0c3407d9a9ad0e5569442a9842b668fe1d6146d64334d0e92fe8f3de48"
+  ],
+  "capability_tags": [
+    "benchmark",
+    "reasoning"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "375afd0c3407d9a9ad0e5569442a9842b668fe1d6146d64334d0e92fe8f3de48",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "test-0001",
+    "test-0002",
+    "test-0003"
+  ],
+  "documents": [
+    {
+      "content_hash": "4f9aa5de2c785ddb1fe08d0f54b1985e7bc38252e9ac6055f46058e668836421",
+      "doc_id": "test-0001",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          102,
+          true
+        ],
+        [
+          "eos",
+          102,
+          103,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 103,
+      "token_start": 0
+    },
+    {
+      "content_hash": "192352115d8efc6e2ff354f66411d8c5751f702bfffa4c1dca9407402ba3b724",
+      "doc_id": "test-0002",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          104,
+          192,
+          true
+        ],
+        [
+          "eos",
+          192,
+          193,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 193,
+      "token_start": 103
+    },
+    {
+      "content_hash": "0dd76ba795493c0b3283eac58d3c3a1bf760a243443b001b2c70ca1721c108e0",
+      "doc_id": "test-0003",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          194,
+          300,
+          true
+        ],
+        [
+          "eos",
+          300,
+          301,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 301,
+      "token_start": 193
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": true,
+  "index_hash": "d16e8d030cb529b7fe41bcb512043f80e550ecb2e15bd9d16717d773687bb2f7",
+  "lane": "test",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": false,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": true,
+  "packing_policy": "pad_only",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "internal reasoning benchmark v1",
+  "rejection_reasons": [
+    "never_train_flag_set"
+  ],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-test-65f6387680",
+  "source_file": "test/benchmark_reasoning.txt",
+  "source_id": "src-test-benchmark",
+  "stage_hint": "early",
+  "token_count": 301,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

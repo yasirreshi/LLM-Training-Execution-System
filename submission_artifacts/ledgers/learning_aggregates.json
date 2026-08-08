@@ -1,0 +1,104 @@
+{
+  "by_lane": {
+    "agentic": {
+      "exposures": 24,
+      "loss_bearing_tokens": 4065,
+      "mean_gradient_norm": 3.251671,
+      "mean_loss_after": 7.059789,
+      "mean_loss_before": 7.174888,
+      "mean_loss_delta": -0.115099,
+      "mean_token_perplexity": 3372.73556
+    },
+    "code": {
+      "exposures": 31,
+      "loss_bearing_tokens": 8121,
+      "mean_gradient_norm": 3.773376,
+      "mean_loss_after": 7.258529,
+      "mean_loss_before": 7.390803,
+      "mean_loss_delta": -0.132274,
+      "mean_token_perplexity": 4793.702113
+    },
+    "general_web": {
+      "exposures": 59,
+      "loss_bearing_tokens": 17478,
+      "mean_gradient_norm": 3.205564,
+      "mean_loss_after": 7.070277,
+      "mean_loss_before": 7.147704,
+      "mean_loss_delta": -0.077427,
+      "mean_token_perplexity": 3231.271317
+    },
+    "indic": {
+      "exposures": 24,
+      "loss_bearing_tokens": 7338,
+      "mean_gradient_norm": 3.251671,
+      "mean_loss_after": 7.218072,
+      "mean_loss_before": 7.329109,
+      "mean_loss_delta": -0.111037,
+      "mean_token_perplexity": 2969.931595
+    },
+    "math_science": {
+      "exposures": 24,
+      "loss_bearing_tokens": 5820,
+      "mean_gradient_norm": 3.251671,
+      "mean_loss_after": 6.851263,
+      "mean_loss_before": 6.970955,
+      "mean_loss_delta": -0.119692,
+      "mean_token_perplexity": 2704.284136
+    },
+    "reasoning": {
+      "exposures": 30,
+      "loss_bearing_tokens": 7224,
+      "mean_gradient_norm": 2.80325,
+      "mean_loss_after": 5.484314,
+      "mean_loss_before": 5.528206,
+      "mean_loss_delta": -0.043892,
+      "mean_token_perplexity": 3766.484207
+    }
+  },
+  "by_phase": {
+    "anneal": {
+      "exposures": 48,
+      "loss_bearing_tokens": 19309,
+      "mean_gradient_norm": 1.00957,
+      "mean_loss_after": 6.728223,
+      "mean_loss_before": 6.755805,
+      "mean_loss_delta": -0.027582,
+      "mean_token_perplexity": 3844.631106
+    },
+    "early": {
+      "exposures": 72,
+      "loss_bearing_tokens": 15281,
+      "mean_gradient_norm": 3.339475,
+      "mean_loss_after": 7.109102,
+      "mean_loss_before": 7.301312,
+      "mean_loss_delta": -0.19221,
+      "mean_token_perplexity": 2235.965488
+    },
+    "late": {
+      "exposures": 8,
+      "loss_bearing_tokens": 1690,
+      "mean_gradient_norm": 2.034081,
+      "mean_loss_after": 7.079979,
+      "mean_loss_before": 7.140067,
+      "mean_loss_delta": -0.060088,
+      "mean_token_perplexity": 3623.799316
+    },
+    "mid": {
+      "exposures": 64,
+      "loss_bearing_tokens": 13766,
+      "mean_gradient_norm": 4.986665,
+      "mean_loss_after": 6.599051,
+      "mean_loss_before": 6.640326,
+      "mean_loss_delta": -0.041275,
+      "mean_token_perplexity": 4573.080637
+    }
+  },
+  "eos_perplexity": {
+    "max": 13331.81543,
+    "mean": 992.307705,
+    "min": 151.86879,
+    "samples": 99
+  },
+  "samples_recorded": 192,
+  "token_records_written": 5038
+}

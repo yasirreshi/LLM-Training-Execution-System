@@ -1,0 +1,62 @@
+# tdes-corpus v1
+# source: hand written worked explanations
+
+===DOC===
+doc_id: math-0001
+lang: en
+script: Latn
+title: Why harmonic mean is the right average for speed
+stage_hint: early
+---
+Average speed is total distance divided by total time, and that definition does more work than it looks. If a journey is split into equal distances covered at different speeds, the arithmetic mean of the speeds is wrong, because the slower leg occupies more time and therefore deserves more weight.
+
+Take a journey of two equal legs of distance d, at speeds v1 and v2. The time for the first leg is d/v1 and for the second d/v2. Total distance is 2d, total time is d/v1 + d/v2, so the average speed is 2d divided by d(1/v1 + 1/v2), which simplifies to 2/(1/v1 + 1/v2). That is the harmonic mean, and it is always less than or equal to the arithmetic mean, with equality only when the two speeds are the same.
+
+The intuition is worth keeping. Time spent is inversely proportional to speed, so the leg you would like to weight least is the one that unavoidably weights itself most. This is why a detour at walking pace ruins an average that a stretch at high speed cannot rescue: the fast stretch is over quickly and contributes little time to the denominator.
+
+If instead the legs are equal in time rather than in distance, the arithmetic mean is correct. The general rule is to average the quantity that adds, which for a fixed distance is time, and for a fixed time is distance.
+
+===DOC===
+doc_id: math-0002
+lang: en
+script: Latn
+title: Bayes' rule and the base rate
+stage_hint: mid
+---
+A test for a condition is described as ninety-nine percent accurate. A person tests positive. The natural reading is that they almost certainly have the condition, and the natural reading is usually wrong.
+
+Let the condition affect one person in ten thousand. Take a population of one million. One hundred people have the condition, and the test correctly flags ninety-nine of them. Nine hundred and ninety-nine thousand nine hundred do not have it, and the test wrongly flags one percent of those, which is nine thousand nine hundred and ninety-nine people. So there are roughly ten thousand and ninety-eight positive results, of which ninety-nine are real. The probability that a positive result means the condition is present is under one percent.
+
+Nothing about the test changed in that calculation. What changed is that the base rate entered it. Bayes' rule states this compactly: the posterior odds equal the prior odds times the likelihood ratio. When the prior odds are extremely low, a likelihood ratio of ninety-nine to one moves them a long way and still leaves them low.
+
+The practical lesson is that screening a rare condition in an unselected population produces mostly false positives no matter how good the test is, which is why screening programmes target groups with a higher prior and why a positive screen is followed by a different, more specific test rather than treated as a conclusion.
+
+===DOC===
+doc_id: math-0003
+lang: en
+script: Latn
+title: Cross-entropy and perplexity
+stage_hint: mid
+---
+A language model outputs a probability distribution over the vocabulary at each position. The cross-entropy loss at a position is the negative log of the probability the model assigned to the token that actually occurred: loss = -log p(true token). Averaged over positions, this is the quantity gradient descent minimises.
+
+Perplexity is the exponential of that loss. The exponential undoes the logarithm, so perplexity has units of "effective number of choices". A perplexity of one means the model was certain and correct. A perplexity equal to the vocabulary size means the model was no better than uniform guessing.
+
+That last equivalence gives a free sanity check at the start of training. An untrained model with a randomly initialised output layer assigns roughly uniform probability, so it should assign about one over the vocabulary size to whatever token appears. The loss should therefore begin near the natural logarithm of the vocabulary size. For a vocabulary of thirty thousand that is about 10.3; for a vocabulary of one hundred and thirty-one thousand it is about 11.8. A first-step loss far from that value means something is wrong before any training has happened: the labels may be shifted, the mask may be inverted, or the output layer may not be random.
+
+The averaged number hides structure, which is why per-token perplexity is worth recording. A shard can show an unremarkable mean while a particular construction inside it stays difficult, and the mean will never reveal which construction it was.
+
+===DOC===
+doc_id: math-0004
+lang: en
+script: Latn
+title: Why floating point addition is not associative
+stage_hint: mid
+---
+Adding three floating point numbers can give two different answers depending on the order, because each addition rounds its result to the nearest representable value and the rounding error depends on the magnitudes involved. Add a very small number to a very large one and the small number may vanish entirely; add the small numbers to each other first and their sum may be large enough to survive.
+
+A concrete case: with a large value L and two small values each equal to half an ulp of L, the expression (L + s) + s returns L, because each addition individually rounds back down, while L + (s + s) returns the next representable value above L, because the two small values combine into a full ulp before meeting L. Same three numbers, different result.
+
+This is why summing a long array in parallel does not reproduce the serial answer. A parallel reduction splits the array, sums the parts, and combines them, which is a different association than the left-to-right order, and the difference is real rather than a bug.
+
+Systems that need reproducible numerics deal with this in one of three ways: fix the reduction order and accept the loss of parallelism, use a compensated summation algorithm that tracks the running error term, or accept the variation and never compare floating point results for exact equality. The third is usually correct, and it implies a design rule: derive identity from integers, and compare floats with a tolerance.

@@ -1,0 +1,350 @@
+{
+  "batch_ids": {
+    "12": "b-fc9d1740c8f3",
+    "13": "b-cb5613c10c6f",
+    "14": "b-fbf7eefeded2",
+    "15": "b-67672a77a4d9",
+    "16": "b-8d02d62c7efa",
+    "17": "b-ef5cecaa6621",
+    "18": "b-6a7d5ed19aa6",
+    "19": "b-e2122d7b6546",
+    "20": "b-5af9f81b8644",
+    "21": "b-37e4c7e26631",
+    "22": "b-6a5ff68530db",
+    "23": "b-aeb04f3b8996"
+  },
+  "final_loss": 6.59826626588345,
+  "firewall": {
+    "batch_checks": 48,
+    "blocked_shard_ids": [],
+    "blocks": [],
+    "blocks_by_reason": {},
+    "blocks_by_side": {},
+    "blocks_total": 0,
+    "fingerprint_registry": {
+      "benchmark_items": [
+        "test-0001",
+        "test-0002",
+        "test-0003",
+        "test-0004"
+      ],
+      "canaries": [
+        "TDES-CANARY-7f3a91c4-benchmark-reasoning-v1-do-not-train"
+      ],
+      "content_hash_count": 4,
+      "fingerprints_per_item": {
+        "test-0001": 62,
+        "test-0002": 60,
+        "test-0003": 57,
+        "test-0004": 27
+      },
+      "ngram_size": 8,
+      "overlap_threshold": 0.55
+    },
+    "registry_checks": 133,
+    "validation_gradient_bearing_tokens": 0
+  },
+  "initial_loss": 7.2659782683246235,
+  "next_batch_verification": {
+    "checkpoint_id": "ckpt_main_0012",
+    "expected_plan_hash_from_checkpoint": "55b37c62e5244119",
+    "matched": true,
+    "recomputed_plan_hash": "55b37c62e5244119",
+    "resume_step": 12
+  },
+  "opus_proxy_health": {
+    "first_round_accepted_grad_norm": 0.536681,
+    "last_round_accepted_grad_norm": 0.164914,
+    "per_round": [
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.536681,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.383895,
+        "mean_score": 0.000474,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 12
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.150111,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.174448,
+        "mean_score": -0.117601,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 13
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.192215,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.194181,
+        "mean_score": -0.103434,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 14
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.196065,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.190884,
+        "mean_score": -0.104345,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 15
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.128569,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.153691,
+        "mean_score": -0.133576,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 16
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.278289,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.295935,
+        "mean_score": -0.317706,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 17
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.208878,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.211182,
+        "mean_score": -0.032744,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 18
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.262032,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.252136,
+        "mean_score": -0.094968,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 19
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.158036,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.176043,
+        "mean_score": -0.042274,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 20
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.200841,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.207498,
+        "mean_score": -0.091651,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 21
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.262473,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.279627,
+        "mean_score": -0.203444,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 22
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.164914,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.19091,
+        "mean_score": -0.091144,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 23
+      }
+    ],
+    "ratio_last_over_first": 0.3073,
+    "rounds": 12,
+    "verdict": "accepted gradient norms collapsed - the pool is likely exhausted, OPUS is selecting the best of poor candidates"
+  },
+  "performance": {
+    "counters": {
+      "accepted_tokens_after_opus": 29632,
+      "cache_hits": 0,
+      "context_only_tokens": 1971,
+      "microbatches": 48,
+      "pad_tokens": 5261,
+      "raw_positions": 36864,
+      "rejected_candidate_tokens": 29667,
+      "sequences": 96,
+      "shard_reads": 0,
+      "steps": 12,
+      "useful_loss_bearing_tokens": 29632
+    },
+    "efficiency": {
+      "cache_hit_rate": 0.0,
+      "compute_share_of_wall": 0.359572,
+      "context_only_share": 0.053467,
+      "idle_share_of_wall": 0.485316,
+      "loader_wait_share_of_wall": 2.5e-05,
+      "loss_density": 0.803819,
+      "opus_share_of_wall": 0.155087,
+      "packing_utilisation": 0.857286,
+      "padding_waste": 0.142714
+    },
+    "how_to_reconstruct": {
+      "loss_density": "useful_loss_bearing_tokens / raw_positions",
+      "note": "raw_positions, pad_tokens and useful_loss_bearing_tokens are also recoverable by summing total_positions, pad_tokens and loss_bearing_tokens over the consumption ledger, which is what verify_evidence.py does rather than trusting this file.",
+      "packing_utilisation": "(raw_positions - pad_tokens) / raw_positions",
+      "useful_tokens_per_sec_compute": "useful_loss_bearing_tokens / timings.compute"
+    },
+    "opus": {
+      "candidates_by_lane": {
+        "agentic": 24,
+        "code": 36,
+        "general_web": 48,
+        "indic": 24,
+        "math_science": 24,
+        "reasoning": 36
+      },
+      "candidates_rejected": 96,
+      "candidates_scored": 192,
+      "rejection_rate": 0.5,
+      "rejections_by_lane": {
+        "agentic": 12,
+        "code": 18,
+        "general_web": 24,
+        "indic": 12,
+        "math_science": 12,
+        "reasoning": 18
+      }
+    },
+    "throughput": {
+      "accepted_tokens_per_sec_compute": 2828.67,
+      "raw_tokens_per_sec_compute": 3519.04,
+      "sequences_per_sec_wall": 3.2952,
+      "useful_tokens_per_sec_compute": 2828.67,
+      "useful_tokens_per_sec_wall": 1017.11
+    },
+    "timer_calls": {
+      "compute": 60,
+      "firewall": 48,
+      "loader": 12,
+      "opus": 14,
+      "validation": 2
+    },
+    "timings_seconds": {
+      "compute": 10.475581,
+      "firewall": 0.069774,
+      "loader": 0.000723,
+      "opus": 4.518207,
+      "validation": 0.133805
+    },
+    "wall_seconds": 29.133452
+  },
+  "plan_hashes": {
+    "12": "55b37c62e5244119",
+    "13": "6ee7449d902c866b",
+    "14": "e3f25dbdec5420f1",
+    "15": "59efe9f20cb6d5ec",
+    "16": "077cac55d4667d67",
+    "17": "e15559f6ff666321",
+    "18": "3f5d9c735b02b6cd",
+    "19": "31aa8c0a7badc053",
+    "20": "5dd6e7664a594517",
+    "21": "4480ebef4a680321",
+    "22": "101be278338085d5",
+    "23": "afebfc38b4901f8a"
+  },
+  "recovery": {
+    "checkpoint": "ckpt_main_0012",
+    "checkpoint_step": 12,
+    "discarded_event_hashes": [
+      "20a804d034a58c1f29d007bd951d41fdf2aa4c9fc1358b458d17499da52f2012",
+      "1f476c71b5083f8f07ed9c153e3fadebc249ce638f534602ad237c79559b4745",
+      "b58b45dd18da55045d4c0c63aa5b82ca120a8f0d3ea1b6c495441196bc9eddde",
+      "7468d18f69d1475ea57bc41b757e5593ed477eab28d881b537897ea1a8ca3b13",
+      "664e57a6fe899e3d78706930d3d64d4f8a035cfe5d03d17dcf84df1f76656cf1",
+      "1f85e3f9c923bb5da206a651eb115df5e8ffda02c6ff7bd9bbf87200159be329",
+      "1e6b370d56b33b8a2055761c6e8a90885cf88afc421a92d6652e8b211fdc212a",
+      "86a5b09733a36ee7c59c6d674c37ded58709922b29d4283cb958757ae89ccf6e",
+      "0bcb7c96ffc4f1301aa175f7aa8361da6e1ef06b367a99b150fad33a0c2f35b3",
+      "d0d3983777d785e087206e7ba5bb422c261693d0b15d937c65bf21745e3b1908",
+      "07e6686decbca6dc570bd6dcf08d01daa7ed93168d026279753489e5964ff28f",
+      "99cb224b23ec6c511ce6caf6d1495b471ea46b38d50ea92df1fb1186552034c9",
+      "13ff567997dbc004f3ea8f3a52fc4ff76cd9a8bfe56e25bb002f234891f2e068",
+      "f7e76da731e7d5e67ac3e22d074fc879466a9ee81802b9d7ffa87b1b872f3769",
+      "64bf6947d4c4bca0d7b5c878dd4db5e9283d11531599201b72be31855401a4ba",
+      "dc665955f8a7250938c7012517f8ffbfedd3dddaa9311860383b8bc969836576",
+      "073404dac4b3c1ba73120c2dc191d9b0db584b5cf53c201b510cce893ec99718",
+      "ef02f8bf6ff283aefcce5dde15edddf60622344378ed3f6b2eb6fbf8a7f2cd67",
+      "0fcc5f67cea6ec9090b9b87bac565e0a7e185ff146166ca29a5c903622015349",
+      "4df148335da77ea16725930dfabb5df7b54ee081a263ffe98e483c699361088c",
+      "fac47401fdaf8f47e7738b503dbe5951039b72fbbaedc21b8947b2bca5fdf2dc",
+      "88540f189fbc7bf08ed9b4b547dded8cd03edcdf6426f81d7cb640465da43ddf",
+      "4fa9a0d2e9038303fc2fcb55390f41fe6c65dcb4ffb276932d36e893d79871b5"
+    ],
+    "discarded_records": 23,
+    "discarded_steps": [
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "ledger_offset": {
+      "byte_offset": 90313,
+      "event_seq": 60,
+      "last_event_hash": "4ba102c6023f78a4adcf2cedd74fa7a828bd87ef95d52b3ce060ca3dd89abea7"
+    },
+    "resume_step": 12,
+    "torn_tail": {
+      "ledger": "consumption_main",
+      "reason": "torn_final_line",
+      "removed_bytes": 172,
+      "torn_fragment_preview": "{\"event_hash\":\"459e7cc096046c0f3318e55fa367dfa4f642247b68fdbe8b3c60bda5d42710fb\",\"payload\":{\"branch_id\":\"main\",\"global_s"
+    },
+    "torn_tail_repaired": true
+  },
+  "rollback_replay_verification": {
+    "compared": 18,
+    "discarded_steps": [
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "identical": true,
+    "mismatches": [],
+    "missing": [],
+    "reserved_records": 48
+  },
+  "steps_completed": 12
+}

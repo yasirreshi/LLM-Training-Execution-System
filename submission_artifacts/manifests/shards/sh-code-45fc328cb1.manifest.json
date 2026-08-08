@@ -1,0 +1,81 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "cb027067ec56869595b30848c3395e86a2f13d688b827a19a2116d5823952092"
+  ],
+  "capability_tags": [
+    "code",
+    "python"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "cb027067ec56869595b30848c3395e86a2f13d688b827a19a2116d5823952092",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 1,
+  "document_ids": [
+    "code-0004"
+  ],
+  "documents": [
+    {
+      "content_hash": "3b820e0f1ed1f3a0c9021dbe9e7c3544a57d52a1597bd1e92a7b6137e159d24d",
+      "doc_id": "code-0004",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          306,
+          true
+        ],
+        [
+          "eos",
+          306,
+          307,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 307,
+      "token_start": 0
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "e192c34961d6383bb17207702522e2d424c86a2d4df4f4204530f29b8553461a",
+  "lane": "code",
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_tier": "B",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "best_fit",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored reference implementations, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-code-45fc328cb1",
+  "source_file": "code/code_python.txt",
+  "source_id": "src-code-py",
+  "stage_hint": "mid",
+  "token_count": 307,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

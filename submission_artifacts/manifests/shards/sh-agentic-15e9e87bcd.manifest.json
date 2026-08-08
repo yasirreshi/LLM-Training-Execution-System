@@ -1,0 +1,278 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "f9d38b6e30bd068668f76ca3d374466ea9b5bb79ee9d66bd02186d41be4a2e30",
+    "75d69cdcb2bb04e9c4d046cc851cb32953c57c9085588e205eae73661446e967",
+    "3b54726c7de4880cbadc89c4fd3398264735f24c0811fec90a294e5b39b665be"
+  ],
+  "capability_tags": [
+    "agentic",
+    "en",
+    "tool_use"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "588c59393c545ff37c7fa77698e781ad90a42f504be9e1ac3654cc66a0796a9f",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 2,
+  "document_ids": [
+    "agent-0001",
+    "agent-0002"
+  ],
+  "documents": [
+    {
+      "content_hash": "6da3a64be2dc34b3d23e1af8263e90104e76791262919bdc239a7355a2e7cf12",
+      "doc_id": "agent-0001",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "user",
+          1,
+          24,
+          false
+        ],
+        [
+          "think",
+          24,
+          99,
+          true
+        ],
+        [
+          "tool_call",
+          99,
+          114,
+          true
+        ],
+        [
+          "tool_result",
+          114,
+          263,
+          false
+        ],
+        [
+          "think",
+          263,
+          351,
+          true
+        ],
+        [
+          "tool_call",
+          351,
+          376,
+          true
+        ],
+        [
+          "tool_result",
+          376,
+          425,
+          false
+        ],
+        [
+          "think",
+          425,
+          471,
+          true
+        ],
+        [
+          "tool_call",
+          471,
+          513,
+          true
+        ],
+        [
+          "tool_result",
+          513,
+          561,
+          false
+        ],
+        [
+          "think",
+          561,
+          665,
+          true
+        ],
+        [
+          "tool_call",
+          665,
+          680,
+          true
+        ],
+        [
+          "tool_result",
+          680,
+          762,
+          false
+        ],
+        [
+          "think",
+          762,
+          862,
+          true
+        ],
+        [
+          "answer",
+          862,
+          1078,
+          true
+        ],
+        [
+          "eos",
+          1078,
+          1079,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 1079,
+      "token_start": 0
+    },
+    {
+      "content_hash": "166aa531441c2beed29e2710a00399122fec585ca331a5e5082cb8769d59a4af",
+      "doc_id": "agent-0002",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "user",
+          1080,
+          1109,
+          false
+        ],
+        [
+          "think",
+          1109,
+          1154,
+          true
+        ],
+        [
+          "tool_call",
+          1154,
+          1196,
+          true
+        ],
+        [
+          "tool_result",
+          1196,
+          1265,
+          false
+        ],
+        [
+          "think",
+          1265,
+          1349,
+          true
+        ],
+        [
+          "tool_call",
+          1349,
+          1401,
+          true
+        ],
+        [
+          "tool_result",
+          1401,
+          1475,
+          false
+        ],
+        [
+          "think",
+          1475,
+          1561,
+          true
+        ],
+        [
+          "tool_call",
+          1561,
+          1582,
+          true
+        ],
+        [
+          "tool_result",
+          1582,
+          1623,
+          false
+        ],
+        [
+          "think",
+          1623,
+          1724,
+          true
+        ],
+        [
+          "tool_call",
+          1724,
+          1756,
+          true
+        ],
+        [
+          "tool_result",
+          1756,
+          1792,
+          false
+        ],
+        [
+          "think",
+          1792,
+          1870,
+          true
+        ],
+        [
+          "answer",
+          1870,
+          2122,
+          true
+        ],
+        [
+          "eos",
+          2122,
+          2123,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 2123,
+      "token_start": 1079
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "db842cf4442ae83fb6f91f2218f05cdfbb1a9b0ea6ea54316006a764a79a8014",
+  "lane": "agentic",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "model_turns",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "structure_preserving",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored agent trajectories, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-agentic-15e9e87bcd",
+  "source_file": "agentic/agentic_traces.txt",
+  "source_id": "src-agentic-traces",
+  "stage_hint": "mid",
+  "token_count": 2123,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

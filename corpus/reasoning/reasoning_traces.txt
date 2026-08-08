@@ -1,0 +1,117 @@
+# tdes-corpus v1
+# source: hand written reasoning traces
+# note: the reasoning lane uses long-context packing - one trace per window,
+#       never co-packed. A reasoning trace that runs out of window before it
+#       reaches its verification step teaches the model to stop reasoning
+#       early, which is worse than not training on it at all.
+#
+#       Loss covers @think and @answer. The @user prompt is context.
+
+===DOC===
+doc_id: reason-0001
+lang: en
+script: Latn
+title: Two trains and a common trap
+stage_hint: early
+---
+@user: Two trains leave stations 300 km apart at the same time, heading towards each other at 60 km/h and 90 km/h. A bird starts at the first train and flies back and forth between them at 120 km/h until they meet. How far does the bird fly?
+@think: The tempting move is to sum the infinite series of the bird's legs, and that series does converge, but computing it is unnecessary work. The bird flies continuously from the start until the trains meet, at a constant speed. So the only quantity I actually need is the elapsed time.
+
+The trains close the gap at 60 + 90 = 150 km/h. The gap is 300 km. So they meet after 300/150 = 2 hours.
+
+The bird flies for those same 2 hours at 120 km/h, so it covers 240 km.
+
+Let me sanity check the setup rather than the arithmetic, since the arithmetic is trivial and the setup is where these problems hide their traps. The bird is faster than both trains, so it genuinely does bounce between them rather than being overtaken - the scenario is consistent. It starts at the first train, which is at one end, so it is inside the closing gap throughout. And the question asks for total distance flown, not displacement, so the back-and-forth does not cancel. All consistent.
+
+One more check: does the answer stay sensible at the limits? If the bird flew at the speed of the slower train it would cover 120 km, and at the speed of the faster it would cover 180 km. At 120 km/h, faster than both, 240 km is larger than both - as it should be.
+@answer: 240 km.
+
+The trick is to ignore the bouncing entirely. The trains approach each other at 60 + 90 = 150 km/h and start 300 km apart, so they meet after 2 hours. The bird flies for that whole 2 hours without stopping, at 120 km/h, so it covers 120 × 2 = 240 km.
+
+Summing the individual legs gives the same answer, but it requires evaluating an infinite geometric series to get a number you can obtain in one line by asking how long the bird was in the air.
+
+===DOC===
+doc_id: reason-0002
+lang: en
+script: Latn
+title: A units error hiding in a plausible answer
+stage_hint: mid
+---
+@user: A pump moves 450 litres per minute. A tank holds 27 cubic metres. Someone says it will take about an hour to fill. Is that right?
+@think: I should convert to one consistent set of units before judging anything, because the claim sounds plausible and plausible-sounding is exactly how unit errors survive.
+
+27 cubic metres. One cubic metre is 1000 litres, so the tank is 27,000 litres.
+
+The pump delivers 450 litres per minute, so in one hour it delivers 450 × 60 = 27,000 litres.
+
+So an hour is not approximately right - it is exactly right. 27,000 litres needed, 27,000 litres delivered per hour.
+
+That is a suspiciously clean result, which makes me want to check it a second way rather than accept it. Working in cubic metres: 450 litres per minute is 0.45 cubic metres per minute, and 27 / 0.45 = 60 minutes. Same answer by a different route, so the conversion was not the source of the tidiness - the numbers were simply chosen to come out even.
+
+Worth noting what this calculation does not include, since the question is really about whether the estimate is safe to rely on. It assumes the pump sustains its rated flow throughout, which real pumps do not do as head increases while the tank fills. It assumes the tank starts empty. And a rated flow is usually a best case rather than a delivered average. So one hour is a lower bound on the fill time, not an expectation.
+@answer: Yes, and exactly rather than approximately - but treat it as a floor.
+
+27 cubic metres is 27,000 litres. At 450 litres per minute the pump delivers 450 × 60 = 27,000 litres in an hour. Checking it the other way, 450 L/min is 0.45 m³/min, and 27 / 0.45 = 60 minutes.
+
+The caveat matters more than the arithmetic. That figure assumes the pump holds its rated flow for the full hour, that the tank starts empty, and that the rated flow is an achieved average rather than a best case. Pump output typically falls as the static head rises with the filling tank, so in practice expect somewhat longer than an hour. Use 60 minutes as a lower bound, not as a plan.
+
+===DOC===
+doc_id: reason-0003
+lang: en
+script: Latn
+title: When an average is the wrong summary
+stage_hint: mid
+min_context: 400
+---
+@user: Our API's average response time is 120 ms and has been stable for months. But support keeps getting complaints about slowness. Are the complaints wrong?
+@think: A stable mean alongside persistent complaints is a classic signature: the mean is stable precisely because it is dominated by the bulk of fast requests, and the complaints are coming from a tail the mean cannot see.
+
+Consider what distributions produce a 120 ms mean. If every request took 115-125 ms, nobody would complain. But suppose 95% of requests take 80 ms and 5% take 880 ms: the mean is 0.95 × 80 + 0.05 × 880 = 76 + 44 = 120 ms. Identical mean, completely different user experience. In the second case one request in twenty takes nearly a second.
+
+And user-level exposure is worse than request-level exposure, which is the part people usually miss. If loading one screen makes 20 API calls and each independently has a 5% chance of being slow, the probability that all 20 are fast is 0.95 raised to the 20th power, which is about 0.36. So roughly 64% of screen loads contain at least one slow call. A 5% request-level tail becomes a majority-of-sessions problem.
+
+So the complaints are almost certainly right, and the metric is almost certainly not lying either - it is answering a question nobody asked. The fix on the measurement side is percentiles: p50 tells you the typical experience, p99 tells you the tail, and the gap between them tells you whether you have one population or two.
+
+I should also flag that averaging percentiles across servers or time buckets does not work - the average of p99s is not the p99 of the whole. That needs histogram merging, and it is a common way monitoring dashboards quietly mislead.
+@answer: The complaints are almost certainly right, and the average is hiding why.
+
+A 120 ms mean is consistent with two very different worlds. If every request takes 115-125 ms, nobody complains. But 95% at 80 ms and 5% at 880 ms averages to exactly the same 120 ms, and in that world one request in twenty takes nearly a second.
+
+The user-facing effect is worse than the request-level number suggests. If a single screen makes 20 API calls and each has an independent 5% chance of landing in the slow tail, only 0.95²⁰ ≈ 36% of screen loads are entirely fast. Around two thirds of sessions hit at least one slow call. That is exactly the shape of "the average is fine but everyone says it's slow".
+
+What to change: report p50, p95, p99 and max rather than the mean, and watch the p99/p50 ratio - a widening gap means a growing tail even when the mean is flat. Measure at the level users experience, so per screen load rather than per API call. And make sure your monitoring merges histograms rather than averaging percentiles across hosts, because the average of per-host p99s is not the fleet p99 and is usually optimistic.
+
+===DOC===
+doc_id: reason-0004
+lang: en
+script: Latn
+title: Reasoning about a resume that must not skip
+stage_hint: anneal
+reserved: true
+min_context: 400
+---
+@user: A training job checkpoints at step 100 and then crashes during step 106. The data ledger has entries for steps 100 through 105. On restart, should we resume from step 100 or step 106?
+@think: The instinct is to resume from 106, since the ledger says 100 through 105 were consumed. But that instinct conflates two different pieces of state, and the conflict is the whole problem.
+
+The model weights on disk are from step 100. They have never seen the data from steps 100 through 105 - those updates happened in memory and died with the process. The ledger, on the other hand, was written to disk as each batch was served, so it does record 100 through 105.
+
+So the two records disagree about how far the run got. Weights say 100, ledger says 106.
+
+Resuming from 106 would mean the model never trains on the data from steps 100-105. That is a skip, and it is silent: nothing in the system would report it, because both the weights and the ledger are internally consistent, just with each other's history missing.
+
+Resuming from 100 and re-serving 100-105 gives the model exactly the data it needs. The objection is that the ledger would then contain those steps twice, which looks like a repeat. But it is only a repeat if you leave the stale entries there. The correct operation is to roll the ledger back to the offset the checkpoint recorded, discard the entries for 100-105, and re-serve them. The model sees each batch once; the ledger records each batch once.
+
+This is why the checkpoint must store a ledger offset and not merely a step number. A step number tells you where to restart counting. An offset tells you where to truncate, which is the operation actually required.
+
+There is one more thing worth proving rather than assuming. If the data stream is deterministic given the checkpoint state, the re-served batches for 100-105 should be byte-identical to the ones that were discarded. Comparing the discarded hashes against the re-served hashes turns "we believe nothing was lost" into "we verified nothing was lost", and it costs one comparison.
+@answer: Resume from step 100, and roll the ledger back to the offset stored in that checkpoint.
+
+The two pieces of state disagree, and it matters which one you trust. The weights on disk are from step 100 and have never seen the data from 100-105; those updates existed only in memory. The ledger was flushed per batch, so it does have 100-105.
+
+Resuming from 106 would silently skip six steps of data. Nothing would report the gap, because the weights and the ledger are each internally consistent - they just describe different histories.
+
+So: restore the step-100 weights, truncate the ledger back to the offset that checkpoint recorded, and re-serve 100-105. The model then sees every batch exactly once and the ledger records every batch exactly once. Those stale entries are not history to preserve; they describe a model state that no longer exists.
+
+This is also the argument for a checkpoint storing a ledger offset rather than just a step number. A step number tells you where to resume counting. An offset tells you where to truncate, which is the operation you actually need.
+
+Finally, log the hashes of the discarded entries before dropping them, and compare them against the batches you re-serve. If the stream is deterministic they will match, and you will have proved that the rollback lost nothing and repeated nothing rather than merely assumed it.

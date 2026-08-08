@@ -1,0 +1,108 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "94cc8dac43ec6a2a950991ffa1370312bafa760f93476dca0e9f839aac24d044"
+  ],
+  "capability_tags": [
+    "en",
+    "systems",
+    "world_knowledge"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "94cc8dac43ec6a2a950991ffa1370312bafa760f93476dca0e9f839aac24d044",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 2,
+  "document_ids": [
+    "web-0104",
+    "web-0105"
+  ],
+  "documents": [
+    {
+      "content_hash": "e0e0e0a020a73331f4e9d7b91802d5da400a36f10cf7d6fe8b6d521593fba4b7",
+      "doc_id": "web-0104",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          283,
+          true
+        ],
+        [
+          "eos",
+          283,
+          284,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 284,
+      "token_start": 0
+    },
+    {
+      "content_hash": "14f9daaae0a3f0476b4baaaf439e4b2761e680ccafc0645be4877ad9fd33c441",
+      "doc_id": "web-0105",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          285,
+          553,
+          true
+        ],
+        [
+          "eos",
+          553,
+          554,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 554,
+      "token_start": 284
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "1989f03f7f4c8668083a4922652090b33473fbfa68abc9c618ca1da5252584b4",
+  "lane": "general_web",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "concat_chop",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored technical prose, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-generalweb-cbd3f64ece",
+  "source_file": "general_web/web_systems.txt",
+  "source_id": "src-web-sys",
+  "stage_hint": "mid",
+  "token_count": 554,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

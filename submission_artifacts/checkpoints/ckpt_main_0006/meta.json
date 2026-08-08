@@ -1,0 +1,28 @@
+{
+  "branch_id": "main",
+  "checkpoint_id": "ckpt_main_0006",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "format_version": "tdes-checkpoint-1",
+  "global_step": 6,
+  "index_hash": "4c7b3bf95e114735f6a8b04470072167a04b83de8f7a502e7098b27306ff9e06",
+  "last_batch_id": "b-07253ccbc024",
+  "learning_offset": {
+    "byte_offset": 37187,
+    "event_seq": 48,
+    "last_event_hash": "5cfefff441be73d8571b2d2ca836128c1039bcf086a708a1767265e539898e58"
+  },
+  "ledger_offset": {
+    "byte_offset": 44425,
+    "event_seq": 29,
+    "last_event_hash": "90146cd21be3c547db52234692cfbf9cc44c27c153bdb5602121a07aafb99df1"
+  },
+  "loss_bearing_tokens_consumed": 10243,
+  "next_expected_plan_hash": "fadaf73653e6b561",
+  "parent_checkpoint_id": "genesis",
+  "rng_fingerprint": "75ad75127a758b7b",
+  "run_id": "v5-s6-demo",
+  "schedule_hash": "a9739d6e1e915c3726b183d8f46b889816ba2e79ef3beef3c0dbce412dfbc154",
+  "stage": "foundation-en",
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d",
+  "tokens_consumed": 12288
+}

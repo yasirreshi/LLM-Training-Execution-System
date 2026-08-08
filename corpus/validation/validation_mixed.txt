@@ -1,0 +1,48 @@
+# tdes-corpus v1
+# source: held-out validation split
+#
+# Validation data has a different permission from test data. It MAY be read
+# during training, to measure loss and watch for divergence. It must never
+# become gradient-bearing. The distinction is enforced in two places: the
+# registry marks these shards loss_bearing=false, and the trainer asserts that
+# the count of gradient-bearing tokens sourced from a validation shard is
+# exactly zero.
+
+===DOC===
+doc_id: val-0001
+lang: en
+script: Latn
+title: Sediment transport
+---
+A river carries sediment in two ways that behave quite differently. Suspended load travels within the body of the flow, held up by turbulence, and responds almost immediately to a change in discharge. Bed load rolls and bounces along the bottom, moves only above a threshold shear stress, and lags the flow considerably.
+
+The practical consequence is that a single measurement of sediment concentration taken mid-column during a flood tells you about the suspended fraction and almost nothing about the bed load, even though the bed load is what reshapes the channel. Reservoir siltation estimates built from suspended measurements alone are therefore systematically optimistic.
+
+===DOC===
+doc_id: val-0002
+lang: hi
+script: Deva
+title: सत्यापन नमूना
+---
+प्रशिक्षण के दौरान हम कुछ आँकड़े केवल मापने के लिए रखते हैं, सीखने के लिए नहीं। इनका उद्देश्य यह देखना है कि मॉडल जो सीख रहा है वह वास्तव में सामान्यीकृत हो रहा है या केवल याद किया जा रहा है।
+
+यदि प्रशिक्षण हानि घटती रहे और सत्यापन हानि बढ़ने लगे, तो यह स्पष्ट संकेत है कि मॉडल आँकड़ों को याद कर रहा है। यही कारण है कि सत्यापन समुच्चय पर ग्रेडिएंट कभी लागू नहीं किया जाता। यदि उस पर भी प्रशिक्षण हो जाए तो वह संकेत देना बंद कर देगा, और हमें पता भी नहीं चलेगा।
+
+===DOC===
+doc_id: val-0003
+lang: en
+script: Latn
+title: A short code sample for validation loss
+---
+def moving_average(values, window):
+    """Simple moving average, returning a list shorter than the input."""
+    if window < 1:
+        raise ValueError("window must be positive")
+    if len(values) < window:
+        return []
+    total = sum(values[:window])
+    out = [total / window]
+    for index in range(window, len(values)):
+        total += values[index] - values[index - window]
+        out.append(total / window)
+    return out

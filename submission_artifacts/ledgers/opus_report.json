@@ -1,0 +1,597 @@
+{
+  "acceptance_rate": 0.5,
+  "by_lane": {
+    "agentic": {
+      "accepted": 33,
+      "deferred": 33
+    },
+    "code": {
+      "accepted": 49,
+      "deferred": 39,
+      "rejected": 10
+    },
+    "general_web": {
+      "accepted": 77,
+      "deferred": 47,
+      "rejected": 30
+    },
+    "indic": {
+      "accepted": 33,
+      "deferred": 33
+    },
+    "math_science": {
+      "accepted": 33,
+      "deferred": 23,
+      "rejected": 10
+    },
+    "reasoning": {
+      "accepted": 39,
+      "deferred": 39
+    }
+  },
+  "by_reason": {
+    "above_proxy_threshold": 221,
+    "below_proxy_threshold": 214,
+    "protected_lane_bias": 18,
+    "quota_pressure": 13,
+    "stage_mismatch": 62
+  },
+  "by_status": {
+    "accepted": 264,
+    "deferred": 214,
+    "rejected": 50
+  },
+  "protected_floor_override_records": [
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-bfca01925505",
+      "candidate_loss": 8.183879,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-69adeadaa108",
+      "effective_token_estimate": 118,
+      "gradient_norm": 1.387175,
+      "lane": "agentic",
+      "opus_score": 0.116878,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 0,
+      "threshold": 0.074855
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-8fa561b5d3bc",
+      "candidate_loss": 8.171175,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-ebb1d1fa155f",
+      "effective_token_estimate": 255,
+      "gradient_norm": 1.409159,
+      "lane": "reasoning",
+      "opus_score": 0.095603,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "status": "accepted",
+      "step": 0,
+      "threshold": 0.090174
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-44757f2a80a7",
+      "candidate_loss": 8.250632,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-9328ae10e1de",
+      "effective_token_estimate": 112,
+      "gradient_norm": 1.675761,
+      "lane": "agentic",
+      "opus_score": 0.044784,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 1,
+      "threshold": 0.002085
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-03ceeab21611",
+      "candidate_loss": 8.140912,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-be20e79717de",
+      "effective_token_estimate": 251,
+      "gradient_norm": 1.381657,
+      "lane": "indic",
+      "opus_score": 0.241914,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa",
+        "sh-indic-cde2b9fc1b"
+      ],
+      "status": "accepted",
+      "step": 1,
+      "threshold": 0.230663
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-67600870aa78",
+      "candidate_loss": 7.956996,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-6936208f0914",
+      "effective_token_estimate": 216,
+      "gradient_norm": 0.551156,
+      "lane": "agentic",
+      "opus_score": -0.001864,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 2,
+      "threshold": -0.028424
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-1176d19f9740",
+      "candidate_loss": 8.031112,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-c1ea1d8fdf8f",
+      "effective_token_estimate": 224,
+      "gradient_norm": 0.880453,
+      "lane": "indic",
+      "opus_score": 0.27339,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-indic-65d3c8b055",
+        "sh-indic-cde2b9fc1b"
+      ],
+      "status": "accepted",
+      "step": 2,
+      "threshold": 0.149195
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-f5add82ac701",
+      "candidate_loss": 7.9755,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-ae060e0ca528",
+      "effective_token_estimate": 109,
+      "gradient_norm": 0.564556,
+      "lane": "agentic",
+      "opus_score": 0.03235,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 3,
+      "threshold": 0.018313
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-c36a0289da58",
+      "candidate_loss": 7.726279,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-1a6efc0f8404",
+      "effective_token_estimate": 221,
+      "gradient_norm": 0.338609,
+      "lane": "reasoning",
+      "opus_score": -0.028931,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 1,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "status": "accepted",
+      "step": 3,
+      "threshold": -0.038168
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-6dda46bd5c96",
+      "candidate_loss": 7.794045,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-3383d64772c2",
+      "effective_token_estimate": 207,
+      "gradient_norm": 0.30861,
+      "lane": "agentic",
+      "opus_score": -0.020352,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 4,
+      "threshold": -0.038286
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-bfca01925505",
+      "candidate_loss": 7.368334,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-f20721585a43",
+      "effective_token_estimate": 118,
+      "gradient_norm": 0.285468,
+      "lane": "agentic",
+      "opus_score": 0.004527,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 1,
+      "scoring_checkpoint": "genesis",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 5,
+      "threshold": 0.002263
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-44757f2a80a7",
+      "candidate_loss": 7.467323,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-4580fba41354",
+      "effective_token_estimate": 112,
+      "gradient_norm": 0.34409,
+      "lane": "agentic",
+      "opus_score": 0.178208,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 1,
+      "scoring_checkpoint": "ckpt_main_0006",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 6,
+      "threshold": 0.151336
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-c36a0289da58",
+      "candidate_loss": 7.056628,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-611236c727e4",
+      "effective_token_estimate": 221,
+      "gradient_norm": 0.266187,
+      "lane": "reasoning",
+      "opus_score": 0.181808,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 2,
+      "scoring_checkpoint": "ckpt_main_0006",
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "status": "accepted",
+      "step": 6,
+      "threshold": 0.143087
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-5cc744b848f2",
+      "candidate_loss": 7.124634,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-6e87e9296846",
+      "effective_token_estimate": 90,
+      "gradient_norm": 0.226161,
+      "lane": "agentic",
+      "opus_score": -0.017663,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 1,
+      "scoring_checkpoint": "ckpt_main_0006",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 7,
+      "threshold": -0.066651
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-073daeb75929",
+      "candidate_loss": 7.132959,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-d3b40b2b6795",
+      "effective_token_estimate": 255,
+      "gradient_norm": 0.324318,
+      "lane": "indic",
+      "opus_score": 0.650487,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 0,
+      "scoring_checkpoint": "ckpt_main_0006",
+      "shard_ids": [
+        "sh-indic-65d3c8b055"
+      ],
+      "status": "accepted",
+      "step": 7,
+      "threshold": 0.56522
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-67600870aa78",
+      "candidate_loss": 7.021429,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-b04c532b1dfa",
+      "effective_token_estimate": 216,
+      "gradient_norm": 0.184534,
+      "lane": "agentic",
+      "opus_score": 0.175283,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 1,
+      "scoring_checkpoint": "ckpt_main_0006",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 8,
+      "threshold": 0.142454
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-e5a825bb8b79",
+      "candidate_loss": 6.6852,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-6ef01beb9fd0",
+      "effective_token_estimate": 252,
+      "gradient_norm": 0.249301,
+      "lane": "agentic",
+      "opus_score": 0.133195,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 1,
+      "scoring_checkpoint": "ckpt_main_0006",
+      "shard_ids": [
+        "sh-agentic-15e9e87bcd"
+      ],
+      "status": "accepted",
+      "step": 9,
+      "threshold": 0.00558
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-03ceeab21611",
+      "candidate_loss": 7.110347,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-73ab7d30c919",
+      "effective_token_estimate": 251,
+      "gradient_norm": 0.300633,
+      "lane": "indic",
+      "opus_score": 0.606639,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 1,
+      "scoring_checkpoint": "ckpt_main_0006",
+      "shard_ids": [
+        "sh-indic-5bbc73dbfa",
+        "sh-indic-cde2b9fc1b"
+      ],
+      "status": "accepted",
+      "step": 9,
+      "threshold": 0.199874
+    },
+    {
+      "branch_id": "main",
+      "candidate_id": "smp-c36a0289da58",
+      "candidate_loss": 6.455836,
+      "curriculum_stage": "foundation-en",
+      "decision_id": "opd-cc15991be0c4",
+      "effective_token_estimate": 221,
+      "gradient_norm": 0.225216,
+      "lane": "reasoning",
+      "opus_score": 0.15223,
+      "protected_floor_override": true,
+      "proxy_version": "opus-proxy-cosine-1",
+      "reason": "protected_lane_bias",
+      "repeated_pass_number": 3,
+      "scoring_checkpoint": "ckpt_main_0006",
+      "shard_ids": [
+        "sh-reasoning-74d077c73c"
+      ],
+      "status": "accepted",
+      "step": 9,
+      "threshold": 0.085347
+    }
+  ],
+  "protected_floor_overrides": 18,
+  "proxy_health": {
+    "first_round_accepted_grad_norm": 0.536681,
+    "last_round_accepted_grad_norm": 0.164914,
+    "per_round": [
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.536681,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.383895,
+        "mean_score": 0.000474,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 12
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.150111,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.174448,
+        "mean_score": -0.117601,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 13
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.192215,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.194181,
+        "mean_score": -0.103434,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 14
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.196065,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.190884,
+        "mean_score": -0.104345,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 15
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.128569,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.153691,
+        "mean_score": -0.133576,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 16
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.278289,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.295935,
+        "mean_score": -0.317706,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "step": 17
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.208878,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.211182,
+        "mean_score": -0.032744,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 18
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.262032,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.252136,
+        "mean_score": -0.094968,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 19
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.158036,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.176043,
+        "mean_score": -0.042274,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 20
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.200841,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.207498,
+        "mean_score": -0.091651,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 21
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.262473,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.279627,
+        "mean_score": -0.203444,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 22
+      },
+      {
+        "accepted": 8,
+        "accepted_mean_gradient_norm": 0.164914,
+        "candidates": 16,
+        "deferred": 8,
+        "mean_gradient_norm": 0.19091,
+        "mean_score": -0.091144,
+        "rejected": 0,
+        "scoring_checkpoint": "ckpt_main_0018",
+        "step": 23
+      }
+    ],
+    "ratio_last_over_first": 0.3073,
+    "rounds": 12,
+    "verdict": "accepted gradient norms collapsed - the pool is likely exhausted, OPUS is selecting the best of poor candidates"
+  },
+  "reason_vocabulary": [
+    "above_proxy_threshold",
+    "below_proxy_threshold",
+    "quota_pressure",
+    "duplicate",
+    "stage_mismatch",
+    "protected_lane_bias"
+  ],
+  "statuses_reconcile": true,
+  "total_candidates_scored": 528
+}

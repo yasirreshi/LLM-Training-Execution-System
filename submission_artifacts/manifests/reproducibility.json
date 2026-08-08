@@ -1,0 +1,7 @@
+{
+  "content_hashes_stable": true,
+  "differing_shard_ids": [],
+  "method": "shards rebuilt from the same corpus in-process; hashes diffed",
+  "shard_ids_stable": true,
+  "shards_compared": 25
+}

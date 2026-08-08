@@ -1,0 +1,213 @@
+# tdes-corpus v1
+# source: hand written reference implementations
+# note: code documents are never chopped mid-file; the code lane uses best_fit
+#       packing so a function body cannot be split across two training windows.
+
+===DOC===
+doc_id: code-0001
+lang: en
+script: Latn
+title: Rolling hash for content-defined chunking
+stage_hint: early
+---
+class Buzhash:
+    """Rolling hash used to find content-defined chunk boundaries.
+
+    A fixed-size window slides over the byte stream. When the low bits of the
+    hash are all zero, the position is declared a boundary. Because the test
+    depends only on the window contents, inserting a byte early in the file
+    shifts only the chunks near the insertion, not every chunk after it.
+    """
+
+    def __init__(self, window=48, mask_bits=13):
+        self.window = window
+        self.mask = (1 << mask_bits) - 1
+        self.table = [self._mix(i) for i in range(256)]
+        self.reset()
+
+    @staticmethod
+    def _mix(value):
+        x = value * 0x9E3779B1 & 0xFFFFFFFF
+        x ^= x >> 15
+        x = x * 0x85EBCA6B & 0xFFFFFFFF
+        x ^= x >> 13
+        return x
+
+    def reset(self):
+        self.buffer = bytearray()
+        self.hash = 0
+
+    def _rotate(self, value, bits):
+        bits %= 32
+        return ((value << bits) | (value >> (32 - bits))) & 0xFFFFFFFF
+
+    def update(self, byte):
+        self.hash = self._rotate(self.hash, 1) ^ self.table[byte]
+        self.buffer.append(byte)
+        if len(self.buffer) > self.window:
+            stale = self.buffer.pop(0)
+            self.hash ^= self._rotate(self.table[stale], self.window % 32)
+        return self.hash
+
+    def at_boundary(self):
+        return len(self.buffer) >= self.window and (self.hash & self.mask) == 0
+
+
+def chunk(stream, min_size=2048, max_size=65536):
+    hasher = Buzhash()
+    current = bytearray()
+    for byte in stream:
+        current.append(byte)
+        hasher.update(byte)
+        long_enough = len(current) >= min_size
+        if (long_enough and hasher.at_boundary()) or len(current) >= max_size:
+            yield bytes(current)
+            current.clear()
+            hasher.reset()
+    if current:
+        yield bytes(current)
+
+===DOC===
+doc_id: code-0002
+lang: en
+script: Latn
+title: Best-fit decreasing bin packing
+stage_hint: mid
+---
+from bisect import bisect_left
+
+
+def best_fit_decreasing(items, capacity):
+    """Pack (id, size) pairs into bins of a fixed capacity.
+
+    Sorting by decreasing size first, then placing each item into the tightest
+    bin that still fits, gives noticeably better utilisation than first-fit on
+    a length distribution with many short items and a few long ones - which is
+    exactly the shape of a text corpus.
+    """
+    ordered = sorted(items, key=lambda pair: (-pair[1], pair[0]))
+    bins = []
+    remaining = []          # remaining[i] mirrors bins[i], kept sorted by value
+
+    for item_id, size in ordered:
+        if size > capacity:
+            raise ValueError(f"item {item_id!r} of size {size} exceeds capacity {capacity}")
+        index = _tightest_fit(remaining, size)
+        if index is None:
+            bins.append([(item_id, size)])
+            remaining.append(capacity - size)
+        else:
+            bins[index].append((item_id, size))
+            remaining[index] -= size
+    return bins
+
+
+def _tightest_fit(remaining, size):
+    best_index = None
+    best_slack = None
+    for index, free in enumerate(remaining):
+        if free < size:
+            continue
+        slack = free - size
+        if best_slack is None or slack < best_slack:
+            best_index, best_slack = index, slack
+            if slack == 0:
+                break
+    return best_index
+
+
+def utilisation(bins, capacity):
+    if not bins:
+        return 0.0
+    used = sum(size for packed in bins for _, size in packed)
+    return used / (len(bins) * capacity)
+
+===DOC===
+doc_id: code-0003
+lang: en
+script: Latn
+title: Atomic file replacement
+stage_hint: early
+---
+import os
+import tempfile
+from pathlib import Path
+
+
+def write_atomic(path, data, mode="wb"):
+    """Write a file so that readers never observe a partial version.
+
+    The write goes to a temporary file in the same directory, is flushed and
+    fsynced, and only then replaced over the target. os.replace is atomic on
+    POSIX and on Windows, so a concurrent reader sees either the complete old
+    file or the complete new one.
+
+    The directory fsync at the end is the step people forget: without it the
+    rename itself can be lost in a power failure even though the data was
+    durable.
+    """
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp_name = tempfile.mkstemp(dir=str(path.parent), prefix=path.name + ".", suffix=".tmp")
+    try:
+        with os.fdopen(fd, mode) as handle:
+            handle.write(data)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(tmp_name, path)
+    except BaseException:
+        try:
+            os.unlink(tmp_name)
+        except OSError:
+            pass
+        raise
+    _sync_directory(path.parent)
+    return path
+
+
+def _sync_directory(directory):
+    if os.name != "posix":
+        return          # Windows has no directory file descriptor to sync
+    fd = os.open(str(directory), os.O_RDONLY)
+    try:
+        os.fsync(fd)
+    finally:
+        os.close(fd)
+
+===DOC===
+doc_id: code-0004
+lang: en
+script: Latn
+title: Largest remainder apportionment
+stage_hint: mid
+---
+def apportion(weights, total):
+    """Split an integer total across named weights without drift.
+
+    Naive rounding of weight * total loses or gains a unit depending on the
+    fractions, and the error accumulates when the function is called once per
+    step. The largest remainder method allocates the floor of each share, then
+    hands the leftover units to the entries with the biggest fractional parts,
+    so the allocation always sums to exactly `total`.
+
+    Ties break on the key name so the result is deterministic - which matters
+    here, because this decides the lane mix of a training batch and the same
+    step must produce the same mix on a replay.
+    """
+    if total <= 0:
+        return {name: 0 for name in weights}
+    mass = sum(weights.values())
+    if mass <= 0:
+        raise ValueError("weights must sum to a positive value")
+
+    exact = {name: total * weight / mass for name, weight in weights.items()}
+    floors = {name: int(value) for name, value in exact.items()}
+    leftover = total - sum(floors.values())
+
+    order = sorted(
+        exact,
+        key=lambda name: (-(exact[name] - floors[name]), name),
+    )
+    for name in order[:leftover]:
+        floors[name] += 1
+    return floors

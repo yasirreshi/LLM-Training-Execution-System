@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Rebuilt from the corpus on every run; the manifests in submission_artifacts/
+# are the record, these are the working copies.
+artifacts_work/
+
+# submission_artifacts/ IS committed - the assignment asks for the generated
+# manifests, ledgers, checkpoints and reports. Two exceptions:
+#
+#   state.pt   16MB of weights per checkpoint. Every run regenerates them, and
+#              the meta.json beside each one (which carries the ledger offset,
+#              the RNG fingerprint and the schedule hash) is what makes a
+#              checkpoint auditable. That is committed.
+submission_artifacts/checkpoints/**/state.pt

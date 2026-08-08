@@ -1,0 +1,134 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "4a06743aa73fe57a1ceab83ea34bbe0aff586561a33cad12304638a290ca84eb"
+  ],
+  "capability_tags": [
+    "validation"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "4a06743aa73fe57a1ceab83ea34bbe0aff586561a33cad12304638a290ca84eb",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "val-0001",
+    "val-0002",
+    "val-0003"
+  ],
+  "documents": [
+    {
+      "content_hash": "48a19166640abc2d08dc78aa7ac674aaced307a7c4a1070ccf7a6d4aaf90689e",
+      "doc_id": "val-0001",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          192,
+          true
+        ],
+        [
+          "eos",
+          192,
+          193,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 193,
+      "token_start": 0
+    },
+    {
+      "content_hash": "93ed604a3f84c1109c85f34eb248d3c2cbf1b6d912997b2ba5c62667b9b64285",
+      "doc_id": "val-0002",
+      "lang": "hi",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          194,
+          512,
+          true
+        ],
+        [
+          "eos",
+          512,
+          513,
+          true
+        ]
+      ],
+      "script": "Deva",
+      "stage_hint": "early",
+      "token_end": 513,
+      "token_start": 193
+    },
+    {
+      "content_hash": "29ef729b08159358f57419c50808fd7c21f693601d38a4fdc897f82b76da1483",
+      "doc_id": "val-0003",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          514,
+          634,
+          true
+        ],
+        [
+          "eos",
+          634,
+          635,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 635,
+      "token_start": 513
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": true,
+  "index_hash": "93d4a33f4ddb5be985dcfca4282546ec2bce049c93e66ad10b8bc070e0761c52",
+  "lane": "validation",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": false,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "pad_only",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "held-out validation split, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Deva",
+    "Latn"
+  ],
+  "shard_id": "sh-validation-9d927d0047",
+  "source_file": "validation/validation_mixed.txt",
+  "source_id": "src-validation",
+  "stage_hint": "early",
+  "token_count": 635,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

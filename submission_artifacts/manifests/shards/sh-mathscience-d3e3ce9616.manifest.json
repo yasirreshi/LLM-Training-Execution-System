@@ -1,0 +1,130 @@
+{
+  "admitted": false,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "bb78989b378d335859bac1479d2606a37a05521bce9a4c393d7cda33e31238fb"
+  ],
+  "capability_tags": [
+    "en",
+    "math",
+    "science"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "overlap_detected",
+  "content_hash": "bb78989b378d335859bac1479d2606a37a05521bce9a4c393d7cda33e31238fb",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_deduped",
+  "doc_count": 2,
+  "document_ids": [
+    "sci-0001",
+    "sci-0002"
+  ],
+  "documents": [
+    {
+      "content_hash": "0bd5474ecaaf9970873e98266c3bb3fb902296d1d7e88d83f4ba48c2f6b4429f",
+      "doc_id": "sci-0001",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          266,
+          true
+        ],
+        [
+          "eos",
+          266,
+          267,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 267,
+      "token_start": 0
+    },
+    {
+      "content_hash": "61519a43b3c8856cfcd4e0ffa79fa77087141a1acf1881c5e83378c0c55f3241",
+      "doc_id": "sci-0002",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          268,
+          520,
+          true
+        ],
+        [
+          "eos",
+          520,
+          521,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 521,
+      "token_start": 267
+    }
+  ],
+  "eval_overlap_detail": [
+    {
+      "benchmark_doc_id": "test-0001",
+      "benchmark_id": "benchmark_reasoning_v1",
+      "canary": "",
+      "detector": "ngram",
+      "doc_id": "sci-0002",
+      "matched_ngrams": 54,
+      "overlap_ratio": 0.871
+    },
+    {
+      "benchmark_doc_id": "test-0002",
+      "benchmark_id": "benchmark_reasoning_v1",
+      "canary": "",
+      "detector": "ngram",
+      "doc_id": "sci-0002",
+      "matched_ngrams": 46,
+      "overlap_ratio": 0.7667
+    }
+  ],
+  "eval_overlap_status": "overlap_detected",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "a466b03d54eb8076dc206f803981a1aac03ae097817b3283daeecf2d5a41ea4f",
+  "lane": "math_science",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC-BY-4.0",
+  "licence_tier": "B",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "greedy",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "study-notes aggregator scrape",
+  "rejection_reasons": [
+    "contamination_not_scanned",
+    "eval_overlap_detected"
+  ],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-mathscience-d3e3ce9616",
+  "source_file": "math_science/science_contaminated.txt",
+  "source_id": "src-sci-aggregator",
+  "stage_hint": "early",
+  "token_count": 521,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

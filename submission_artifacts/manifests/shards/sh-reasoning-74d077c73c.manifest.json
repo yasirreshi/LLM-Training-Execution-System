@@ -1,0 +1,171 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "8e2b9a9d48f92e13c43d5e978707cc8917e02a37ba23e7114cf514db01e6db0b",
+    "25d05d56926da99723fe8709f57d5f7ecad0b0afb7353f07a3c46dc1ca1658ff"
+  ],
+  "capability_tags": [
+    "chain_of_thought",
+    "en",
+    "reasoning"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "b440b2ab9c9df2f630b13a2383059551df41c746675a844ed929717881b24f31",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "reason-0001",
+    "reason-0002",
+    "reason-0003"
+  ],
+  "documents": [
+    {
+      "content_hash": "eda3b4b51ad801ab11800036af11ffc5ea49d4e64b6894724a06764a9f277f34",
+      "doc_id": "reason-0001",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "user",
+          1,
+          64,
+          false
+        ],
+        [
+          "think",
+          64,
+          374,
+          true
+        ],
+        [
+          "answer",
+          374,
+          498,
+          true
+        ],
+        [
+          "eos",
+          498,
+          499,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 499,
+      "token_start": 0
+    },
+    {
+      "content_hash": "52059dce7e63a0df174a7d0df4c4e84aead452c454723a95aae1e3e4d087154b",
+      "doc_id": "reason-0002",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "user",
+          500,
+          534,
+          false
+        ],
+        [
+          "think",
+          534,
+          836,
+          true
+        ],
+        [
+          "answer",
+          836,
+          1011,
+          true
+        ],
+        [
+          "eos",
+          1011,
+          1012,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 1012,
+      "token_start": 499
+    },
+    {
+      "content_hash": "dc01eddfbf19586ef984061090218e30cf48686cd95c764da35833caa3847d45",
+      "doc_id": "reason-0003",
+      "lang": "en",
+      "min_context": 400,
+      "reserved": false,
+      "role_spans": [
+        [
+          "user",
+          1013,
+          1051,
+          false
+        ],
+        [
+          "think",
+          1051,
+          1427,
+          true
+        ],
+        [
+          "answer",
+          1427,
+          1718,
+          true
+        ],
+        [
+          "eos",
+          1718,
+          1719,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 1719,
+      "token_start": 1012
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "c5cbbdeba9435b08a8410f94b336e20292173a91bc2ec754d21725349aeb15e6",
+  "lane": "reasoning",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "response_only",
+  "min_context": 400,
+  "never_train": false,
+  "packing_policy": "long_context",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored reasoning traces, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-reasoning-74d077c73c",
+  "source_file": "reasoning/reasoning_traces.txt",
+  "source_id": "src-reasoning",
+  "stage_hint": "mid",
+  "token_count": 1719,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

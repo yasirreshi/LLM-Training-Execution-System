@@ -1,0 +1,1757 @@
+{
+  "answerable": {
+    "which_batches_preceded_a_spike": true,
+    "which_shards_in_a_token_window": true,
+    "which_shards_trained_this_checkpoint": true
+  },
+  "branch_id": "main",
+  "loss_spikes_detected": [
+    {
+      "delta": 0.462199,
+      "gradient_norm": 29.952969,
+      "loss": 7.265978,
+      "previous_loss": 6.803779,
+      "step": 12,
+      "z_score": 2.6731
+    },
+    {
+      "delta": 0.297791,
+      "gradient_norm": 2.034081,
+      "loss": 7.223894,
+      "previous_loss": 6.926103,
+      "step": 17,
+      "z_score": 1.8458
+    }
+  ],
+  "queries": {
+    "checkpoint_provenance": {
+      "branch_id": "main",
+      "checkpoint_step": 24,
+      "interval_steps": [
+        0,
+        24
+      ],
+      "loss_bearing_tokens": 50046,
+      "question": "which data produced checkpoint ckpt_main_0024",
+      "shards": [
+        {
+          "distinct_spans": 11,
+          "first_step": 0,
+          "last_step": 23,
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "steps": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            23
+          ],
+          "total_span_tokens": 4753
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 20,
+          "last_step": 22,
+          "shard_id": "sh-agentic-2124a81dbc",
+          "steps": [
+            20,
+            21,
+            22
+          ],
+          "total_span_tokens": 1196
+        },
+        {
+          "distinct_spans": 4,
+          "first_step": 12,
+          "last_step": 18,
+          "shard_id": "sh-code-45fc328cb1",
+          "steps": [
+            12,
+            13,
+            15,
+            16,
+            18
+          ],
+          "total_span_tokens": 921
+        },
+        {
+          "distinct_spans": 12,
+          "first_step": 1,
+          "last_step": 23,
+          "shard_id": "sh-code-a513275e65",
+          "steps": [
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            19,
+            20,
+            22,
+            23
+          ],
+          "total_span_tokens": 4134
+        },
+        {
+          "distinct_spans": 11,
+          "first_step": 0,
+          "last_step": 23,
+          "shard_id": "sh-code-e0ea18f98d",
+          "steps": [
+            0,
+            3,
+            6,
+            9,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            21,
+            23
+          ],
+          "total_span_tokens": 3119
+        },
+        {
+          "distinct_spans": 8,
+          "first_step": 0,
+          "last_step": 22,
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "steps": [
+            0,
+            1,
+            3,
+            6,
+            7,
+            9,
+            10,
+            13,
+            14,
+            21,
+            22
+          ],
+          "total_span_tokens": 3020
+        },
+        {
+          "distinct_spans": 4,
+          "first_step": 1,
+          "last_step": 22,
+          "shard_id": "sh-generalweb-507734bdcc",
+          "steps": [
+            1,
+            4,
+            7,
+            10,
+            14,
+            22
+          ],
+          "total_span_tokens": 1808
+        },
+        {
+          "distinct_spans": 9,
+          "first_step": 0,
+          "last_step": 21,
+          "shard_id": "sh-generalweb-582f1166ec",
+          "steps": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            16,
+            17,
+            19,
+            21
+          ],
+          "total_span_tokens": 4552
+        },
+        {
+          "distinct_spans": 4,
+          "first_step": 11,
+          "last_step": 22,
+          "shard_id": "sh-generalweb-8592ef7b58",
+          "steps": [
+            11,
+            13,
+            16,
+            18,
+            19,
+            20,
+            22
+          ],
+          "total_span_tokens": 1156
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 11,
+          "last_step": 22,
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "steps": [
+            11,
+            15,
+            18,
+            20,
+            22
+          ],
+          "total_span_tokens": 1240
+        },
+        {
+          "distinct_spans": 8,
+          "first_step": 0,
+          "last_step": 23,
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "steps": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            15,
+            16,
+            18,
+            20,
+            23
+          ],
+          "total_span_tokens": 5805
+        },
+        {
+          "distinct_spans": 2,
+          "first_step": 19,
+          "last_step": 20,
+          "shard_id": "sh-indic-2222a85dee",
+          "steps": [
+            19,
+            20
+          ],
+          "total_span_tokens": 96
+        },
+        {
+          "distinct_spans": 9,
+          "first_step": 0,
+          "last_step": 22,
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "steps": [
+            0,
+            1,
+            4,
+            9,
+            11,
+            17,
+            19,
+            20,
+            22
+          ],
+          "total_span_tokens": 1912
+        },
+        {
+          "distinct_spans": 4,
+          "first_step": 2,
+          "last_step": 20,
+          "shard_id": "sh-indic-65d3c8b055",
+          "steps": [
+            2,
+            7,
+            10,
+            11,
+            15,
+            20
+          ],
+          "total_span_tokens": 1069
+        },
+        {
+          "distinct_spans": 12,
+          "first_step": 1,
+          "last_step": 23,
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "steps": [
+            1,
+            2,
+            3,
+            5,
+            6,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16,
+            18,
+            19,
+            20,
+            21,
+            23
+          ],
+          "total_span_tokens": 4315
+        },
+        {
+          "distinct_spans": 11,
+          "first_step": 0,
+          "last_step": 23,
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "steps": [
+            0,
+            1,
+            3,
+            4,
+            6,
+            7,
+            9,
+            10,
+            12,
+            13,
+            15,
+            16,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "total_span_tokens": 4993
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 0,
+          "last_step": 17,
+          "shard_id": "sh-mathscience-6602f5780e",
+          "steps": [
+            0,
+            2,
+            3,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12,
+            14,
+            17
+          ],
+          "total_span_tokens": 881
+        },
+        {
+          "distinct_spans": 7,
+          "first_step": 0,
+          "last_step": 23,
+          "shard_id": "sh-reasoning-74d077c73c",
+          "steps": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "total_span_tokens": 6856
+        },
+        {
+          "distinct_spans": 1,
+          "first_step": 18,
+          "last_step": 22,
+          "shard_id": "sh-reasoning-8e3e81c92a",
+          "steps": [
+            18,
+            19,
+            21,
+            22
+          ],
+          "total_span_tokens": 1180
+        }
+      ],
+      "shards_involved": 19,
+      "tokens_by_lane": {
+        "agentic": 7680,
+        "code": 9472,
+        "general_web": 18176,
+        "indic": 7680,
+        "math_science": 7680,
+        "reasoning": 10752
+      },
+      "total_positions": 61440
+    },
+    "interval_by_step": {
+      "branch_id": "main",
+      "interval_steps": [
+        6,
+        12
+      ],
+      "loss_bearing_tokens": 10171,
+      "question": "which shards influenced the model between step 6 and step 12",
+      "shards": [
+        {
+          "distinct_spans": 6,
+          "first_step": 6,
+          "last_step": 11,
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "steps": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "total_span_tokens": 1244
+        },
+        {
+          "distinct_spans": 5,
+          "first_step": 7,
+          "last_step": 11,
+          "shard_id": "sh-code-a513275e65",
+          "steps": [
+            7,
+            8,
+            10,
+            11
+          ],
+          "total_span_tokens": 1028
+        },
+        {
+          "distinct_spans": 2,
+          "first_step": 6,
+          "last_step": 9,
+          "shard_id": "sh-code-e0ea18f98d",
+          "steps": [
+            6,
+            9
+          ],
+          "total_span_tokens": 512
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 6,
+          "last_step": 10,
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "steps": [
+            6,
+            7,
+            9,
+            10
+          ],
+          "total_span_tokens": 1024
+        },
+        {
+          "distinct_spans": 1,
+          "first_step": 7,
+          "last_step": 10,
+          "shard_id": "sh-generalweb-507734bdcc",
+          "steps": [
+            7,
+            10
+          ],
+          "total_span_tokens": 494
+        },
+        {
+          "distinct_spans": 4,
+          "first_step": 6,
+          "last_step": 11,
+          "shard_id": "sh-generalweb-582f1166ec",
+          "steps": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "total_span_tokens": 1042
+        },
+        {
+          "distinct_spans": 1,
+          "first_step": 11,
+          "last_step": 11,
+          "shard_id": "sh-generalweb-8592ef7b58",
+          "steps": [
+            11
+          ],
+          "total_span_tokens": 10
+        },
+        {
+          "distinct_spans": 1,
+          "first_step": 11,
+          "last_step": 11,
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "steps": [
+            11
+          ],
+          "total_span_tokens": 246
+        },
+        {
+          "distinct_spans": 6,
+          "first_step": 6,
+          "last_step": 10,
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "steps": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "total_span_tokens": 1298
+        },
+        {
+          "distinct_spans": 6,
+          "first_step": 9,
+          "last_step": 11,
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "steps": [
+            9,
+            11
+          ],
+          "total_span_tokens": 254
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 7,
+          "last_step": 11,
+          "shard_id": "sh-indic-65d3c8b055",
+          "steps": [
+            7,
+            10,
+            11
+          ],
+          "total_span_tokens": 442
+        },
+        {
+          "distinct_spans": 8,
+          "first_step": 6,
+          "last_step": 11,
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "steps": [
+            6,
+            8,
+            9,
+            10,
+            11
+          ],
+          "total_span_tokens": 791
+        },
+        {
+          "distinct_spans": 7,
+          "first_step": 6,
+          "last_step": 10,
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "steps": [
+            6,
+            7,
+            9,
+            10
+          ],
+          "total_span_tokens": 968
+        },
+        {
+          "distinct_spans": 2,
+          "first_step": 6,
+          "last_step": 11,
+          "shard_id": "sh-mathscience-6602f5780e",
+          "steps": [
+            6,
+            8,
+            9,
+            11
+          ],
+          "total_span_tokens": 184
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 6,
+          "last_step": 11,
+          "shard_id": "sh-reasoning-74d077c73c",
+          "steps": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "total_span_tokens": 1084
+        }
+      ],
+      "shards_involved": 15,
+      "tokens_by_lane": {
+        "agentic": 1536,
+        "code": 1792,
+        "general_web": 4352,
+        "indic": 1536,
+        "math_science": 1536,
+        "reasoning": 1536
+      },
+      "total_positions": 12288
+    },
+    "interval_by_token_count": {
+      "branch_id": "main",
+      "interval_steps": [
+        10,
+        19
+      ],
+      "loss_bearing_tokens": 16708,
+      "question": "which shards influenced the model between tokens 20480 and 40960",
+      "shards": [
+        {
+          "distinct_spans": 8,
+          "first_step": 10,
+          "last_step": 18,
+          "shard_id": "sh-agentic-15e9e87bcd",
+          "steps": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "total_span_tokens": 2127
+        },
+        {
+          "distinct_spans": 4,
+          "first_step": 12,
+          "last_step": 18,
+          "shard_id": "sh-code-45fc328cb1",
+          "steps": [
+            12,
+            13,
+            15,
+            16,
+            18
+          ],
+          "total_span_tokens": 921
+        },
+        {
+          "distinct_spans": 9,
+          "first_step": 10,
+          "last_step": 17,
+          "shard_id": "sh-code-a513275e65",
+          "steps": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "total_span_tokens": 1426
+        },
+        {
+          "distinct_spans": 7,
+          "first_step": 12,
+          "last_step": 17,
+          "shard_id": "sh-code-e0ea18f98d",
+          "steps": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "total_span_tokens": 1288
+        },
+        {
+          "distinct_spans": 5,
+          "first_step": 10,
+          "last_step": 14,
+          "shard_id": "sh-generalweb-0891b7c5fa",
+          "steps": [
+            10,
+            13,
+            14
+          ],
+          "total_span_tokens": 614
+        },
+        {
+          "distinct_spans": 4,
+          "first_step": 10,
+          "last_step": 14,
+          "shard_id": "sh-generalweb-507734bdcc",
+          "steps": [
+            10,
+            14
+          ],
+          "total_span_tokens": 657
+        },
+        {
+          "distinct_spans": 7,
+          "first_step": 10,
+          "last_step": 17,
+          "shard_id": "sh-generalweb-582f1166ec",
+          "steps": [
+            10,
+            11,
+            12,
+            16,
+            17
+          ],
+          "total_span_tokens": 1243
+        },
+        {
+          "distinct_spans": 4,
+          "first_step": 11,
+          "last_step": 18,
+          "shard_id": "sh-generalweb-8592ef7b58",
+          "steps": [
+            11,
+            13,
+            16,
+            18
+          ],
+          "total_span_tokens": 578
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 11,
+          "last_step": 18,
+          "shard_id": "sh-generalweb-cbd3f64ece",
+          "steps": [
+            11,
+            15,
+            18
+          ],
+          "total_span_tokens": 748
+        },
+        {
+          "distinct_spans": 6,
+          "first_step": 10,
+          "last_step": 18,
+          "shard_id": "sh-generalweb-d7da98bf1b",
+          "steps": [
+            10,
+            12,
+            15,
+            16,
+            18
+          ],
+          "total_span_tokens": 1536
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 11,
+          "last_step": 17,
+          "shard_id": "sh-indic-5bbc73dbfa",
+          "steps": [
+            11,
+            17
+          ],
+          "total_span_tokens": 386
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 10,
+          "last_step": 15,
+          "shard_id": "sh-indic-65d3c8b055",
+          "steps": [
+            10,
+            11,
+            15
+          ],
+          "total_span_tokens": 442
+        },
+        {
+          "distinct_spans": 10,
+          "first_step": 10,
+          "last_step": 18,
+          "shard_id": "sh-indic-cde2b9fc1b",
+          "steps": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            16,
+            18
+          ],
+          "total_span_tokens": 1683
+        },
+        {
+          "distinct_spans": 10,
+          "first_step": 10,
+          "last_step": 18,
+          "shard_id": "sh-mathscience-1889d2c0cc",
+          "steps": [
+            10,
+            12,
+            13,
+            15,
+            16,
+            18
+          ],
+          "total_span_tokens": 1595
+        },
+        {
+          "distinct_spans": 3,
+          "first_step": 11,
+          "last_step": 17,
+          "shard_id": "sh-mathscience-6602f5780e",
+          "steps": [
+            11,
+            12,
+            14,
+            17
+          ],
+          "total_span_tokens": 604
+        },
+        {
+          "distinct_spans": 5,
+          "first_step": 10,
+          "last_step": 18,
+          "shard_id": "sh-reasoning-74d077c73c",
+          "steps": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "total_span_tokens": 1733
+        },
+        {
+          "distinct_spans": 1,
+          "first_step": 18,
+          "last_step": 18,
+          "shard_id": "sh-reasoning-8e3e81c92a",
+          "steps": [
+            18
+          ],
+          "total_span_tokens": 295
+        }
+      ],
+      "shards_involved": 17,
+      "steps_in_window": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "token_window": [
+        20480,
+        40960
+      ],
+      "tokens_by_lane": {
+        "agentic": 2560,
+        "code": 4352,
+        "general_web": 5376,
+        "indic": 2560,
+        "math_science": 2560,
+        "reasoning": 3072
+      },
+      "total_positions": 20480
+    }
+  },
+  "spike_investigations": [
+    {
+      "accepted_decisions": [
+        {
+          "candidate_id": "smp-6dda46bd5c96",
+          "decision_id": "opd-fd8496f8d82a",
+          "gradient_norm": 0.20647,
+          "lane": "agentic",
+          "opus_score": 0.019972,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 10
+        },
+        {
+          "candidate_id": "smp-dfc87060cd1c",
+          "decision_id": "opd-519af0e063ff",
+          "gradient_norm": 0.195805,
+          "lane": "code",
+          "opus_score": 0.010736,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 10
+        },
+        {
+          "candidate_id": "smp-13e2c29ed5e0",
+          "decision_id": "opd-7fb688876214",
+          "gradient_norm": 0.205036,
+          "lane": "general_web",
+          "opus_score": 0.087331,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 10
+        },
+        {
+          "candidate_id": "smp-22c4686b4ed3",
+          "decision_id": "opd-0e413c35dc90",
+          "gradient_norm": 0.197597,
+          "lane": "general_web",
+          "opus_score": 0.110256,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 10
+        },
+        {
+          "candidate_id": "smp-991bfd8dbb55",
+          "decision_id": "opd-c78f5fa932cd",
+          "gradient_norm": 0.18322,
+          "lane": "general_web",
+          "opus_score": 0.053749,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 10
+        },
+        {
+          "candidate_id": "smp-1176d19f9740",
+          "decision_id": "opd-ef080bd5dd85",
+          "gradient_norm": 0.309243,
+          "lane": "indic",
+          "opus_score": 0.619191,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 10
+        },
+        {
+          "candidate_id": "smp-e87c7a74a054",
+          "decision_id": "opd-6dc4912f2470",
+          "gradient_norm": 0.233663,
+          "lane": "math_science",
+          "opus_score": 0.138632,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 10
+        },
+        {
+          "candidate_id": "smp-8914ca3f4d63",
+          "decision_id": "opd-f4655d5b3069",
+          "gradient_norm": 0.0,
+          "lane": "reasoning",
+          "opus_score": 0.0,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 10
+        },
+        {
+          "candidate_id": "smp-bfca01925505",
+          "decision_id": "opd-14bb7688db84",
+          "gradient_norm": 0.221105,
+          "lane": "agentic",
+          "opus_score": 0.072369,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 11
+        },
+        {
+          "candidate_id": "smp-65a7af7249ac",
+          "decision_id": "opd-d5d31fb63127",
+          "gradient_norm": 0.185969,
+          "lane": "code",
+          "opus_score": -0.078947,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 11
+        },
+        {
+          "candidate_id": "smp-8b04455072e5",
+          "decision_id": "opd-98408612e8c9",
+          "gradient_norm": 0.265135,
+          "lane": "code",
+          "opus_score": -0.060678,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 11
+        },
+        {
+          "candidate_id": "smp-e0eca11a6d30",
+          "decision_id": "opd-599fcf2ddebc",
+          "gradient_norm": 0.160904,
+          "lane": "general_web",
+          "opus_score": -0.021305,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 11
+        },
+        {
+          "candidate_id": "smp-ed0bbb95d9be",
+          "decision_id": "opd-0ca08dd65bf4",
+          "gradient_norm": 0.243412,
+          "lane": "general_web",
+          "opus_score": -0.054345,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 11
+        },
+        {
+          "candidate_id": "smp-6dd88e262f55",
+          "decision_id": "opd-f81a5bbe61b1",
+          "gradient_norm": 0.41096,
+          "lane": "indic",
+          "opus_score": -0.062833,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 11
+        },
+        {
+          "candidate_id": "smp-9ea2e6484f81",
+          "decision_id": "opd-1861409658f3",
+          "gradient_norm": 0.165207,
+          "lane": "math_science",
+          "opus_score": 0.01412,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 11
+        },
+        {
+          "candidate_id": "smp-c245e7308abb",
+          "decision_id": "opd-1837d6ba2e29",
+          "gradient_norm": 0.205332,
+          "lane": "reasoning",
+          "opus_score": 0.126025,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 11
+        },
+        {
+          "candidate_id": "smp-44757f2a80a7",
+          "decision_id": "opd-dd7bb753eb05",
+          "gradient_norm": 0.34295,
+          "lane": "agentic",
+          "opus_score": -0.046439,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-44757f2a80a7",
+          "decision_id": "opd-dd7bb753eb05",
+          "gradient_norm": 0.34295,
+          "lane": "agentic",
+          "opus_score": -0.046439,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-1d66d4be8f00",
+          "decision_id": "opd-5091c34d71cc",
+          "gradient_norm": 0.253018,
+          "lane": "code",
+          "opus_score": 0.109656,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-1d66d4be8f00",
+          "decision_id": "opd-5091c34d71cc",
+          "gradient_norm": 0.253018,
+          "lane": "code",
+          "opus_score": 0.109656,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-3840ec996d79",
+          "decision_id": "opd-a91df7692cbe",
+          "gradient_norm": 2.467768,
+          "lane": "code",
+          "opus_score": 0.09823,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-3840ec996d79",
+          "decision_id": "opd-a91df7692cbe",
+          "gradient_norm": 2.467768,
+          "lane": "code",
+          "opus_score": 0.09823,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-395c5b31df1d",
+          "decision_id": "opd-9c21e70b0859",
+          "gradient_norm": 0.306567,
+          "lane": "general_web",
+          "opus_score": -0.058499,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-395c5b31df1d",
+          "decision_id": "opd-9c21e70b0859",
+          "gradient_norm": 0.306567,
+          "lane": "general_web",
+          "opus_score": -0.058499,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-8a0202098d9f",
+          "decision_id": "opd-4e81c6fdbfd7",
+          "gradient_norm": 0.153934,
+          "lane": "general_web",
+          "opus_score": -0.041204,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-8a0202098d9f",
+          "decision_id": "opd-4e81c6fdbfd7",
+          "gradient_norm": 0.153934,
+          "lane": "general_web",
+          "opus_score": -0.041204,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-a2ab49c8cd4a",
+          "decision_id": "opd-b6625077541f",
+          "gradient_norm": 0.304237,
+          "lane": "indic",
+          "opus_score": 0.810362,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-a2ab49c8cd4a",
+          "decision_id": "opd-b6625077541f",
+          "gradient_norm": 0.304237,
+          "lane": "indic",
+          "opus_score": 0.810362,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-b6fb15eabb4d",
+          "decision_id": "opd-48098924d690",
+          "gradient_norm": 0.203613,
+          "lane": "math_science",
+          "opus_score": -0.07445,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-b6fb15eabb4d",
+          "decision_id": "opd-48098924d690",
+          "gradient_norm": 0.203613,
+          "lane": "math_science",
+          "opus_score": -0.07445,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-8fa561b5d3bc",
+          "decision_id": "opd-9c1215fdbe71",
+          "gradient_norm": 0.261362,
+          "lane": "reasoning",
+          "opus_score": -0.05569,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        },
+        {
+          "candidate_id": "smp-8fa561b5d3bc",
+          "decision_id": "opd-9c1215fdbe71",
+          "gradient_norm": 0.261362,
+          "lane": "reasoning",
+          "opus_score": -0.05569,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 12
+        }
+      ],
+      "highest_gradient_norm_candidate": {
+        "branch_id": "main",
+        "candidate_id": "smp-3840ec996d79",
+        "candidate_loss": 9.268503,
+        "curriculum_stage": "reasoning-heavy-midtrain",
+        "decision_id": "opd-a91df7692cbe",
+        "effective_token_estimate": 255,
+        "gradient_norm": 2.467768,
+        "lane": "code",
+        "opus_score": 0.09823,
+        "protected_floor_override": false,
+        "proxy_version": "opus-proxy-cosine-1",
+        "reason": "above_proxy_threshold",
+        "repeated_pass_number": 2,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "shard_ids": [
+          "sh-code-a513275e65"
+        ],
+        "status": "accepted",
+        "step": 12,
+        "threshold": 0.016877
+      },
+      "lookback_steps": [
+        10,
+        12
+      ],
+      "opus_accepted_in_window": 32,
+      "opus_overrides_in_window": 0,
+      "question": "which OPUS-selected batches appeared before the loss spike at step 12",
+      "shards_in_window": [
+        "sh-agentic-15e9e87bcd",
+        "sh-code-45fc328cb1",
+        "sh-code-a513275e65",
+        "sh-code-e0ea18f98d",
+        "sh-generalweb-0891b7c5fa",
+        "sh-generalweb-507734bdcc",
+        "sh-generalweb-582f1166ec",
+        "sh-generalweb-8592ef7b58",
+        "sh-generalweb-cbd3f64ece",
+        "sh-generalweb-d7da98bf1b",
+        "sh-indic-5bbc73dbfa",
+        "sh-indic-65d3c8b055",
+        "sh-indic-cde2b9fc1b",
+        "sh-mathscience-1889d2c0cc",
+        "sh-mathscience-6602f5780e",
+        "sh-reasoning-74d077c73c"
+      ],
+      "spike_step": 12,
+      "tokens_by_lane": {
+        "agentic": 768,
+        "code": 1280,
+        "general_web": 1792,
+        "indic": 768,
+        "math_science": 768,
+        "reasoning": 768
+      }
+    },
+    {
+      "accepted_decisions": [
+        {
+          "candidate_id": "smp-ac277563ace3",
+          "decision_id": "opd-42123ccc7df9",
+          "gradient_norm": 0.165087,
+          "lane": "agentic",
+          "opus_score": -0.118765,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-ac277563ace3",
+          "decision_id": "opd-42123ccc7df9",
+          "gradient_norm": 0.165087,
+          "lane": "agentic",
+          "opus_score": -0.118765,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-1d66d4be8f00",
+          "decision_id": "opd-097d3bd5cb44",
+          "gradient_norm": 0.300668,
+          "lane": "code",
+          "opus_score": 0.31501,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-1d66d4be8f00",
+          "decision_id": "opd-097d3bd5cb44",
+          "gradient_norm": 0.300668,
+          "lane": "code",
+          "opus_score": 0.31501,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-33c28a89b8bf",
+          "decision_id": "opd-62ca2d203cb1",
+          "gradient_norm": 0.187574,
+          "lane": "code",
+          "opus_score": 0.069515,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-33c28a89b8bf",
+          "decision_id": "opd-62ca2d203cb1",
+          "gradient_norm": 0.187574,
+          "lane": "code",
+          "opus_score": 0.069515,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-22c4686b4ed3",
+          "decision_id": "opd-18d0b4398be6",
+          "gradient_norm": 0.13176,
+          "lane": "general_web",
+          "opus_score": -0.286486,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-22c4686b4ed3",
+          "decision_id": "opd-18d0b4398be6",
+          "gradient_norm": 0.13176,
+          "lane": "general_web",
+          "opus_score": -0.286486,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-3fc24cc6f9fe",
+          "decision_id": "opd-2bfb068ab6ba",
+          "gradient_norm": 0.120836,
+          "lane": "general_web",
+          "opus_score": -0.143976,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-3fc24cc6f9fe",
+          "decision_id": "opd-2bfb068ab6ba",
+          "gradient_norm": 0.120836,
+          "lane": "general_web",
+          "opus_score": -0.143976,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-674c6e80e324",
+          "decision_id": "opd-3e2ff7474322",
+          "gradient_norm": 0.322078,
+          "lane": "indic",
+          "opus_score": 0.777115,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-674c6e80e324",
+          "decision_id": "opd-3e2ff7474322",
+          "gradient_norm": 0.322078,
+          "lane": "indic",
+          "opus_score": 0.777115,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-cc3d38001044",
+          "decision_id": "opd-9143f01911ab",
+          "gradient_norm": 0.163607,
+          "lane": "math_science",
+          "opus_score": -0.209659,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-cc3d38001044",
+          "decision_id": "opd-9143f01911ab",
+          "gradient_norm": 0.163607,
+          "lane": "math_science",
+          "opus_score": -0.209659,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-8fa561b5d3bc",
+          "decision_id": "opd-3f92ce59f5f2",
+          "gradient_norm": 0.176911,
+          "lane": "reasoning",
+          "opus_score": -0.206782,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-8fa561b5d3bc",
+          "decision_id": "opd-3f92ce59f5f2",
+          "gradient_norm": 0.176911,
+          "lane": "reasoning",
+          "opus_score": -0.206782,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 15
+        },
+        {
+          "candidate_id": "smp-4ba3395483c4",
+          "decision_id": "opd-c61eecb6c900",
+          "gradient_norm": 0.0,
+          "lane": "agentic",
+          "opus_score": 0.0,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-4ba3395483c4",
+          "decision_id": "opd-c61eecb6c900",
+          "gradient_norm": 0.0,
+          "lane": "agentic",
+          "opus_score": 0.0,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-932f9d29f8cd",
+          "decision_id": "opd-89243dcecba2",
+          "gradient_norm": 0.157494,
+          "lane": "code",
+          "opus_score": -0.231267,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-932f9d29f8cd",
+          "decision_id": "opd-89243dcecba2",
+          "gradient_norm": 0.157494,
+          "lane": "code",
+          "opus_score": -0.231267,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-adda4e8f635a",
+          "decision_id": "opd-2fccdde20ed6",
+          "gradient_norm": 0.132997,
+          "lane": "code",
+          "opus_score": -0.236703,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-adda4e8f635a",
+          "decision_id": "opd-2fccdde20ed6",
+          "gradient_norm": 0.132997,
+          "lane": "code",
+          "opus_score": -0.236703,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-41304901fd4f",
+          "decision_id": "opd-c2c4240e244d",
+          "gradient_norm": 0.203118,
+          "lane": "general_web",
+          "opus_score": 0.120632,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-41304901fd4f",
+          "decision_id": "opd-c2c4240e244d",
+          "gradient_norm": 0.203118,
+          "lane": "general_web",
+          "opus_score": 0.120632,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-930a3669f13d",
+          "decision_id": "opd-ef99dbd4ef01",
+          "gradient_norm": 0.148909,
+          "lane": "general_web",
+          "opus_score": -0.364677,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-930a3669f13d",
+          "decision_id": "opd-ef99dbd4ef01",
+          "gradient_norm": 0.148909,
+          "lane": "general_web",
+          "opus_score": -0.364677,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-22e18fac48d8",
+          "decision_id": "opd-4a3008ad8f12",
+          "gradient_norm": 0.252141,
+          "lane": "indic",
+          "opus_score": 0.691937,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-22e18fac48d8",
+          "decision_id": "opd-4a3008ad8f12",
+          "gradient_norm": 0.252141,
+          "lane": "indic",
+          "opus_score": 0.691937,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-67280ce6d7f4",
+          "decision_id": "opd-b05cf183dfce",
+          "gradient_norm": 0.133892,
+          "lane": "math_science",
+          "opus_score": -0.12593,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-67280ce6d7f4",
+          "decision_id": "opd-b05cf183dfce",
+          "gradient_norm": 0.133892,
+          "lane": "math_science",
+          "opus_score": -0.12593,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-8914ca3f4d63",
+          "decision_id": "opd-fd759de9b4a0",
+          "gradient_norm": 0.0,
+          "lane": "reasoning",
+          "opus_score": 0.0,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-8914ca3f4d63",
+          "decision_id": "opd-fd759de9b4a0",
+          "gradient_norm": 0.0,
+          "lane": "reasoning",
+          "opus_score": 0.0,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 16
+        },
+        {
+          "candidate_id": "smp-44757f2a80a7",
+          "decision_id": "opd-c36a7869f97f",
+          "gradient_norm": 0.233642,
+          "lane": "agentic",
+          "opus_score": 0.045738,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 17
+        },
+        {
+          "candidate_id": "smp-8b04455072e5",
+          "decision_id": "opd-78643b4218a1",
+          "gradient_norm": 0.218756,
+          "lane": "code",
+          "opus_score": -0.314827,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 17
+        },
+        {
+          "candidate_id": "smp-f6373f1dadcc",
+          "decision_id": "opd-9c360dbbba70",
+          "gradient_norm": 0.111565,
+          "lane": "code",
+          "opus_score": -0.179207,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 17
+        },
+        {
+          "candidate_id": "smp-395c5b31df1d",
+          "decision_id": "opd-a711e2fdcc4d",
+          "gradient_norm": 0.25005,
+          "lane": "general_web",
+          "opus_score": -0.53668,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 17
+        },
+        {
+          "candidate_id": "smp-6fde11fbc65c",
+          "decision_id": "opd-d027740a1de5",
+          "gradient_norm": 0.134812,
+          "lane": "general_web",
+          "opus_score": -0.38525,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 17
+        },
+        {
+          "candidate_id": "smp-6e5d04357004",
+          "decision_id": "opd-bd7f6df83bac",
+          "gradient_norm": 0.850459,
+          "lane": "indic",
+          "opus_score": 0.38821,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 17
+        },
+        {
+          "candidate_id": "smp-eb58ddba0bdc",
+          "decision_id": "opd-160063990dcd",
+          "gradient_norm": 0.13875,
+          "lane": "math_science",
+          "opus_score": -0.158444,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 17
+        },
+        {
+          "candidate_id": "smp-94b14ad3e76c",
+          "decision_id": "opd-b0701e70c7cb",
+          "gradient_norm": 0.288276,
+          "lane": "reasoning",
+          "opus_score": -0.48725,
+          "protected_floor_override": false,
+          "reason": "above_proxy_threshold",
+          "step": 17
+        }
+      ],
+      "highest_gradient_norm_candidate": {
+        "branch_id": "main",
+        "candidate_id": "smp-6e5d04357004",
+        "candidate_loss": 9.055774,
+        "curriculum_stage": "reasoning-heavy-midtrain",
+        "decision_id": "opd-bd7f6df83bac",
+        "effective_token_estimate": 255,
+        "gradient_norm": 0.850459,
+        "lane": "indic",
+        "opus_score": 0.38821,
+        "protected_floor_override": false,
+        "proxy_version": "opus-proxy-cosine-1",
+        "reason": "above_proxy_threshold",
+        "repeated_pass_number": 2,
+        "scoring_checkpoint": "ckpt_main_0012",
+        "shard_ids": [
+          "sh-indic-5bbc73dbfa"
+        ],
+        "status": "accepted",
+        "step": 17,
+        "threshold": 0.242626
+      },
+      "lookback_steps": [
+        15,
+        17
+      ],
+      "opus_accepted_in_window": 40,
+      "opus_overrides_in_window": 0,
+      "question": "which OPUS-selected batches appeared before the loss spike at step 17",
+      "shards_in_window": [
+        "sh-agentic-15e9e87bcd",
+        "sh-code-45fc328cb1",
+        "sh-code-a513275e65",
+        "sh-code-e0ea18f98d",
+        "sh-generalweb-582f1166ec",
+        "sh-generalweb-8592ef7b58",
+        "sh-generalweb-cbd3f64ece",
+        "sh-generalweb-d7da98bf1b",
+        "sh-indic-5bbc73dbfa",
+        "sh-indic-65d3c8b055",
+        "sh-indic-cde2b9fc1b",
+        "sh-mathscience-1889d2c0cc",
+        "sh-mathscience-6602f5780e",
+        "sh-reasoning-74d077c73c"
+      ],
+      "spike_step": 17,
+      "tokens_by_lane": {
+        "agentic": 768,
+        "code": 1536,
+        "general_web": 1536,
+        "indic": 768,
+        "math_science": 768,
+        "reasoning": 768
+      }
+    }
+  ]
+}

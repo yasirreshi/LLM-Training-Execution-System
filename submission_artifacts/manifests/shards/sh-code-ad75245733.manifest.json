@@ -1,0 +1,110 @@
+{
+  "admitted": false,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "efb38d9a66d6c59b3ddf3df1d3baa46557e3345614ff68b4a6650312ebdeb9ce"
+  ],
+  "capability_tags": [
+    "code",
+    "python"
+  ],
+  "cleaning_pipeline_hash": null,
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "not_scanned",
+  "content_hash": "efb38d9a66d6c59b3ddf3df1d3baa46557e3345614ff68b4a6650312ebdeb9ce",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "unknown",
+  "doc_count": 2,
+  "document_ids": [
+    "code-0201",
+    "code-0202"
+  ],
+  "documents": [
+    {
+      "content_hash": "7ea23343c3494b9573befb5625dc90c9006a81b778d75ac99ad9f6d4a5d1c997",
+      "doc_id": "code-0201",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          189,
+          true
+        ],
+        [
+          "eos",
+          189,
+          190,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 190,
+      "token_start": 0
+    },
+    {
+      "content_hash": "a9b1f043aeb175f51956bab983c1c30760d66b69843cff176eb659c950e1ee2c",
+      "doc_id": "code-0202",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          191,
+          337,
+          true
+        ],
+        [
+          "eos",
+          337,
+          338,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 338,
+      "token_start": 190
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "d59786179c7ba537ca6b6e4d7fb13d3831d260d8dc7f113c8dfd7d556dfc5f94",
+  "lane": "code",
+  "languages": [
+    "en"
+  ],
+  "licence": "MIT",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "best_fit",
+  "parent_shard_ids": [],
+  "pii_status": "unknown",
+  "position_policy": "segment_relative",
+  "provenance": "unknown scrape",
+  "rejection_reasons": [
+    "cleaning_lineage_unknown",
+    "contamination_not_scanned"
+  ],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-code-ad75245733",
+  "source_file": "code/code_unknown_lineage.txt",
+  "source_id": "src-code-unknown",
+  "stage_hint": "early",
+  "token_count": 338,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

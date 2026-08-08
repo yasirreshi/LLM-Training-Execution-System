@@ -1,0 +1,72 @@
+{
+  "blocked": 3,
+  "by_lane": {
+    "agentic": {
+      "tokens": 4385,
+      "train": 2
+    },
+    "code": {
+      "blocked": 1,
+      "tokens": 3094,
+      "train": 3
+    },
+    "general_web": {
+      "blocked": 1,
+      "tokens": 4804,
+      "train": 6
+    },
+    "indic": {
+      "tokens": 4911,
+      "train": 4
+    },
+    "math_science": {
+      "blocked": 1,
+      "tokens": 1865,
+      "train": 2
+    },
+    "reasoning": {
+      "tokens": 2474,
+      "train": 2
+    },
+    "test": {
+      "test": 2,
+      "tokens": 379
+    },
+    "validation": {
+      "tokens": 635,
+      "validation": 1
+    }
+  },
+  "permissions": {
+    "sh-agentic-15e9e87bcd": "train",
+    "sh-agentic-2124a81dbc": "train",
+    "sh-code-45fc328cb1": "train",
+    "sh-code-a513275e65": "train",
+    "sh-code-ad75245733": "blocked",
+    "sh-code-e0ea18f98d": "train",
+    "sh-generalweb-0891b7c5fa": "train",
+    "sh-generalweb-507734bdcc": "train",
+    "sh-generalweb-582f1166ec": "train",
+    "sh-generalweb-8592ef7b58": "train",
+    "sh-generalweb-cbd3f64ece": "train",
+    "sh-generalweb-d00a44874b": "blocked",
+    "sh-generalweb-d7da98bf1b": "train",
+    "sh-indic-2222a85dee": "train",
+    "sh-indic-5bbc73dbfa": "train",
+    "sh-indic-65d3c8b055": "train",
+    "sh-indic-cde2b9fc1b": "train",
+    "sh-mathscience-1889d2c0cc": "train",
+    "sh-mathscience-6602f5780e": "train",
+    "sh-mathscience-d3e3ce9616": "blocked",
+    "sh-reasoning-74d077c73c": "train",
+    "sh-reasoning-8e3e81c92a": "train",
+    "sh-test-24dae7d4c5": "test",
+    "sh-test-65f6387680": "test",
+    "sh-validation-9d927d0047": "validation"
+  },
+  "test": 2,
+  "total_shards": 25,
+  "train": 19,
+  "trainable_tokens": 20359,
+  "validation": 1
+}

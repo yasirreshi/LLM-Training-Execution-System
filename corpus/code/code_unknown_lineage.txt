@@ -1,0 +1,60 @@
+# tdes-corpus v1
+# source: unknown scrape, cleaning lineage not recorded
+#
+# The cleaning pipeline that produced this file was not recorded, so there is
+# no cleaning_pipeline_hash to put in the manifest. the admission contract's admission
+# contract says only data with a known cleaning lineage may enter training, so
+# the gate is expected to reject the shard built from this file - even though
+# the code itself is fine.
+
+===DOC===
+doc_id: code-0201
+lang: en
+script: Latn
+title: Levenshtein distance
+---
+def levenshtein(a, b):
+    """Edit distance between two strings, O(len(a) * len(b)) time, O(len(b)) space."""
+    if a == b:
+        return 0
+    if not a:
+        return len(b)
+    if not b:
+        return len(a)
+
+    previous = list(range(len(b) + 1))
+    for i, ca in enumerate(a, start=1):
+        current = [i]
+        for j, cb in enumerate(b, start=1):
+            insert = current[j - 1] + 1
+            delete = previous[j] + 1
+            substitute = previous[j - 1] + (ca != cb)
+            current.append(min(insert, delete, substitute))
+        previous = current
+    return previous[-1]
+
+===DOC===
+doc_id: code-0202
+lang: en
+script: Latn
+title: Reservoir sampling
+---
+import random
+
+
+def reservoir_sample(stream, k, rng=None):
+    """Uniformly sample k items from a stream of unknown length in one pass.
+
+    Every item in the stream ends up in the reservoir with probability k/n,
+    where n is the final length, without n ever being known in advance.
+    """
+    rng = rng or random.Random()
+    reservoir = []
+    for index, item in enumerate(stream):
+        if index < k:
+            reservoir.append(item)
+        else:
+            j = rng.randint(0, index)
+            if j < k:
+                reservoir[j] = item
+    return reservoir

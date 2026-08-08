@@ -1,0 +1,26 @@
+# tdes-corpus v1
+# source: syndicated news wire, licence tier D (no redistribution, no training)
+#
+# This file is admissible-looking prose from an inadmissible source. It exists
+# so the admission gate has a real licence rejection to record rather than a
+# synthetic one. Nothing about the text is wrong; the licence is.
+
+===DOC===
+doc_id: web-0301
+lang: en
+script: Latn
+title: Port congestion eases after three weeks
+---
+Container dwell times at the eastern terminal fell to four days this week from a peak of eleven, port authority figures show, as the backlog created by the storm closure continued to clear. Vessel waiting time outside the roadstead is now under twelve hours for the first time since the disruption began.
+
+Operators cautioned that the improvement reflects reduced arrivals as much as increased throughput. Several services diverted to alternative ports during the closure and have not yet returned to their normal rotation, which has temporarily lowered demand at the terminal while the recovery is measured.
+
+===DOC===
+doc_id: web-0302
+lang: en
+script: Latn
+title: Grain procurement crosses seasonal target
+---
+State procurement of wheat has passed the seasonal target with two weeks of the buying window remaining, according to figures released on Tuesday. Arrivals at regulated markets have been heavier than in the corresponding period last year, which officials attributed to a favourable harvest and to earlier-than-usual sowing across the northern belt.
+
+Storage capacity remains the constraint. Covered warehousing in the region is near full, and a portion of the procured stock is being held under temporary cover, a practice that raises spoilage risk if rainfall arrives before movement to consuming states is complete.

@@ -1,0 +1,82 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "ab1e99ebde14ead0e2b8fb7661c99ea092f8e10875c6a1baa4efb44190c26a24"
+  ],
+  "capability_tags": [
+    "en",
+    "math",
+    "reasoning"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "ab1e99ebde14ead0e2b8fb7661c99ea092f8e10875c6a1baa4efb44190c26a24",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 1,
+  "document_ids": [
+    "math-0004"
+  ],
+  "documents": [
+    {
+      "content_hash": "6022324be56f26919ee0b99c19f98762f7cb9318e324fe95371143f49f74ae2b",
+      "doc_id": "math-0004",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          347,
+          true
+        ],
+        [
+          "eos",
+          347,
+          348,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 348,
+      "token_start": 0
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "fa86d203275db48731594260dc0e569c6f228cd711139c441b127e16f7aa010e",
+  "lane": "math_science",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "greedy",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored worked explanations, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-mathscience-6602f5780e",
+  "source_file": "math_science/math_core.txt",
+  "source_id": "src-math-core",
+  "stage_hint": "mid",
+  "token_count": 348,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

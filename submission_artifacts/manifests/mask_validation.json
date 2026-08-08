@@ -1,0 +1,15 @@
+{
+  "all_attention_confined": true,
+  "all_masks_valid": true,
+  "attention_problems": [],
+  "checks_applied": [
+    "no loss on padding",
+    "no loss on the first token of a segment",
+    "no loss on context-only spans (prompt, tool observation)",
+    "position ids segment-relative, contiguous, monotonic",
+    "segments contiguous, padding a suffix",
+    "attention causal and confined to one packed document"
+  ],
+  "mask_problems": [],
+  "samples_checked": 121
+}

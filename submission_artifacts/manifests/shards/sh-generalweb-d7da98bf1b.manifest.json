@@ -1,0 +1,135 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "a191329867bcdf0ef436cdd92ba56de6e595331c33333d7dc4c4ed9c9780c87a",
+    "cd2ad47d32892162567a28a64c2ba484bd617725d32744082b9e14b0963bef80"
+  ],
+  "capability_tags": [
+    "en",
+    "geography",
+    "world_knowledge"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "5fb3e6a83b12280bd03cff2cce325fb199ed5895a092e43fe513b42bf7c6bbd4",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "web-0001",
+    "web-0002",
+    "web-0003"
+  ],
+  "documents": [
+    {
+      "content_hash": "2f1c53a8d3a161c0abfb638f17cec53bbef2bc30da3878260d3775d2cb832108",
+      "doc_id": "web-0001",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          404,
+          true
+        ],
+        [
+          "eos",
+          404,
+          405,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 405,
+      "token_start": 0
+    },
+    {
+      "content_hash": "6204ea7c5e8893b7921e4f9025eaeed415f0ad33e05f4f3a1d3b974adb8cecc6",
+      "doc_id": "web-0002",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          406,
+          733,
+          true
+        ],
+        [
+          "eos",
+          733,
+          734,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 734,
+      "token_start": 405
+    },
+    {
+      "content_hash": "3914d972c3b7ffb9ecb6247cc49ccf487e8c8acde425641dcdf17a2ceddc47d1",
+      "doc_id": "web-0003",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          735,
+          1108,
+          true
+        ],
+        [
+          "eos",
+          1108,
+          1109,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 1109,
+      "token_start": 734
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "afdbaabd06acdc61ac583d87c6e160efac4a5bf724166aef5b810b49462a92b7",
+  "lane": "general_web",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "concat_chop",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored encyclopaedic prose, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-generalweb-d7da98bf1b",
+  "source_file": "general_web/web_geography.txt",
+  "source_id": "src-web-geo",
+  "stage_hint": "early",
+  "token_count": 1109,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

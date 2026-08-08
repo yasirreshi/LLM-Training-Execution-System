@@ -1,0 +1,9 @@
+# CPU-only PyTorch is sufficient; the model is 1.3M parameters and the run
+# pins itself to a single thread for determinism.
+#
+# If the default index tries to pull a CUDA build you do not want, use:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.0
+
+# Tests only.
+pytest>=7.0

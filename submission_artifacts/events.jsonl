@@ -1,0 +1,204 @@
+{"kind": "banner", "pid": 23680, "seq": 0, "text": "TDES  Training Data Execution System  ·  full demonstration", "ts": 1786200075.280171}
+{"event": "run_configuration", "kind": "event", "payload": {"config_hash": "eb8646b63484219c", "grad_accum": 2, "run_id": "v5-s6-demo", "seed": 20260807, "sequences_per_step": 8, "total_steps": 24, "world_size": 2}, "pid": 23680, "seq": 1, "ts": 1786200075.287462}
+{"kind": "banner", "pid": 23680, "seq": 2, "text": "PHASE 0  build the data system", "ts": 1786200075.2924404}
+{"check": "tokenizer_hash_verified", "kind": "check", "payload": {"merges": 3293, "tokenizer_hash": "a50ca9093ec605d7", "vocab_size": 3558}, "pid": 23680, "result": "PASS", "seq": 3, "ts": 1786200077.9050944}
+{"kind": "milestone", "milestone": "shards created", "payload": {"documents": 54, "shards": 25, "tokens": 22547}, "pid": 23680, "seq": 4, "ts": 1786200078.2737405}
+{"kind": "milestone", "milestone": "manifests validated", "payload": {"admitted": 20, "rejected": 5, "structural_problems": 0}, "pid": 23680, "seq": 5, "ts": 1786200078.2737405}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "code", "reasons": ["cleaning_lineage_unknown", "contamination_not_scanned"], "shard": "sh-code-ad75245733"}, "pid": 23680, "seq": 6, "ts": 1786200078.2812116}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "general_web", "reasons": ["licence_tier_not_trainable"], "shard": "sh-generalweb-d00a44874b"}, "pid": 23680, "seq": 7, "ts": 1786200078.2846508}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "math_science", "reasons": ["contamination_not_scanned", "eval_overlap_detected"], "shard": "sh-mathscience-d3e3ce9616"}, "pid": 23680, "seq": 8, "ts": 1786200078.2874737}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "test", "reasons": ["never_train_flag_set"], "shard": "sh-test-24dae7d4c5"}, "pid": 23680, "seq": 9, "ts": 1786200078.2874737}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "test", "reasons": ["never_train_flag_set"], "shard": "sh-test-65f6387680"}, "pid": 23680, "seq": 10, "ts": 1786200078.2874737}
+{"check": "shards_rebuild_identical", "kind": "check", "payload": {"differing": 0, "shards": 25}, "pid": 23680, "result": "PASS", "seq": 11, "ts": 1786200078.6600986}
+{"kind": "milestone", "milestone": "evaluation data blocked", "payload": {"batch_side": true, "canary_present_in_sample": true, "registry_side": true}, "pid": 23680, "seq": 12, "ts": 1786200078.6713166}
+{"check": "eval_shard_blocked", "kind": "check", "payload": {"batch_side": true, "reason": "batch firewall-demo-batch sources shard sh-test-24dae7d4c5 with permission 'test' - refusi", "registry_side": true}, "pid": 23680, "result": "PASS", "seq": 13, "ts": 1786200078.6713166}
+{"kind": "milestone", "milestone": "mixture compiled", "payload": {"floor_adjustments": 18, "scarcity_resolutions": 9, "schedule_hash": "a9739d6e1e915c37", "steps": 24}, "pid": 23680, "seq": 14, "ts": 1786200078.686525}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "general_web", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 23680, "seq": 15, "ts": 1786200078.6879616}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 23680, "seq": 16, "ts": 1786200078.6939397}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 23680, "seq": 17, "ts": 1786200078.6939397}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "code", "repeat_factor": 1.25, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 23680, "seq": 18, "ts": 1786200078.6939397}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 23680, "seq": 19, "ts": 1786200078.703146}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 23680, "seq": 20, "ts": 1786200078.7051601}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "general_web", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 23680, "seq": 21, "ts": 1786200078.711263}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.5, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 23680, "seq": 22, "ts": 1786200078.7132692}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 2.0, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 23680, "seq": 23, "ts": 1786200078.7198253}
+{"kind": "milestone", "milestone": "batches packed", "payload": {"contexts": 2, "packed_samples": 121, "validation_samples": 3}, "pid": 23680, "seq": 24, "ts": 1786200078.8876457}
+{"check": "packed_supply_matches_compiled_plan", "kind": "check", "payload": {"contexts": 2, "mismatches": 0}, "pid": 23680, "result": "PASS", "seq": 25, "ts": 1786200078.9031863}
+{"check": "masks_and_attention_valid", "kind": "check", "payload": {"attention_problems": 0, "mask_problems": 0, "samples": 121}, "pid": 23680, "result": "PASS", "seq": 26, "ts": 1786200080.6645372}
+{"event": "worker_launch", "kind": "event", "payload": {"command": "-m tdes.cli.train_worker --phase primary", "phase": "primary"}, "pid": 23680, "seq": 27, "ts": 1786200080.6905093}
+{"check": "tokenizer_hash_verified", "kind": "check", "payload": {"merges": 3293, "tokenizer_hash": "a50ca9093ec605d7", "vocab_size": 3558}, "pid": 54120, "result": "PASS", "seq": 28, "ts": 1786200087.02875}
+{"event": "rebuild:shards_created", "kind": "event", "payload": {"documents": 54, "shards": 25, "tokens": 22547}, "pid": 54120, "seq": 29, "ts": 1786200087.4535656}
+{"event": "rebuild:manifests_validated", "kind": "event", "payload": {"admitted": 20, "rejected": 5, "structural_problems": 0}, "pid": 54120, "seq": 30, "ts": 1786200087.4535656}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "code", "reasons": ["cleaning_lineage_unknown", "contamination_not_scanned"], "shard": "sh-code-ad75245733"}, "pid": 54120, "seq": 31, "ts": 1786200087.4535656}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "general_web", "reasons": ["licence_tier_not_trainable"], "shard": "sh-generalweb-d00a44874b"}, "pid": 54120, "seq": 32, "ts": 1786200087.4535656}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "math_science", "reasons": ["contamination_not_scanned", "eval_overlap_detected"], "shard": "sh-mathscience-d3e3ce9616"}, "pid": 54120, "seq": 33, "ts": 1786200087.4535656}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "test", "reasons": ["never_train_flag_set"], "shard": "sh-test-24dae7d4c5"}, "pid": 54120, "seq": 34, "ts": 1786200087.4697611}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "test", "reasons": ["never_train_flag_set"], "shard": "sh-test-65f6387680"}, "pid": 54120, "seq": 35, "ts": 1786200087.4697611}
+{"event": "rebuild:mixture_compiled", "kind": "event", "payload": {"floor_adjustments": 18, "scarcity_resolutions": 9, "schedule_hash": "a9739d6e1e915c37", "steps": 24}, "pid": 54120, "seq": 36, "ts": 1786200087.485775}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "general_web", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 54120, "seq": 37, "ts": 1786200087.4896164}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 54120, "seq": 38, "ts": 1786200087.493299}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 54120, "seq": 39, "ts": 1786200087.4974277}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "code", "repeat_factor": 1.25, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 54120, "seq": 40, "ts": 1786200087.4974277}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 54120, "seq": 41, "ts": 1786200087.5094595}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 54120, "seq": 42, "ts": 1786200087.5094595}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "general_web", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 54120, "seq": 43, "ts": 1786200087.5094595}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.5, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 54120, "seq": 44, "ts": 1786200087.523484}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 2.0, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 54120, "seq": 45, "ts": 1786200087.523484}
+{"event": "rebuild:batches_packed", "kind": "event", "payload": {"contexts": 2, "packed_samples": 121, "validation_samples": 3}, "pid": 54120, "seq": 46, "ts": 1786200087.8030689}
+{"check": "packed_supply_matches_compiled_plan", "kind": "check", "payload": {"contexts": 2, "mismatches": 0}, "pid": 54120, "result": "PASS", "seq": 47, "ts": 1786200087.8143172}
+{"check": "data_system_deterministic_across_processes", "kind": "check", "payload": {"differing_fields": [], "schedule_hash": "a9739d6e1e915c37", "shard_root": "a65f27a441a7fd6d", "tokenizer_hash": "a50ca9093ec605d7"}, "pid": 54120, "result": "PASS", "seq": 48, "ts": 1786200087.8189824}
+{"event": "model_initialised", "kind": "event", "payload": {"expected_initial_loss": 8.177, "parameters": 1312256, "vocab_size": 3558}, "pid": 54120, "seq": 49, "ts": 1786200089.7170763}
+{"check": "initial_loss_matches_uniform_prior", "kind": "check", "payload": {"delta": 0.0265, "expected_ln_vocab": 8.177, "measured": 8.2035}, "pid": 54120, "result": "PASS", "seq": 50, "ts": 1786200090.035476}
+{"kind": "banner", "pid": 54120, "seq": 51, "text": "PHASE 1  train from step 0, crash injected at step 16", "ts": 1786200090.0515633}
+{"kind": "milestone", "milestone": "OPUS decisions recorded", "payload": {"first_round_step": 0, "proxy_version": "opus-proxy-cosine-1", "scoring_checkpoint": "genesis"}, "pid": 54120, "seq": 52, "ts": 1786200090.1475985}
+{"event": "opus_proxy_direction", "kind": "event", "payload": {"checkpoint": "genesis", "dim": 198016, "probe_batches": 2, "step": 0}, "pid": 54120, "seq": 53, "ts": 1786200090.1557305}
+{"event": "step", "kind": "event", "payload": {"batch": "b-9a4e71e13c97", "grad_norm": 2.7992, "loss": 8.1869, "n": 0, "ppl": 3593.453, "stage": "foundation-en"}, "pid": 54120, "seq": 54, "ts": 1786200091.6904857}
+{"event": "step", "kind": "event", "payload": {"batch": "b-5614dc8e7078", "grad_norm": 2.3436, "loss": 8.0996, "n": 1, "ppl": 3293.248, "stage": "foundation-en"}, "pid": 54120, "seq": 55, "ts": 1786200093.0921142}
+{"event": "step", "kind": "event", "payload": {"batch": "b-0c7bb750d98f", "grad_norm": 2.1147, "loss": 7.9583, "n": 2, "ppl": 2859.068, "stage": "foundation-en"}, "pid": 54120, "seq": 56, "ts": 1786200094.612193}
+{"event": "step", "kind": "event", "payload": {"batch": "b-4b3a43ef703c", "grad_norm": 1.9055, "loss": 7.8348, "n": 3, "ppl": 2526.931, "stage": "foundation-en"}, "pid": 54120, "seq": 57, "ts": 1786200096.2382905}
+{"event": "step", "kind": "event", "payload": {"batch": "b-280278f4ba57", "grad_norm": 1.8844, "loss": 7.7754, "n": 4, "ppl": 2381.381, "stage": "foundation-en"}, "pid": 54120, "seq": 58, "ts": 1786200097.8709087}
+{"event": "step", "kind": "event", "payload": {"batch": "b-07253ccbc024", "grad_norm": 2.0231, "loss": 7.4634, "n": 5, "ppl": 1743.06, "stage": "foundation-en"}, "pid": 54120, "seq": 59, "ts": 1786200099.3045158}
+{"kind": "milestone", "milestone": "checkpoint saved", "payload": {"checkpoint": "ckpt_main_0006", "ledger_offset_bytes": 44425, "step": 6}, "pid": 54120, "seq": 60, "ts": 1786200099.4663575}
+{"check": "checkpoint_saved", "kind": "check", "payload": {"checkpoint": "ckpt_main_0006", "ledger_bytes": 44425, "ledger_seq": 29, "step": 6}, "pid": 54120, "result": "PASS", "seq": 61, "ts": 1786200099.4705114}
+{"event": "validation", "kind": "event", "payload": {"gradient_bearing": false, "loss": 7.4228, "step": 5}, "pid": 54120, "seq": 62, "ts": 1786200099.4713151}
+{"event": "opus_proxy_direction", "kind": "event", "payload": {"checkpoint": "ckpt_main_0006", "dim": 198016, "probe_batches": 2, "step": 6}, "pid": 54120, "seq": 63, "ts": 1786200099.5214307}
+{"event": "step", "kind": "event", "payload": {"batch": "b-febc9f3de71c", "grad_norm": 2.1278, "loss": 7.2355, "n": 6, "ppl": 1387.827, "stage": "foundation-en"}, "pid": 54120, "seq": 64, "ts": 1786200101.294785}
+{"event": "step", "kind": "event", "payload": {"batch": "b-e8f94e6f8187", "grad_norm": 13.0949, "loss": 7.1774, "n": 7, "ppl": 1309.552, "stage": "foundation-en"}, "pid": 54120, "seq": 65, "ts": 1786200102.9691749}
+{"event": "step", "kind": "event", "payload": {"batch": "b-af43476e7607", "grad_norm": 1.762, "loss": 6.8865, "n": 8, "ppl": 979.0, "stage": "foundation-en"}, "pid": 54120, "seq": 66, "ts": 1786200104.640611}
+{"event": "step", "kind": "event", "payload": {"batch": "b-68f7d9bc465f", "grad_norm": 1.582, "loss": 6.8727, "n": 9, "ppl": 965.51, "stage": "foundation-en"}, "pid": 54120, "seq": 67, "ts": 1786200106.0431378}
+{"event": "step", "kind": "event", "payload": {"batch": "b-435e5f934156", "grad_norm": 1.4108, "loss": 6.7701, "n": 10, "ppl": 871.402, "stage": "reasoning-heavy-midtrain"}, "pid": 54120, "seq": 68, "ts": 1786200107.4407365}
+{"event": "step", "kind": "event", "payload": {"batch": "b-abb8e3c69282", "grad_norm": 1.4839, "loss": 6.8038, "n": 11, "ppl": 901.247, "stage": "reasoning-heavy-midtrain"}, "pid": 54120, "seq": 69, "ts": 1786200108.8533354}
+{"kind": "milestone", "milestone": "checkpoint saved", "payload": {"checkpoint": "ckpt_main_0012", "ledger_offset_bytes": 90313, "step": 12}, "pid": 54120, "seq": 70, "ts": 1786200109.0056338}
+{"check": "checkpoint_saved", "kind": "check", "payload": {"checkpoint": "ckpt_main_0012", "ledger_bytes": 90313, "ledger_seq": 60, "step": 12}, "pid": 54120, "result": "PASS", "seq": 71, "ts": 1786200109.0056338}
+{"event": "validation", "kind": "event", "payload": {"gradient_bearing": false, "loss": 6.9496, "step": 11}, "pid": 54120, "seq": 72, "ts": 1786200109.017117}
+{"event": "opus_proxy_direction", "kind": "event", "payload": {"checkpoint": "ckpt_main_0012", "dim": 198016, "probe_batches": 2, "step": 12}, "pid": 54120, "seq": 73, "ts": 1786200109.073086}
+{"event": "step", "kind": "event", "payload": {"batch": "b-fc9d1740c8f3", "grad_norm": 29.953, "loss": 7.266, "n": 12, "ppl": 1430.785, "stage": "reasoning-heavy-midtrain"}, "pid": 54120, "seq": 74, "ts": 1786200110.6197217}
+{"event": "step", "kind": "event", "payload": {"batch": "b-cb5613c10c6f", "grad_norm": 1.1916, "loss": 7.0294, "n": 13, "ppl": 1129.409, "stage": "reasoning-heavy-midtrain"}, "pid": 54120, "seq": 75, "ts": 1786200112.0167367}
+{"event": "step", "kind": "event", "payload": {"batch": "b-fbf7eefeded2", "grad_norm": 0.9491, "loss": 7.0944, "n": 14, "ppl": 1205.155, "stage": "reasoning-heavy-midtrain"}, "pid": 54120, "seq": 76, "ts": 1786200114.0139241}
+{"event": "step", "kind": "event", "payload": {"batch": "b-67672a77a4d9", "grad_norm": 1.1669, "loss": 7.0586, "n": 15, "ppl": 1162.851, "stage": "reasoning-heavy-midtrain"}, "pid": 54120, "seq": 77, "ts": 1786200116.2450333}
+{"kind": "milestone", "milestone": "crash simulated", "payload": {"last_checkpoint": "ckpt_main_0012", "microbatches_recorded": 2, "step": 16}, "pid": 54120, "seq": 78, "ts": 1786200117.1953638}
+{"event": "crash_injected", "kind": "event", "payload": {"exit_code": 137, "full_record_bytes": 314, "ledger": "consumption_main", "partial_bytes": 172}, "pid": 54120, "seq": 79, "ts": 1786200117.2014852}
+{"event": "worker_exit", "kind": "event", "payload": {"exit_code": 137, "phase": "primary"}, "pid": 23680, "seq": 80, "ts": 1786200117.4414413}
+{"check": "crash_simulated_and_process_died", "kind": "check", "payload": {"exit_code": 137, "expected": 137}, "pid": 23680, "result": "PASS", "seq": 81, "ts": 1786200117.4602284}
+{"event": "worker_launch", "kind": "event", "payload": {"command": "-m tdes.cli.train_worker --phase resume", "phase": "resume"}, "pid": 23680, "seq": 82, "ts": 1786200117.4666734}
+{"check": "tokenizer_hash_verified", "kind": "check", "payload": {"merges": 3293, "tokenizer_hash": "a50ca9093ec605d7", "vocab_size": 3558}, "pid": 76156, "result": "PASS", "seq": 83, "ts": 1786200125.2856185}
+{"event": "rebuild:shards_created", "kind": "event", "payload": {"documents": 54, "shards": 25, "tokens": 22547}, "pid": 76156, "seq": 84, "ts": 1786200125.694873}
+{"event": "rebuild:manifests_validated", "kind": "event", "payload": {"admitted": 20, "rejected": 5, "structural_problems": 0}, "pid": 76156, "seq": 85, "ts": 1786200125.694873}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "code", "reasons": ["cleaning_lineage_unknown", "contamination_not_scanned"], "shard": "sh-code-ad75245733"}, "pid": 76156, "seq": 86, "ts": 1786200125.7084649}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "general_web", "reasons": ["licence_tier_not_trainable"], "shard": "sh-generalweb-d00a44874b"}, "pid": 76156, "seq": 87, "ts": 1786200125.711424}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "math_science", "reasons": ["contamination_not_scanned", "eval_overlap_detected"], "shard": "sh-mathscience-d3e3ce9616"}, "pid": 76156, "seq": 88, "ts": 1786200125.711424}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "test", "reasons": ["never_train_flag_set"], "shard": "sh-test-24dae7d4c5"}, "pid": 76156, "seq": 89, "ts": 1786200125.711424}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "test", "reasons": ["never_train_flag_set"], "shard": "sh-test-65f6387680"}, "pid": 76156, "seq": 90, "ts": 1786200125.711424}
+{"event": "rebuild:mixture_compiled", "kind": "event", "payload": {"floor_adjustments": 18, "scarcity_resolutions": 9, "schedule_hash": "a9739d6e1e915c37", "steps": 24}, "pid": 76156, "seq": 91, "ts": 1786200125.7280774}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "general_web", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 76156, "seq": 92, "ts": 1786200125.7280774}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 76156, "seq": 93, "ts": 1786200125.7280774}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 76156, "seq": 94, "ts": 1786200125.7280774}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "code", "repeat_factor": 1.25, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 76156, "seq": 95, "ts": 1786200125.7401276}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 76156, "seq": 96, "ts": 1786200125.7445998}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 76156, "seq": 97, "ts": 1786200125.7445998}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "general_web", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 76156, "seq": 98, "ts": 1786200125.7445998}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.5, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 76156, "seq": 99, "ts": 1786200125.7445998}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 2.0, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 76156, "seq": 100, "ts": 1786200125.756159}
+{"event": "rebuild:batches_packed", "kind": "event", "payload": {"contexts": 2, "packed_samples": 121, "validation_samples": 3}, "pid": 76156, "seq": 101, "ts": 1786200126.3802993}
+{"check": "packed_supply_matches_compiled_plan", "kind": "check", "payload": {"contexts": 2, "mismatches": 0}, "pid": 76156, "result": "PASS", "seq": 102, "ts": 1786200126.387261}
+{"check": "data_system_deterministic_across_processes", "kind": "check", "payload": {"differing_fields": [], "schedule_hash": "a9739d6e1e915c37", "shard_root": "a65f27a441a7fd6d", "tokenizer_hash": "a50ca9093ec605d7"}, "pid": 76156, "result": "PASS", "seq": 103, "ts": 1786200126.3931134}
+{"kind": "banner", "pid": 76156, "seq": 104, "text": "PHASE 2  resume from the last checkpoint", "ts": 1786200130.550358}
+{"event": "ledger_torn_tail_repaired", "kind": "event", "payload": {"ledger": "consumption_main", "reason": "torn_final_line", "removed_bytes": 172, "torn_fragment_preview": "{\"event_hash\":\"459e7cc096046c0f3318e55fa367dfa4f642247b68fdbe8b3c60bda5d42710fb\",\"payload\":{\"branch_id\":\"main\",\"global_s"}, "pid": 76156, "seq": 105, "ts": 1786200130.6233413}
+{"kind": "milestone", "milestone": "run resumed", "payload": {"checkpoint": "ckpt_main_0012", "discarded_records": 23, "discarded_steps": [12, 13, 14, 15, 16], "resume_step": 12, "torn_tail_repaired": true}, "pid": 76156, "seq": 106, "ts": 1786200130.876868}
+{"check": "ledger_torn_tail_repaired", "kind": "check", "payload": {"reason": "torn_final_line", "removed_bytes": 172}, "pid": 76156, "result": "PASS", "seq": 107, "ts": 1786200130.9426718}
+{"check": "resume_next_batch_matched", "kind": "check", "payload": {"expected": "55b37c62e5244119", "recomputed": "55b37c62e5244119", "step": 12}, "pid": 76156, "result": "PASS", "seq": 108, "ts": 1786200130.952765}
+{"kind": "milestone", "milestone": "OPUS decisions recorded", "payload": {"first_round_step": 12, "proxy_version": "opus-proxy-cosine-1", "scoring_checkpoint": "ckpt_main_0012"}, "pid": 76156, "seq": 109, "ts": 1786200131.4442494}
+{"event": "opus_proxy_direction", "kind": "event", "payload": {"checkpoint": "ckpt_main_0012", "dim": 198016, "probe_batches": 2, "step": 12}, "pid": 76156, "seq": 110, "ts": 1786200131.4605277}
+{"event": "step", "kind": "event", "payload": {"batch": "b-fc9d1740c8f3", "grad_norm": 29.953, "loss": 7.266, "n": 12, "ppl": 1430.785, "stage": "reasoning-heavy-midtrain"}, "pid": 76156, "seq": 111, "ts": 1786200134.0044284}
+{"event": "step", "kind": "event", "payload": {"batch": "b-cb5613c10c6f", "grad_norm": 1.1916, "loss": 7.0294, "n": 13, "ppl": 1129.409, "stage": "reasoning-heavy-midtrain"}, "pid": 76156, "seq": 112, "ts": 1786200135.363401}
+{"event": "step", "kind": "event", "payload": {"batch": "b-fbf7eefeded2", "grad_norm": 0.9491, "loss": 7.0944, "n": 14, "ppl": 1205.155, "stage": "reasoning-heavy-midtrain"}, "pid": 76156, "seq": 113, "ts": 1786200136.5731533}
+{"event": "step", "kind": "event", "payload": {"batch": "b-67672a77a4d9", "grad_norm": 1.1669, "loss": 7.0586, "n": 15, "ppl": 1162.851, "stage": "reasoning-heavy-midtrain"}, "pid": 76156, "seq": 114, "ts": 1786200138.0322428}
+{"event": "step", "kind": "event", "payload": {"batch": "b-8d02d62c7efa", "grad_norm": 2.1561, "loss": 6.9261, "n": 16, "ppl": 1018.517, "stage": "reasoning-heavy-midtrain"}, "pid": 76156, "seq": 115, "ts": 1786200139.6736553}
+{"event": "step", "kind": "event", "payload": {"batch": "b-ef5cecaa6621", "grad_norm": 2.0341, "loss": 7.2239, "n": 17, "ppl": 1371.821, "stage": "reasoning-heavy-midtrain"}, "pid": 76156, "seq": 116, "ts": 1786200141.0448308}
+{"kind": "milestone", "milestone": "checkpoint saved", "payload": {"checkpoint": "ckpt_main_0018", "ledger_offset_bytes": 148855, "step": 18}, "pid": 76156, "seq": 117, "ts": 1786200141.1878347}
+{"check": "checkpoint_saved", "kind": "check", "payload": {"checkpoint": "ckpt_main_0018", "ledger_bytes": 148855, "ledger_seq": 91, "step": 18}, "pid": 76156, "result": "PASS", "seq": 118, "ts": 1786200141.1878347}
+{"event": "validation", "kind": "event", "payload": {"gradient_bearing": false, "loss": 6.7061, "step": 17}, "pid": 76156, "seq": 119, "ts": 1786200141.1878347}
+{"event": "opus_proxy_direction", "kind": "event", "payload": {"checkpoint": "ckpt_main_0018", "dim": 198016, "probe_batches": 2, "step": 18}, "pid": 76156, "seq": 120, "ts": 1786200141.235443}
+{"event": "step", "kind": "event", "payload": {"batch": "b-6a7d5ed19aa6", "grad_norm": 1.3173, "loss": 6.7834, "n": 18, "ppl": 883.043, "stage": "long-context-anneal"}, "pid": 76156, "seq": 121, "ts": 1786200144.1960685}
+{"event": "step", "kind": "event", "payload": {"batch": "b-e2122d7b6546", "grad_norm": 1.1883, "loss": 6.6665, "n": 19, "ppl": 785.628, "stage": "long-context-anneal"}, "pid": 76156, "seq": 122, "ts": 1786200147.1798704}
+{"event": "step", "kind": "event", "payload": {"batch": "b-5af9f81b8644", "grad_norm": 0.9288, "loss": 6.732, "n": 20, "ppl": 838.843, "stage": "long-context-anneal"}, "pid": 76156, "seq": 123, "ts": 1786200150.136319}
+{"event": "step", "kind": "event", "payload": {"batch": "b-37e4c7e26631", "grad_norm": 0.7952, "loss": 6.7149, "n": 21, "ppl": 824.585, "stage": "long-context-anneal"}, "pid": 76156, "seq": 124, "ts": 1786200153.1278386}
+{"event": "step", "kind": "event", "payload": {"batch": "b-6a5ff68530db", "grad_norm": 1.0769, "loss": 6.9039, "n": 22, "ppl": 996.132, "stage": "long-context-anneal"}, "pid": 76156, "seq": 125, "ts": 1786200156.3136935}
+{"event": "step", "kind": "event", "payload": {"batch": "b-aeb04f3b8996", "grad_norm": 0.7509, "loss": 6.5983, "n": 23, "ppl": 733.822, "stage": "long-context-anneal"}, "pid": 76156, "seq": 126, "ts": 1786200159.308738}
+{"kind": "milestone", "milestone": "checkpoint saved", "payload": {"checkpoint": "ckpt_main_0024", "ledger_offset_bytes": 194786, "step": 24}, "pid": 76156, "seq": 127, "ts": 1786200159.6083713}
+{"check": "checkpoint_saved", "kind": "check", "payload": {"checkpoint": "ckpt_main_0024", "ledger_bytes": 194786, "ledger_seq": 122, "step": 24}, "pid": 76156, "result": "PASS", "seq": 128, "ts": 1786200159.6083713}
+{"event": "validation", "kind": "event", "payload": {"gradient_bearing": false, "loss": 6.7014, "step": 23}, "pid": 76156, "seq": 129, "ts": 1786200159.6242173}
+{"check": "resume_rollback_replay_identical", "kind": "check", "payload": {"compared": 18, "mismatches": 0, "missing": 0, "steps": [12, 13, 14, 15, 16]}, "pid": 76156, "result": "PASS", "seq": 130, "ts": 1786200159.6650827}
+{"event": "worker_exit", "kind": "event", "payload": {"exit_code": 0, "phase": "resume"}, "pid": 23680, "seq": 131, "ts": 1786200160.2416286}
+{"check": "replay_hash_matched", "kind": "check", "payload": {"interval": "6-12", "masks": true, "microbatches": 24, "plan": true, "spans": true, "tokens": true}, "pid": 23680, "result": "PASS", "seq": 132, "ts": 1786200160.2744646}
+{"kind": "milestone", "milestone": "historical stream replayed", "payload": {"all_match": true, "interval": "6-12", "microbatches": 24}, "pid": 23680, "seq": 133, "ts": 1786200160.2744646}
+{"event": "worker_launch", "kind": "event", "payload": {"command": "-m tdes.cli.train_worker --phase fork", "phase": "fork"}, "pid": 23680, "seq": 134, "ts": 1786200160.2943273}
+{"check": "tokenizer_hash_verified", "kind": "check", "payload": {"merges": 3293, "tokenizer_hash": "a50ca9093ec605d7", "vocab_size": 3558}, "pid": 35232, "result": "PASS", "seq": 135, "ts": 1786200166.629591}
+{"event": "rebuild:shards_created", "kind": "event", "payload": {"documents": 54, "shards": 25, "tokens": 22547}, "pid": 35232, "seq": 136, "ts": 1786200167.0047805}
+{"event": "rebuild:manifests_validated", "kind": "event", "payload": {"admitted": 20, "rejected": 5, "structural_problems": 0}, "pid": 35232, "seq": 137, "ts": 1786200167.0047805}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "code", "reasons": ["cleaning_lineage_unknown", "contamination_not_scanned"], "shard": "sh-code-ad75245733"}, "pid": 35232, "seq": 138, "ts": 1786200167.0117047}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "general_web", "reasons": ["licence_tier_not_trainable"], "shard": "sh-generalweb-d00a44874b"}, "pid": 35232, "seq": 139, "ts": 1786200167.017143}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "math_science", "reasons": ["contamination_not_scanned", "eval_overlap_detected"], "shard": "sh-mathscience-d3e3ce9616"}, "pid": 35232, "seq": 140, "ts": 1786200167.0206203}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "test", "reasons": ["never_train_flag_set"], "shard": "sh-test-24dae7d4c5"}, "pid": 35232, "seq": 141, "ts": 1786200167.0226276}
+{"event": "shard_rejected", "kind": "event", "payload": {"lane": "test", "reasons": ["never_train_flag_set"], "shard": "sh-test-65f6387680"}, "pid": 35232, "seq": 142, "ts": 1786200167.028337}
+{"event": "rebuild:mixture_compiled", "kind": "event", "payload": {"floor_adjustments": 18, "scarcity_resolutions": 9, "schedule_hash": "a9739d6e1e915c37", "steps": 24}, "pid": 35232, "seq": 143, "ts": 1786200167.028337}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "general_web", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 35232, "seq": 144, "ts": 1786200167.0365074}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 35232, "seq": 145, "ts": 1786200167.0365074}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 1.667, "resolution": "repeat_existing_data", "stage": "foundation-en"}, "pid": 35232, "seq": 146, "ts": 1786200167.04104}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "code", "repeat_factor": 1.25, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 35232, "seq": 147, "ts": 1786200167.0462298}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 35232, "seq": 148, "ts": 1786200167.0462298}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "reasoning-heavy-midtrain"}, "pid": 35232, "seq": 149, "ts": 1786200167.0462298}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "general_web", "repeat_factor": 1.333, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 35232, "seq": 150, "ts": 1786200167.0462298}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "math_science", "repeat_factor": 1.5, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 35232, "seq": 151, "ts": 1786200167.0462298}
+{"event": "mixture_scarcity", "kind": "event", "payload": {"lane": "reasoning", "repeat_factor": 2.0, "resolution": "repeat_existing_data", "stage": "long-context-anneal"}, "pid": 35232, "seq": 152, "ts": 1786200167.061738}
+{"event": "rebuild:batches_packed", "kind": "event", "payload": {"contexts": 2, "packed_samples": 121, "validation_samples": 3}, "pid": 35232, "seq": 153, "ts": 1786200167.2327886}
+{"check": "packed_supply_matches_compiled_plan", "kind": "check", "payload": {"contexts": 2, "mismatches": 0}, "pid": 35232, "result": "PASS", "seq": 154, "ts": 1786200167.2339904}
+{"check": "data_system_deterministic_across_processes", "kind": "check", "payload": {"differing_fields": [], "schedule_hash": "a9739d6e1e915c37", "shard_root": "a65f27a441a7fd6d", "tokenizer_hash": "a50ca9093ec605d7"}, "pid": 35232, "result": "PASS", "seq": 155, "ts": 1786200167.2404113}
+{"kind": "banner", "pid": 35232, "seq": 156, "text": "PHASE 4  fork from step 12 into br-dce229fce9", "ts": 1786200167.244767}
+{"kind": "milestone", "milestone": "OPUS decisions recorded", "payload": {"first_round_step": 12, "proxy_version": "opus-proxy-cosine-1", "scoring_checkpoint": "ckpt_main_0012"}, "pid": 35232, "seq": 157, "ts": 1786200169.1474144}
+{"event": "opus_proxy_direction", "kind": "event", "payload": {"checkpoint": "ckpt_main_0012", "dim": 198016, "probe_batches": 2, "step": 12}, "pid": 35232, "seq": 158, "ts": 1786200169.1639464}
+{"event": "step", "kind": "event", "payload": {"batch": "b-1ddc3426fd92", "grad_norm": 47.1468, "loss": 7.289, "n": 12, "ppl": 1464.083, "stage": "reasoning-heavy-midtrain"}, "pid": 35232, "seq": 159, "ts": 1786200170.6892097}
+{"event": "step", "kind": "event", "payload": {"batch": "b-e3bdf2d3f3fd", "grad_norm": 1.1569, "loss": 7.1232, "n": 13, "ppl": 1240.392, "stage": "reasoning-heavy-midtrain"}, "pid": 35232, "seq": 160, "ts": 1786200172.1700208}
+{"event": "step", "kind": "event", "payload": {"batch": "b-6a3a2b1ded6b", "grad_norm": 0.9988, "loss": 7.0304, "n": 14, "ppl": 1130.428, "stage": "reasoning-heavy-midtrain"}, "pid": 35232, "seq": 161, "ts": 1786200173.6683378}
+{"event": "step", "kind": "event", "payload": {"batch": "b-778f8a045e84", "grad_norm": 1.1154, "loss": 7.0382, "n": 15, "ppl": 1139.35, "stage": "reasoning-heavy-midtrain"}, "pid": 35232, "seq": 162, "ts": 1786200175.316761}
+{"kind": "milestone", "milestone": "branch forked", "payload": {"branch": "br-dce229fce9", "from_step": 12, "parent": "main", "steps": 4}, "pid": 35232, "seq": 163, "ts": 1786200175.3367636}
+{"event": "worker_exit", "kind": "event", "payload": {"exit_code": 0, "phase": "fork"}, "pid": 23680, "seq": 164, "ts": 1786200175.8472407}
+{"check": "fork_diverged", "kind": "check", "payload": {"branch": "br-dce229fce9", "differing_steps": 4, "from_step": 12}, "pid": 23680, "result": "PASS", "seq": 165, "ts": 1786200175.8972852}
+{"kind": "milestone", "milestone": "audit completed", "payload": {"interval": "6-12", "shards_traced": 19, "spikes": 2}, "pid": 23680, "seq": 166, "ts": 1786200175.9670603}
+{"event": "checkpoints_pruned", "kind": "event", "payload": {"kept": [12, 24], "mb_reclaimed": 31.6, "pruned": 2}, "pid": 23680, "seq": 167, "ts": 1786200176.0046694}
+{"kind": "banner", "pid": 23680, "seq": 168, "text": "PHASE 7  reports derived from the ledgers", "ts": 1786200176.0077972}
+{"check": "ledger_chain_intact", "kind": "check", "payload": {"ledger": "consumption", "records": 124}, "pid": 23680, "result": "PASS", "seq": 169, "ts": 1786200176.027773}
+{"check": "no_skipped_or_repeated_batches", "kind": "check", "payload": {"duplicates": 0, "gaps": 0, "steps": [0, 23]}, "pid": 23680, "result": "PASS", "seq": 170, "ts": 1786200176.0326452}
+{"check": "mixture_within_tolerance", "kind": "check", "payload": {"max_delta": 0.0, "tolerance": 0.06}, "pid": 23680, "result": "PASS", "seq": 171, "ts": 1786200176.0429716}
+{"check": "protected_floors_respected", "kind": "check", "payload": {"checks": 9}, "pid": 23680, "result": "PASS", "seq": 172, "ts": 1786200176.0468433}
+{"kind": "milestone", "milestone": "OPUS decisions recorded", "payload": {"accepted": 264, "candidates": 528, "deferred": 214, "floor_overrides": 18, "rejected": 50}, "pid": 23680, "seq": 173, "ts": 1786200176.1020885}
+{"check": "opus_all_decisions_have_reasons", "kind": "check", "payload": {"reasons": 5}, "pid": 23680, "result": "PASS", "seq": 174, "ts": 1786200176.1020885}
+{"check": "opus_protected_floor_override_recorded", "kind": "check", "payload": {"overrides": 18}, "pid": 23680, "result": "PASS", "seq": 175, "ts": 1786200176.110917}
+{"check": "opus_rescoring_after_crash_identical", "kind": "check", "payload": {"divergent": 0, "rescored_candidates": 80}, "pid": 23680, "result": "PASS", "seq": 176, "ts": 1786200176.116056}
+{"check": "learning_trace_linked_to_source", "kind": "check", "payload": {"samples": 192, "shard_cards": 19, "tokens_traced": 5038}, "pid": 23680, "result": "PASS", "seq": 177, "ts": 1786200176.2069101}
+{"check": "eos_perplexity_tracked", "kind": "check", "payload": {"mean": 992.307705, "samples": 99}, "pid": 23680, "result": "PASS", "seq": 178, "ts": 1786200176.2082257}
+{"check": "validation_never_gradient_bearing", "kind": "check", "payload": {"tokens": 0}, "pid": 23680, "result": "PASS", "seq": 179, "ts": 1786200176.2137794}
+{"kind": "milestone", "milestone": "performance measured", "payload": {"loss_density": 0.820241, "packing_utilisation": 0.866584, "useful_tokens_per_sec": 2933.41}, "pid": 23680, "seq": 180, "ts": 1786200176.258202}
+{"kind": "banner", "pid": 23680, "seq": 181, "text": "PHASE 7b  the completion criterion", "ts": 1786200176.2615721}
+{"check": "proves_what_it_consumed", "kind": "check", "payload": {"clause": "what it consumed"}, "pid": 23680, "result": "PASS", "seq": 182, "ts": 1786200176.3470173}
+{"check": "proves_why_it_consumed_it", "kind": "check", "payload": {"clause": "why it consumed it"}, "pid": 23680, "result": "PASS", "seq": 183, "ts": 1786200176.3470173}
+{"check": "proves_what_the_model_learned", "kind": "check", "payload": {"clause": "what the model learned from it"}, "pid": 23680, "result": "PASS", "seq": 184, "ts": 1786200176.3606296}
+{"check": "proves_how_the_run_can_be_reconstructed", "kind": "check", "payload": {"clause": "how the run can be reconstructed"}, "pid": 23680, "result": "PASS", "seq": 185, "ts": 1786200176.3631935}
+{"check": "completion_criterion_met", "kind": "check", "payload": {"samples_walked": 192}, "pid": 23680, "result": "PASS", "seq": 186, "ts": 1786200176.3631935}
+{"kind": "banner", "pid": 23680, "seq": 187, "text": "PHASE 8  evidence bundle", "ts": 1786200176.3746789}
+{"check": "evidence_end-to-end_execution", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 188, "ts": 1786200176.6924732}
+{"check": "evidence_shards_and_manifests", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 189, "ts": 1786200176.69627}
+{"check": "evidence_tokenizer_integrity", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 190, "ts": 1786200176.69627}
+{"check": "evidence_packing_correctness", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 191, "ts": 1786200176.7005348}
+{"check": "evidence_mixture_compliance", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 192, "ts": 1786200176.7005348}
+{"check": "evidence_opus_audit_trail", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 193, "ts": 1786200176.7090125}
+{"check": "evidence_evaluation_firewall", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 194, "ts": 1786200176.7128918}
+{"check": "evidence_crash_recovery", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 195, "ts": 1786200176.7128918}
+{"check": "evidence_replay", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 196, "ts": 1786200176.7128918}
+{"check": "evidence_fork", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 197, "ts": 1786200176.7128918}
+{"check": "evidence_learning_trace", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 198, "ts": 1786200176.724294}
+{"check": "evidence_throughput", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 199, "ts": 1786200176.7291489}
+{"check": "evidence_completion_criterion", "kind": "check", "payload": {}, "pid": 23680, "result": "PASS", "seq": 200, "ts": 1786200176.730468}
+{"check": "evidence_independently_verified", "kind": "check", "payload": {"exit_code": 0}, "pid": 23680, "result": "PASS", "seq": 201, "ts": 1786200177.3619077}
+{"kind": "banner", "pid": 23680, "seq": 202, "text": "COMPLETE  13/13 requirements passed in 102.3s", "ts": 1786200177.3799534}
+{"event": "summary", "kind": "event", "payload": {"artifacts": "submission_artifacts", "fail_lines": 0, "pass_lines": 37}, "pid": 23680, "seq": 203, "ts": 1786200177.3839169}

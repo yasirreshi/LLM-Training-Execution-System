@@ -1,0 +1,134 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "b6693ff23163c8edf03602d0199f006fcdee69ea86d711e3c0c08d2310e2c8ff",
+    "52f669006f0314604ef8b54b880fc236f413efa46030e4c370ec4bbdcdb3970d"
+  ],
+  "capability_tags": [
+    "code",
+    "python"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "6e896d0e9111b6d2238914e0b6e39f09e826b028d10407ec0cbcd3f5b96465ff",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "code-0001",
+    "code-0002",
+    "code-0003"
+  ],
+  "documents": [
+    {
+      "content_hash": "3ffd8db25624dd4dc1a52a54d4c8f26ddc4fea8c9a865a80d67862a8955c3dbf",
+      "doc_id": "code-0001",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          518,
+          true
+        ],
+        [
+          "eos",
+          518,
+          519,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 519,
+      "token_start": 0
+    },
+    {
+      "content_hash": "1fd4cea7fbc5195bc09d0e5186ed35393a6ad17a2c2984229a0a60678e93d4c8",
+      "doc_id": "code-0002",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          520,
+          903,
+          true
+        ],
+        [
+          "eos",
+          903,
+          904,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 904,
+      "token_start": 519
+    },
+    {
+      "content_hash": "659cb20ebb348ef78177c558ab33679aab3d7fd782f8f4adc20a317b7c7fcc97",
+      "doc_id": "code-0003",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          905,
+          1292,
+          true
+        ],
+        [
+          "eos",
+          1292,
+          1293,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 1293,
+      "token_start": 904
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "90e346962d0a45fa0239f0f9ecb47cc0a524ff39ca9dc73cfb1d5b1ca24b45ce",
+  "lane": "code",
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_tier": "B",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "best_fit",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored reference implementations, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-code-a513275e65",
+  "source_file": "code/code_python.txt",
+  "source_id": "src-code-py",
+  "stage_hint": "mid",
+  "token_count": 1293,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

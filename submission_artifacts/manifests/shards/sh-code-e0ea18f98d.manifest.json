@@ -1,0 +1,135 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "69b6843222ad4b31db5519c5d379ac3d65cc2623b810b4dcb8a3dc875573bdbf",
+    "64ab74d7f20c92248a294606d34c75dd7fd45c943460cc7909f1eeb6976ddbb7"
+  ],
+  "capability_tags": [
+    "code",
+    "javascript",
+    "sql"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "b1d7ec058bfaaf92736f4234fe876216c1cb45918665f81c71530f728b5a8ca0",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "code-0101",
+    "code-0102",
+    "code-0103"
+  ],
+  "documents": [
+    {
+      "content_hash": "c43de6c05988ec00c5be84efb42c97be4de9d46ce8161d2c5340357b58312dfb",
+      "doc_id": "code-0101",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          412,
+          true
+        ],
+        [
+          "eos",
+          412,
+          413,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 413,
+      "token_start": 0
+    },
+    {
+      "content_hash": "d0ff2c414abe065db5a6ce599e6ce8abf8247844f62c393dee946439c3a1e280",
+      "doc_id": "code-0102",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          414,
+          761,
+          true
+        ],
+        [
+          "eos",
+          761,
+          762,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 762,
+      "token_start": 413
+    },
+    {
+      "content_hash": "ffdd5cb73897faeaa8fdccf22011cf6eee2ceb2aeed2a382130a8cca7ca45bed",
+      "doc_id": "code-0103",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          763,
+          1155,
+          true
+        ],
+        [
+          "eos",
+          1155,
+          1156,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 1156,
+      "token_start": 762
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "98f603a50e7ccdb06177504be6f9ae3c4641d20be930054249ec31d8cdf5dba4",
+  "lane": "code",
+  "languages": [
+    "en"
+  ],
+  "licence": "Apache-2.0",
+  "licence_tier": "B",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "best_fit",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored reference implementations, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-code-e0ea18f98d",
+  "source_file": "code/code_mixed.txt",
+  "source_id": "src-code-mixed",
+  "stage_hint": "mid",
+  "token_count": 1156,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

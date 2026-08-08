@@ -1,0 +1,140 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "7856f9693ebcd560091d474571c0fd7e2ae328ac17d439c502ccbca431016818",
+    "57ff41090d6a5d85fd43ab5e4fe757f024c31a1b1620c906e93b9d1881c9e2b5"
+  ],
+  "capability_tags": [
+    "bn",
+    "indic",
+    "ta",
+    "te"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "531454de1d3dfab70b317697ea9c085d9b35c50013a946ff4c80763559e01b1c",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "indic-0101",
+    "indic-0102",
+    "indic-0103"
+  ],
+  "documents": [
+    {
+      "content_hash": "dc912f7f666949103398ef0ce469172c3c69e678622d873da45e6e3c713a8e38",
+      "doc_id": "indic-0101",
+      "lang": "bn",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          528,
+          true
+        ],
+        [
+          "eos",
+          528,
+          529,
+          true
+        ]
+      ],
+      "script": "Beng",
+      "stage_hint": "early",
+      "token_end": 529,
+      "token_start": 0
+    },
+    {
+      "content_hash": "7f23b6ee8956ca8e1b3f5d9372b6e4368070c719fa79e729b9837e5cf563de5e",
+      "doc_id": "indic-0102",
+      "lang": "ta",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          530,
+          1170,
+          true
+        ],
+        [
+          "eos",
+          1170,
+          1171,
+          true
+        ]
+      ],
+      "script": "Taml",
+      "stage_hint": "early",
+      "token_end": 1171,
+      "token_start": 529
+    },
+    {
+      "content_hash": "cfc4b156bd32d0f560dc042b59ea121bb46724bc9c9dbba05f14bf466debb0c7",
+      "doc_id": "indic-0103",
+      "lang": "te",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1172,
+          1789,
+          true
+        ],
+        [
+          "eos",
+          1789,
+          1790,
+          true
+        ]
+      ],
+      "script": "Telu",
+      "stage_hint": "mid",
+      "token_end": 1790,
+      "token_start": 1171
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "3f3fc9ff3b11ef37700fac3fab4604ae25351db3b0e3e5645ce8e8bb03598380",
+  "lane": "indic",
+  "languages": [
+    "bn",
+    "ta",
+    "te"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "best_fit",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored Indic prose, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Beng",
+    "Taml",
+    "Telu"
+  ],
+  "shard_id": "sh-indic-5bbc73dbfa",
+  "source_file": "indic/indic_south_east.txt",
+  "source_id": "src-indic-se",
+  "stage_hint": "mid",
+  "token_count": 1790,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

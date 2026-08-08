@@ -1,0 +1,54 @@
+# tdes-corpus v1
+# source: curated historical prose, hand written for this repository
+
+===DOC===
+doc_id: web-0201
+lang: en
+script: Latn
+title: The measurement of longitude
+stage_hint: early
+---
+Latitude was never the hard problem. The angle of the sun at noon, or of the pole star at night, gives it directly, and sailors had reliable tables for both long before anyone worried about the other coordinate. Longitude is different in kind, because the earth rotates. Knowing where you are east or west requires knowing what time it is somewhere else at the same moment you observe local noon. The difference between the two times is the difference in longitude, at fifteen degrees to the hour.
+
+The astronomical approach tried to use the sky as the reference clock. The moon moves fast enough against the fixed stars to serve as a hand on a dial, and lunar distance tables were published for exactly this purpose. The method worked, in the sense that a competent observer with clear weather and four hours of arithmetic could get a position. It failed in the sense that clear weather and four hours are not always available on a working ship.
+
+The mechanical approach was to carry the reference time along in a clock accurate enough to survive the voyage. This required a timepiece that would not be disturbed by temperature, humidity, salt air or the motion of a deck, at a period when the best clocks on land depended on a pendulum swinging in a still room. That it was solved at all is remarkable. That it was solved by a carpenter working largely alone is the part that made the story famous.
+
+===DOC===
+doc_id: web-0202
+lang: en
+script: Latn
+title: Standard time and the railways
+stage_hint: early
+---
+Before the railways, every town kept its own noon. A clock in one town might differ from a clock sixty kilometres east by several minutes, and nobody minded, because nothing moved fast enough for the difference to matter. A traveller arriving by coach after two days had no way to notice that the church clock was four minutes out, and no reason to care if he did.
+
+The railway destroyed that tolerance in a single decade. A timetable is a promise about simultaneity, and a train travelling between towns whose clocks disagree cannot honour a timetable written in either town's time. The companies solved it first for themselves, by running their whole network on the time of a single observatory and printing that time in the schedules. For a while, stations displayed two clocks, or one clock with two minute hands, showing railway time and local time side by side.
+
+Legal adoption lagged practice by years and in some places by decades. The interesting part is the direction of causation. The unified time was not imposed by a state deciding to rationalise; it was adopted by a commercial network that could not function without it, and the state followed. Infrastructure created the standard, and the standard then looked so obviously correct that its absence became difficult to imagine.
+
+===DOC===
+doc_id: web-0203
+lang: en
+script: Latn
+title: The spice trade and the monsoon
+stage_hint: mid
+---
+The seasonal reversal of the winds across the Arabian Sea made long-distance trade possible on a schedule, and the schedule shaped everything else. A ship leaving the Red Sea in July could run before the southwest monsoon and reach the Malabar coast in weeks. It could not come back until the winds reversed in the winter. The round trip was therefore fixed at close to a year, not by distance, but by the calendar of the atmosphere.
+
+A fixed annual cycle has consequences that a variable one does not. It meant merchants wintered in port cities, so those cities developed resident foreign communities rather than transient ones. It meant capital was tied up for a year at a time, so the financing instruments that emerged were designed around annual settlement. It meant that missing the window cost a full season, which made timing decisions unusually consequential and put a premium on accurate knowledge of when the winds would turn.
+
+That knowledge was itself a traded commodity, held by pilots who had made the crossing repeatedly and passed down as practical lore long before it was written into any navigational text. When it was finally written down, the sailing directions read less like meteorology and more like a calendar: leave after this festival, do not leave after that one.
+
+===DOC===
+doc_id: web-0204
+lang: en
+script: Latn
+title: Why the metre was redefined
+stage_hint: mid
+---
+The metre began as a fraction of the earth's meridian, which was a principled choice and an impractical one. Nobody can compare a bar of metal to a quadrant of the planet, so in practice the definition was embodied in a physical artefact, and the artefact became the real standard. A platinum-iridium bar held in a vault near Paris was the metre, and every other metre in the world was a copy of a copy of it.
+
+Artefact standards have a failure mode that is easy to state and impossible to detect from inside: the artefact can change. Metal creeps, surfaces oxidise, and there is no external reference against which to notice, because the artefact is the reference. Comparisons between national copies drifted by amounts large enough to matter for precision work, and there was no way to tell which copy had moved.
+
+Defining the metre in terms of the speed of light removed the artefact entirely. The speed of light is fixed by definition, the second is defined by an atomic transition, and the metre follows. Any laboratory with the right equipment can realise the standard from first principles rather than by comparison with an object in another country. The definition stopped being a thing and became a procedure, which is the general direction every base unit has since travelled.

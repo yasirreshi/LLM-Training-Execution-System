@@ -1,0 +1,134 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "9730383db19a5cf560e8ddf9a3b47cec71405bb46e058f29dbbe063e99362f95"
+  ],
+  "capability_tags": [
+    "en",
+    "systems",
+    "world_knowledge"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "9730383db19a5cf560e8ddf9a3b47cec71405bb46e058f29dbbe063e99362f95",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "web-0101",
+    "web-0102",
+    "web-0103"
+  ],
+  "documents": [
+    {
+      "content_hash": "413ddff5f0b3b70f28c1639debad472d59a927e26e5eb4a9256b7d630073099a",
+      "doc_id": "web-0101",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          317,
+          true
+        ],
+        [
+          "eos",
+          317,
+          318,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 318,
+      "token_start": 0
+    },
+    {
+      "content_hash": "ebd937eac15100f5c154ecee01419fea844c69ed899bc4be7040b287c5a112f4",
+      "doc_id": "web-0102",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          319,
+          586,
+          true
+        ],
+        [
+          "eos",
+          586,
+          587,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 587,
+      "token_start": 318
+    },
+    {
+      "content_hash": "2b94a411ace339c2a55d56268b1e3aee88af7c4bc1428f7509189e9b452e589b",
+      "doc_id": "web-0103",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          588,
+          869,
+          true
+        ],
+        [
+          "eos",
+          869,
+          870,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 870,
+      "token_start": 587
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "b14046fc03d4ddcf2707d25dd42662ccc1caffb24e0d80ec69f9409eb11a9436",
+  "lane": "general_web",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "concat_chop",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored technical prose, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-generalweb-0891b7c5fa",
+  "source_file": "general_web/web_systems.txt",
+  "source_id": "src-web-sys",
+  "stage_hint": "mid",
+  "token_count": 870,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

@@ -1,0 +1,74 @@
+# tdes-corpus v1
+# source: hand written agent trajectories, scarce tier-A material
+#
+# note: every document in this file is marked `reserved: true`. These are the
+#       scarce, high quality trajectories the mixture compiler must hold back
+#       instead of letting the early stages burn through them. They unlock at
+#       the anneal stage. The rule: if a lane contains scarce tier-A material, the schedule reserves it
+#       rather than allowing it to be exhausted early.
+
+===DOC===
+doc_id: agent-0101
+lang: en
+script: Latn
+title: Recover a corrupted append-only log
+stage_hint: anneal
+reserved: true
+min_context: 400
+---
+@user: Our event log got truncated by a crash. The consumer refuses to start and just says "chain broken at 40213". Can you recover it without losing data?
+@think: A chain-broken error at a specific sequence number tells me the log is hash-chained and verification stops at that record. Two very different things could be true: the record at 40213 is genuinely corrupt, or the record is fine and everything after it is garbage. The recovery differs, so I must not guess. Read the raw bytes around that boundary first.
+@tool_call: log.raw_slice(path="/var/lib/events/main.jsonl", from_record=40210, to_record=40216)
+@tool_result: {"records":[{"seq":40210,"bytes":214,"parses":true},{"seq":40211,"bytes":209,"parses":true},{"seq":40212,"bytes":218,"parses":true},{"seq":40213,"bytes":97,"parses":false,"raw_tail":"{\"seq\":40213,\"prev_hash\":\"9f2c1ab4e"}],"file_ends_after":40213,"trailing_newline":false}
+@think: This is the cleanest possible version of the problem. Record 40213 is 97 bytes where its neighbours are around 210, it does not parse, the file ends immediately after it, and there is no trailing newline. That is a torn final write - the process died partway through emitting one line. Nothing after it was lost because there was nothing after it. So no data is at risk except that one partial record, which by definition was never acknowledged to any producer.
+@think: Before truncating I want to be certain the chain is intact up to 40212, otherwise I would be repairing the wrong problem and hiding real corruption underneath a cosmetic fix.
+@tool_call: log.verify_chain(path="/var/lib/events/main.jsonl", through_record=40212)
+@tool_result: {"ok":true,"records_verified":40213,"head_hash":"9f2c1ab4e77d0d5f2c1b8a6e4d3f90a1b2c3d4e5f60718293a4b5c6d7e8f9012"}
+@think: Chain verifies through 40212 and the head hash matches the prev_hash prefix visible in the torn fragment, which independently confirms the partial record was the next one in sequence and nothing was skipped. Truncation is safe. I will take a copy of the torn bytes before removing them so the repair is auditable rather than silent.
+@tool_call: log.repair_torn_tail(path="/var/lib/events/main.jsonl", preserve_fragment_to="/var/lib/events/main.torn.40213", dry_run=true)
+@tool_result: {"would_remove_bytes":97,"would_leave_records":40213,"resulting_head":"9f2c1ab4e77d0d5f2c1b8a6e4d3f90a1b2c3d4e5f60718293a4b5c6d7e8f9012","dry_run":true}
+@think: The dry run leaves the head hash unchanged, which is what I expect since the partial record never contributed to the chain. Apply it for real.
+@tool_call: log.repair_torn_tail(path="/var/lib/events/main.jsonl", preserve_fragment_to="/var/lib/events/main.torn.40213", dry_run=false)
+@tool_result: {"removed_bytes":97,"records":40213,"head":"9f2c1ab4e77d0d5f2c1b8a6e4d3f90a1b2c3d4e5f60718293a4b5c6d7e8f9012","fragment_saved":"/var/lib/events/main.torn.40213","verified":true}
+@answer: Repaired, and nothing was lost.
+
+What happened: the crash killed the process partway through writing record 40213. The file ended with a 97-byte fragment and no trailing newline, against a typical record size of about 210 bytes. That is a torn final write, not corruption in the body of the log.
+
+What I checked before touching it: the hash chain verifies cleanly through record 40212, and the head hash at that point matches the prev_hash visible inside the torn fragment. That confirms the partial record was the immediate next one and that no completed record went missing behind it.
+
+What I did: truncated the 97 partial bytes, after saving them to /var/lib/events/main.torn.40213 so the repair is auditable. The chain head is unchanged, because a partial record never entered the chain in the first place.
+
+What you should confirm on the producer side: record 40213 was never acknowledged, so whatever generated it must either retry or have already retried. If your producers are idempotent this is already handled; if they are not, that is the real bug and the truncation only cleared its symptom.
+
+===DOC===
+doc_id: agent-0102
+lang: en
+script: Latn
+title: Decide whether a benchmark jump is real
+stage_hint: anneal
+reserved: true
+min_context: 400
+---
+@user: Our model's score on the internal reasoning benchmark jumped from 41% to 68% after the last training run. Everyone is excited. Should we be?
+@think: A 27 point jump in one run is either a genuine breakthrough or contamination, and the prior strongly favours contamination. The responsible move is to try to falsify the result before celebrating it. The single most informative check is whether any benchmark item, or a near duplicate of one, entered the training stream during that run.
+@tool_call: firewall.overlap_scan(run_id="run-2026-07-29", registry="benchmark_reasoning_v3")
+@tool_result: {"exact_content_hash_hits":0,"ngram_fingerprint_hits":34,"canary_hits":0,"scanned_batches":18422}
+@think: Zero exact hits but 34 n-gram fingerprint hits. That is the interesting middle case. Exact hashing would miss a reformatted copy of a benchmark item, which is precisely what fingerprinting is for. I need to see what those 34 hits actually are before drawing a conclusion, because n-gram overlap also fires on common phrasing that means nothing.
+@tool_call: firewall.overlap_detail(run_id="run-2026-07-29", limit=5, order="score_desc")
+@tool_result: [{"shard":"sh-web-0912","benchmark_item":"BR3-0044","overlap_ratio":0.94,"span_tokens":180},{"shard":"sh-web-0912","benchmark_item":"BR3-0051","overlap_ratio":0.91,"span_tokens":164},{"shard":"sh-web-0912","benchmark_item":"BR3-0077","overlap_ratio":0.89,"span_tokens":203},{"shard":"sh-web-0107","benchmark_item":"BR3-0012","overlap_ratio":0.38,"span_tokens":22},{"shard":"sh-web-0107","benchmark_item":"BR3-0019","overlap_ratio":0.35,"span_tokens":41}]
+@think: There is a clear split. The hits from sh-web-0912 are around 0.9 overlap over one to two hundred tokens, which is a copy with light edits, not a coincidence. The hits from sh-web-0107 are around 0.35 over twenty to forty tokens, which is ordinary shared phrasing. So one shard is contaminated and the other is noise. I should find out how many benchmark items sh-web-0912 covers, because that determines how much of the 27 points it can account for.
+@tool_call: firewall.overlap_detail(run_id="run-2026-07-29", shard="sh-web-0912", min_overlap=0.8, count_only=true)
+@tool_result: {"distinct_benchmark_items":29,"total_benchmark_items":100,"mean_overlap":0.90}
+@think: Twenty-nine of one hundred benchmark items appear in that one shard at 0.9 overlap. The score went up 27 points. Those two numbers matching so closely is not a coincidence - it is very likely the model memorised the answers to about 29 items and got the rest at roughly its old rate. I can test that directly: recompute the score on the 71 uncontaminated items only.
+@tool_call: eval.rescore(run_id="run-2026-07-29", benchmark="benchmark_reasoning_v3", exclude_items_from_shard="sh-web-0912")
+@tool_result: {"items_scored":71,"score":0.42,"previous_run_score_same_subset":0.41}
+@think: That settles it. On the 71 clean items the score is 42% against 41% before - a one point move, within noise. The entire apparent gain came from the 29 contaminated items. The model did not get better at reasoning; it got better at recalling 29 specific questions it had been shown.
+@answer: No. The jump is contamination, and the underlying capability did not move.
+
+The scan found zero exact content-hash hits but 34 n-gram fingerprint hits. Splitting those by overlap ratio separates two different things: shard sh-web-0912 matches benchmark items at around 0.90 overlap across 160-200 token spans, which is a lightly edited copy, while sh-web-0107 matches at around 0.35 over 20-40 tokens, which is just common phrasing and can be ignored.
+
+sh-web-0912 covers 29 of the 100 benchmark items at a mean overlap of 0.90. Rescoring the run on the 71 items that shard does not touch gives 42%, against 41% for the same subset in the previous run. That is a one point move - noise. All 27 points came from the 29 memorised items.
+
+Three things to do. Quarantine sh-web-0912 and find out how a copy of the benchmark reached a web shard, because wherever it came from there are probably more. Add these fingerprints to the registry so the firewall blocks them at admission instead of finding them afterwards. And treat the exact-hash check as insufficient on its own - it returned zero here while the corpus was plainly contaminated.
+
+One caution on the rescore: 71 items is a small sample, so treat 42% as approximately unchanged rather than as a precise new number.

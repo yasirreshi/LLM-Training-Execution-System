@@ -1,0 +1,41 @@
+{
+  "branches": {
+    "br-dce229fce9": {
+      "branch_id": "br-dce229fce9",
+      "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+      "divergence_note": "deliberate divergence: new branch seed, so the data stream after the fork point differs and every later difference is attributable",
+      "forked_from_checkpoint": "ckpt_main_0012",
+      "forked_from_step": 12,
+      "index_hash": "95de5602a6c7fcd7869836c3b65b5552a63e0a9acd28678688969c86538267fb",
+      "mode": "fork",
+      "parent_branch_id": "main",
+      "run_id": "v5-s6-demo",
+      "schedule_hash": "a9739d6e1e915c3726b183d8f46b889816ba2e79ef3beef3c0dbce412dfbc154",
+      "seed": 20261784,
+      "steps_completed": 4
+    },
+    "main": {
+      "branch_id": "main",
+      "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+      "divergence_note": "",
+      "forked_from_checkpoint": null,
+      "forked_from_step": null,
+      "index_hash": "",
+      "mode": "primary",
+      "parent_branch_id": null,
+      "run_id": "v5-s6-demo",
+      "schedule_hash": "",
+      "seed": 20260807,
+      "steps_completed": 0
+    }
+  },
+  "lineages": {
+    "br-dce229fce9": [
+      "main",
+      "br-dce229fce9"
+    ],
+    "main": [
+      "main"
+    ]
+  }
+}

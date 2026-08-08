@@ -1,0 +1,136 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "5159f845a3bedb87322530df1b44323ceb6c9a99542426db19ab5871336885d9",
+    "857f3317d0508be351a5502311e63ade42181ca7bd4a12b900242209cc8197e7"
+  ],
+  "capability_tags": [
+    "devanagari",
+    "hi",
+    "indic",
+    "mr"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "2223e4fce7d372d3314a6cb868fe92f28bc720e87ab543df1c2a82c15026122d",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "indic-0001",
+    "indic-0002",
+    "indic-0003"
+  ],
+  "documents": [
+    {
+      "content_hash": "dfeec55e8cceec9cbe47a07d330c6f0a37165f0d0441f1c072133c930960cb4b",
+      "doc_id": "indic-0001",
+      "lang": "hi",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          644,
+          true
+        ],
+        [
+          "eos",
+          644,
+          645,
+          true
+        ]
+      ],
+      "script": "Deva",
+      "stage_hint": "early",
+      "token_end": 645,
+      "token_start": 0
+    },
+    {
+      "content_hash": "2a9f5be517dba56c328b7e2fe11f71fa2e440bc0c0068cf1fa25c1edd8d07ab0",
+      "doc_id": "indic-0002",
+      "lang": "hi",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          646,
+          1198,
+          true
+        ],
+        [
+          "eos",
+          1198,
+          1199,
+          true
+        ]
+      ],
+      "script": "Deva",
+      "stage_hint": "early",
+      "token_end": 1199,
+      "token_start": 645
+    },
+    {
+      "content_hash": "747546f8e44a61d16c9f7e966cc92e6d429b893ec8d43a2a048be50b956d00bb",
+      "doc_id": "indic-0003",
+      "lang": "hi",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1200,
+          1814,
+          true
+        ],
+        [
+          "eos",
+          1814,
+          1815,
+          true
+        ]
+      ],
+      "script": "Deva",
+      "stage_hint": "mid",
+      "token_end": 1815,
+      "token_start": 1199
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "49ab3c02bb431aab98195d0d83762f74bf5b47beaa1cf3c33b2d1f46335a7cb9",
+  "lane": "indic",
+  "languages": [
+    "hi"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "best_fit",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored Indic prose, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Deva"
+  ],
+  "shard_id": "sh-indic-cde2b9fc1b",
+  "source_file": "indic/indic_hindi.txt",
+  "source_id": "src-indic-hi",
+  "stage_hint": "mid",
+  "token_count": 1815,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

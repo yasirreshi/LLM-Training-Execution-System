@@ -1,0 +1,83 @@
+{
+  "admitted": false,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": "benchmark_reasoning_v1",
+  "block_hashes": [
+    "041a2cb604215dfb05b406963151e1af12ea0c6cf2e3b687d9aeb3493b06145b"
+  ],
+  "capability_tags": [
+    "benchmark",
+    "reasoning"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "041a2cb604215dfb05b406963151e1af12ea0c6cf2e3b687d9aeb3493b06145b",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 1,
+  "document_ids": [
+    "test-0004"
+  ],
+  "documents": [
+    {
+      "content_hash": "76819407a58b7992e2801fa48158400ffacc7be53722a05baf20b264d0c701fd",
+      "doc_id": "test-0004",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          77,
+          true
+        ],
+        [
+          "eos",
+          77,
+          78,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 78,
+      "token_start": 0
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": true,
+  "index_hash": "4c08cd47959cc075961f449f8cc14c3952a1337ef4bb8f2f99954418425d8803",
+  "lane": "test",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": false,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": true,
+  "packing_policy": "pad_only",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "internal reasoning benchmark v1",
+  "rejection_reasons": [
+    "never_train_flag_set"
+  ],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-test-24dae7d4c5",
+  "source_file": "test/benchmark_reasoning.txt",
+  "source_id": "src-test-benchmark",
+  "stage_hint": "early",
+  "token_count": 78,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

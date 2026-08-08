@@ -1,0 +1,67 @@
+# tdes-corpus v1
+# source: curated encyclopaedic prose, hand written for this repository
+
+===DOC===
+doc_id: web-0001
+lang: en
+script: Latn
+title: Monsoon onset over the Western Ghats
+stage_hint: early
+---
+The southwest monsoon reaches the Kerala coast in the first week of June in most years. The date is not a formality. It is declared only when a set of conditions holds together for two consecutive days: a minimum number of reporting stations record rainfall above a threshold, the depth of the westerly wind field reaches a stated height, and outgoing longwave radiation over a defined box of ocean falls below a stated value. Any one of those signals can appear on its own during a pre-monsoon squall. All three together are what separate the onset from a false start.
+
+The Western Ghats do most of the work of turning that moist air into rain. The range runs roughly parallel to the coast for sixteen hundred kilometres, and the air arriving from the Arabian Sea has nowhere to go but up. Rising air cools, cooling air loses its capacity to hold water vapour, and the vapour condenses. The windward slopes receive several metres of rain in a season. Thirty kilometres inland, on the far side of the crest, the same season may deliver a tenth of that. The dry belt in the rain shadow is not a gap in the monsoon; it is the monsoon, seen from the wrong side of a wall.
+
+The consequences run through everything downstream. Reservoir managers plan drawdown schedules against onset dates. Farmers time the first ploughing to it. Power planners watch it because hydroelectric generation and cooling water for thermal plants both depend on it. When the onset is late by a fortnight, the effect is not a fortnight of inconvenience; it compresses the sowing window, and a compressed window pushes the entire cropping calendar into a less favourable part of the year.
+
+===DOC===
+doc_id: web-0002
+lang: en
+script: Latn
+title: How a river gauge works
+stage_hint: early
+---
+A river gauge answers one question continuously: how much water is passing this point right now. The measurement is indirect. What the instrument actually records is stage, the height of the water surface above a fixed datum. Discharge, the volume per unit time that hydrologists care about, is inferred from stage through a rating curve built by wading into the river with a current meter on many separate occasions and measuring velocity across a cross section.
+
+The rating curve is the weak link, and everybody who works with the data knows it. It is calibrated at the flows that happened to occur during the calibration visits, which are almost never the extreme flows. A flood large enough to matter is also a flood large enough to rearrange the riverbed, and once the bed shifts the relationship between stage and discharge shifts with it. The gauge keeps reporting a number with the same apparent precision it always had. The number simply means something slightly different than it did last year.
+
+Good practice is therefore to store the stage record and the rating curve separately, with a version and a date on the curve, rather than storing only the discharge that the two produced together. If the curve is later revised, the whole historical discharge series can be recomputed. If only the derived discharge was kept, the revision cannot be applied retroactively and the archive quietly contains two incompatible definitions of the same column.
+
+===DOC===
+doc_id: web-0003
+lang: en
+script: Latn
+title: The Grand Trunk Road
+stage_hint: early
+---
+The route now called the Grand Trunk Road is older than any of the empires that maintained it. A road along the Gangetic plain, connecting the eastern delta to the northwest passes, existed under the Mauryas. Sher Shah Suri rebuilt and extended it in the sixteenth century, planted trees along its length for shade, and placed caravanserais at intervals a loaded animal could cover in a day. The Mughals maintained it. The British metalled it and renamed it. Each administration treated it as new infrastructure and each was largely resurfacing something already there.
+
+What made the alignment durable was not engineering but geography. The road follows the ground between the Himalayan foothills and the flood-prone centre of the plain: high enough to stay usable in the wet season, low enough to avoid climbing, and close enough to the rivers for water without sitting in their path. A route chosen for those reasons does not become obsolete when the technology changes. The modern highway follows it, and so does much of the railway.
+
+The caravanserai spacing is a nice illustration of how a constraint becomes invisible once it is met. The stops are roughly twenty kilometres apart because that is a day's march for a pack animal. Nobody driving the road today notices the rhythm, but the towns that grew at those stops are still there, still roughly twenty kilometres apart, and still the places where a traveller stops to eat.
+
+===DOC===
+doc_id: web-0004
+lang: en
+script: Latn
+title: Why cities flood more than the countryside
+stage_hint: mid
+---
+Rain falling on a field mostly soaks in. Rain falling on a city mostly does not. Roofs, roads and pavements are impervious, so water that would have entered the soil instead runs across the surface, and it runs fast, because a smooth paved slope offers far less resistance than grass and leaf litter. The same storm therefore produces a very different hydrograph: in the rural catchment the peak flow is modest and arrives hours later, in the urban catchment it is several times higher and arrives within minutes.
+
+Drainage networks make this worse before they make it better. A storm sewer is designed to move water away from where it fell as quickly as possible, which is exactly right from the point of view of the street it drains and exactly wrong from the point of view of whatever lies downstream. Concentrating many fast local responses into one channel produces a larger and sharper peak than the same area would have produced undrained.
+
+The mitigations all work by putting the delay back. Detention basins hold water and release it slowly. Permeable paving lets some of it infiltrate. Green roofs hold the first few millimetres of a storm, which matters more than it sounds, because most storms are small and the first flush carries most of the accumulated pollution. None of these measures reduces the total volume of a large event by much. What they buy is time, and in flood management time is usually the thing in shortest supply.
+
+===DOC===
+doc_id: web-0005
+lang: en
+script: Latn
+title: Reading a topographic map
+stage_hint: early
+---
+Contour lines connect points of equal elevation. Everything else on a topographic map is detail; the contours are the map. Once the interval is known, the spacing tells you the slope directly: lines packed tightly mean steep ground, lines far apart mean flat ground, and a series of closed loops shrinking inward means a hill, unless the innermost loop carries hachure marks pointing inward, in which case it is a depression.
+
+Valleys and ridges are distinguished by which way the contours bend where they cross a drainage line. Where a contour crosses a stream it forms a V, and the V points upstream, towards higher ground. A ridge produces the opposite: the contour bulges outward, downhill. This rule is worth internalising because it lets you read the drainage pattern of an area from the contours alone, without any blue ink on the sheet at all.
+
+The one thing contours cannot show is what the ground is made of. Two hillsides with identical contours can behave completely differently in rain if one is fractured rock and the other is deep clay. Geological maps exist for that reason, and the standard practice of overlaying the two is not redundancy; each answers a question the other cannot.

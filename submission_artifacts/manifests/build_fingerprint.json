@@ -1,0 +1,11 @@
+{
+  "admitted_shards": 20,
+  "corpus_hash": "87a634a5eb0c6440622f6e8176e4ec7af9cf2814095fd3f2c23806ffa7acc7c2",
+  "packed_sample_count": 121,
+  "packed_sample_root": "d8163367fef485cf",
+  "schedule_hash": "a9739d6e1e915c3726b183d8f46b889816ba2e79ef3beef3c0dbce412dfbc154",
+  "shard_content_root": "a65f27a441a7fd6d7f4864918b5e91ed2950b28b76f392d525b5630ef2253a38",
+  "shard_count": 25,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d",
+  "vocab_size": 3558
+}

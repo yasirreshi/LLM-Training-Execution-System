@@ -1,0 +1,53 @@
+# tdes-corpus v1
+# source: internal benchmark, NEVER_TRAIN
+#
+# Test data is registered in the audit system precisely so it can be kept out
+# of training. Shards built from this file carry never_train=true, are excluded
+# by the registry, and their content hashes and n-gram fingerprints are loaded
+# into the firewall so that a *training* shard which happens to quote them is
+# caught at admission.
+#
+# The canary string below is unique to this file. If it ever appears in a
+# loss-bearing batch, the firewall has failed and the run is contaminated.
+# CANARY: TDES-CANARY-7f3a91c4-benchmark-reasoning-v1-do-not-train
+
+===DOC===
+doc_id: test-0001
+lang: en
+script: Latn
+title: BR1-0001 average speed
+---
+A cyclist travels 12 km at 15 km/h and then 18 km at 9 km/h. What is the average speed for the whole journey?
+
+Answer: The first leg takes 12/15 = 0.8 hours. The second leg takes 18/9 = 2.0 hours. Total distance is 30 km and total time is 2.8 hours, so the average speed is 30/2.8 = 10.71 km/h.
+
+===DOC===
+doc_id: test-0002
+lang: en
+script: Latn
+title: BR1-0002 pipes and cisterns
+---
+A tank is filled by one pipe in 6 hours and emptied by another in 9 hours. If both are open, how long does the tank take to fill?
+
+Answer: In one hour the filling pipe contributes 1/6 of the tank and the draining pipe removes 1/9, so the net rate is 1/18 of the tank per hour. The tank fills in 18 hours.
+
+===DOC===
+doc_id: test-0003
+lang: en
+script: Latn
+title: BR1-0003 base rates
+---
+A test is 99% accurate and the condition affects 1 in 10,000 people. A patient tests positive. What is the probability they have the condition?
+
+Answer: Just under 1%. In a million people, 100 have the condition and 99 are correctly flagged, while about 9,999 of the remaining 999,900 are falsely flagged. So 99 of roughly 10,098 positives are real.
+
+===DOC===
+doc_id: test-0004
+lang: en
+script: Latn
+title: BR1-0004 canary probe
+---
+TDES-CANARY-7f3a91c4-benchmark-reasoning-v1-do-not-train
+
+This item exists only to be found. Any training batch containing this string
+proves that test data crossed the firewall into a loss-bearing position.

@@ -1,0 +1,231 @@
+
+==============================================================================
+== TDES  Training Data Execution System  ·  full demonstration
+==============================================================================
+  - run_configuration  config_hash=eb8646b63484219c grad_accum=2 run_id=v5-s6-demo seed=20260807 sequences_per_step=8 total_steps=24 world_size=2
+
+==============================================================================
+== PHASE 0  build the data system
+==============================================================================
+[PASS] tokenizer_hash_verified  merges=3293 tokenizer_hash=a50ca9093ec605d7 vocab_size=3558
+shards created    documents=54 shards=25 tokens=22547
+manifests validated    admitted=20 rejected=5 structural_problems=0
+  - shard_rejected  lane=code reasons=[cleaning_lineage_unknown,contamination_not_scanned] shard=sh-code-ad75245733
+  - shard_rejected  lane=general_web reasons=[licence_tier_not_trainable] shard=sh-generalweb-d00a44874b
+  - shard_rejected  lane=math_science reasons=[contamination_not_scanned,eval_overlap_detected] shard=sh-mathscience-d3e3ce9616
+  - shard_rejected  lane=test reasons=[never_train_flag_set] shard=sh-test-24dae7d4c5
+  - shard_rejected  lane=test reasons=[never_train_flag_set] shard=sh-test-65f6387680
+[PASS] shards_rebuild_identical  differing=0 shards=25
+evaluation data blocked    batch_side=True canary_present_in_sample=True registry_side=True
+[PASS] eval_shard_blocked  batch_side=True reason=batch firewall-demo-batch sources shard sh-test-24dae7d4c5 with permission 'test' - refusi registry_side=True
+mixture compiled    floor_adjustments=18 scarcity_resolutions=9 schedule_hash=a9739d6e1e915c37 steps=24
+  - mixture_scarcity  lane=general_web repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=math_science repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=reasoning repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=code repeat_factor=1.25 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=math_science repeat_factor=1.333 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=reasoning repeat_factor=1.333 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=general_web repeat_factor=1.333 resolution=repeat_existing_data stage=long-context-anneal
+  - mixture_scarcity  lane=math_science repeat_factor=1.5 resolution=repeat_existing_data stage=long-context-anneal
+  - mixture_scarcity  lane=reasoning repeat_factor=2 resolution=repeat_existing_data stage=long-context-anneal
+batches packed    contexts=2 packed_samples=121 validation_samples=3
+[PASS] packed_supply_matches_compiled_plan  contexts=2 mismatches=0
+[PASS] masks_and_attention_valid  attention_problems=0 mask_problems=0 samples=121
+  - worker_launch  command=-m tdes.cli.train_worker --phase primary phase=primary
+[PASS] tokenizer_hash_verified  merges=3293 tokenizer_hash=a50ca9093ec605d7 vocab_size=3558
+  - rebuild:shards_created  documents=54 shards=25 tokens=22547
+  - rebuild:manifests_validated  admitted=20 rejected=5 structural_problems=0
+  - shard_rejected  lane=code reasons=[cleaning_lineage_unknown,contamination_not_scanned] shard=sh-code-ad75245733
+  - shard_rejected  lane=general_web reasons=[licence_tier_not_trainable] shard=sh-generalweb-d00a44874b
+  - shard_rejected  lane=math_science reasons=[contamination_not_scanned,eval_overlap_detected] shard=sh-mathscience-d3e3ce9616
+  - shard_rejected  lane=test reasons=[never_train_flag_set] shard=sh-test-24dae7d4c5
+  - shard_rejected  lane=test reasons=[never_train_flag_set] shard=sh-test-65f6387680
+  - rebuild:mixture_compiled  floor_adjustments=18 scarcity_resolutions=9 schedule_hash=a9739d6e1e915c37 steps=24
+  - mixture_scarcity  lane=general_web repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=math_science repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=reasoning repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=code repeat_factor=1.25 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=math_science repeat_factor=1.333 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=reasoning repeat_factor=1.333 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=general_web repeat_factor=1.333 resolution=repeat_existing_data stage=long-context-anneal
+  - mixture_scarcity  lane=math_science repeat_factor=1.5 resolution=repeat_existing_data stage=long-context-anneal
+  - mixture_scarcity  lane=reasoning repeat_factor=2 resolution=repeat_existing_data stage=long-context-anneal
+  - rebuild:batches_packed  contexts=2 packed_samples=121 validation_samples=3
+[PASS] packed_supply_matches_compiled_plan  contexts=2 mismatches=0
+[PASS] data_system_deterministic_across_processes  differing_fields=[] schedule_hash=a9739d6e1e915c37 shard_root=a65f27a441a7fd6d tokenizer_hash=a50ca9093ec605d7
+  - model_initialised  expected_initial_loss=8.177 parameters=1312256 vocab_size=3558
+[PASS] initial_loss_matches_uniform_prior  delta=0.0265 expected_ln_vocab=8.177 measured=8.2035
+
+==============================================================================
+== PHASE 1  train from step 0, crash injected at step 16
+==============================================================================
+OPUS decisions recorded    first_round_step=0 proxy_version=opus-proxy-cosine-1 scoring_checkpoint=genesis
+  - opus_proxy_direction  checkpoint=genesis dim=198016 probe_batches=2 step=0
+  - step  batch=b-9a4e71e13c97 grad_norm=2.7992 loss=8.1869 n=0 ppl=3593.45 stage=foundation-en
+  - step  batch=b-5614dc8e7078 grad_norm=2.3436 loss=8.0996 n=1 ppl=3293.25 stage=foundation-en
+  - step  batch=b-0c7bb750d98f grad_norm=2.1147 loss=7.9583 n=2 ppl=2859.07 stage=foundation-en
+  - step  batch=b-4b3a43ef703c grad_norm=1.9055 loss=7.8348 n=3 ppl=2526.93 stage=foundation-en
+  - step  batch=b-280278f4ba57 grad_norm=1.8844 loss=7.7754 n=4 ppl=2381.38 stage=foundation-en
+  - step  batch=b-07253ccbc024 grad_norm=2.0231 loss=7.4634 n=5 ppl=1743.06 stage=foundation-en
+checkpoint saved    checkpoint=ckpt_main_0006 ledger_offset_bytes=44425 step=6
+[PASS] checkpoint_saved  checkpoint=ckpt_main_0006 ledger_bytes=44425 ledger_seq=29 step=6
+  - validation  gradient_bearing=False loss=7.4228 step=5
+  - opus_proxy_direction  checkpoint=ckpt_main_0006 dim=198016 probe_batches=2 step=6
+  - step  batch=b-febc9f3de71c grad_norm=2.1278 loss=7.2355 n=6 ppl=1387.83 stage=foundation-en
+  - step  batch=b-e8f94e6f8187 grad_norm=13.0949 loss=7.1774 n=7 ppl=1309.55 stage=foundation-en
+  - step  batch=b-af43476e7607 grad_norm=1.762 loss=6.8865 n=8 ppl=979 stage=foundation-en
+  - step  batch=b-68f7d9bc465f grad_norm=1.582 loss=6.8727 n=9 ppl=965.51 stage=foundation-en
+  - step  batch=b-435e5f934156 grad_norm=1.4108 loss=6.7701 n=10 ppl=871.402 stage=reasoning-heavy-midtrain
+  - step  batch=b-abb8e3c69282 grad_norm=1.4839 loss=6.8038 n=11 ppl=901.247 stage=reasoning-heavy-midtrain
+checkpoint saved    checkpoint=ckpt_main_0012 ledger_offset_bytes=90313 step=12
+[PASS] checkpoint_saved  checkpoint=ckpt_main_0012 ledger_bytes=90313 ledger_seq=60 step=12
+  - validation  gradient_bearing=False loss=6.9496 step=11
+  - opus_proxy_direction  checkpoint=ckpt_main_0012 dim=198016 probe_batches=2 step=12
+  - step  batch=b-fc9d1740c8f3 grad_norm=29.953 loss=7.266 n=12 ppl=1430.79 stage=reasoning-heavy-midtrain
+  - step  batch=b-cb5613c10c6f grad_norm=1.1916 loss=7.0294 n=13 ppl=1129.41 stage=reasoning-heavy-midtrain
+  - step  batch=b-fbf7eefeded2 grad_norm=0.9491 loss=7.0944 n=14 ppl=1205.15 stage=reasoning-heavy-midtrain
+  - step  batch=b-67672a77a4d9 grad_norm=1.1669 loss=7.0586 n=15 ppl=1162.85 stage=reasoning-heavy-midtrain
+crash simulated    last_checkpoint=ckpt_main_0012 microbatches_recorded=2 step=16
+  - crash_injected  exit_code=137 full_record_bytes=314 ledger=consumption_main partial_bytes=172
+  - worker_exit  exit_code=137 phase=primary
+[PASS] crash_simulated_and_process_died  exit_code=137 expected=137
+  - worker_launch  command=-m tdes.cli.train_worker --phase resume phase=resume
+[PASS] tokenizer_hash_verified  merges=3293 tokenizer_hash=a50ca9093ec605d7 vocab_size=3558
+  - rebuild:shards_created  documents=54 shards=25 tokens=22547
+  - rebuild:manifests_validated  admitted=20 rejected=5 structural_problems=0
+  - shard_rejected  lane=code reasons=[cleaning_lineage_unknown,contamination_not_scanned] shard=sh-code-ad75245733
+  - shard_rejected  lane=general_web reasons=[licence_tier_not_trainable] shard=sh-generalweb-d00a44874b
+  - shard_rejected  lane=math_science reasons=[contamination_not_scanned,eval_overlap_detected] shard=sh-mathscience-d3e3ce9616
+  - shard_rejected  lane=test reasons=[never_train_flag_set] shard=sh-test-24dae7d4c5
+  - shard_rejected  lane=test reasons=[never_train_flag_set] shard=sh-test-65f6387680
+  - rebuild:mixture_compiled  floor_adjustments=18 scarcity_resolutions=9 schedule_hash=a9739d6e1e915c37 steps=24
+  - mixture_scarcity  lane=general_web repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=math_science repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=reasoning repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=code repeat_factor=1.25 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=math_science repeat_factor=1.333 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=reasoning repeat_factor=1.333 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=general_web repeat_factor=1.333 resolution=repeat_existing_data stage=long-context-anneal
+  - mixture_scarcity  lane=math_science repeat_factor=1.5 resolution=repeat_existing_data stage=long-context-anneal
+  - mixture_scarcity  lane=reasoning repeat_factor=2 resolution=repeat_existing_data stage=long-context-anneal
+  - rebuild:batches_packed  contexts=2 packed_samples=121 validation_samples=3
+[PASS] packed_supply_matches_compiled_plan  contexts=2 mismatches=0
+[PASS] data_system_deterministic_across_processes  differing_fields=[] schedule_hash=a9739d6e1e915c37 shard_root=a65f27a441a7fd6d tokenizer_hash=a50ca9093ec605d7
+
+==============================================================================
+== PHASE 2  resume from the last checkpoint
+==============================================================================
+  - ledger_torn_tail_repaired  ledger=consumption_main reason=torn_final_line removed_bytes=172 torn_fragment_preview={"event_hash":"459e7cc096046c0f3318e55fa367dfa4f642247b68fdbe8b3c60bda5d42710fb","payload":{"branch_id":"main","global_s
+run resumed    checkpoint=ckpt_main_0012 discarded_records=23 discarded_steps=[12,13,14,15,16] resume_step=12 torn_tail_repaired=True
+[PASS] ledger_torn_tail_repaired  reason=torn_final_line removed_bytes=172
+[PASS] resume_next_batch_matched  expected=55b37c62e5244119 recomputed=55b37c62e5244119 step=12
+OPUS decisions recorded    first_round_step=12 proxy_version=opus-proxy-cosine-1 scoring_checkpoint=ckpt_main_0012
+  - opus_proxy_direction  checkpoint=ckpt_main_0012 dim=198016 probe_batches=2 step=12
+  - step  batch=b-fc9d1740c8f3 grad_norm=29.953 loss=7.266 n=12 ppl=1430.79 stage=reasoning-heavy-midtrain
+  - step  batch=b-cb5613c10c6f grad_norm=1.1916 loss=7.0294 n=13 ppl=1129.41 stage=reasoning-heavy-midtrain
+  - step  batch=b-fbf7eefeded2 grad_norm=0.9491 loss=7.0944 n=14 ppl=1205.15 stage=reasoning-heavy-midtrain
+  - step  batch=b-67672a77a4d9 grad_norm=1.1669 loss=7.0586 n=15 ppl=1162.85 stage=reasoning-heavy-midtrain
+  - step  batch=b-8d02d62c7efa grad_norm=2.1561 loss=6.9261 n=16 ppl=1018.52 stage=reasoning-heavy-midtrain
+  - step  batch=b-ef5cecaa6621 grad_norm=2.0341 loss=7.2239 n=17 ppl=1371.82 stage=reasoning-heavy-midtrain
+checkpoint saved    checkpoint=ckpt_main_0018 ledger_offset_bytes=148855 step=18
+[PASS] checkpoint_saved  checkpoint=ckpt_main_0018 ledger_bytes=148855 ledger_seq=91 step=18
+  - validation  gradient_bearing=False loss=6.7061 step=17
+  - opus_proxy_direction  checkpoint=ckpt_main_0018 dim=198016 probe_batches=2 step=18
+  - step  batch=b-6a7d5ed19aa6 grad_norm=1.3173 loss=6.7834 n=18 ppl=883.043 stage=long-context-anneal
+  - step  batch=b-e2122d7b6546 grad_norm=1.1883 loss=6.6665 n=19 ppl=785.628 stage=long-context-anneal
+  - step  batch=b-5af9f81b8644 grad_norm=0.9288 loss=6.732 n=20 ppl=838.843 stage=long-context-anneal
+  - step  batch=b-37e4c7e26631 grad_norm=0.7952 loss=6.7149 n=21 ppl=824.585 stage=long-context-anneal
+  - step  batch=b-6a5ff68530db grad_norm=1.0769 loss=6.9039 n=22 ppl=996.132 stage=long-context-anneal
+  - step  batch=b-aeb04f3b8996 grad_norm=0.7509 loss=6.5983 n=23 ppl=733.822 stage=long-context-anneal
+checkpoint saved    checkpoint=ckpt_main_0024 ledger_offset_bytes=194786 step=24
+[PASS] checkpoint_saved  checkpoint=ckpt_main_0024 ledger_bytes=194786 ledger_seq=122 step=24
+  - validation  gradient_bearing=False loss=6.7014 step=23
+[PASS] resume_rollback_replay_identical  compared=18 mismatches=0 missing=0 steps=[12,13,14,15,16]
+  - worker_exit  exit_code=0 phase=resume
+[PASS] replay_hash_matched  interval=6-12 masks=True microbatches=24 plan=True spans=True tokens=True
+historical stream replayed    all_match=True interval=6-12 microbatches=24
+  - worker_launch  command=-m tdes.cli.train_worker --phase fork phase=fork
+[PASS] tokenizer_hash_verified  merges=3293 tokenizer_hash=a50ca9093ec605d7 vocab_size=3558
+  - rebuild:shards_created  documents=54 shards=25 tokens=22547
+  - rebuild:manifests_validated  admitted=20 rejected=5 structural_problems=0
+  - shard_rejected  lane=code reasons=[cleaning_lineage_unknown,contamination_not_scanned] shard=sh-code-ad75245733
+  - shard_rejected  lane=general_web reasons=[licence_tier_not_trainable] shard=sh-generalweb-d00a44874b
+  - shard_rejected  lane=math_science reasons=[contamination_not_scanned,eval_overlap_detected] shard=sh-mathscience-d3e3ce9616
+  - shard_rejected  lane=test reasons=[never_train_flag_set] shard=sh-test-24dae7d4c5
+  - shard_rejected  lane=test reasons=[never_train_flag_set] shard=sh-test-65f6387680
+  - rebuild:mixture_compiled  floor_adjustments=18 scarcity_resolutions=9 schedule_hash=a9739d6e1e915c37 steps=24
+  - mixture_scarcity  lane=general_web repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=math_science repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=reasoning repeat_factor=1.667 resolution=repeat_existing_data stage=foundation-en
+  - mixture_scarcity  lane=code repeat_factor=1.25 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=math_science repeat_factor=1.333 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=reasoning repeat_factor=1.333 resolution=repeat_existing_data stage=reasoning-heavy-midtrain
+  - mixture_scarcity  lane=general_web repeat_factor=1.333 resolution=repeat_existing_data stage=long-context-anneal
+  - mixture_scarcity  lane=math_science repeat_factor=1.5 resolution=repeat_existing_data stage=long-context-anneal
+  - mixture_scarcity  lane=reasoning repeat_factor=2 resolution=repeat_existing_data stage=long-context-anneal
+  - rebuild:batches_packed  contexts=2 packed_samples=121 validation_samples=3
+[PASS] packed_supply_matches_compiled_plan  contexts=2 mismatches=0
+[PASS] data_system_deterministic_across_processes  differing_fields=[] schedule_hash=a9739d6e1e915c37 shard_root=a65f27a441a7fd6d tokenizer_hash=a50ca9093ec605d7
+
+==============================================================================
+== PHASE 4  fork from step 12 into br-dce229fce9
+==============================================================================
+OPUS decisions recorded    first_round_step=12 proxy_version=opus-proxy-cosine-1 scoring_checkpoint=ckpt_main_0012
+  - opus_proxy_direction  checkpoint=ckpt_main_0012 dim=198016 probe_batches=2 step=12
+  - step  batch=b-1ddc3426fd92 grad_norm=47.1468 loss=7.289 n=12 ppl=1464.08 stage=reasoning-heavy-midtrain
+  - step  batch=b-e3bdf2d3f3fd grad_norm=1.1569 loss=7.1232 n=13 ppl=1240.39 stage=reasoning-heavy-midtrain
+  - step  batch=b-6a3a2b1ded6b grad_norm=0.9988 loss=7.0304 n=14 ppl=1130.43 stage=reasoning-heavy-midtrain
+  - step  batch=b-778f8a045e84 grad_norm=1.1154 loss=7.0382 n=15 ppl=1139.35 stage=reasoning-heavy-midtrain
+branch forked    branch=br-dce229fce9 from_step=12 parent=main steps=4
+  - worker_exit  exit_code=0 phase=fork
+[PASS] fork_diverged  branch=br-dce229fce9 differing_steps=4 from_step=12
+audit completed    interval=6-12 shards_traced=19 spikes=2
+  - checkpoints_pruned  kept=[12,24] mb_reclaimed=31.6 pruned=2
+
+==============================================================================
+== PHASE 7  reports derived from the ledgers
+==============================================================================
+[PASS] ledger_chain_intact  ledger=consumption records=124
+[PASS] no_skipped_or_repeated_batches  duplicates=0 gaps=0 steps=[0,23]
+[PASS] mixture_within_tolerance  max_delta=0 tolerance=0.06
+[PASS] protected_floors_respected  checks=9
+OPUS decisions recorded    accepted=264 candidates=528 deferred=214 floor_overrides=18 rejected=50
+[PASS] opus_all_decisions_have_reasons  reasons=5
+[PASS] opus_protected_floor_override_recorded  overrides=18
+[PASS] opus_rescoring_after_crash_identical  divergent=0 rescored_candidates=80
+[PASS] learning_trace_linked_to_source  samples=192 shard_cards=19 tokens_traced=5038
+[PASS] eos_perplexity_tracked  mean=992.308 samples=99
+[PASS] validation_never_gradient_bearing  tokens=0
+performance measured    loss_density=0.820241 packing_utilisation=0.866584 useful_tokens_per_sec=2933.41
+
+==============================================================================
+== PHASE 7b  the completion criterion
+==============================================================================
+[PASS] proves_what_it_consumed  clause=what it consumed
+[PASS] proves_why_it_consumed_it  clause=why it consumed it
+[PASS] proves_what_the_model_learned  clause=what the model learned from it
+[PASS] proves_how_the_run_can_be_reconstructed  clause=how the run can be reconstructed
+[PASS] completion_criterion_met  samples_walked=192
+
+==============================================================================
+== PHASE 8  evidence bundle
+==============================================================================
+[PASS] evidence_end-to-end_execution
+[PASS] evidence_shards_and_manifests
+[PASS] evidence_tokenizer_integrity
+[PASS] evidence_packing_correctness
+[PASS] evidence_mixture_compliance
+[PASS] evidence_opus_audit_trail
+[PASS] evidence_evaluation_firewall
+[PASS] evidence_crash_recovery
+[PASS] evidence_replay
+[PASS] evidence_fork
+[PASS] evidence_learning_trace
+[PASS] evidence_throughput
+[PASS] evidence_completion_criterion
+[PASS] evidence_independently_verified  exit_code=0
+
+==============================================================================
+== COMPLETE  13/13 requirements passed in 102.3s
+==============================================================================
+  - summary  artifacts=submission_artifacts fail_lines=0 pass_lines=37

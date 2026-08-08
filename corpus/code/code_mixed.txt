@@ -1,0 +1,149 @@
+# tdes-corpus v1
+# source: hand written reference implementations across languages
+
+===DOC===
+doc_id: code-0101
+lang: en
+script: Latn
+title: SQL for a slowly changing dimension
+stage_hint: mid
+---
+-- Type 2 slowly changing dimension: history is kept by closing the old row
+-- and inserting a new one, rather than by updating in place. The surrogate
+-- key changes; the business key does not.
+
+CREATE TABLE dim_shard (
+    shard_sk        BIGINT       GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    shard_id        TEXT         NOT NULL,
+    tokenizer_hash  CHAR(64)     NOT NULL,
+    capability_lane TEXT         NOT NULL,
+    licence_tier    TEXT         NOT NULL,
+    valid_from      TIMESTAMPTZ  NOT NULL,
+    valid_to        TIMESTAMPTZ,
+    is_current      BOOLEAN      NOT NULL DEFAULT TRUE
+);
+
+CREATE UNIQUE INDEX dim_shard_current
+    ON dim_shard (shard_id)
+    WHERE is_current;
+
+-- Close the outgoing version and open the incoming one in one transaction,
+-- so no reader ever sees zero current rows or two current rows.
+BEGIN;
+
+UPDATE dim_shard
+   SET valid_to   = now(),
+       is_current = FALSE
+ WHERE shard_id   = $1
+   AND is_current;
+
+INSERT INTO dim_shard (shard_id, tokenizer_hash, capability_lane, licence_tier, valid_from)
+VALUES ($1, $2, $3, $4, now());
+
+COMMIT;
+
+-- Point-in-time query: what did the registry look like on a given date?
+SELECT shard_id, capability_lane, licence_tier
+  FROM dim_shard
+ WHERE valid_from <= $1
+   AND (valid_to IS NULL OR valid_to > $1);
+
+===DOC===
+doc_id: code-0102
+lang: en
+script: Latn
+title: A bounded queue with backpressure
+stage_hint: mid
+---
+// A bounded async queue. push() resolves only when there is room, which is
+// what turns "the consumer is slow" into "the producer waits" instead of
+// "memory grows until something dies".
+
+class BoundedQueue {
+  constructor(capacity) {
+    if (capacity < 1) throw new RangeError("capacity must be at least 1");
+    this.capacity = capacity;
+    this.items = [];
+    this.waitingPushers = [];
+    this.waitingPoppers = [];
+    this.closed = false;
+  }
+
+  async push(item) {
+    if (this.closed) throw new Error("push on a closed queue");
+    if (this.items.length >= this.capacity) {
+      await new Promise((resolve) => this.waitingPushers.push(resolve));
+    }
+    this.items.push(item);
+    const popper = this.waitingPoppers.shift();
+    if (popper) popper();
+  }
+
+  async pop() {
+    if (this.items.length === 0) {
+      if (this.closed) return undefined;
+      await new Promise((resolve) => this.waitingPoppers.push(resolve));
+    }
+    const item = this.items.shift();
+    const pusher = this.waitingPushers.shift();
+    if (pusher) pusher();
+    return item;
+  }
+
+  close() {
+    this.closed = true;
+    this.waitingPoppers.splice(0).forEach((resolve) => resolve());
+  }
+
+  get depth() {
+    return this.items.length;
+  }
+}
+
+export { BoundedQueue };
+
+===DOC===
+doc_id: code-0103
+lang: en
+script: Latn
+title: Merkle root over fixed-size blocks
+stage_hint: early
+---
+import hashlib
+from typing import Iterable, List
+
+
+def block_hashes(data: bytes, block_size: int = 4096) -> List[str]:
+    """Hash a byte string block by block.
+
+    Storing the per-block digests alongside the root means a corrupted file can
+    be localised to a block instead of merely declared bad, which is the whole
+    reason to build a tree rather than hash the file once.
+    """
+    return [
+        hashlib.sha256(data[offset:offset + block_size]).hexdigest()
+        for offset in range(0, max(len(data), 1), block_size)
+    ]
+
+
+def merkle_root(leaves: Iterable[str]) -> str:
+    level = [bytes.fromhex(leaf) for leaf in leaves]
+    if not level:
+        return hashlib.sha256(b"").hexdigest()
+    while len(level) > 1:
+        parents = []
+        for index in range(0, len(level), 2):
+            left = level[index]
+            # An odd node is paired with itself. This is simple but note that
+            # it makes some distinct leaf sets collide; production trees add a
+            # domain separation byte to leaves and internal nodes to avoid it.
+            right = level[index + 1] if index + 1 < len(level) else left
+            parents.append(hashlib.sha256(left + right).digest())
+        level = parents
+    return level[0].hex()
+
+
+def verify_block(data: bytes, index: int, expected: str, block_size: int = 4096) -> bool:
+    start = index * block_size
+    actual = hashlib.sha256(data[start:start + block_size]).hexdigest()
+    return actual == expected

@@ -1,0 +1,134 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "9d4061ca8fba76eee291ffd0fcc3f0456f3da1bc5e919e9bc8e3430c44db4e17"
+  ],
+  "capability_tags": [
+    "en",
+    "math",
+    "reasoning"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "9d4061ca8fba76eee291ffd0fcc3f0456f3da1bc5e919e9bc8e3430c44db4e17",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 3,
+  "document_ids": [
+    "math-0001",
+    "math-0002",
+    "math-0003"
+  ],
+  "documents": [
+    {
+      "content_hash": "678f370baed0617b9f0e1354059469d83155e45020ce6e2d305fc38467c0cba0",
+      "doc_id": "math-0001",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          343,
+          true
+        ],
+        [
+          "eos",
+          343,
+          344,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 344,
+      "token_start": 0
+    },
+    {
+      "content_hash": "d1a1c29256c9759b28e51f37caaccab386a57ebe55d2454122c902ab65ad7c59",
+      "doc_id": "math-0002",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          345,
+          652,
+          true
+        ],
+        [
+          "eos",
+          652,
+          653,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 653,
+      "token_start": 344
+    },
+    {
+      "content_hash": "50f25f199ec8ee0abc89f0834d4e670eb9516698605d6022690f3367d602853d",
+      "doc_id": "math-0003",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          654,
+          995,
+          true
+        ],
+        [
+          "eos",
+          995,
+          996,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "mid",
+      "token_end": 996,
+      "token_start": 653
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "cbf7702d3636c2ada3df9eb24dfcfd062e723b5dd05714e6746077a07d10e1af",
+  "lane": "math_science",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "greedy",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored worked explanations, this repository",
+  "rejection_reasons": [],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-mathscience-1889d2c0cc",
+  "source_file": "math_science/math_core.txt",
+  "source_id": "src-math-core",
+  "stage_hint": "mid",
+  "token_count": 996,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

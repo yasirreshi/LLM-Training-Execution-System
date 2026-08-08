@@ -1,0 +1,67 @@
+# tdes-corpus v1
+# source: curated technical prose, hand written for this repository
+
+===DOC===
+doc_id: web-0101
+lang: en
+script: Latn
+title: What a write-ahead log buys you
+stage_hint: early
+---
+A database that modifies pages in place has a problem the moment the power fails. A page is written to disk in units the storage device chooses, not in units the database chooses, so a crash halfway through can leave a page that is neither the old version nor the new one. Recovery has no way to tell, because the page looks structurally valid either way.
+
+The write-ahead log solves this by changing the order of operations. Before a page is modified, a record describing the modification is appended to a log and forced to durable storage. Only then may the page itself be written. If the system crashes, recovery replays the log: for every record that made it to disk, the corresponding change is reapplied, and any transaction that had not committed is undone. The invariant is simple to state and is the whole trick: the log record always reaches disk before the change it describes.
+
+The cost is that every commit involves a synchronous write, and synchronous writes are slow. The mitigations are all variations on batching. Group commit collects several transactions and flushes them together, so one physical write covers many logical commits. The result is that throughput scales with the flush rate rather than the transaction rate, and a system that could handle a few hundred commits per second suddenly handles tens of thousands, without weakening the guarantee at all.
+
+===DOC===
+doc_id: web-0102
+lang: en
+script: Latn
+title: Idempotency in distributed systems
+stage_hint: mid
+---
+A network call that times out has not necessarily failed. It may have succeeded and the acknowledgement may have been lost. The caller cannot distinguish these cases, so it must either retry and risk applying the operation twice, or not retry and risk not applying it at all. Neither is acceptable when the operation is a payment.
+
+Idempotency makes the choice unnecessary. If applying an operation twice has the same effect as applying it once, the caller can retry freely. Implementing it usually means giving each logical operation a client-generated key, recording that key on the server when the operation is applied, and checking for the key before applying anything. A repeat arrives, the key is already present, and the server returns the original result instead of doing the work again.
+
+The subtlety is that the key check and the operation must be atomic with respect to each other. If the server records the key and then crashes before performing the work, a retry will be treated as a duplicate and the work will never happen. The usual fix is to perform both inside the same transaction, so either both are durable or neither is. That constraint is why idempotency is easy inside one database and hard across several.
+
+===DOC===
+doc_id: web-0103
+lang: en
+script: Latn
+title: Why caches need an eviction policy
+stage_hint: early
+---
+A cache is smaller than the thing it caches, which means it must sometimes discard an entry to make room. Which entry to discard is the entire design problem. Least recently used is the common default and is a reasonable guess at the future: an item touched recently is likely to be touched again. It fails badly on one specific pattern, a scan through a data set larger than the cache, because the scan touches everything once, marks everything as recent, and evicts exactly the working set the cache existed to hold.
+
+Least frequently used avoids the scan problem but introduces its own: an item that was popular long ago accumulates a count that a genuinely popular new item cannot overtake for a long time. The cache becomes a museum. Practical policies therefore combine recency and frequency, and add a mechanism for letting old counts decay.
+
+The measurement that matters is hit rate, but hit rate alone can mislead. A cache with a high hit rate on cheap items and a low hit rate on expensive ones may be doing less good than a cache with the opposite profile. If the cost of a miss varies, the policy should weight by cost, and the reported metric should be cost avoided rather than hits counted.
+
+===DOC===
+doc_id: web-0104
+lang: en
+script: Latn
+title: Backpressure
+stage_hint: mid
+---
+A producer faster than its consumer will eventually exhaust something. If the queue between them is unbounded, it exhausts memory. If the queue is bounded and drops, it exhausts correctness. Backpressure is the third option: the queue refuses new work, and the refusal propagates upstream until it reaches something that can legitimately slow down.
+
+The design question is where that something is. In a request-response system it is usually the client, and the mechanism is a rejection with a retry hint. In a streaming pipeline it may be a reader that simply stops reading, letting the operating system's receive buffer fill and the sender's window close. In a batch system it may be a scheduler that declines to launch the next task.
+
+What goes wrong most often is a pipeline with a large buffer somewhere in the middle. The buffer absorbs the mismatch for a while, so the system appears healthy under a load it cannot actually sustain, and the failure arrives late, all at once, and far from its cause. A smaller buffer would have surfaced the same problem immediately and near its source. Buffers hide backpressure, and hidden backpressure is the reason a system that was fine at ninety percent load falls over at ninety-five.
+
+===DOC===
+doc_id: web-0105
+lang: en
+script: Latn
+title: Content addressing
+stage_hint: mid
+---
+In a content-addressed store, the name of an object is a hash of its bytes. This one decision resolves a surprising number of problems at once. Deduplication is automatic, because identical content produces an identical name and therefore occupies one slot. Integrity checking is automatic, because recomputing the hash of what was retrieved and comparing it to the name detects any corruption. Caching is safe forever, because a name can never refer to different content later.
+
+The cost is that content-addressed objects are immutable by construction. Changing an object produces a different name, so anything referring to the old name still refers to the old content. Systems built this way therefore need a separate, mutable layer of pointers: a name that means "the current version of this thing", which is updated to point at successive immutable objects.
+
+Splitting the two layers is not a workaround, it is the point. It makes the difference between identity and history explicit. The immutable layer records what existed. The mutable layer records what is current. Auditing becomes possible because the past is still addressable, and rollback becomes trivial because it is only a pointer move.

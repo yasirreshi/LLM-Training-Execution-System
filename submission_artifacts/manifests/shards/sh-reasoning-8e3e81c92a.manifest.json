@@ -1,0 +1,94 @@
+{
+  "admitted": true,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "894b7d86f259392eaff80aec445af9eaf9194fe6e230331d58c7411a70b634ad"
+  ],
+  "capability_tags": [
+    "chain_of_thought",
+    "en",
+    "reasoning"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "894b7d86f259392eaff80aec445af9eaf9194fe6e230331d58c7411a70b634ad",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 1,
+  "document_ids": [
+    "reason-0004"
+  ],
+  "documents": [
+    {
+      "content_hash": "c318cac110bf0377795f2ab1e0ba348a6013e8dbf5d6014c4cc521558d6580df",
+      "doc_id": "reason-0004",
+      "lang": "en",
+      "min_context": 400,
+      "reserved": true,
+      "role_spans": [
+        [
+          "user",
+          1,
+          42,
+          false
+        ],
+        [
+          "think",
+          42,
+          460,
+          true
+        ],
+        [
+          "answer",
+          460,
+          754,
+          true
+        ],
+        [
+          "eos",
+          754,
+          755,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "anneal",
+      "token_end": 755,
+      "token_start": 0
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "bb4d7e9923307844fe7e37cfdd7715f34a9f97ea71bd3969317a281e70a0e31c",
+  "lane": "reasoning",
+  "languages": [
+    "en"
+  ],
+  "licence": "CC0-1.0",
+  "licence_tier": "A",
+  "loss_bearing": true,
+  "loss_policy": "response_only",
+  "min_context": 400,
+  "never_train": false,
+  "packing_policy": "long_context",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "hand-authored reasoning traces, this repository",
+  "rejection_reasons": [],
+  "reserved": true,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-reasoning-8e3e81c92a",
+  "source_file": "reasoning/reasoning_traces.txt",
+  "source_id": "src-reasoning",
+  "stage_hint": "anneal",
+  "token_count": 755,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

@@ -1,0 +1,38 @@
+# tdes-corpus v1
+# source: scraped study-notes aggregator, quality unverified
+#
+# WARNING - this file is deliberately contaminated. The second document quotes
+# a benchmark item from corpus/test/benchmark_reasoning.txt verbatim, together
+# with its answer. It exists so the evaluation firewall has a real overlap to
+# detect at admission time rather than a synthetic one injected by test code.
+# The admission gate is expected to reject the shard built from this file.
+
+===DOC===
+doc_id: sci-0001
+lang: en
+script: Latn
+title: Thermal mass in building design
+stage_hint: early
+---
+A material with high thermal mass absorbs heat slowly and releases it slowly. Thick masonry walls exploit this: the wall warms through the day, lagging the outside temperature by several hours, and gives that heat back at night when the air has cooled. The interior therefore swings less than the exterior, without any energy being spent.
+
+The strategy only works where the daily temperature range is large. In a climate that stays hot through the night, the wall never gets a chance to discharge, and by the third day of a heatwave the thermal mass has become a heat store working against the occupants. This is the standard failure of applying a technique from one climate in another, and it is visible in buildings across the world where an imported style met a different diurnal range.
+
+Pairing thermal mass with night ventilation fixes the failure where it can be fixed. Opening the building when the outside air is coolest flushes the stored heat, resetting the wall for the next day. The design then depends on a behaviour rather than only on a material, which is a weaker guarantee but a much more flexible one.
+
+===DOC===
+doc_id: sci-0002
+lang: en
+script: Latn
+title: Worked problems on average speed
+stage_hint: early
+---
+Here is a standard exam problem with its solution.
+
+A cyclist travels 12 km at 15 km/h and then 18 km at 9 km/h. What is the average speed for the whole journey?
+
+Solution. The first leg takes 12/15 = 0.8 hours. The second leg takes 18/9 = 2.0 hours. Total distance is 30 km and total time is 2.8 hours, so the average speed is 30/2.8 = 10.71 km/h. Note that the arithmetic mean of 15 and 9 is 12 km/h, which is wrong, because the slower leg occupies more of the elapsed time.
+
+A second one. A tank is filled by one pipe in 6 hours and emptied by another in 9 hours. If both are open, how long does the tank take to fill?
+
+Solution. In one hour the filling pipe contributes 1/6 of the tank and the draining pipe removes 1/9, so the net rate is 1/6 - 1/9 = 3/18 - 2/18 = 1/18 of the tank per hour. The tank fills in 18 hours.

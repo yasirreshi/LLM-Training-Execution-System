@@ -1,0 +1,109 @@
+{
+  "admitted": false,
+  "attention_policy": "causal_block_diagonal_per_segment",
+  "benchmark_id": null,
+  "block_hashes": [
+    "3b14963434d096ccc69d798f97a2b68dc98cd76b6abbf8dc562a138e62f77302"
+  ],
+  "capability_tags": [
+    "en",
+    "news"
+  ],
+  "cleaning_pipeline_hash": "clean-1.0.0",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "contamination_status": "scanned_clean",
+  "content_hash": "3b14963434d096ccc69d798f97a2b68dc98cd76b6abbf8dc562a138e62f77302",
+  "dataloader_version": "tdes-loader-1.0.0",
+  "dedup_status": "exact_and_fuzzy_deduped",
+  "doc_count": 2,
+  "document_ids": [
+    "web-0301",
+    "web-0302"
+  ],
+  "documents": [
+    {
+      "content_hash": "c463e1ccc7f85a77318244ff9fc76656e75cd3f5d453b57494afbc71637e2a82",
+      "doc_id": "web-0301",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          1,
+          153,
+          true
+        ],
+        [
+          "eos",
+          153,
+          154,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 154,
+      "token_start": 0
+    },
+    {
+      "content_hash": "9c5f5544482a849c1c10f8de38f023c407af6d9958696eecd1a014842582e55a",
+      "doc_id": "web-0302",
+      "lang": "en",
+      "min_context": 0,
+      "reserved": false,
+      "role_spans": [
+        [
+          "text",
+          155,
+          314,
+          true
+        ],
+        [
+          "eos",
+          314,
+          315,
+          true
+        ]
+      ],
+      "script": "Latn",
+      "stage_hint": "early",
+      "token_end": 315,
+      "token_start": 154
+    }
+  ],
+  "eval_overlap_detail": [],
+  "eval_overlap_status": "none",
+  "format_version": "tdes-manifest-1",
+  "held_out": false,
+  "index_hash": "9b64982d9966e4b311c821bdc52c7807f5c333bf62ba5a1453ccab8566543734",
+  "lane": "general_web",
+  "languages": [
+    "en"
+  ],
+  "licence": "Proprietary-NoTrain",
+  "licence_tier": "D",
+  "loss_bearing": true,
+  "loss_policy": "all",
+  "min_context": 0,
+  "never_train": false,
+  "packing_policy": "concat_chop",
+  "parent_shard_ids": [],
+  "pii_status": "screened",
+  "position_policy": "segment_relative",
+  "provenance": "syndicated news wire",
+  "rejection_reasons": [
+    "licence_tier_not_trainable"
+  ],
+  "reserved": false,
+  "scarce_tier": null,
+  "scripts": [
+    "Latn"
+  ],
+  "shard_id": "sh-generalweb-d00a44874b",
+  "source_file": "general_web/web_restricted_licence.txt",
+  "source_id": "src-web-wire",
+  "stage_hint": "early",
+  "token_count": 315,
+  "tokenizer_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+}

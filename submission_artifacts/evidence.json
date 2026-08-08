@@ -1,0 +1,439 @@
+{
+  "all_passed": true,
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "generated_by": "tdes.audit.evidence.build_evidence",
+  "generation_method": "each requirement is checked by reopening the generated artifacts and recomputing the claim; no expected value is hardcoded and no value is carried over in memory from the run",
+  "python": "3.9.13",
+  "requirements": [
+    {
+      "detail": {
+        "fail_lines_in_log": [],
+        "milestones_found": 13,
+        "milestones_in_order": true,
+        "milestones_required": 13,
+        "missing_milestones": [],
+        "pass_lines_in_log": 40,
+        "submission_structure_complete": true
+      },
+      "evidence": [
+        "run.log"
+      ],
+      "note": "log scanned for the required event sequence and for any [FAIL] line",
+      "requirement": "End-to-end execution",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "manifests_missing_content_hash": [],
+        "manifests_missing_lineage_field": [],
+        "rebuild_reproducibility": {
+          "content_hashes_stable": true,
+          "differing_shard_ids": [],
+          "method": "shards rebuilt from the same corpus in-process; hashes diffed",
+          "shard_ids_stable": true,
+          "shards_compared": 25
+        },
+        "shard_manifests": 25,
+        "structural_problems": [],
+        "structurally_valid": true
+      },
+      "evidence": [
+        "manifests/shards/*.manifest.json",
+        "manifests/manifest_validation.json",
+        "manifests/reproducibility.json"
+      ],
+      "note": "shards rebuilt in-process and content hashes compared",
+      "requirement": "Shards and manifests",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "all_shards_share_one_tokenizer": true,
+        "distinct_tokenizer_hashes_in_manifests": [
+          "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d"
+        ],
+        "hash_matches": true,
+        "merges": 3293,
+        "recomputed_from_merge_table": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d",
+        "recorded_hash": "a50ca9093ec605d7690619bb07fe5d14f6a367065be1ad62ca1d523bce69610d",
+        "shard_manifests_checked": 25,
+        "vocab_size": 3558
+      },
+      "evidence": [
+        "manifests/tokenizer.json",
+        "manifests/shards/*.manifest.json"
+      ],
+      "note": "hash recomputed from the merge table, not read back from the file",
+      "requirement": "Tokenizer integrity",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "aggregate_loss_density": 0.8021,
+        "aggregate_packing_utilisation": 0.85568,
+        "mask_validation": {
+          "all_attention_confined": true,
+          "all_masks_valid": true,
+          "attention_problems": [],
+          "checks_applied": [
+            "no loss on padding",
+            "no loss on the first token of a segment",
+            "no loss on context-only spans (prompt, tool observation)",
+            "position ids segment-relative, contiguous, monotonic",
+            "segments contiguous, padding a suffix",
+            "attention causal and confined to one packed document"
+          ],
+          "mask_problems": [],
+          "samples_checked": 121
+        },
+        "packed_samples": 121,
+        "policies_exercised": [
+          "best_fit",
+          "concat_chop",
+          "greedy",
+          "long_context",
+          "structure_preserving"
+        ],
+        "policy_comparison_present": true,
+        "samples_with_inconsistent_utilisation": []
+      },
+      "evidence": [
+        "manifests/packed_samples_index.json",
+        "manifests/mask_validation.json",
+        "manifests/packing_report.json"
+      ],
+      "note": "utilisation recomputed per sample from pad counts",
+      "requirement": "Packing correctness",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "all_lanes_within_tolerance": true,
+        "all_protected_floors_respected": true,
+        "floor_breaches": [],
+        "lanes": [
+          {
+            "actual_share": 0.29583,
+            "actual_tokens": 18176,
+            "delta": 0.0,
+            "lane": "general_web",
+            "planned_share": 0.29583,
+            "planned_tokens": 18176,
+            "within_tolerance": true
+          },
+          {
+            "actual_share": 0.15417,
+            "actual_tokens": 9472,
+            "delta": 0.0,
+            "lane": "code",
+            "planned_share": 0.15417,
+            "planned_tokens": 9472,
+            "within_tolerance": true
+          },
+          {
+            "actual_share": 0.125,
+            "actual_tokens": 7680,
+            "delta": 0.0,
+            "lane": "math_science",
+            "planned_share": 0.125,
+            "planned_tokens": 7680,
+            "within_tolerance": true
+          },
+          {
+            "actual_share": 0.125,
+            "actual_tokens": 7680,
+            "delta": 0.0,
+            "lane": "indic",
+            "planned_share": 0.125,
+            "planned_tokens": 7680,
+            "within_tolerance": true
+          },
+          {
+            "actual_share": 0.125,
+            "actual_tokens": 7680,
+            "delta": 0.0,
+            "lane": "agentic",
+            "planned_share": 0.125,
+            "planned_tokens": 7680,
+            "within_tolerance": true
+          },
+          {
+            "actual_share": 0.175,
+            "actual_tokens": 10752,
+            "delta": 0.0,
+            "lane": "reasoning",
+            "planned_share": 0.175,
+            "planned_tokens": 10752,
+            "within_tolerance": true
+          }
+        ],
+        "max_abs_delta": 0.0,
+        "tolerance": 0.06
+      },
+      "evidence": [
+        "manifests/mixture_compliance.json",
+        "manifests/mixture_schedule.json"
+      ],
+      "note": "actual shares summed from the consumption ledger, not from the planner",
+      "requirement": "Mixture compliance",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "by_reason": {
+          "above_proxy_threshold": 221,
+          "below_proxy_threshold": 214,
+          "protected_lane_bias": 18,
+          "quota_pressure": 13,
+          "stage_mismatch": 62
+        },
+        "by_status": {
+          "accepted": 264,
+          "deferred": 214,
+          "rejected": 50
+        },
+        "decisions_missing_a_reason": [],
+        "decisions_recorded": 528,
+        "distinct_scores": 423,
+        "ledger_chain_detail": {
+          "head": "f65d9a058553349d4a2773c7c778de271f0e325e19e4ce5e1f077c0f1d86d6ab",
+          "ledger": "opus_decisions",
+          "records": 528
+        },
+        "ledger_chain_intact": true,
+        "protected_floor_overrides": 18,
+        "score_range": [
+          -0.563792,
+          0.86712
+        ],
+        "statuses_present": [
+          "accepted",
+          "deferred",
+          "rejected"
+        ]
+      },
+      "evidence": [
+        "ledgers/opus_decisions.jsonl",
+        "ledgers/opus_report.json"
+      ],
+      "note": "scores are gradient cosines, so near-unique values are expected",
+      "requirement": "OPUS audit trail",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "batch_side_checks_run": 49,
+        "canaries_registered": 1,
+        "eval_overlap_shards_blocked": [
+          "sh-mathscience-d3e3ce9616"
+        ],
+        "never_train_shards_blocked": [
+          "sh-test-24dae7d4c5",
+          "sh-test-65f6387680"
+        ],
+        "non_train_shards_found_in_consumption_ledger": [],
+        "registry_side_blocks": 1,
+        "validation_gradient_bearing_tokens": 0
+      },
+      "evidence": [
+        "ledgers/firewall_report.json",
+        "manifests/admission_report.json",
+        "ledgers/consumption_main.jsonl"
+      ],
+      "note": "consumption ledger re-scanned against registry permissions independently",
+      "requirement": "Evaluation firewall",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "crash_step": 16,
+        "expected_plan_hash": "55b37c62e5244119",
+        "ledger_chain_intact": true,
+        "ledger_integrity": {
+          "distinct_microbatches": 96,
+          "every_step_complete": true,
+          "no_duplicates": true,
+          "no_gaps": true,
+          "step_range": [
+            0,
+            23
+          ]
+        },
+        "microbatches_compared": 18,
+        "next_batch_matched": true,
+        "recomputed_plan_hash": "55b37c62e5244119",
+        "records_rolled_back": 23,
+        "resume_step": 12,
+        "resumed_from_checkpoint": "ckpt_main_0012",
+        "rollback_replay_identical": true,
+        "steps_rolled_back": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "torn_tail_repaired": true
+      },
+      "evidence": [
+        "ledgers/phase_resume_main.json",
+        "ledgers/consumption_main.jsonl",
+        "checkpoints/"
+      ],
+      "note": "gap and duplicate check recomputed from the ledger file",
+      "requirement": "Crash recovery",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "batch_ids": [
+          "b-435e5f934156",
+          "b-68f7d9bc465f",
+          "b-abb8e3c69282",
+          "b-af43476e7607",
+          "b-e8f94e6f8187",
+          "b-febc9f3de71c"
+        ],
+        "derivations_compared": [
+          "recorded (ledger)",
+          "reconstructed (shard bytes re-read and re-hashed)",
+          "recomputed (planner, from the seed, ledger not consulted)"
+        ],
+        "interval": [
+          6,
+          12
+        ],
+        "loss_masks_match": true,
+        "microbatches_replayed": 24,
+        "plan_recomputation_matches": true,
+        "token_spans_match": true,
+        "tokens_match": true
+      },
+      "evidence": [
+        "ledgers/replay_report.json",
+        "ledgers/consumption_main.jsonl"
+      ],
+      "note": "three independent derivations compared, not a file against itself",
+      "requirement": "Replay",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "branches": [
+          "br-dce229fce9",
+          "main"
+        ],
+        "diverged_after_fork": true,
+        "fork_point_step": 12,
+        "identical_before_fork": true,
+        "steps_after_fork_compared": [
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "evidence": [
+        "ledgers/branches.json",
+        "ledgers/fork_divergence.json"
+      ],
+      "note": "parent must be identical before the fork point and differ after it",
+      "requirement": "Fork",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "classification_summary": {
+          "exhausted": 0,
+          "harmful": 7,
+          "neutral": 0,
+          "useful": 12
+        },
+        "eos_perplexity": {
+          "max": 13331.81543,
+          "mean": 992.307705,
+          "min": 151.86879,
+          "samples": 99
+        },
+        "missing_token_fields": [],
+        "sample_records": 192,
+        "samples_without_source_link": [],
+        "shard_report_cards": 19,
+        "token_fields_present": [
+          "cross_entropy",
+          "doc_id",
+          "is_eos",
+          "is_special",
+          "lane",
+          "lang",
+          "loss_mask",
+          "perplexity",
+          "position_in_segment",
+          "position_in_sequence",
+          "preview",
+          "script",
+          "shard_id",
+          "token_id"
+        ],
+        "token_trace_records": 23,
+        "tokens_traced": 5038
+      },
+      "evidence": [
+        "ledgers/learning_main.jsonl",
+        "ledgers/learning_aggregates.json",
+        "ledgers/next_corpus_recommendations.json"
+      ],
+      "note": "every loss record carries the shard and document that produced it",
+      "requirement": "Learning trace",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "opus_rejection_rate": 0.5,
+        "padding_waste": 0.133416,
+        "raw_tokens_per_sec_compute": 3601.2,
+        "recomputed_from_ledger": 0.86273,
+        "recomputed_loss_density": 0.81455,
+        "reconstruction_formulas": {
+          "independent_source": "counters are summed from ledgers/consumption_*.jsonl (total_positions, pad_tokens, loss_bearing_tokens, context_only_tokens) - verify_evidence.py re-sums them from the ledger and compares, rather than trusting this file",
+          "loss_density": "useful_loss_bearing_tokens / raw_positions",
+          "packing_utilisation": "(raw_positions - pad_tokens) / raw_positions",
+          "useful_tokens_per_sec_compute": "timed_phase_counters.useful_loss_bearing_tokens / timings.compute"
+        },
+        "reported_loss_density": 0.820241,
+        "reported_packing_utilisation": 0.866584,
+        "useful_tokens_per_sec_compute": 2933.41
+      },
+      "evidence": [
+        "performance.json",
+        "ledgers/consumption_main.jsonl"
+      ],
+      "note": "utilisation and loss density recomputed by summing ledger counters",
+      "requirement": "Throughput",
+      "result": "PASS"
+    },
+    {
+      "detail": {
+        "consumed_sample_instances": 192,
+        "criterion": "The assignment is complete only when the system can prove what it consumed, why it consumed it, what the model learned from it and how the run can be reconstructed.",
+        "dangling_opus_decisions": 0,
+        "proves_how_it_can_be_reconstructed": true,
+        "proves_what_it_consumed": true,
+        "proves_what_the_model_learned": true,
+        "proves_why_it_consumed_it": true,
+        "records_missing_provenance": 0,
+        "samples_without_a_learning_record": 0
+      },
+      "evidence": [
+        "ledgers/completion_criterion.json"
+      ],
+      "note": "a link walk over every consumed sample, not a spot check",
+      "requirement": "Completion criterion",
+      "result": "PASS"
+    }
+  ],
+  "requirements_passed": 13,
+  "requirements_total": 13,
+  "run_id": "v5-s6-demo",
+  "wall_seconds": 101.324
+}

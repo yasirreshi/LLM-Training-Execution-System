@@ -1,0 +1,93 @@
+{
+  "branch_id": "main",
+  "distinct_microbatches": 96,
+  "duplicate_count": 0,
+  "duplicate_microbatches": [],
+  "every_step_complete": true,
+  "expected_microbatches_per_step": 4,
+  "loss_bearing_tokens": 50046,
+  "loss_density": 0.81455,
+  "microbatches_per_step": [
+    4
+  ],
+  "missing_steps": [],
+  "no_duplicates": true,
+  "no_gaps": true,
+  "ok": true,
+  "packing_utilisation": 0.86273,
+  "pad_tokens": 8434,
+  "records": 96,
+  "sequences_by_lane": {
+    "agentic": 24,
+    "code": 31,
+    "general_web": 59,
+    "indic": 24,
+    "math_science": 24,
+    "reasoning": 30
+  },
+  "step_range": [
+    0,
+    23
+  ],
+  "steps_observed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "tokens_by_lane": {
+    "agentic": 7680,
+    "code": 9472,
+    "general_web": 18176,
+    "indic": 7680,
+    "math_science": 7680,
+    "reasoning": 10752
+  },
+  "tokens_by_stage_lane": {
+    "foundation-en": {
+      "agentic": 2560,
+      "code": 2560,
+      "general_web": 7680,
+      "indic": 2560,
+      "math_science": 2560,
+      "reasoning": 2560
+    },
+    "long-context-anneal": {
+      "agentic": 3072,
+      "code": 3072,
+      "general_web": 6144,
+      "indic": 3072,
+      "math_science": 3072,
+      "reasoning": 6144
+    },
+    "reasoning-heavy-midtrain": {
+      "agentic": 2048,
+      "code": 3840,
+      "general_web": 4352,
+      "indic": 2048,
+      "math_science": 2048,
+      "reasoning": 2048
+    }
+  },
+  "total_positions": 61440
+}

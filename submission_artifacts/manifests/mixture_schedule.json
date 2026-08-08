@@ -1,0 +1,1253 @@
+{
+  "anneal_reserve": {
+    "agentic": [
+      "smp-99d66c22c899",
+      "smp-9cdc96448a6c",
+      "smp-a5e5bff92955",
+      "smp-a878cf89ee84",
+      "smp-dd1b1aff5f45",
+      "smp-df737f87d7c3"
+    ],
+    "indic": [
+      "smp-ac1d4638f6a5",
+      "smp-e442ebcd4bd4",
+      "smp-eccd52866ffe"
+    ],
+    "reasoning": [
+      "smp-318a7cf581ae",
+      "smp-e9974ba6db3d"
+    ]
+  },
+  "feasibility": [
+    {
+      "distinct_samples_available": 18,
+      "lane": "general_web",
+      "note": "repeating existing data 1.67x",
+      "repeat_factor": 1.667,
+      "resolution": "repeat_existing_data",
+      "sequences_required": 30,
+      "stage": "foundation-en",
+      "tokens_available": 4489
+    },
+    {
+      "distinct_samples_available": 12,
+      "lane": "code",
+      "note": "",
+      "repeat_factor": 1.0,
+      "resolution": "satisfied",
+      "sequences_required": 10,
+      "stage": "foundation-en",
+      "tokens_available": 2756
+    },
+    {
+      "distinct_samples_available": 6,
+      "lane": "math_science",
+      "note": "repeating existing data 1.67x",
+      "repeat_factor": 1.667,
+      "resolution": "repeat_existing_data",
+      "sequences_required": 10,
+      "stage": "foundation-en",
+      "tokens_available": 1344
+    },
+    {
+      "distinct_samples_available": 17,
+      "lane": "indic",
+      "note": "",
+      "repeat_factor": 1.0,
+      "resolution": "satisfied",
+      "sequences_required": 10,
+      "stage": "foundation-en",
+      "tokens_available": 4303
+    },
+    {
+      "distinct_samples_available": 11,
+      "lane": "agentic",
+      "note": "",
+      "repeat_factor": 1.0,
+      "resolution": "satisfied",
+      "sequences_required": 10,
+      "stage": "foundation-en",
+      "tokens_available": 2123
+    },
+    {
+      "distinct_samples_available": 6,
+      "lane": "reasoning",
+      "note": "protected lane is short 4 sequences; repeating existing data 1.67x rather than dropping below the floor",
+      "repeat_factor": 1.667,
+      "resolution": "repeat_existing_data",
+      "sequences_required": 10,
+      "stage": "foundation-en",
+      "tokens_available": 1012
+    },
+    {
+      "distinct_samples_available": 18,
+      "lane": "general_web",
+      "note": "",
+      "repeat_factor": 1.0,
+      "resolution": "satisfied",
+      "sequences_required": 17,
+      "stage": "reasoning-heavy-midtrain",
+      "tokens_available": 4489
+    },
+    {
+      "distinct_samples_available": 12,
+      "lane": "code",
+      "note": "repeating existing data 1.25x",
+      "repeat_factor": 1.25,
+      "resolution": "repeat_existing_data",
+      "sequences_required": 15,
+      "stage": "reasoning-heavy-midtrain",
+      "tokens_available": 2756
+    },
+    {
+      "distinct_samples_available": 6,
+      "lane": "math_science",
+      "note": "repeating existing data 1.33x",
+      "repeat_factor": 1.333,
+      "resolution": "repeat_existing_data",
+      "sequences_required": 8,
+      "stage": "reasoning-heavy-midtrain",
+      "tokens_available": 1344
+    },
+    {
+      "distinct_samples_available": 17,
+      "lane": "indic",
+      "note": "",
+      "repeat_factor": 1.0,
+      "resolution": "satisfied",
+      "sequences_required": 8,
+      "stage": "reasoning-heavy-midtrain",
+      "tokens_available": 4303
+    },
+    {
+      "distinct_samples_available": 11,
+      "lane": "agentic",
+      "note": "",
+      "repeat_factor": 1.0,
+      "resolution": "satisfied",
+      "sequences_required": 8,
+      "stage": "reasoning-heavy-midtrain",
+      "tokens_available": 2123
+    },
+    {
+      "distinct_samples_available": 6,
+      "lane": "reasoning",
+      "note": "protected lane is short 2 sequences; repeating existing data 1.33x rather than dropping below the floor",
+      "repeat_factor": 1.333,
+      "resolution": "repeat_existing_data",
+      "sequences_required": 8,
+      "stage": "reasoning-heavy-midtrain",
+      "tokens_available": 1012
+    },
+    {
+      "distinct_samples_available": 9,
+      "lane": "general_web",
+      "note": "repeating existing data 1.33x",
+      "repeat_factor": 1.333,
+      "resolution": "repeat_existing_data",
+      "sequences_required": 12,
+      "stage": "long-context-anneal",
+      "tokens_available": 4489
+    },
+    {
+      "distinct_samples_available": 7,
+      "lane": "code",
+      "note": "",
+      "repeat_factor": 1.0,
+      "resolution": "satisfied",
+      "sequences_required": 6,
+      "stage": "long-context-anneal",
+      "tokens_available": 2756
+    },
+    {
+      "distinct_samples_available": 4,
+      "lane": "math_science",
+      "note": "repeating existing data 1.50x",
+      "repeat_factor": 1.5,
+      "resolution": "repeat_existing_data",
+      "sequences_required": 6,
+      "stage": "long-context-anneal",
+      "tokens_available": 1344
+    },
+    {
+      "distinct_samples_available": 10,
+      "lane": "indic",
+      "note": "",
+      "repeat_factor": 1.0,
+      "resolution": "satisfied",
+      "sequences_required": 6,
+      "stage": "long-context-anneal",
+      "tokens_available": 4911
+    },
+    {
+      "distinct_samples_available": 12,
+      "lane": "agentic",
+      "note": "",
+      "repeat_factor": 1.0,
+      "resolution": "satisfied",
+      "sequences_required": 6,
+      "stage": "long-context-anneal",
+      "tokens_available": 4385
+    },
+    {
+      "distinct_samples_available": 6,
+      "lane": "reasoning",
+      "note": "protected lane is short 6 sequences; repeating existing data 2.00x rather than dropping below the floor",
+      "repeat_factor": 2.0,
+      "resolution": "repeat_existing_data",
+      "sequences_required": 12,
+      "stage": "long-context-anneal",
+      "tokens_available": 2473
+    }
+  ],
+  "floor_adjustments": [
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 0
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 1
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 2
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 3
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 4
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 5
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 6
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 7
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 8
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.03,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "foundation-en",
+      "step": 9
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.06,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 11
+    },
+    {
+      "added": 1,
+      "donors": [
+        "general_web",
+        "code",
+        "math_science"
+      ],
+      "floor": 0.06,
+      "lane": "agentic",
+      "required_sequences": 1,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 12
+    },
+    {
+      "added": 1,
+      "donors": [
+        "code",
+        "general_web",
+        "math_science"
+      ],
+      "floor": 0.16,
+      "lane": "reasoning",
+      "required_sequences": 2,
+      "stage": "long-context-anneal",
+      "step": 18
+    },
+    {
+      "added": 1,
+      "donors": [
+        "code",
+        "general_web",
+        "math_science"
+      ],
+      "floor": 0.16,
+      "lane": "reasoning",
+      "required_sequences": 2,
+      "stage": "long-context-anneal",
+      "step": 19
+    },
+    {
+      "added": 1,
+      "donors": [
+        "code",
+        "general_web",
+        "math_science"
+      ],
+      "floor": 0.16,
+      "lane": "reasoning",
+      "required_sequences": 2,
+      "stage": "long-context-anneal",
+      "step": 20
+    },
+    {
+      "added": 1,
+      "donors": [
+        "code",
+        "general_web",
+        "math_science"
+      ],
+      "floor": 0.16,
+      "lane": "reasoning",
+      "required_sequences": 2,
+      "stage": "long-context-anneal",
+      "step": 21
+    },
+    {
+      "added": 1,
+      "donors": [
+        "code",
+        "general_web",
+        "math_science"
+      ],
+      "floor": 0.16,
+      "lane": "reasoning",
+      "required_sequences": 2,
+      "stage": "long-context-anneal",
+      "step": 22
+    },
+    {
+      "added": 1,
+      "donors": [
+        "code",
+        "general_web",
+        "math_science"
+      ],
+      "floor": 0.16,
+      "lane": "reasoning",
+      "required_sequences": 2,
+      "stage": "long-context-anneal",
+      "step": 23
+    }
+  ],
+  "per_step": [
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 0,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 1,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 2,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 3,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 4,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 5,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 6,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 7,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 8,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "foundation-en",
+      "step": 9,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 3,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.375,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 10,
+      "warmup_t": 0.25
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 2,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.25,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 11,
+      "warmup_t": 0.5
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 2,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.25,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 12,
+      "warmup_t": 0.75
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 2,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.25,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 13,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 2,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.25,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 14,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 2,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.25,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 15,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 2,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.25,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 16,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 2,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 1
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.25,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.125
+      },
+      "reserved_unlocked": false,
+      "sequence_length": 256,
+      "stage": "reasoning-heavy-midtrain",
+      "step": 17,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 2
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.25
+      },
+      "reserved_unlocked": true,
+      "sequence_length": 512,
+      "stage": "long-context-anneal",
+      "step": 18,
+      "warmup_t": 0.3333
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 2
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.25
+      },
+      "reserved_unlocked": true,
+      "sequence_length": 512,
+      "stage": "long-context-anneal",
+      "step": 19,
+      "warmup_t": 0.6667
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 2
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.25
+      },
+      "reserved_unlocked": true,
+      "sequence_length": 512,
+      "stage": "long-context-anneal",
+      "step": 20,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 2
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.25
+      },
+      "reserved_unlocked": true,
+      "sequence_length": 512,
+      "stage": "long-context-anneal",
+      "step": 21,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 2
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.25
+      },
+      "reserved_unlocked": true,
+      "sequence_length": 512,
+      "stage": "long-context-anneal",
+      "step": 22,
+      "warmup_t": 1.0
+    },
+    {
+      "counts": {
+        "agentic": 1,
+        "code": 1,
+        "general_web": 2,
+        "indic": 1,
+        "math_science": 1,
+        "reasoning": 2
+      },
+      "planned_shares": {
+        "agentic": 0.125,
+        "code": 0.125,
+        "general_web": 0.25,
+        "indic": 0.125,
+        "math_science": 0.125,
+        "reasoning": 0.25
+      },
+      "reserved_unlocked": true,
+      "sequence_length": 512,
+      "stage": "long-context-anneal",
+      "step": 23,
+      "warmup_t": 1.0
+    }
+  ],
+  "planned_lane_sequences": {
+    "agentic": 24,
+    "code": 31,
+    "general_web": 59,
+    "indic": 24,
+    "math_science": 24,
+    "reasoning": 30
+  },
+  "planned_lane_shares": {
+    "agentic": 0.125,
+    "code": 0.15417,
+    "general_web": 0.29583,
+    "indic": 0.125,
+    "math_science": 0.125,
+    "reasoning": 0.175
+  },
+  "planned_lane_tokens": {
+    "agentic": 7680,
+    "code": 9472,
+    "general_web": 18176,
+    "indic": 7680,
+    "math_science": 7680,
+    "reasoning": 10752
+  },
+  "protected_lanes": [
+    "indic",
+    "agentic",
+    "reasoning"
+  ],
+  "quota_granularity": 0.125,
+  "schedule_hash": "a9739d6e1e915c3726b183d8f46b889816ba2e79ef3beef3c0dbce412dfbc154",
+  "sequences_per_step": 8,
+  "shortfalls": [],
+  "stage_intent_vs_compiled": [
+    {
+      "compiled_share": 0.375,
+      "delta": -0.065,
+      "floor": null,
+      "intended_share": 0.44,
+      "lane": "general_web",
+      "limited_by": "integer_rounding",
+      "stage": "foundation-en"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": -0.035,
+      "floor": null,
+      "intended_share": 0.16,
+      "lane": "code",
+      "limited_by": "integer_rounding",
+      "stage": "foundation-en"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": -0.015,
+      "floor": null,
+      "intended_share": 0.14,
+      "lane": "math_science",
+      "limited_by": "integer_rounding",
+      "stage": "foundation-en"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": -0.015,
+      "floor": 0.1,
+      "intended_share": 0.14,
+      "lane": "indic",
+      "limited_by": "integer_rounding",
+      "stage": "foundation-en"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": 0.085,
+      "floor": 0.03,
+      "intended_share": 0.04,
+      "lane": "agentic",
+      "limited_by": "below_quota_granularity",
+      "stage": "foundation-en"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": 0.045,
+      "floor": 0.05,
+      "intended_share": 0.08,
+      "lane": "reasoning",
+      "limited_by": "below_quota_granularity",
+      "stage": "foundation-en"
+    },
+    {
+      "compiled_share": 0.26562,
+      "delta": -0.01438,
+      "floor": null,
+      "intended_share": 0.28,
+      "lane": "general_web",
+      "limited_by": "integer_rounding",
+      "stage": "reasoning-heavy-midtrain"
+    },
+    {
+      "compiled_share": 0.23438,
+      "delta": 0.01437,
+      "floor": null,
+      "intended_share": 0.22,
+      "lane": "code",
+      "limited_by": "integer_rounding",
+      "stage": "reasoning-heavy-midtrain"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": -0.055,
+      "floor": null,
+      "intended_share": 0.18,
+      "lane": "math_science",
+      "limited_by": "integer_rounding",
+      "stage": "reasoning-heavy-midtrain"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": 0.005,
+      "floor": 0.1,
+      "intended_share": 0.12,
+      "lane": "indic",
+      "limited_by": "below_quota_granularity",
+      "stage": "reasoning-heavy-midtrain"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": 0.045,
+      "floor": 0.06,
+      "intended_share": 0.08,
+      "lane": "agentic",
+      "limited_by": "below_quota_granularity",
+      "stage": "reasoning-heavy-midtrain"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": 0.005,
+      "floor": 0.1,
+      "intended_share": 0.12,
+      "lane": "reasoning",
+      "limited_by": "below_quota_granularity",
+      "stage": "reasoning-heavy-midtrain"
+    },
+    {
+      "compiled_share": 0.25,
+      "delta": 0.07,
+      "floor": null,
+      "intended_share": 0.18,
+      "lane": "general_web",
+      "limited_by": "integer_rounding",
+      "stage": "long-context-anneal"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": -0.075,
+      "floor": null,
+      "intended_share": 0.2,
+      "lane": "code",
+      "limited_by": "integer_rounding",
+      "stage": "long-context-anneal"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": -0.035,
+      "floor": null,
+      "intended_share": 0.16,
+      "lane": "math_science",
+      "limited_by": "integer_rounding",
+      "stage": "long-context-anneal"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": -0.015,
+      "floor": 0.12,
+      "intended_share": 0.14,
+      "lane": "indic",
+      "limited_by": "integer_rounding",
+      "stage": "long-context-anneal"
+    },
+    {
+      "compiled_share": 0.125,
+      "delta": -0.015,
+      "floor": 0.1,
+      "intended_share": 0.14,
+      "lane": "agentic",
+      "limited_by": "integer_rounding",
+      "stage": "long-context-anneal"
+    },
+    {
+      "compiled_share": 0.25,
+      "delta": 0.07,
+      "floor": 0.16,
+      "intended_share": 0.18,
+      "lane": "reasoning",
+      "limited_by": "integer_rounding",
+      "stage": "long-context-anneal"
+    }
+  ],
+  "stages": [
+    {
+      "anneal": false,
+      "mixture": {
+        "agentic": 0.04,
+        "code": 0.16,
+        "general_web": 0.44,
+        "indic": 0.14,
+        "math_science": 0.14,
+        "reasoning": 0.08
+      },
+      "name": "foundation-en",
+      "protected_floors": {
+        "agentic": 0.03,
+        "indic": 0.1,
+        "reasoning": 0.05
+      },
+      "sequence_length": 256,
+      "steps": 10,
+      "warmup_steps": 0
+    },
+    {
+      "anneal": false,
+      "mixture": {
+        "agentic": 0.08,
+        "code": 0.22,
+        "general_web": 0.28,
+        "indic": 0.12,
+        "math_science": 0.18,
+        "reasoning": 0.12
+      },
+      "name": "reasoning-heavy-midtrain",
+      "protected_floors": {
+        "agentic": 0.06,
+        "indic": 0.1,
+        "reasoning": 0.1
+      },
+      "sequence_length": 256,
+      "steps": 8,
+      "warmup_steps": 4
+    },
+    {
+      "anneal": true,
+      "mixture": {
+        "agentic": 0.14,
+        "code": 0.2,
+        "general_web": 0.18,
+        "indic": 0.14,
+        "math_science": 0.16,
+        "reasoning": 0.18
+      },
+      "name": "long-context-anneal",
+      "protected_floors": {
+        "agentic": 0.1,
+        "indic": 0.12,
+        "reasoning": 0.16
+      },
+      "sequence_length": 512,
+      "steps": 6,
+      "warmup_steps": 3
+    }
+  ],
+  "total_steps": 24
+}

@@ -1,0 +1,124 @@
+{
+  "admitted": [
+    "sh-agentic-15e9e87bcd",
+    "sh-agentic-2124a81dbc",
+    "sh-code-45fc328cb1",
+    "sh-code-a513275e65",
+    "sh-code-e0ea18f98d",
+    "sh-generalweb-0891b7c5fa",
+    "sh-generalweb-507734bdcc",
+    "sh-generalweb-582f1166ec",
+    "sh-generalweb-8592ef7b58",
+    "sh-generalweb-cbd3f64ece",
+    "sh-generalweb-d7da98bf1b",
+    "sh-indic-2222a85dee",
+    "sh-indic-5bbc73dbfa",
+    "sh-indic-65d3c8b055",
+    "sh-indic-cde2b9fc1b",
+    "sh-mathscience-1889d2c0cc",
+    "sh-mathscience-6602f5780e",
+    "sh-reasoning-74d077c73c",
+    "sh-reasoning-8e3e81c92a",
+    "sh-validation-9d927d0047"
+  ],
+  "admitted_count": 20,
+  "reason_vocabulary": [
+    "licence_tier_not_trainable",
+    "cleaning_lineage_unknown",
+    "tokenizer_hash_missing",
+    "eval_overlap_detected",
+    "never_train_flag_set",
+    "contamination_not_scanned",
+    "shard_has_no_tokens",
+    "capability_lane_unknown"
+  ],
+  "rejected": [
+    {
+      "eval_overlap_detail": [],
+      "lane": "code",
+      "reasons": [
+        "cleaning_lineage_unknown",
+        "contamination_not_scanned"
+      ],
+      "shard_id": "sh-code-ad75245733",
+      "source_id": "src-code-unknown"
+    },
+    {
+      "eval_overlap_detail": [],
+      "lane": "general_web",
+      "reasons": [
+        "licence_tier_not_trainable"
+      ],
+      "shard_id": "sh-generalweb-d00a44874b",
+      "source_id": "src-web-wire"
+    },
+    {
+      "eval_overlap_detail": [
+        {
+          "benchmark_doc_id": "test-0001",
+          "benchmark_id": "benchmark_reasoning_v1",
+          "canary": "",
+          "detector": "ngram",
+          "doc_id": "sci-0002",
+          "matched_ngrams": 54,
+          "overlap_ratio": 0.871
+        },
+        {
+          "benchmark_doc_id": "test-0002",
+          "benchmark_id": "benchmark_reasoning_v1",
+          "canary": "",
+          "detector": "ngram",
+          "doc_id": "sci-0002",
+          "matched_ngrams": 46,
+          "overlap_ratio": 0.7667
+        }
+      ],
+      "lane": "math_science",
+      "reasons": [
+        "contamination_not_scanned",
+        "eval_overlap_detected"
+      ],
+      "shard_id": "sh-mathscience-d3e3ce9616",
+      "source_id": "src-sci-aggregator"
+    },
+    {
+      "eval_overlap_detail": [],
+      "lane": "test",
+      "reasons": [
+        "never_train_flag_set"
+      ],
+      "shard_id": "sh-test-24dae7d4c5",
+      "source_id": "src-test-benchmark"
+    },
+    {
+      "eval_overlap_detail": [],
+      "lane": "test",
+      "reasons": [
+        "never_train_flag_set"
+      ],
+      "shard_id": "sh-test-65f6387680",
+      "source_id": "src-test-benchmark"
+    }
+  ],
+  "rejected_by_reason": {
+    "cleaning_lineage_unknown": [
+      "sh-code-ad75245733"
+    ],
+    "contamination_not_scanned": [
+      "sh-code-ad75245733",
+      "sh-mathscience-d3e3ce9616"
+    ],
+    "eval_overlap_detected": [
+      "sh-mathscience-d3e3ce9616"
+    ],
+    "licence_tier_not_trainable": [
+      "sh-generalweb-d00a44874b"
+    ],
+    "never_train_flag_set": [
+      "sh-test-24dae7d4c5",
+      "sh-test-65f6387680"
+    ]
+  },
+  "rejected_count": 5,
+  "total_shards": 25
+}

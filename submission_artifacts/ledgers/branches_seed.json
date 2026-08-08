@@ -1,0 +1,14 @@
+{
+  "branch_id": "main",
+  "config_hash": "eb8646b63484219c4979e7a62d25cfce8b866d5510b81c984c39c184d78ce6e2",
+  "divergence_note": "",
+  "forked_from_checkpoint": null,
+  "forked_from_step": null,
+  "index_hash": "4c7b3bf95e114735f6a8b04470072167a04b83de8f7a502e7098b27306ff9e06",
+  "mode": "primary",
+  "parent_branch_id": null,
+  "run_id": "v5-s6-demo",
+  "schedule_hash": "a9739d6e1e915c3726b183d8f46b889816ba2e79ef3beef3c0dbce412dfbc154",
+  "seed": 20260807,
+  "steps_completed": 0
+}
